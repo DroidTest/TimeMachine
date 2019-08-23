@@ -1,0 +1,84 @@
+# TimeMachine #
+
+TimeMachine is an automated testing tool for Android apps that enables Monkey \[ [1](https://developer.android.com/studio/test/monkey) \] to resume the most progressive state observed in the past when there is lack of progress. 
+    
+<p align="center">
+<img src="https://github.com/DroidTest/TimeMachine/blob/master/illustration.jpg" width="600">
+</p>
+
+The figure above demonstrates how it works. When execution keeps going through a loop state S2 --> S3 --> S4 --> S2 (see Figure (a)), TimeMachine terminates the current execution due to lack of progress, resumes the most progressive state S1 (assuming that S1 is the most progressive state among all discovered states),  and launches a new execution from state S1. When reaching state S6 via S5 (see Figure(b)), the execution gets stuck, i.e., unable to exit the state after executing a fixed amount of events. TimeMachine terminates current execution again and resumes the most progressive state S5 to launch a new execution. The whole process is automatically triggered during testing.
+
+## Architecture ##
+<p align="center">
+<img src="https://github.com/DroidTest/TimeMachine/blob/master/arch.jpg" width="600">
+</p>
+
+The figure above shows TimeMachine's architecture. The whole system runs in a docker container with the Ubuntu operating system. App under test is installed in an Android virtual machine. TimeMachine connects the virtual machine via ADB to test the app. Main Components are configured as followed:
+
+* Android SDK Version 25  
+* Android-x86-7.1.r2
+* Virtualbox v5.0.18
+* Docker API v1.13 or above 
+* Python 2.7.2
+
+## Setup ##
+The following is required to set up TimeMachine:
+* at least 100 GB hard drive 
+* 8 GB memory
+* Ububntu 16.04 64-bit
+
+### Step 1: clone repository ###
+```
+git clone https://github.com/DroidTest/TimeMachine.git
+```
+### Step 2: install dependencies ###
+
+install a specific version of linux header (using linux-headers-4.4.0-124-generic) 
+```
+sudo apt-get install linux-headers-generic 
+```
+install virtualbox 5.0.18
+```
+sudo apt-get install virtualbox-dkms=5.0.18-dfsg-2ubuntu1
+sudo apt-get install virtualbox=5.0.18-dfsg-2build1
+sudo apt-get install virtualbox-qt=5.0.18-dfsg-2build1
+```
+install and configure docker 
+```
+sudo apt-get install docker.io
+sudo groupadd docker
+sudo usermod -aG docker $USER
+newgrp docker 
+```
+install aapt
+```
+sudo apt install aapt
+```
+### step 3: build an docker image ###
+```
+./build_docker_image.bash
+```
+It takes around 20 minutes.
+## Usage ##
+```
+cd fuzzingandroid
+```
+Test example apps in a container   
+```
+./exec-single-app.bash ../two_apps_under_test/ms_word/ 21600 ../word_output
+./exec-single-app.bash ../two_apps_under_test/duolingo/ 21600 ../duolingo_output
+```  
+## Output ##
+check method coverage
+```
+./compute_cov_aver.bash ../word_output/ ../two_apps_under_test/ms_word/
+./compute_cov_aver.bash ../duolingo_output/ ../two_apps_under_test/duolingo/
+```
+check crashes
+```
+cat word_output/hypermonkey-output/pareto_crash.log
+cat duolingo_output/hypermonkey-output/pareto_crash.log
+```
+
+
+
