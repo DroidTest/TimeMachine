@@ -8,6 +8,16 @@ TimeMachine is an automated testing tool for Android apps that enables Monkey \[
 
 The figure above demonstrates how it works. When execution keeps going through a loop state S2 --> S3 --> S4 --> S2 (see Figure (a)), TimeMachine terminates the current execution due to lack of progress, resumes the most progressive state S1 (assuming that S1 is the most progressive state among all discovered states),  and launches a new execution from state S1. When reaching state S6 via S5 (see Figure(b)), the execution gets stuck, i.e., unable to exit the state after executing a fixed amount of events. TimeMachine terminates current execution again and resumes the most progressive state S5 to launch a new execution. The whole process is automatically triggered during testing.
 
+## Publication ##
+```
+@InProceedings{zhendong:icse:2020,
+author = "Zhen Dong, Marcel Böhme, Lucia Cojocaru, Abhik Roychoudhury",
+titile = "Time-travel Testing of Android Apps",
+booktitle = "Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering (ICSE) 2020"
+}
+
+```
+
 ## Architecture ##
 <p align="center">
 <img src="https://github.com/DroidTest/TimeMachine/blob/master/arch.jpg" width="600">
