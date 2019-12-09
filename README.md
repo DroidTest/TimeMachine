@@ -13,7 +13,8 @@ The figure above demonstrates how it works. When execution keeps going through a
 @InProceedings{zhendong:icse:2020,
 author = "Zhen Dong, Marcel Böhme, Lucia Cojocaru, Abhik Roychoudhury",
 titile = "Time-travel Testing of Android Apps",
-booktitle = "Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering (ICSE) 2020"
+booktitle = "Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering (ICSE) 2020",
+year = "2020"
 }
 
 ```
