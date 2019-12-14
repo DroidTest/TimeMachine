@@ -91,12 +91,8 @@ check crashes
 cat word_output/hypermonkey-output/pareto_crash.log
 cat duolingo_output/hypermonkey-output/pareto_crash.log
 ```
-## Team ##
-### Principal investigator ###
-* Abhik Roychoudhury
-* Marcel Böhme
-### Developers ###
-* Zhen Dong (core developer)
-* Lucia Cojocaru
+## Note ##
+* Time-travle Testing for Android Apps was developed by Zhen Dong, Marcel Böhme, Lucia Cojocaru, and Abhik Roychoudhury
+* Our implementation TimeMachine was developed by Zhen Dong and Lucia Cojocaru.
 
 
