@@ -92,7 +92,7 @@ cat word_output/hypermonkey-output/pareto_crash.log
 cat duolingo_output/hypermonkey-output/pareto_crash.log
 ```
 ## Contributors ##
-* Zhen Dong, 
+* Zhen Dong
 * Marcel Böhme
 * Lucia Cojocaru
 * Abhik Roychoudhury
