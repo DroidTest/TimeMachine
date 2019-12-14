@@ -1,6 +1,6 @@
 # TimeMachine #
 
-TimeMachine is an automated testing tool for Android apps that enables Monkey \[ [1](https://developer.android.com/studio/test/monkey) \] to resume the most progressive state observed in the past when there is lack of progress. 
+TimeMachine is an automated testing tool for Android apps which can automatically jump to the most progressive state observed in the past when testing progress is slow. 
     
 <p align="center">
 <img src="https://github.com/DroidTest/TimeMachine/blob/master/illustration.jpg" width="600">
