@@ -91,6 +91,12 @@ check crashes
 cat word_output/hypermonkey-output/pareto_crash.log
 cat duolingo_output/hypermonkey-output/pareto_crash.log
 ```
-
+## Team ##
+### Principal investigator ###
+* Abhik Roychoudhury
+* Marcel Böhme
+### Developers ###
+* Zhen Dong (core developer)
+* Lucia Cojocaru
 
 
