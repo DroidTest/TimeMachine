@@ -39,7 +39,10 @@ The figure above shows TimeMachine's architecture. The whole system runs in a do
 * Virtualbox v5.0.18
 * Docker API v1.13 or above 
 * Python 2.7.2
-
+## ToDo ##
+* To build a component to dynamically load virtualbox-dkms from a container
+  - Installations of virtualbox and the specific version of linux-header can be avoided on the host machine,
+  - Only docker installation is needed on the host machine.
 ## Setup ##
 The following is required to set up TimeMachine:
 * at least 100 GB hard drive 
@@ -98,8 +101,11 @@ check crashes
 cat word_output/hypermonkey-output/pareto_crash.log
 cat duolingo_output/hypermonkey-output/pareto_crash.log
 ```
+## Need help? ##
+* If failed to connect VM, please check whether the version of installed linux-header is 4.4.0-124-generic
+* Contact Zhen Dong for further issues.
 ## Contributors ##
-* Zhen Dong
+* Zhen Dong (zhendng@gmail.com)
 * Lucia Cojocaru
 * Marcel Böhme
 * Abhik Roychoudhury
