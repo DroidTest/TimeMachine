@@ -41,7 +41,7 @@ The figure above shows TimeMachine's architecture. The whole system runs in a do
 * Python 2.7.2
 ## ToDo ##
 * To build a component to dynamically load virtualbox-dkms from a container
-  - Installations of virtualbox and the specific version of linux-header can be avoided on the host machine,
+  - Installations of virtualbox and linux-header can be avoided on the host machine,
   - Only docker installation is needed on the host machine.
 ## Setup ##
 The following is required to set up TimeMachine:
