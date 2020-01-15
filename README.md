@@ -107,7 +107,7 @@ cat duolingo_output/hypermonkey-output/pareto_crash.log
 ## Contributors ##
 * Zhen Dong (zhendng@gmail.com)
 * Lucia Cojocaru
-* Xiaoliang Yu
+* Xiao Liang Yu
 * Marcel Böhme
 * Abhik Roychoudhury
 
