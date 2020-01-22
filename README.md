@@ -18,12 +18,12 @@ The figure above demonstrates how it works. When execution keeps going through a
 ## Publication ##
 ```
 @InProceedings{zhendong:icse:2020,
-author = {Zhen Dong, Marcel B\"ohme, Lucia Cojocaru, Abhik Roychoudhury},
-titile = {Time-travel Testing of Android Apps},
+author = {Dong, Zhen and B{\"o}hme, Marcel and Cojocaru, Lucia and Roychoudhury, Abhik},
+title = {Time-travel Testing of Android Apps},
 booktitle = {Proceedings of the 42nd International Conference on Software Engineering},
 series = {ICSE '20},
-year = {2020}
-}
+year = {2020},
+pages={1-12}}
 
 ```
 
