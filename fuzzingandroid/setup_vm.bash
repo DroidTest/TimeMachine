@@ -11,6 +11,29 @@ MACHINE_NAME=$1
 ADB_PORT=$2
 
 
+load_dkms()
+{
+          
+        MODULE="vboxdrv"
+        if lsmod | grep "$MODULE" &> /dev/null ; then
+                 echo "$MODULE is loaded!"
+        else
+                echo "Loading $MODULE !"
+                insmod $(find /lib/modules/ -name $MODULE".ko")
+                sleep 1
+        fi
+}
+
+add_vboxpython2_7()
+{
+        cp ./libs/VBoxPython2_7.so /usr/lib/virtualbox/
+}
+
+#setting virtualbox
+add_vboxpython2_7
+load_dkms
+
+
 #create a vm with name "Android6"
 vboxmanage createvm --name $MACHINE_NAME --ostype Linux26_64 --register
 
