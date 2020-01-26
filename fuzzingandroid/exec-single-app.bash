@@ -15,6 +15,24 @@ if (( $# < 5 )); then
     exit 1
 fi
 
+
+load_dkms()
+{
+
+        MODULE="vboxdrv"
+        if lsmod | grep "$MODULE" &> /dev/null ; then
+                 echo "$MODULE is loaded!"
+        else
+                echo "Loading $MODULE from a container"
+                #insmod $(find /lib/modules/ -name $MODULE".ko")
+                docker run -d --rm --privileged=true -u root --workdir /root/fuzzingandroid "${DOCKERIMAGE}" \
+                bash -l -x -c "bash ./load_dkms.sh" 
+                sleep 5
+        fi
+}
+# load dkms in a walkaround solution
+load_dkms
+
 mkdir -p "${OUTPUT_PATH}"
 
 readonly OUTPUT_HYPERMONKEY_PATH=`realpath "${OUTPUT_PATH}/timemachine-output"`
