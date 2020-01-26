@@ -1,6 +1,6 @@
 #!/bin/sh
 
-EC_DIR=/home/hypermonkey/fuzzingandroid/output/ella_files
+EC_DIR=~/fuzzingandroid/output/ella_files
 
 cd $EC_DIR
 
