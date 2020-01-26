@@ -278,7 +278,7 @@ class Executor:
 
         try:
             cmd="adb -s " + vm.VM.ip+ ":"+vm.VM.adb_port +" shell dumpsys activity recents | grep realActivity="+ pkg_name + "  | cut -d'=' -f2 | xargs adb shell am start "
-            os.system(cmd)
+            os.system(cmd + " > /dev/null 2>&1")
         except Exception, e:
             print "resumed app failed."
 
@@ -383,16 +383,13 @@ if __name__ == '__main__':
     RunParameters.RUN_PKG = sys.argv[4]
     RunParameters.RUN_TIME = float(sys.argv[5])
 
-    RunParameters.RUN_ID = str(sys.argv[6])
-    RunParameters.RUN_MODE = str(sys.argv[7])
-    RunParameters.RUN_STRATEGY = int(sys.argv[8])
-    RunParameters.RUN_GUI = str(sys.argv[9])
+    RunParameters.RUN_GUI = str(sys.argv[6])
 
-    RunParameters.OUTPUT_FILE= "../../output/" + RunParameters.RUN_MODE + RunParameters.RUN_ID + ".csv"
-    RunParameters.CRASH_FILE= "../../output/" + RunParameters.RUN_MODE +  "_crash.log"
+    RunParameters.OUTPUT_FILE= "../../output/"  +  "data.csv"
+    RunParameters.CRASH_FILE= "../../output/" +  "crashes.log"
 
 
-    machine = vm.VM(RunParameters.RUN_GUI, vm.VM.adb_port, vm.VM.ssh_port)  # headless or gui
+    machine = vm.VM(RunParameters.RUN_GUI, vm.VM.adb_port)  # headless or gui
 
     graph = state_graph.StateGraph()
     monkey_controller = fuzzers.MonkeyController()

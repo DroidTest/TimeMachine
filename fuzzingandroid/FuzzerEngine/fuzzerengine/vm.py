@@ -7,16 +7,14 @@ import os
 class VM:
     machine_name = None
     adb_port = None
-    ssh_port = None
     ip = '127.0.0.1'
     mode = 'headless' # or "gui"
 
-    def __init__(self, mode, adb_port, ssh_port):
+    def __init__(self, mode, adb_port):
         self.vm = virtualbox.VirtualBox().find_machine(self.machine_name)
         self.session = virtualbox.Session()
         self.mode = mode
         self.adb_port = adb_port
-        self.ssh_port = ssh_port
 
     def launchVM(self):
         if str(self.vm.state) == "PoweredOff" or str(self.vm.state) == "Aborted":
