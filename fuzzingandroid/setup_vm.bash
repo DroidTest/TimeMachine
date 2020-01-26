@@ -20,7 +20,7 @@ load_dkms()
         else
                 echo "Loading $MODULE !"
                 insmod $(find /lib/modules/ -name $MODULE".ko")
-                sleep 1
+                sleep 15
         fi
 }
 
