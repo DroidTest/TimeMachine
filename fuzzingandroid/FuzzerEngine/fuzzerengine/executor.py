@@ -287,7 +287,8 @@ class Executor:
 
         print "launching app under test..."
         os.system("adb shell monkey -p " + app_name + "  1") 
-        time.sleep(20)
+        print "takes a while to complete starting animation ..."
+        time.sleep(200)
 
         self.bring_app_to_front(self.pkg_name)
         time.sleep(5)
