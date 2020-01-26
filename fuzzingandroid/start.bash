@@ -26,7 +26,9 @@ function wait_adb {
 
 replace_monkey_uiautomator()
 {
-        adb -s $DEVICE push libs/monkey libs/monkey.jar libs/uiautomator.jar /sdcard/
+        adb -s $DEVICE push libs/monkey /sdcard
+        adb -s $DEVICE push libs/*.jar /sdcard
+        sleep 2
         adb -s $DEVICE shell 'su -c "mv /sdcard/monkey /system/bin/"'
         adb -s $DEVICE shell 'su -c "mv /sdcard/monkey.jar /system/framework/"'
         adb -s $DEVICE shell 'su -c "mv /sdcard/uiautomator.jar /system/framework/"'
