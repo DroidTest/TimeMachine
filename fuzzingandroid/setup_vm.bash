@@ -6,7 +6,6 @@
 # To create machine "Android7_1" running with adb port 6000 
 
 
-
 MACHINE_NAME=$1
 ADB_PORT=$2
 
@@ -23,16 +22,8 @@ load_dkms()
                 sleep 15
         fi
 }
-
-add_vboxpython2_7()
-{
-        cp ./libs/VBoxPython2_7.so /usr/lib/virtualbox/
-}
-
-#setting virtualbox
-add_vboxpython2_7
+#load dkms from a container
 load_dkms
-
 
 #create a vm with name "Android6"
 vboxmanage createvm --name $MACHINE_NAME --ostype Linux26_64 --register

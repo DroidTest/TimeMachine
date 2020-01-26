@@ -19,7 +19,8 @@ COPY fuzzingandroid /root/fuzzingandroid/
 # install virtualbox sdk
 RUN cd vbox_sdk/installer && python vboxapisetup.py install
 
-#COPY fuzzingandroid /root/fuzzingandroid/
+#add VBoxpython2.7 
+RUN cp fuzzingandroid/libs/VBoxPython2_7.so /usr/lib/virtualbox/
 # clone the project
 #RUN git clone https://github.com/zhendong2050/3TDroid.git
 
