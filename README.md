@@ -36,13 +36,10 @@ The figure above shows TimeMachine's architecture. The whole system runs in a do
 
 * Android SDK Version 25  
 * Android-x86-7.1.r2
-* Virtualbox v5.0.18
+* Virtualbox 5.1.38 or 5.0.18 
 * Docker API v1.13 or above 
 * Python 2.7.2
-## ToDo ##
-* To build a component to dynamically load virtualbox-dkms from a container
-  - Installations of virtualbox and linux-header can be avoided on the host machine,
-  - Only docker installation is needed on the host machine.
+
 ## Setup ##
 The following is required to set up TimeMachine:
 * at least 100 GB hard drive 
@@ -55,16 +52,6 @@ git clone https://github.com/DroidTest/TimeMachine.git
 ```
 ### Step 2: install dependencies ###
 
-install a specific version of linux header (using linux-headers-4.4.0-124-generic) 
-```
-sudo apt-get install linux-headers-generic 
-```
-install virtualbox 5.0.18
-```
-sudo apt-get install virtualbox-dkms=5.0.18-dfsg-2ubuntu1
-sudo apt-get install virtualbox=5.0.18-dfsg-2build1
-sudo apt-get install virtualbox-qt=5.0.18-dfsg-2build1
-```
 install and configure docker 
 ```
 sudo apt-get install docker.io
@@ -72,24 +59,25 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker 
 ```
-install aapt
-```
-sudo apt install aapt
-```
+
 ### step 3: build an docker image ###
 ```
-./build_docker_image.bash
+docker build -t droidtest/timemachine:1.0 .
 ```
-It takes around 20 minutes.
+It takes serveral minutes.
 ## Usage ##
+TimeMachine takes as input apks instrumented with [Emma](http://emma.sourceforge.net/) or [Ella](https://github.com/saswatanand/ella). Under folder two_apps_under_test are closed-source apks instrumented with Ella, i.e., Microsoft Word and Duolingo.  
 ```
 cd fuzzingandroid
 ```
 Test example apps in a container   
 ```
-./exec-single-app.bash ../two_apps_under_test/ms_word/ 21600 ../word_output
-./exec-single-app.bash ../two_apps_under_test/duolingo/ 21600 ../duolingo_output
+#USAGE: exec-single.bash APP_DIR OPEN_SOURCE DOCKER_IMAGE TIMEOUT [OUTPUT_PATH]
+
+./exec-single-app.bash ../two_apps_under_test/ms_word/ 0 droidtest/timemachine:1.0 1800 ../word_output
+./exec-single-app.bash ../two_apps_under_test/duolingo/ 0 droidtest/timemachine:1.0 1800 ../duolingo_output
 ```  
+
 ## Output ##
 check method coverage
 ```
@@ -102,7 +90,7 @@ cat word_output/hypermonkey-output/pareto_crash.log
 cat duolingo_output/hypermonkey-output/pareto_crash.log
 ```
 ## Need help? ##
-* If failed to connect VM, please check whether the version of installed linux-header is 4.4.0-124-generic
+* If failed to connect VM, please check whether virtualbox is correctly installed. TimeMachine was tested on virtualbox 5.0.18 and virtualbox 5.1.38. 
 * Contact Zhen Dong for further issues.
 ## Contributors ##
 * Zhen Dong (zhendng@gmail.com)
