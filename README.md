@@ -86,8 +86,8 @@ check method coverage
 ```
 check crashes
 ```
-cat word_output/hypermonkey-output/pareto_crash.log
-cat duolingo_output/hypermonkey-output/pareto_crash.log
+cat word_output/timemachine-output/crashes.log
+cat duolingo_output/timemachine-output/crashes.log 
 ```
 ## Need help? ##
 * If failed to connect VM, please check whether virtualbox is correctly installed. TimeMachine was tested on virtualbox 5.0.18 and virtualbox 5.1.38. 
