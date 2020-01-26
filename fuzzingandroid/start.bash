@@ -92,7 +92,7 @@ wait_adb
 # Make the IP static to fast recovery after restoring
 #adb -s $DEVICE shell 'su -c "(ifconfig eth0 down && ifconfig eth0 up `echo $(ip addr show dev eth0 | grep inet | head -n1) | cut -d\" \" -f2` ) &; exit"; exit'
 echo "adb is connected"
-
+sleep 10
 replace_monkey_uiautomator
 
 # uninstall the app if installed, then install
