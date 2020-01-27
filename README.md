@@ -66,7 +66,7 @@ docker build -t droidtest/timemachine:1.0 .
 ```
 It takes serveral minutes.
 ## Usage ##
-TimeMachine takes as input apks instrumented with [Emma](http://emma.sourceforge.net/) or [Ella](https://github.com/saswatanand/ella). Under folder two_apps_under_test are closed-source apks instrumented with Ella, i.e., Microsoft Word and Duolingo.  
+TimeMachine takes as input apks instrumented with Android apps instrumenting tool [Emma](http://emma.sourceforge.net/) or [Ella](https://github.com/saswatanand/ella). Under folder two_apps_under_test are closed-source apks instrumented with Ella, i.e., Microsoft Word and Duolingo.  
 ```
 cd fuzzingandroid
 ```
