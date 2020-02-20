@@ -65,6 +65,7 @@ newgrp docker
 docker build -t droidtest/timemachine:1.0 .
 ```
 It takes serveral minutes.
+**Note:** you should build the docker image whenever your running Linux kernel has been changed(e.g. kernel updated).
 ## Usage ##
 TimeMachine takes as input apks instrumented with Android apps instrumenting tool [Emma](http://emma.sourceforge.net/) or [Ella](https://github.com/saswatanand/ella). Under folder two_apps_under_test are closed-source apks instrumented with Ella, i.e., Microsoft Word and Duolingo.  
 ```
