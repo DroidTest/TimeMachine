@@ -40,11 +40,14 @@ The figure above shows TimeMachine's architecture. The whole system runs in a do
 * Docker API v1.13 or above 
 * Python 2.7.2
 
+## Todo ##
+Ubuntu version needs to be specified in the current setting, Ubuntu 18.04 for now. <br>
+Develop a module to dynamically identify versions of the operation system for image building.
 ## Setup ##
 The following is required to set up TimeMachine:
 * at least 100 GB hard drive 
 * 8 GB memory
-* Ububntu 16.04 64-bit
+* Ububntu 18.04 64-bit
 
 ### Step 1: clone repository ###
 ```
