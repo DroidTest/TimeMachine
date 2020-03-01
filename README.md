@@ -16,6 +16,7 @@ The figure above demonstrates how it works. When execution keeps going through a
 --->
 
 ## Publication ##
+The paper PDF can be found at https://www.comp.nus.edu.sg/~abhik/pdf/ICSE20TM.pdf
 ```
 @InProceedings{zhendong:icse:2020,
 author = {Dong, Zhen and B{\"o}hme, Marcel and Cojocaru, Lucia and Roychoudhury, Abhik},
