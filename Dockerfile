@@ -1,4 +1,7 @@
+#image for Unbuntu-16.04 
+#FROM zhendong2050/android-x86-7.1  
 FROM zhendong2050/android-x86-7.1-ubuntu-18.04
+
 MAINTAINER zhendong@gmail.com
 
 WORKDIR /root
