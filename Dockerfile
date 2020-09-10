@@ -2,7 +2,7 @@
 #FROM zhendong2050/android-x86-7.1  
 FROM zhendong2050/android-x86-7.1-ubuntu-18.04
 
-MAINTAINER zhendong@gmail.com
+MAINTAINER zhendng@gmail.com
 
 WORKDIR /root
 ENV DEBIAN_FRONTEND noninteractive
