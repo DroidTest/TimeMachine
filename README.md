@@ -42,8 +42,9 @@ The figure above shows TimeMachine's architecture. The whole system runs in a do
 * Python 2.7.2
 
 ## Todo ##
-Ubuntu version needs to be specified in the current setting, Ubuntu 18.04 for now. <br>
-Develop a module to dynamically identify versions of the operation system for image building.
+Replace virtualbox machines with emulators from Google to solve issues due to lack of Google Play Services.  
+
+
 ## Setup ##
 The following is required to set up TimeMachine:
 * at least 100 GB hard drive 
