@@ -99,7 +99,7 @@ cat duolingo_output/timemachine-output/crashes.log
 * If failed to connect VM, please check whether virtualbox is correctly installed. TimeMachine was tested on virtualbox 5.0.18 and virtualbox 5.1.38. 
 * Contact Zhen Dong for further issues.
 ## Contributors ##
-* Zhen Dong (zhendng@gmail.com)
+* Zhen Dong (zhendong@fudan.edu.cn)
 * Lucia Cojocaru
 * Xiao Liang Yu
 * Marcel Böhme
