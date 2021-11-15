@@ -118,6 +118,10 @@ cat $FUZZER/../duolingo_output/timemachine-output/crashes.log
 * Contact Zhen Dong for further issues.
 ## Contributors ##
 * Zhen Dong (zhendng@gmail.com)
-* CAI Xiaobao (15302010019@fudan.edu.cn)
+* Lucia Cojocaru
+* Xiao Liang Yu
+* Marcel Böhme
+* Abhik Roychoudhury
+* CAI Xiaobao
 
 
