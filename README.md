@@ -1,6 +1,6 @@
 # TimeMachine <img align="right" src="https://zenodo.org/badge/DOI/10.5281/zenodo.3672076.svg">
 
-TimeMachine is an automated testing tool for Android apps,  which can automatically jump to the most progressive state observed in the past when progress is slow. 
+TimeMachine is an automated testing tool for Android apps, which can automatically jump to the most progressive state observed in the past when progress is slow. 
 
 <p align="center">
 <img src="https://github.com/DroidTest/TimeMachine/blob/master/illustration.jpg" width="600">
@@ -98,9 +98,11 @@ cd $FUZZER/FuzzerEngine/fuzzerengine
 Test example apps by the following scripts
 ```
 #start the avd named "test" by start_avd.bash
-./start_avd.bash
+cd $ANDROID_HOME/emulator
+sudo nohup ./emulator -avd test  -no-window -writable-system -no-qt -no-cache &
 
 #start the fuzzerengine by start.bash
+cd $FUZZER/FuzzerEngine/fuzzerengine
 ./start.bash
 ```  
 
