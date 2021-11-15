@@ -80,7 +80,7 @@ export AAPT_HOME="$ANDROID_HOME/build-tools/29.0.0"
 
 export PATH=$ANDROID_TOOLS:$ADB_HOME:$AAPT_HOME:$PATH
 
-export FUZZER="~/fuzzingandroid"
+export FUZZER="~/TimeMachine/fuzzingandroid"
 ```
 Check the correct configured environment by type command "adb" "aapt" "avdmanager" in your terminal.
 
@@ -109,13 +109,13 @@ cd $FUZZER/FuzzerEngine/fuzzerengine
 ## Output ##
 check method coverage
 ```
-./compute_cov_aver.bash ../word_output/ ../two_apps_under_test/ms_word/
-./compute_cov_aver.bash ../duolingo_output/ ../two_apps_under_test/duolingo/
+./$FUZZER/compute_cov_aver.bash $FUZZER/../word_output/ $FUZZER/../two_apps_under_test/ms_word/
+./$FUZZER/compute_cov_aver.bash $FUZZER/../duolingo_output/ $FUZZER/../two_apps_under_test/duolingo/
 ```
 check crashes
 ```
-cat word_output/timemachine-output/crashes.log
-cat duolingo_output/timemachine-output/crashes.log 
+cat $FUZZER/../word_output/timemachine-output/crashes.log
+cat $FUZZER/../duolingo_output/timemachine-output/crashes.log 
 ```
 ## Need help? ##
 * Contact Zhen Dong for further issues.
