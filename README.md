@@ -33,17 +33,14 @@ pages={1-12}}
 <img src="https://github.com/DroidTest/TimeMachine/blob/master/arch.jpg" width="600">
 </p>
 
-The figure above shows TimeMachine's architecture. The whole system runs in a docker container with the Ubuntu operating system. App under test is installed in an Android virtual machine. TimeMachine connects the virtual machine via ADB to test the app. Main Components are configured as followed:
+The figure above shows TimeMachine's architecture. The whole system runs in the Ubuntu operating system. App under test is installed in an Android virtual machine. TimeMachine connects the virtual machine via ADB to test the app. Main Components are configured as followed:
 
-* Android SDK Version 25  
+* Android SDK
 * Android-x86-7.1.r2
-* Virtualbox 5.1.38 or 5.0.18 
-* Docker API v1.13 or above 
-* Python 2.7.2
+* Python 2.7.17
 
 ## Todo ##
 Ubuntu version needs to be specified in the current setting, Ubuntu 18.04 for now. <br>
-Develop a module to dynamically identify versions of the operation system for image building.
 ## Setup ##
 The following is required to set up TimeMachine:
 * at least 100 GB hard drive 
@@ -54,33 +51,57 @@ The following is required to set up TimeMachine:
 ```
 git clone https://github.com/DroidTest/TimeMachine.git
 ```
-### Step 2: install dependencies ###
+### Step 2: install Android sdk ###
 
-install and configure docker 
+You can run the following command to download the latest Android cmdline-tools:
 ```
-sudo apt-get install docker.io
-sudo groupadd docker
-sudo usermod -aG docker $USER
-newgrp docker 
-```
+wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
+``` 
+Unzip the zip package and copy all files under directory "cmdline-tools" to the path " ~ / Android / sdk / cmdline-tools / latest ".<br> 
+Then you can use the sdkmanager under directory "bin" to install apis, emulator, etc.
 
-### step 3: build an docker image ###
 ```
-docker build -t droidtest/timemachine:1.0 .
+#install android-25, emulator, platform-tools, build-tools
+./sdkmanager --update
+./sdkmanager "system-images;android-25;google_apis;x86" emulator platform-tools "platforms;android-25" "build-tools;29.0.0"<<EOF
+y
+EOF
+``` 
+**Note:** If the download or installation command fails, please check if you are permitted to visit the google server first.
+
+### Step 3: configure dependencies ###
+
+Please make sure you have correctly configured the following environment variable in your properties.
 ```
-It takes serveral minutes.
-**Note:** you should build the docker image whenever your running Linux kernel has been changed(e.g. kernel updated).
+export ANDROID_HOME="~/Android/sdk"
+export ANDROID_TOOLS=$ANDROID_HOME/cmdline-tools/latest/bin
+export ADB_HOME="$ANDROID_HOME/platform-tools"
+export AAPT_HOME="$ANDROID_HOME/build-tools/29.0.0"
+
+export PATH=$ANDROID_TOOLS:$ADB_HOME:$AAPT_HOME:$PATH
+
+export FUZZER="~/fuzzingandroid"
+```
+Check the correct configured environment by type command "adb" "aapt" "avdmanager" in your terminal.
+
+### step 4: create an avd by avdmanager ###
+```
+avdmanager create avd -n test -k "system-images;android-25;google_apis;x86"<<EOF
+n
+EOF
+```
 ## Usage ##
 TimeMachine takes as input apks instrumented with Android apps instrumenting tool [Emma](http://emma.sourceforge.net/) or [Ella](https://github.com/saswatanand/ella). Under folder two_apps_under_test are closed-source apks instrumented with Ella, i.e., Microsoft Word and Duolingo.  
 ```
-cd fuzzingandroid
+cd $FUZZER/FuzzerEngine/fuzzerengine
 ```
-Test example apps in a container   
+Test example apps by the following scripts
 ```
-#USAGE: exec-single.bash APP_DIR OPEN_SOURCE DOCKER_IMAGE TIMEOUT [OUTPUT_PATH]
+#start the avd named "test" by start_avd.bash
+./start_avd.bash
 
-./exec-single-app.bash ../two_apps_under_test/ms_word/ 0 droidtest/timemachine:1.0 1800 ../word_output
-./exec-single-app.bash ../two_apps_under_test/duolingo/ 0 droidtest/timemachine:1.0 1800 ../duolingo_output
+#start the fuzzerengine by start.bash
+./start.bash
 ```  
 
 ## Output ##
@@ -95,13 +116,9 @@ cat word_output/timemachine-output/crashes.log
 cat duolingo_output/timemachine-output/crashes.log 
 ```
 ## Need help? ##
-* If failed to connect VM, please check whether virtualbox is correctly installed. TimeMachine was tested on virtualbox 5.0.18 and virtualbox 5.1.38. 
 * Contact Zhen Dong for further issues.
 ## Contributors ##
 * Zhen Dong (zhendng@gmail.com)
-* Lucia Cojocaru
-* Xiao Liang Yu
-* Marcel Böhme
-* Abhik Roychoudhury
+* CAI Xiaobao (15302010019@fudan.edu.cn)
 
 
