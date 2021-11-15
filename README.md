@@ -92,10 +92,7 @@ EOF
 ```
 ## Usage ##
 TimeMachine takes as input apks instrumented with Android apps instrumenting tool [Emma](http://emma.sourceforge.net/) or [Ella](https://github.com/saswatanand/ella). Under folder two_apps_under_test are closed-source apks instrumented with Ella, i.e., Microsoft Word and Duolingo.  
-```
-cd $FUZZER/FuzzerEngine/fuzzerengine
-```
-Test example apps by the following scripts
+Put the instrumented.apk under $Fuzzer/aut_apk and rename the apk with "aut.apk". Test example apps by the following scripts
 ```
 #start the avd named "test" by start_avd.bash
 cd $ANDROID_HOME/emulator
