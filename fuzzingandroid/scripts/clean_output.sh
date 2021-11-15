@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-PROJECT_DIR=~/fuzzingandroid
+PROJECT_DIR=$FUZZER
 pwd
 timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
 tar --ignore-failed-read -cvf results_$timestamp.tar -C $PROJECT_DIR output/ > /dev/null

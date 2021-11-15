@@ -1,7 +1,4 @@
-import vm
-
-
-ADB_COMMAND_PREFIX = 'adb -s '+ vm.VM.ip+':'+vm.VM.adb_port+' '
+ADB_COMMAND_PREFIX = 'adb -s '+ 'emulator-5554'+' '
 ADB_COMMAND_SHELL = 'shell'
 ADB_COMMAND_PULL = 'pull'
 ADB_COMMAND_PUSH = 'push'

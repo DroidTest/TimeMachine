@@ -2,8 +2,8 @@
 
 COV_FILE_NAME=$1
 
-EC_DIR=~/fuzzingandroid/output/ec_files
-EMMA_DIR=~/fuzzingandroid/emma_jars
+EC_DIR=$FUZZER/output/ec_files
+EMMA_DIR=$FUZZER/emma_jars
 
 adb shell am broadcast -a edu.gatech.m3.emma.COLLECT_COVERAGE
 adb pull /mnt/sdcard/coverage.ec

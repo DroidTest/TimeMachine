@@ -4,9 +4,7 @@ from random import randint
 
 class SysEventGenerator:
 
-    def __init__(self, machine_addr, adb_port, run_time):
-        self.machine_addr = machine_addr
-        self.adb_port = adb_port
+    def __init__(self, run_time):
         self.time_limit = run_time
         self.start_time = time.time()
     def generate_system_events(self):
@@ -15,7 +13,7 @@ class SysEventGenerator:
             time.sleep(randint(60, 90))
             print "!!!!!!!!!!!!!!!!!!!!!!!!!!! Generating system event !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"	
             print "start time:  " + str(self.start_time) + "   budget:  " + str(self.time_limit) + "   now: " + str(time.time())
-            cmd = "python ~/fuzzingandroid/sys_event_generator/tester.py -s " + self.machine_addr + ":" + self.adb_port + " -f ~/fuzzingandroid/aut_apk/aut.apk -p random"
+            cmd = "python2.7 ../../sys_event_generator/tester.py -s " + "emulator-5554" + " -f ../../aut_apk/aut.apk -p random"
             try:
                 os.system(cmd)
             except:

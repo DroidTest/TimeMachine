@@ -28,25 +28,25 @@ class Device:
         args = self.parse_event(sys_event)
         filtered_args = [arg.strip() for arg in args]
         if len(filtered_args) > 0:
-            print filtered_args
+            print(filtered_args)
             subprocess.check_output(filtered_args)
 
     def parse_event(self, sys_event):
         if isinstance(sys_event, IntentEvent):
-            args = ['adb', '-s', self.serial, 'shell', 'su', '-c', '"am', 'broadcast']
+            args = ['adb', '-s', self.serial, 'shell','am', 'broadcast']
             if sys_event.get_action() is not None:
                 args.extend(['-a', sys_event.get_action()])
             if sys_event.get_category() is not None:
-                args.extend(['-c', sys_event.get_category()])
+                args.extend(['0', sys_event.get_category()])
             if sys_event.get_package_name() is not None:
                 args.extend(['-n', sys_event.get_package_name()])
-            args[len(args)-1] = args[len(args)-1] + '"'
+            #args[len(args)-1] = args[len(args)-1] + '"'
             #print args
             return args
         elif isinstance(sys_event, LauncherEvent):
-            args = ['adb', '-s', self.serial, 'shell', 'su', '-c', '"am', 'start']
+            args = ['adb', '-s', self.serial, 'shell', 'am', 'start']
             args.extend(['-n', sys_event.get_package_name().strip()+'/'+sys_event.get_activity_name().strip()])
-            args[len(args) - 1] = args[len(args) - 1] + '"'
+            #args[len(args) - 1] = args[len(args) - 1] + '"'
             return args
         elif isinstance(sys_event, ListenerEvent):
 
@@ -69,30 +69,30 @@ class Device:
                 connector.verify_auth()
                 connector.check_connectivity()
                 args = sys_event.feed_cmd()
-                print args
+                print(args)
                 connector.run_cmd(args)
                 post_args = sys_event.post_cmd()
                 if len(post_args) > 0:
                     import time
                     #print 'waiting 3 seconds for the post command'
                     time.sleep(3)
-                    print args
+                    print(args)
                     connector.run_cmd(post_args)
                 connector.disconnect()
             return []
 
         elif isinstance(sys_event, ServiceEvent):
             if sys_event.get_stop():
-                args = ['adb', '-s', self.serial, 'shell', 'su', '-c', '"am', 'stopservice']
+                args = ['adb', '-s', self.serial, 'shell','am', 'stopservice']
             else:
-                args = ['adb', '-s', self.serial, 'shell', 'su', '-c', '"am', 'startservice']
+                args = ['adb', '-s', self.serial, 'shell','am', 'startservice']
             args.extend([sys_event.get_package_name().strip()+'/'+sys_event.get_service_name().strip()])
-            args[len(args) - 1] = args[len(args) - 1] + '"'
+            #args[len(args) - 1] = args[len(args) - 1] + '"'
             return args
         elif isinstance(sys_event, ReceiverEvent):
-            args = ['adb', '-s', self.serial, 'shell', 'su', '-c', '"am', 'broadcast']
+            args = ['adb', '-s', self.serial, 'shell','am', 'broadcast']
             args.extend(['-n', sys_event.get_package_name().strip()+'/'+sys_event.get_receiver_name().strip()])
-            args[len(args) - 1] = args[len(args) - 1] + '"'
+            #args[len(args) - 1] = args[len(args) - 1] + '"'
             return args
 
 

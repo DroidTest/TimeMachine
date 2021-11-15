@@ -1,6 +1,5 @@
 import subprocess
 from config_fuzzer import RunParameters
-import vm
 import select
 import threading
 
@@ -14,7 +13,7 @@ class LogWatcher:
 
     def get_AUT_PID(self, package_name):
         try:
-            cmd = 'adb -s ' + vm.VM.ip + ':' + vm.VM.adb_port + " shell pidof -s " + package_name
+            cmd = 'adb -s ' + 'emulator-5554' + " shell pidof -s " + package_name
             pid = subprocess.check_output(cmd.split()).strip()
         except:
             return None
@@ -23,7 +22,7 @@ class LogWatcher:
 
     # crash logs can be found here
     def get_process_logs(self, aut_pid):
-        cmd = "adb -s " + vm.VM.ip + ':' + vm.VM.adb_port + " logcat | grep -e " + str(aut_pid) + " -e controllable_widgets"
+        cmd = "adb -s " + 'emulator-5554' + " logcat | grep -e " + str(aut_pid) + " -e controllable_widgets"
         p = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE, universal_newlines=True)
         return p
 

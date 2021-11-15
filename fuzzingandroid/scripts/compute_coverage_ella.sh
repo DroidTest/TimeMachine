@@ -1,6 +1,6 @@
 #!/bin/sh
 
-EC_DIR=~/fuzzingandroid/output/ella_files
+EC_DIR=$FUZZER/output/ella_files
 
 cd $EC_DIR
 

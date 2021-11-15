@@ -2,7 +2,6 @@
 
 import threading
 import state_monitor
-import vm
 import fuzzers
 import os
 import time
@@ -38,16 +37,24 @@ class Executor:
     rootState = None # the root of the state graph
     shortest_eventSq_state = None # a dict storing pairs of the shortest eventSqs and edge_ids
 
-    def __init__(self, machine, monkey, state_graph, strategy, pkg_name, time_limit):
+    def __init__(self, monkey, state_graph, strategy, pkg_name, time_limit):
 
-        self.vm = machine
+        #self.vm = machine
+
+
         self.monkey_controller = monkey
         self.state_graph = state_graph
         self.strategy = strategy
         self.adb_messages = AdbMessagesQueue()
         self.logger = log_watcher.LogWatcher(self.adb_messages)
         self.monitor = state_monitor.StateMonitor(self.adb_messages)
-        self.sys_event_generator = SysEventGenerator(machine.ip, machine.adb_port, time_limit)
+
+
+        # self.sys_event_generator = SysEventGenerator(machine.ip, machine.adb_port, time_limit)
+        self.sys_event_generator = SysEventGenerator(time_limit)
+
+
+
         self.logger_thread = None
         self.monitor_thread = None
         self.sys_event_thread = None
@@ -63,14 +70,14 @@ class Executor:
         self.num_restore = 0
 
 
-    def prepare_vm(self):
-
-        self.vm.launchVM()
-        self.vm.reconnect_adb()
+    # def prepare_vm(self):
+    #
+    #     self.vm.launchVM()
+    #     self.vm.reconnect_adb()
         
 
     def set_app_under_test(self,app_name):
-        os.system('adb -s '+ vm.VM.ip+':'+vm.VM.adb_port+" shell setprop 'PackageName' '" + app_name + "'")
+        os.system('adb -s '+ 'emulator-5554'+" shell setprop 'PackageName' '" + app_name + "'")
 
 
     def start_monkey(self, app_name):
@@ -149,8 +156,16 @@ class Executor:
             fittest_state=self.strategy.get_k_neighbours_fittest_state()
             print "--the fittest state is " + str(fittest_state)
 
-            self.vm.restore_snapshot(str(fittest_state))
-            self.vm.reconnect_adb()
+
+
+
+            # self.vm.restore_snapshot(str(fittest_state))
+            os.system("./load_snapshot.bash "+str(fittest_state))
+
+
+
+
+            # self.vm.reconnect_adb()
             self.monkey_controller.kill_monkey()
             state = self.state_graph.retrieve(fittest_state)
             state.add_restore_count()
@@ -246,7 +261,12 @@ class Executor:
                             
                         if id != "OOAUT": 
                             print "--taking snapshot..."
-                            self.vm.take_snapshot(id, "", True)
+
+
+                            # self.vm.take_snapshot(id, "", True)
+                            os.system("./take_snapshot.bash "+ id)
+
+
                             self.state_graph.retrieve(id).solid = True
 
                             current_coverage = new_coverage
@@ -277,7 +297,7 @@ class Executor:
     def bring_app_to_front(self,pkg_name):
 
         try:
-            cmd="adb -s " + vm.VM.ip+ ":"+vm.VM.adb_port +" shell dumpsys activity recents | grep realActivity="+ pkg_name + "  | cut -d'=' -f2 | xargs adb shell am start "
+            cmd="adb -s " + 'emulator-5554' +" shell dumpsys activity recents | grep realActivity="+ pkg_name + "  | cut -d'=' -f2 | xargs adb shell am start "
             os.system(cmd + " > /dev/null 2>&1")
         except Exception, e:
             print "resumed app failed."
@@ -294,7 +314,10 @@ class Executor:
         time.sleep(5)
         print "--taking snapshot for the initial state..."
         self.state_graph.add_node("INITIAL")
-        self.vm.take_snapshot("INITIAL", "", True)
+
+        # self.vm.take_snapshot("INITIAL", "", True)
+        os.system("./take_snapshot.bash INITIAL")
+
         self.state_graph.retrieve("INITIAL").solid = True
 
     def get_state_id(self, line):
@@ -364,7 +387,9 @@ class Executor:
 
     def dump_crash_logs(self):
         
-        cmd = "adb -s " + vm.VM.ip+ ":"+vm.VM.adb_port +"  logcat AndroidRuntime:E *:S"
+        # cmd = "adb -s " + 'emulator-'+ ":"+'5554' +"  logcat AndroidRuntime:E *:S"
+        cmd = "adb -s " + "emulator-5554" +"  logcat AndroidRuntime:E *:S"
+
         p = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE, universal_newlines=True, close_fds=True)
         fw = open(RunParameters.CRASH_FILE, "a")
         while True:
@@ -378,37 +403,38 @@ class Executor:
 
 
 if __name__ == '__main__':
-    vm.VM.machine_name = sys.argv[1]
-    vm.VM.adb_port = sys.argv[2]
-    vm.VM.ssh_port = sys.argv[3]
-    RunParameters.RUN_PKG = sys.argv[4]
-    RunParameters.RUN_TIME = float(sys.argv[5])
-
-    RunParameters.RUN_GUI = str(sys.argv[6])
+    # vm.VM.machine_name = sys.argv[1]
+    # '5554' = sys.argv[2]
+    # vm.VM.ssh_port = sys.argv[3]
+    RunParameters.RUN_GUI = str(sys.argv[1])
+    RunParameters.RUN_PKG = sys.argv[2]
+    RunParameters.RUN_TIME = float(sys.argv[3])
 
     RunParameters.OUTPUT_FILE= "../../output/"  +  "data.csv"
     RunParameters.CRASH_FILE= "../../output/" +  "crashes.log"
 
 
-    machine = vm.VM(RunParameters.RUN_GUI, vm.VM.adb_port)  # headless or gui
+    # machine = vm.VM(RunParameters.RUN_GUI, '5554')  # headless or gui
 
     graph = state_graph.StateGraph()
     monkey_controller = fuzzers.MonkeyController()
 
     strategy = CircularRestoreStrategy(graph, 3)
-    executor = Executor(machine, monkey_controller, graph, strategy, RunParameters.RUN_PKG, RunParameters.RUN_TIME)
-    executor.prepare_vm()
+    executor = Executor( monkey_controller, graph, strategy, RunParameters.RUN_PKG, RunParameters.RUN_TIME)
+    # executor.prepare_vm()
     executor.set_app_under_test(RunParameters.RUN_PKG)
     time.sleep(3)
 
     if RunParameters.OPEN_SOURCE:
 
-        os.system('adb -s ' + vm.VM.ip + ':' + vm.VM.adb_port + ' shell am instrument -e coverage true -w ' + RunParameters.RUN_PKG + '/.EmmaInstrument.EmmaInstrumentation &')
+        # os.system('adb -s ' + 'emulator-' + ':' + '5554' + ' shell am instrument -e coverage true -w ' + RunParameters.RUN_PKG + '/.EmmaInstrument.EmmaInstrumentation &')
+        os.system('adb -s emulator-5554 shell am instrument -e coverage true -w ' + RunParameters.RUN_PKG + '/.EmmaInstrument.EmmaInstrumentation &')
+
         time.sleep(5)
    
     executor.run(RunParameters.RUN_PKG, 10, RunParameters.RUN_TIME)
 
     graph.dump()
-    machine.power_off_VM()
+    # machine.power_off_VM()
 
 

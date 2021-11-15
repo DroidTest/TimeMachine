@@ -1,8 +1,8 @@
 #!/bin/bash
 
-EMMA_DIR=~/fuzzingandroid/emma_jars
-EC_DIR=~/fuzzingandroid/output/ec_files
-OUTPUT=~/fuzzingandroid/output/
+EMMA_DIR=$FUZZER/emma_jars
+EC_DIR=$FUZZER/output/ec_files
+OUTPUT=$FUZZER/output/
 
 #~/fuzzingandroid/scripts/pull_coverage.sh coverage_temp
 

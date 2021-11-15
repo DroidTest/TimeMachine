@@ -1,6 +1,6 @@
 import logging
 import threading
-from os.path import expanduser, join
+import os
 
 class TelnetException(Exception):
     """
@@ -42,10 +42,10 @@ class TelnetConsole(object):
             raise TelnetException()
     
     def verify_auth(self, auth_file=None):
-        if auth_file is None:
-            auth_file = join(expanduser('~'), '.emulator_console_auth_token')
-        auth_key = open(auth_file).read()
-
+        #if auth_file is None:
+        #    auth_file = join(expanduser('~'), '.emulator_console_auth_token')
+        #auth_key = open(auth_file).read()
+        auth_key=os.popen("sudo cat ~/.emulator_console_auth_token").read()
         self.run_cmd('auth ' + auth_key)
 
 

@@ -16,7 +16,7 @@ The figure above demonstrates how it works. When execution keeps going through a
 --->
 
 ## Publication ##
-The paper PDF can be found at https://zhendong2050.github.io/res/time-travel-testing-21-01-2020.pdf
+The paper PDF can be found at https://www.comp.nus.edu.sg/~abhik/pdf/ICSE20TM.pdf
 ```
 @InProceedings{zhendong:icse:2020,
 author = {Dong, Zhen and B{\"o}hme, Marcel and Cojocaru, Lucia and Roychoudhury, Abhik},
@@ -42,9 +42,8 @@ The figure above shows TimeMachine's architecture. The whole system runs in a do
 * Python 2.7.2
 
 ## Todo ##
-Replace virtualbox machines with emulators from Google to solve issues due to lack of Google Play Services.  
-
-
+Ubuntu version needs to be specified in the current setting, Ubuntu 18.04 for now. <br>
+Develop a module to dynamically identify versions of the operation system for image building.
 ## Setup ##
 The following is required to set up TimeMachine:
 * at least 100 GB hard drive 
@@ -99,7 +98,7 @@ cat duolingo_output/timemachine-output/crashes.log
 * If failed to connect VM, please check whether virtualbox is correctly installed. TimeMachine was tested on virtualbox 5.0.18 and virtualbox 5.1.38. 
 * Contact Zhen Dong for further issues.
 ## Contributors ##
-* Zhen Dong (zhendong@fudan.edu.cn)
+* Zhen Dong (zhendng@gmail.com)
 * Lucia Cojocaru
 * Xiao Liang Yu
 * Marcel Böhme
