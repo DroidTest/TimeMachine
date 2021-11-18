@@ -29,11 +29,7 @@ pages={1-12}}
 ```
 
 ## Architecture ##
-<p align="center">
-<img src="https://github.com/DroidTest/TimeMachine/blob/master/arch.jpg" width="600">
-</p>
-
-The figure above shows TimeMachine's architecture. The whole system runs in the Ubuntu operating system. App under test is installed in an Android virtual machine. TimeMachine connects the virtual machine via ADB to test the app. Main Components are configured as followed:
+The whole system runs in the Ubuntu operating system. App under test is installed in an Android virtual machine. TimeMachine connects the virtual machine via ADB to test the app. Main Components are configured as followed:
 
 * Android SDK
 * Android-x86-7.1.r2
@@ -92,27 +88,35 @@ EOF
 ```
 ## Usage ##
 TimeMachine takes as input apks instrumented with Android apps instrumenting tool [Emma](http://emma.sourceforge.net/) or [Ella](https://github.com/saswatanand/ella). Under folder two_apps_under_test are closed-source apks instrumented with Ella, i.e., Microsoft Word and Duolingo.  
-Put the instrumented.apk under $Fuzzer/aut_apk and rename the apk with "aut.apk". Test example apps by the following scripts
+Test example apps by the following scripts:
 ```
 #start the avd named "test" by start_avd.bash
 cd $ANDROID_HOME/emulator
 sudo nohup ./emulator -avd test  -no-window -writable-system -no-qt -no-cache &
 
-#start the fuzzerengine by start.bash
 cd $FUZZER/FuzzerEngine/fuzzerengine
-./start.bash
+
+#start the fuzzerengine by start.bash
+#USAGE: ./start.bash [AUT_DIR] [OPEN_SOURCE] [TIMEOUT]
+./start.bash $FUZZER/../two_apps_under_test/ms_word 0 1800
 ```  
+
+**Note:** Each time before starting TimeMachine, please run the "./clean.bash" under $FUZZER/FuzzerEngine/fuzzerengine to remove last output files first.
 
 ## Output ##
 check method coverage
 ```
-./$FUZZER/compute_cov_aver.bash $FUZZER/../word_output/ $FUZZER/../two_apps_under_test/ms_word/
-./$FUZZER/compute_cov_aver.bash $FUZZER/../duolingo_output/ $FUZZER/../two_apps_under_test/duolingo/
+cd $FUZZER
+./compute_cov_aver.bash output ../two_apps_under_test/ms_word/
+./compute_cov_aver.bash output ../two_apps_under_test/duolingo/
 ```
 check crashes
 ```
-cat $FUZZER/../word_output/timemachine-output/crashes.log
-cat $FUZZER/../duolingo_output/timemachine-output/crashes.log 
+cat output/crashes.log
+```
+check logs
+```
+cat output/timemachine-run.log
 ```
 ## Need help? ##
 * Contact Zhen Dong for further issues.
