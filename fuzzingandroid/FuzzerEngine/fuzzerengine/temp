@@ -1,0 +1,8 @@
+EMMA: processing input files ...
+java.io.IOException: input file does not exist: [/home/klouyge/TimeMachine-master/fuzzingandroid/FuzzerEngine/fuzzerengine/coverage.ec]
+	at com.vladium.emma.data.DataFactory.mergeload(DataFactory.java:409)
+	at com.vladium.emma.data.DataFactory.load(DataFactory.java:56)
+	at com.vladium.emma.report.ReportProcessor._run(ReportProcessor.java:175)
+	at com.vladium.emma.Processor.run(Processor.java:54)
+	at com.vladium.emma.report.reportCommand.run(reportCommand.java:130)
+	at emma.main(emma.java:40)

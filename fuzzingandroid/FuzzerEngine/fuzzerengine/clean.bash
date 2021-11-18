@@ -2,10 +2,12 @@
 
 ./shutdown_avd.bash
 
-rm nohup.out<<-EOF
+rm -f nohup.out<<-EOF
 yes
 EOF
 
-rm *.pyc
+rm -f *.pyc
 
-rm $TESTER/*.pyc
+rm -f $TESTER/*.pyc
+rm -f -r $FUZZER/output
+rm -f $FUZZER/aut_apk/*.apk

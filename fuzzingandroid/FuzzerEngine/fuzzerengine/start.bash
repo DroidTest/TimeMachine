@@ -1,5 +1,16 @@
 #!/bin/bash
 
+AUT_DIR=$1
+
+OPEN_SOURCE=$2
+
+TIMEOUT=$3
+
+if (( $# < 3)); then
+    echo 'USAGE: ./start.bash AUT_DIR OPEN_SOURCE TIMEOUT'
+    exit 1
+fi
+
 function wait_adb {
     while true;
     do
@@ -34,7 +45,10 @@ adb uninstall com.github.uiautomator
 adb uninstall com.github.uiautomator.test
 adb install $FUZZER/../app-uiautomator.apk
 adb install $FUZZER/../app-uiautomator-test.apk
+
 #get package name of aut
+cp $1/instrumented.apk $FUZZER/aut_apk/
+mv $FUZZER/aut_apk/instrumented.apk $FUZZER/aut_apk/aut.apk
 APP_PKG=`aapt dump badging ../../aut_apk/aut.apk | grep package | awk '{print $2}' | sed s/name=//g | sed s/\'//g`
 echo $APP_PKG
 
@@ -47,9 +61,9 @@ adb install -g ../../aut_apk/aut.apk
 # pressing permission button for installation
 #sleep 5
 
-TIMEOUT=1800
-
-OPEN_SOURCE=0
+mkdir $FUZZER/output
+touch $FUZZER/output/timemachine-run.log
+OUTPUT_LOG_PATH="$FUZZER/output/timemachine-run.log"
 
 echo "bash executed successfully! start engine now ..."
-./executor.py $OPEN_SOURCE $APP_PKG $TIMEOUT
+./executor.py $OPEN_SOURCE $APP_PKG $TIMEOUT | tee -a $OUTPUT_LOG_PATH

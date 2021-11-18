@@ -406,7 +406,7 @@ if __name__ == '__main__':
     # vm.VM.machine_name = sys.argv[1]
     # '5554' = sys.argv[2]
     # vm.VM.ssh_port = sys.argv[3]
-    RunParameters.RUN_GUI = str(sys.argv[1])
+    RunParameters.OPEN_SOURCE = False
     RunParameters.RUN_PKG = sys.argv[2]
     RunParameters.RUN_TIME = float(sys.argv[3])
 
