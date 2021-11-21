@@ -64,7 +64,7 @@ Then you can use the sdkmanager under directory "bin" to install apis, emulator,
 y
 EOF
 ``` 
-**Note1:** If the download or installation command fails, please check if you are permitted to visit the google server first.
+**Note1:** If the download or installation command fails, please check if you are permitted to visit the google server first.<br>
 **Note2:** If you are running TimeMachine on Mac-OSX, please make sure the latest version of emulator fits your OS well, or you will have to run with old emulator by following this: https://stackoverflow.com/questions/66455173/android-emulator-30-4-5-not-working-on-macos
 
 ### Step 3: configure dependencies ###
