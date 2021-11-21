@@ -36,12 +36,13 @@ The whole system runs in the Ubuntu operating system. App under test is installe
 * Python 2.7.17
 
 ## Todo ##
-Ubuntu version needs to be specified in the current setting, Ubuntu 18.04 for now. <br>
+Optimize methods for state selection to achieve a better performance on coverage. <br>
+
 ## Setup ##
 The following is required to set up TimeMachine:
 * at least 100 GB hard drive 
 * 8 GB memory
-* Ububntu 18.04 64-bit
+* Ububntu 18.04 64-bit or Mac-OSX 10.15 
 
 ### Step 1: clone repository ###
 ```
@@ -63,7 +64,8 @@ Then you can use the sdkmanager under directory "bin" to install apis, emulator,
 y
 EOF
 ``` 
-**Note:** If the download or installation command fails, please check if you are permitted to visit the google server first.
+**Note1:** If the download or installation command fails, please check if you are permitted to visit the google server first.
+**Note2:** If you are running TimeMachine on Mac-OSX, please make sure the latest version of emulator fits your OS well, or you will have to run with old emulator by following this: https://stackoverflow.com/questions/66455173/android-emulator-30-4-5-not-working-on-macos
 
 ### Step 3: configure dependencies ###
 
