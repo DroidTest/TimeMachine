@@ -92,7 +92,7 @@ Test example apps by the following scripts:
 ```
 #start the avd named "test" by start_avd.bash
 cd $ANDROID_HOME/emulator
-sudo nohup ./emulator -avd test  -no-window -writable-system -no-qt -no-cache &
+sudo nohup ./emulator -avd test  -no-window -writable-system -no-cache &
 
 cd $FUZZER/FuzzerEngine/fuzzerengine
 
