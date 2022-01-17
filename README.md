@@ -67,9 +67,20 @@ EOF
 **Note1:** If the download or installation command fails, please check if you are permitted to visit the google server first.<br>
 **Note2:** If you are running TimeMachine on Mac-OSX, please make sure the latest version of emulator fits your OS well, or you will have to run with old emulator by following this: https://stackoverflow.com/questions/66455173/android-emulator-30-4-5-not-working-on-macos
 
-### Step 3: configure dependencies ###
 
-Please make sure you have correctly configured the following environment variable in your properties.
+### step 3: install dependencies ###
+TimeMachine use Python 2.7.17 as interpreter. 
+
+If you are running TimeMachine on the Ubuntu 18.04, just run the following commands:
+```
+apt install expect python2.7 python-pip
+pip install enum uiautomator
+```
+However, there may be compilation errors if you directly use the built-in Python 2.7 provided by Mac-OSX 10.15. In this case, we recommend an external Python 2.7 environment which could be installed by conda(https://docs.conda.io) or other available package managers.
+
+### Step 4: configure environment variables ###
+
+Please make sure you have correctly configured the following environment variables in your property.
 ```
 export ANDROID_HOME="~/Android/sdk"
 export ANDROID_TOOLS=$ANDROID_HOME/cmdline-tools/latest/bin
@@ -82,7 +93,7 @@ export FUZZER="~/TimeMachine/fuzzingandroid"
 ```
 Check the correct configured environment by type command "adb" "aapt" "avdmanager" in your terminal.
 
-### step 4: create an avd by avdmanager ###
+### step 5: create an avd by avdmanager ###
 ```
 avdmanager create avd -n test -k "system-images;android-25;google_apis;x86"<<EOF
 n
