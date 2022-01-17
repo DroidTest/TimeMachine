@@ -60,7 +60,7 @@ Then you can use the sdkmanager under directory "bin" to install apis, emulator,
 ```
 #install android-25, emulator, platform-tools, build-tools
 ./sdkmanager --update
-./sdkmanager "system-images;android-25;google_apis;x86" emulator platform-tools "platforms;android-25" "build-tools;29.0.0"<<EOF
+./sdkmanager "system-images;android-25;google_apis;x86" platform-tools "platforms;android-25" "build-tools;29.0.0"<<EOF
 y
 EOF
 ``` 
