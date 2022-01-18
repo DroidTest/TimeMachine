@@ -73,7 +73,7 @@ TimeMachine use Python 2.7.17 as interpreter.
 
 If you are running TimeMachine on the Ubuntu 18.04, just run the following commands:
 ```
-apt install expect python2.7 python-pip
+sudo apt install expect python2.7 python-pip
 pip install enum uiautomator
 ```
 However, there may be compilation errors if you directly use the built-in Python 2.7 provided by Mac-OSX 10.15. In this case, we recommend an external Python 2.7 environment which could be installed by conda(https://docs.conda.io) or other available package managers.
@@ -104,17 +104,15 @@ TimeMachine takes as input apks instrumented with Android apps instrumenting too
 Test example apps by the following scripts:
 ```
 #start the avd named "test" by start_avd.bash
-cd $ANDROID_HOME/emulator
-sudo nohup ./emulator -avd test  -no-window -writable-system -no-cache &
-
 cd $FUZZER/FuzzerEngine/fuzzerengine
+bash start_avd.bash
 
 #start the fuzzerengine by start.bash
 #USAGE: ./start.bash [AUT_DIR] [OPEN_SOURCE] [TIMEOUT]
 ./start.bash $FUZZER/../two_apps_under_test/ms_word 0 1800
 ```  
 
-**Note:** Each time before starting TimeMachine, please run the "./clean.bash" under $FUZZER/FuzzerEngine/fuzzerengine to remove last output files first.
+**Note:** Each time before starting TimeMachine, please run the "clean.bash" under $FUZZER/FuzzerEngine/fuzzerengine to remove last output files.
 
 ## Output ##
 check method coverage
