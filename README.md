@@ -80,7 +80,7 @@ However, there may be compilation errors if you directly use the built-in Python
 
 ### Step 4: configure environment variables ###
 
-Please make sure you have correctly configured the following environment variables in your property.
+Please make sure you have correctly configured the following environment variables in your property files. 
 ```
 export ANDROID_HOME="~/Android/sdk"
 export ANDROID_TOOLS=$ANDROID_HOME/cmdline-tools/latest/bin
@@ -91,7 +91,7 @@ export PATH=$ANDROID_TOOLS:$ADB_HOME:$AAPT_HOME:$PATH
 
 export FUZZER="~/TimeMachine/fuzzingandroid"
 ```
-Check the correct configured environment by type command "adb" "aapt" "avdmanager" in your terminal.
+Check the correct configured environment by typing command "adb", "aapt", "avdmanager" in your terminal.
 
 ### step 5: create an avd by avdmanager ###
 ```
@@ -103,16 +103,18 @@ EOF
 TimeMachine takes as input apks instrumented with Android apps instrumenting tool [Emma](http://emma.sourceforge.net/) or [Ella](https://github.com/saswatanand/ella). Under folder two_apps_under_test are closed-source apks instrumented with Ella, i.e., Microsoft Word and Duolingo.  
 Test example apps by the following scripts:
 ```
-#start the avd named "test" by start_avd.bash
 cd $FUZZER/FuzzerEngine/fuzzerengine
-bash start_avd.bash
 
-#start the fuzzerengine by start.bash
+#clean output files
+./clean.bash
+
+#start avd
+./start_avd.bash
+
 #USAGE: ./start.bash [AUT_DIR] [OPEN_SOURCE] [TIMEOUT]
 ./start.bash $FUZZER/../two_apps_under_test/ms_word 0 1800
 ```  
 
-**Note:** Each time before starting TimeMachine, please run the "clean.bash" under $FUZZER/FuzzerEngine/fuzzerengine to remove last output files.
 
 ## Output ##
 check method coverage
