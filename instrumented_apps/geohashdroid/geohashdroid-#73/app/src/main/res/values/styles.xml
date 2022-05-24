@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- This is for the buttons on the dialogs.  They're kinda-sorta like the
+         Lollipop dialog buttons, in a way, but then again, not. -->
+    <style name="GeohashDroid.Button.Borderless" parent="android:Widget.DeviceDefault.Light.Button.Borderless.Small">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#009688</item>
+    </style>
+
+    <!-- This is for any Activity-that-looks-like-a-dialog. -->
+    <style name="GeohashDroidDialog">
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/dialog_padding</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/geohashing_logo_background</item>
+    </style>
+
+    <!-- The basic infobox text. -->
+    <style name="InfoboxText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/infobox_fontsize</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">@color/infobox_text</item>
+        <item name="android:drawablePadding">@dimen/infobox_drawable_padding</item>
+    </style>
+
+    <!-- The main About texts.  Not the headers or whatnot.  The bottom note
+         overrides the size. -->
+    <style name="AboutText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+</resources>

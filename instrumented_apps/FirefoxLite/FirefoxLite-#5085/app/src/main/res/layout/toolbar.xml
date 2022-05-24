@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<org.mozilla.rocket.nightmode.themed.ThemedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?toolBarAppearance"
+    android:id="@+id/toolbar_root"
+    android:layout_width="match_parent"
+    android:layout_height="26dp"
+    android:animateLayoutChanges="true"
+    android:orientation="horizontal"
+    android:paddingEnd="0dp"
+    android:layout_marginBottom="1dp"
+    android:paddingStart="8dp">
+
+    <ImageButton
+        android:id="@+id/customtab_close"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="10dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/content_description_customtab_exit"
+        android:visibility="gone" />
+
+    <org.mozilla.rocket.nightmode.themed.ThemedImageView
+        style="?siteIdentityAppearance"
+        android:id="@+id/site_identity"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="6dp"
+        android:contentDescription="@string/content_description_lock"
+        android:scaleType="centerInside" />
+
+    <!-- lint: We need to use singleLine=true for the fading edge to work (which is officially deprecated,
+         but still needed), hence we ignore deprecated warnings here.. -->
+    <org.mozilla.rocket.nightmode.themed.ThemedTextView
+        style="?displayUrlAppearance"
+        android:id="@+id/display_url"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:ellipsize="none"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="2sp"
+        android:requiresFadingEdge="horizontal"
+        android:singleLine="true"
+        android:textSize="12sp"
+        android:foreground="?android:attr/selectableItemBackground"
+        tools:ignore="Deprecated" />
+
+    <!-- The contentDescription is supplied by other applications in the Custom Tab Intent, and
+         is therefore set programatically. -->
+    <ImageButton
+        android:id="@+id/customtab_actionbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:adjustViewBounds="true"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:maxHeight="@dimen/customtabs_toolbar_icon_size"
+        android:maxWidth="@dimen/customtabs_toolbar_icon_size"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        tools:ignore="contentDescription" />
+
+</org.mozilla.rocket.nightmode.themed.ThemedLinearLayout>

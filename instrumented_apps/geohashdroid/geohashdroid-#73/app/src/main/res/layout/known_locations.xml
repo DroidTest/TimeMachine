@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"
+        android:layout_gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="RtlHardcoded"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/search_box"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/double_padding"
+        android:background="?android:attr/colorBackground"
+        android:elevation="@dimen/elevation_error_banner"
+        android:padding="@dimen/standard_padding">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/search"
+            android:hint="@string/known_locations_search"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:maxLines="1"
+            android:inputType="text"
+            android:imeOptions="actionGo"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_go"
+            android:src="@drawable/search"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:contentDescription="@string/known_locations_search_description"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

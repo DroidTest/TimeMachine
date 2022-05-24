@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources>
+
+    <style name="NormalModeTheme.V23" parent="NormalModeTheme.Base">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="NormalModeTheme" parent="NormalModeTheme.V23"/>
+
+    <style name="PrivateModeTheme.V23" parent="PrivateModeTheme.Base">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/privateBackground</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+    <style name="PrivateModeTheme" parent="PrivateModeTheme.V23">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="ContentTabTheme" parent="PrivateModeTheme.V23"/>
+
+    <style name="PrivateActionBar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="actionMenuTextColor">@color/bookmarkEditToolbarText</item>
+    </style>
+
+</resources>

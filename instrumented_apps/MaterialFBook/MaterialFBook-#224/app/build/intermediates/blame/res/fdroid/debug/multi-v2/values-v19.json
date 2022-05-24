@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/incremental/mergeFdroidDebugResources/merged.dir/values-v19/values-v19.xml",
+            "map": [
+                {
+                    "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/values-v19/styles.xml",
+                    "from": {
+                        "startLines": "10,21,2",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "389,971,17",
+                        "endLines": "19,30,8",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "965,1547,383"
+                    },
+                    "to": {
+                        "startLines": "2,12,22",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,636,1217",
+                        "endLines": "11,21,28",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "631,1212,1583"
+                    }
+                }
+            ]
+        }
+    ]
+}

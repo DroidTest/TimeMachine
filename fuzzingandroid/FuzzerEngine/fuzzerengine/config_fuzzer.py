@@ -1,8 +1,3 @@
-VM_MANAGER_CONFIG = {
-    'vm_directory': '~/VirtualBoxVMs/Android/Snapshots',
-}
-
-
 class RunParameters:
     RUN_ID = 0
     RUN_TIME = 3600
@@ -13,6 +8,12 @@ class RunParameters:
 
     OUTPUT_FILE = "pareto0.log"
     CRASH_FILE = "pareto0.crash"
-    OPEN_SOURCE = False
+    OPEN_SOURCE = True
 
+    OUTPUT_DIR = ""
+    AVD_SERIAL = ""
+    AVD_PORT = ""
+    AVD_NAME = ""
+    APP_DIR = ""
+    APK_FILE_NAME = ""
 

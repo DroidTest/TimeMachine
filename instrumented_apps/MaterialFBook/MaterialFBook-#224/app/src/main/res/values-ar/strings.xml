@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Notifications -->
+    <string name="notifications_setting_title">الإشعارات</string>
+    <string name="notif">الإشعارات</string>
+    <string name="facebook_message">رسالة جديدة</string>
+    <string name="facebook_notifications">إشعار من فيسبوك</string>
+    <string name="notification_sound_description">اختر نغمة الإشعار ، أو الوضع الصامت \u0020</string>
+    <string name="notifications_settings">إعدادات الإشعارات</string>
+    <string name="notifications_settings_description">إعدادات إضافية. اختر الفاصل الزمني, اختر الأصوات,لون مصباح الإشعارات ، الاهتزاز.</string>
+    <string name="interval_pref">الفاصل الزمني لكل فحص</string>
+    <string name="notification_sound">صوت الإشعارات</string>
+    <string name="interval_pref_description_new">سيتم البحث عن إشعارات جديدة كل % ثانية.</string>
+    <string name="notification_sound_msg">صوت الرسالة</string>
+    <string name="vibrate">الإهتزاز</string>
+    <string name="vibrate_double">الإهتزاز المزدوج</string>
+    <string name="led_light">ضوء الإشعارات</string>
+
+    <string name="general_setting_title">عام</string>
+    <!-- End Notifications -->
+
+    <!-- General -->
+    <string name="location_enabled_title">تحديد الموقع الجغرافي</string>
+    <string name="location_enabled_summary">تفعيل هذا سوف يسمح للفيسبوك بتحديد موقعك الجغرافي.</string>
+    <string name="hide_editor_newsfeed_title">إخفاء محرر الحالة في صفحة الأخبار</string>
+    <string name="hide_editor_newsfeed_summary">عند التفعيل ، سيتم إخفاء محرر الحالة في صفحة الأخبار.</string>
+    <string name="stop_images_title">عدم تحميل الصور</string>
+    <string name="stop_images_summary">عند التفعيل ، لن يتم تحميل الصور ، لكن بعض الصور القديمة قد تظل موجودة في ذاكرة التخزين.</string>
+    <string name="hide_sponsored_title">إخفاء &#8216;الإعلانات&#8217; </string>
+    <string name="hide_sponsored_summary">إخفاء &#8216;الإعلانات&#8217; من الصفحة الرئيسية.</string>
+    <string name="hide_birthdays_title">إخفاء تواريخ الميلاد</string>
+    <string name="hide_birthdays_summary">إخفاء تواريخ الميلاد من الصفحة الرئيسية، الأحداث والإشعارات.</string>
+    <string name="hide_menu_bar_title">إخفاء القائمة</string>
+    <string name="hide_menu_bar_summary">عند التفعيل ، سيتم إخفاء شريط القوائم.</string>
+    <string name="hide_recently_commented">Hide recently commented</string>
+    <string name="hide_recently_commented_summary">X people recently commented on this.</string>
+    <string name="start_url">Start URL</string>
+    <string name="more">المزيد</string>
+    <string name="about_updates">التحديثات</string>
+    <!-- End general -->
+
+    <!-- About -->
+    <string name="updates">ابحث عن التحديثات</string>
+    <string name="updates_summary">افتح الصفحة وحمل أحدث نسخة</string>
+    <string name="people_who_translated">الأشخاص الذين قاموا بترجمة التطبيق</string>
+    <string name="devs_who_helped_me">المطورون الذين ساعدوني وأجابوا أسئلتي وسمحوا لي بنسخ بعض الأكواد البرمجية من تطبيقاتهم</string>
+    <string name="help_translations">ساعدني في ترجمة هذا التطبيق إلى لغتك</string>
+    <string name="about_translations">ساعدني، أنا أحتاج دعمك</string>
+    <string name="source_code">الكود المصدري على موقع جٍتْهَب</string>
+    <string name="withYou">بلّغ عن الأخطاء، أو اطلب مزايا جديدة</string>
+    <string name="changelog">سجل التغييرات</string>
+    <string name="appearance_setting_title">المظهر</string>
+    <string name="app_themes">سمات التطبيق</string>
+    <!-- End about -->
+
+    <!-- APPEARANCE -->
+    <string name="app_themes_summary">يمكنك اختيار سمة مختلفة للتطبيق.</string>
+    <string name="navigation_setting_title">التنقل</string>
+    <string name="navigation_menu_settings">عناصر قائمة التنقل</string>
+
+    <!-- Navigation -->
+    <string name="navigation_menu_settings_description">يمكنك إظهار/إخفاء عناصر قائمة التنقل.</string>
+    <string name="save_data">وضع توفير البيانات</string>
+    <string name="save_data_summary">تحميل النسخة الأساسية من فيسبوك وإخفاء الأشرطة وبيانات الملفات الشخصية. والتحديثات.</string>
+    <string name="fab_enable">الزر العائم</string>
+    <string name="fab_enable_summary">إظهار الزر العائم.</string>
+    <string name="fab_text">نشر حالة</string>
+    <string name="fab_photo">نشر صورة</string>
+    <!-- Navigation: fab -->
+    <string name="fab_checkin">تحقق</string>
+    <string name="fab_jump_top">قفز إلى الأعلى</string>
+    <string name="navigation_menu_title">قائمة التنقل</string>
+    <string name="menu_photos">الصور</string>
+    <!-- Navigation: items -->
+    <string name="menu_photos_summary">إظهار &#8216;زر الصور &#8217; في درج التنقل.</string>
+    <string name="menu_events">الأحداث</string>
+    <string name="menu_events_summary">إظهار &#8216;زر الأحداث&#8217; في درج التنقل.</string>
+    <string name="menu_top_stories">أهم الأخبار</string>
+    <string name="menu_top_stories_summary">إظهار &#8216;زر أهم الأخبار&#8217;  في درج التنقل.</string>
+    <string name="menu_most_recent">آخر الأخبار</string>
+    <string name="menu_friendreq">طلبات الصداقة</string>
+    <string name="menu_friendreq_summary">إظهار &#8216;زر طلبات الصداقة&#8217;  في درج التنقل.</string>
+    <string name="menu_groups">المجموعات</string>
+    <string name="menu_groups_summary">إظهار &#8216;زر المجموعات&#8217;  في درج التنقل.</string>
+    <string name="menu_messages">Messages</string>
+    <string name="menu_search">البحث</string>
+    <string name="menu_search_summary">إظهار &#8216;زر البحث &#8217;  في درج التنقل.</string>
+    <string name="menu_mainmenu">القائمة الرئيسية</string>
+    <string name="menu_mainmenu_summary">إظهار &#8216;زر القائمة الرئيسية &#8217;  في درج التنقل.</string>
+    <string name="silent">صامت</string>
+    <string name="navigation_drawer_open">فتح درج التنقل</string>
+    <string name="navigation_drawer_close">غلق درج التنقل</string>
+    <string name="nav_notifications">الإشعارات</string>
+    <string name="settings">الإعدادات</string>
+    <string name="context_share_image">مشاركة الصورة</string>
+    <string name="context_share_link">مشاركة الرابط</string>
+    <string name="context_share_image_progress">جار مشاركة الصورة…</string>
+    <string name="content_copy_link_done">تم نسخ الرابط في الحافظة</string>
+    <string name="permission_denied">تم رفض إعطاء الصلاحيات المطلوبة، للأسف لا يمكن إتمام طلبك</string>
+    <string name="downloaded">تم التحميل</string>
+    <string name="new_bookmark">Added:</string>
+    <string name="remove_bookmark">Removed:</string>
+    <string-array name="intervalPrefTitles">
+        <item>دقيقة</item>
+        <item>دقيقتان</item>
+        <item>5 دقائق</item>
+        <item>15 دقيقة</item>
+        <item>30 دقيقة</item>
+        <item>ساعة</item>
+        <item>3 ساعات</item>
+        <item>6 ساعات</item>
+    </string-array>
+    <string-array name="Start">
+        <item>MostRecent</item>
+        <item>TopStories</item>
+        <item>Messages</item>
+    </string-array>
+</resources>

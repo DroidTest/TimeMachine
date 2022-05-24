@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_marginTop="@dimen/standard_padding"
+              android:layout_marginBottom="@dimen/standard_padding"
+              tools:ignore="UseCompoundDrawables">
+    <!-- We ignore the CompoundDrawables lint because we can't tell a compound
+         drawable to top-align itself to the text, like a bulletpoint does. -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bulletIcon"
+        android:layout_gravity="top"
+        android:src="@drawable/version_history_bullet_image"
+        android:layout_marginTop="@dimen/version_history_bullet_image_margin_top"
+        android:layout_marginLeft="@dimen/version_history_bullet_image_margin_left"
+        android:layout_marginBottom="@dimen/version_history_bullet_image_margin_bottom"
+        android:layout_marginRight="@dimen/version_history_bullet_image_margin_right"
+        android:contentDescription="@string/accessibility_version_bullet"/>
+
+    <TextView
+        android:id="@+id/bulletText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"/>
+</LinearLayout>

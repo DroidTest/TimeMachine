@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="contentDescription,spUsage">
+
+    <ImageView android:id="@+id/star_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/star_bg"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/logo_man"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/tab_tray_peekHeight"
+        app:srcCompat="@drawable/logo_man" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <org.mozilla.rocket.nightmode.themed.ThemedRecyclerView
+            android:id="@+id/tab_tray_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_tab_tray"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/tab_tray_padding"
+            android:paddingBottom="@dimen/tab_tray_new_tab_btn_height"
+            app:layout_behavior="org.mozilla.focus.tabs.tabtray.InterceptBehavior"
+            app:behavior_hideable="true"
+            app:behavior_peekHeight="@dimen/tab_tray_peekHeight"
+            tools:listitem="@layout/item_tab_tray" />
+
+        <org.mozilla.rocket.nightmode.themed.ThemedRelativeLayout
+            android:id="@+id/new_tab_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_tray_new_tab_btn_height"
+            android:layout_gravity="bottom"
+            android:background="@drawable/tab_tray_bottom_bar_bg"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/private_browsing_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/tab_tray_bottom_sheet_start_margin"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:id="@+id/badge_in_private_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/private_browsing_img"
+                    android:layout_alignTop="@+id/private_browsing_img"
+                    android:paddingEnd="-10dp"
+                    android:paddingTop="6dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/ic_menu_private_mode" />
+
+                <org.mozilla.rocket.nightmode.themed.ThemedImageView
+                    android:id="@+id/private_browsing_img"
+                    style="@style/MainMenuButton"
+                    android:layout_centerInParent="true"
+                    android:padding="8dp"
+                    android:tint="@color/tab_tray_private_btn"
+                    app:srcCompat="@drawable/ic_menu_mask"
+                    tools:ignore="contentDescription" />
+            </RelativeLayout>
+
+            <org.mozilla.rocket.nightmode.themed.ThemedView
+                android:id="@+id/bottom_divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/tab_tray_bottom_divider_bg" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground" />
+            <org.mozilla.rocket.nightmode.themed.ThemedImageView
+                android:id="@+id/plus_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleType="center"
+                app:srcCompat="@drawable/action_add"
+                android:tint="@color/tab_tray_private_btn"
+                tools:ignore="contentDescription" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@id/plus_sign"
+                android:layout_marginStart="@dimen/tab_tray_close_all_btn_margin_start">
+                <TextView
+                    android:id="@+id/close_all_tabs_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/tab_tray_bottom_sheet_end_margin"
+                    android:paddingStart="@dimen/tab_tray_close_all_btn_margin_end"
+                    android:paddingEnd="@dimen/tab_tray_close_all_btn_margin_end"
+                    android:textAllCaps="true"
+                    android:text="@string/tab_tray_close_tabs_btn_text"
+                    android:gravity="center|end"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:textColor="@color/tabTrayCloseAll"
+                    android:textSize="@dimen/tab_tray_close_all_btn_text_size"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    tools:ignore="RtlSymmetry" />
+            </FrameLayout>
+        </org.mozilla.rocket.nightmode.themed.ThemedRelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

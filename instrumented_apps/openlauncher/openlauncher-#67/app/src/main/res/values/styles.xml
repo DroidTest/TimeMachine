@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Home.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:navigationBarColor" tools:targetApi="21">@android:color/transparent</item>
+        <item name="android:colorPrimaryDark"  tools:targetApi="21">@android:color/transparent</item>
+
+		    <item name="android:windowNoTitle">true</item>
+		    <item name="android:windowShowWallpaper">true</item>
+
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/Light.Primary</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColorPrimary">@color/Light.TextColor</item>
+        <item name="android:textColor">@color/Light.TextColor</item>
+        <item name="android:textColorSecondary">@color/Light.TextColorSec</item>
+	  </style>
+
+    <style name="AppTheme.MaterialAboutActivity" parent="Theme.Mal" >
+        <item name="colorPrimaryDark">@color/Light.PrimaryDark</item>
+        <item name="colorPrimary">@color/Light.Primary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="NormalActivity.Light" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/Light.PrimaryDark</item>
+        <item name="colorPrimary">@color/Light.Primary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowBackground">@color/Light.GreyBackground</item>
+
+        <item name="android:textColorPrimary">@color/Light.TextColor</item>
+        <item name="android:textColor">@color/Light.TextColor</item>
+        <item name="android:textColorSecondary">@color/Light.TextColorSec</item>
+    </style>
+
+    <style name="Toolbar.LightButton" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">#FFF</item>
+    </style>
+
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+</resources>

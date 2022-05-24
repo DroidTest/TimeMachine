@@ -88,48 +88,57 @@ export ADB_HOME="$ANDROID_HOME/platform-tools"
 export AAPT_HOME="$ANDROID_HOME/build-tools/29.0.0"
 
 export PATH=$ANDROID_TOOLS:$ADB_HOME:$AAPT_HOME:$PATH
-
-export FUZZER="~/TimeMachine/fuzzingandroid"
 ```
 Check the correct configured environment by typing command "adb", "aapt", "avdmanager" in your terminal.
 
 ### step 5: create an avd by avdmanager ###
 ```
-avdmanager create avd -n test -k "system-images;android-25;google_apis;x86"<<EOF
+avdmanager create avd -n avd0 -k "system-images;android-25;google_apis;x86"<<EOF
 n
 EOF
 ```
 ## Usage ##
-TimeMachine takes as input apks instrumented with Android apps instrumenting tool [Emma](http://emma.sourceforge.net/) or [Ella](https://github.com/saswatanand/ella). Under folder two_apps_under_test are closed-source apks instrumented with Ella, i.e., Microsoft Word and Duolingo.  
-Test example apps by the following scripts:
+TimeMachine takes as input apks instrumented with Android apps instrumenting tool [Jacoco](https://www.jacoco.org/jacoco/). Under folder instrumented_apps are several open-source apps instrumented with Jacoco, i.e., AmazeFileManager and FirefoxLite. The command lines for deployment are as follow.
 ```
-cd $FUZZER/FuzzerEngine/fuzzerengine
+usage: python2.7 main.py [-h] [--avd AVD_NAME] [--apk APK] [-n NUMBER_OF_DEVICES]
+                         [--apk-list APK_LIST] -o O [--time TIME] [--repeat REPEAT]
+                         [--no-headless] [--offset OFFSET]
 
-#clean output files
-./clean.bash
+optional arguments:
+  -h, --help            show this help message and exit
+  --avd AVD_NAME        the device name
+  --apk APK
+  -n NUMBER_OF_DEVICES  number of emulators created for testing, default: 1
+  --apk-list APK_LIST   list of apks under test
+  -o O                  output dir
+  --time TIME           the fuzzing time in hours (e.g., 6h), minutes (e.g.,
+                        6m), or seconds (e.g., 6s), default: 6h
+  --repeat REPEAT       the repeated number of runs, default: 1
+  --no-headless         show gui
+  --offset OFFSET       device offset number w.r.t emulator-5554
 
-#start avd
-./start_avd.bash
+```  
+Test example apps by the following scripts:
+```  
+cd TimeMachine/fuzzingandroid
 
-#USAGE: ./start.bash [AUT_DIR] [OPEN_SOURCE] [TIMEOUT]
-./start.bash $FUZZER/../two_apps_under_test/ms_word 0 1800
+python2.7 main.py --avd avd0 --apk ../instrumented_apps/AmazeFileManager/AmazeFileManager-3.4.2-#1837.apk --time 1h -o ../timemachine-results --no-headless
+
 ```  
 
 
 ## Output ##
-check method coverage
+check current jacoco line coverage
 ```
-cd $FUZZER
-./compute_cov_aver.bash output ../two_apps_under_test/ms_word/
-./compute_cov_aver.bash output ../two_apps_under_test/duolingo/
+python2.7 compute_coverage.py ../timemachine-results/[output_file_dir_name]
 ```
 check crashes
 ```
-cat output/crashes.log
+cat ../timemachine-results/[output_file_dir_name]/crashes.log
 ```
 check logs
 ```
-cat output/timemachine-run.log
+cat ../timemachine-results/[output_file_dir_name]/timemachine-run.log
 ```
 ## Need help? ##
 * Contact Zhen Dong for further issues.

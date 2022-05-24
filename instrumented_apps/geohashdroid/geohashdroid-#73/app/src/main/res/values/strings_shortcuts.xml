@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="shortcut_closest_long">Closest hashpoint</string>
+    <string name="shortcut_closest_short">Closest</string>
+
+    <string name="shortcut_last_used_long">Last-used graticule</string>
+    <string name="shortcut_last_used_short">Last-used</string>
+
+    <string name="shortcut_picker_long">Graticule picker</string>
+    <string name="shortcut_picker_short">Picker</string>
+</resources>

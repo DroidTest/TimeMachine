@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:defaultValue="UseClosest"
+        android:dialogTitle="@string/pref_startup_dialogtitle"
+        android:entries="@array/pref_startup_entries"
+        android:entryValues="@array/pref_startup_values"
+        android:key="StartupBehavior"
+        android:persistent="true"
+        android:title="@string/pref_startup_title" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="InfoBox"
+        android:persistent="true"
+        android:summaryOff="@string/pref_infobox_off"
+        android:summaryOn="@string/pref_infobox_on"
+        android:title="@string/pref_infobox_title" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="AutoZoom"
+        android:persistent="true"
+        android:summaryOff="@string/pref_autozoom_off"
+        android:summaryOn="@string/pref_autozoom_on"
+        android:title="@string/pref_autozoom_title" />
+    <ListPreference
+        android:defaultValue="Metric"
+        android:dialogTitle="@string/pref_units_dialogtitle"
+        android:entries="@array/pref_units_entries"
+        android:entryValues="@array/pref_units_values"
+        android:key="Units"
+        android:persistent="true"
+        android:title="@string/pref_units_title" />
+    <ListPreference
+        android:defaultValue="Degrees"
+        android:dialogTitle="@string/pref_coordunits_dialogtitle"
+        android:entries="@array/pref_coordunits_entries"
+        android:entryValues="@array/pref_coordunits_values"
+        android:key="CoordUnits"
+        android:persistent="true"
+        android:title="@string/pref_coordunits_title" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="NearbyPoints"
+        android:persistent="true"
+        android:summaryOff="@string/pref_nearbypoints_off"
+        android:summaryOn="@string/pref_nearbypoints_on"
+        android:title="@string/pref_nearbypoints_title" />
+
+    <Preference
+        android:key="_knownLocations"
+        android:title="@string/pref_knownlocations_title" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="ShowKnownLocations"
+        android:persistent="true"
+        android:summaryOff="@string/pref_showknownlocations_off"
+        android:summaryOn="@string/pref_showknownlocations_on"
+        android:title="@string/pref_showknownlocations_title" />
+
+    <ListPreference
+        android:defaultValue="OnlyOnce"
+        android:dialogTitle="@string/pref_knownnotification_dialogtitle"
+        android:entries="@array/pref_knownnotification_entries"
+        android:entryValues="@array/pref_knownnotification_values"
+        android:key="KnownNotification"
+        android:persistent="true"
+        android:title="@string/pref_knownnotification_title"/>
+
+</PreferenceScreen>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.amaze.filemanager.ui.views.WarnableTextInputLayout
+        android:id="@+id/til_encrypt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_dialog_encrypt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_gravity="center_vertical"/>
+    </com.amaze.filemanager.ui.views.WarnableTextInputLayout>
+
+
+    <com.amaze.filemanager.ui.views.WarnableTextInputLayout
+        android:id="@+id/til_encrypt_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/til_encrypt_password"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_text_dialog_encrypt_password_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password_repeat"
+            android:inputType="textPassword"
+            android:layout_gravity="center_vertical" />
+    </com.amaze.filemanager.ui.views.WarnableTextInputLayout>
+
+    <com.amaze.filemanager.ui.views.WarnableTextInputLayout
+        android:id="@+id/til_encrypt_save_as"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/til_encrypt_password_confirm">
+        
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/edit_text_encrypt_save_as"
+            android:layout_gravity="center_vertical" />
+
+    </com.amaze.filemanager.ui.views.WarnableTextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="oval">
+    <!-- Some people think they can outsmart the version history dialog.  Maybe.
+         Maybe.  I've yet to meet one that can outsmart the bullet drawable. -->
+    <solid android:color="?android:attr/textColorPrimary" />
+    <size android:width="@dimen/version_history_bullet_image_size"
+          android:height="@dimen/version_history_bullet_image_size" />
+</shape>

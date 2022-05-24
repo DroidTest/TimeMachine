@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Notifications -->
+    <string name="notifications_setting_title">NOTIFICARI</string>
+    <string name="notif">Notificari</string>
+    <string name="facebook_message">Mesaje Facebook</string>
+    <string name="facebook_notifications">Notificari Facebook</string>
+    <string name="notification_sound_description">Alege un ringtone sau deloc: \u0020</string>
+    <string name="notifications_settings">Setarile notificarilor</string>
+    <string name="notifications_settings_description">Setari aditionale. Alege intervalul de timp, adauga sunete, LED si vibratii.</string>
+    <string name="interval_pref">Intervalul de timp pentru verificare</string>
+    <string name="notification_sound">Sunetul de notificare</string>
+    <string name="interval_pref_description_new">Notificarile vor fi verificate la fiecare %s.</string>
+    <string name="notification_sound_msg">Sunet pentru mesaje</string>
+    <string name="vibrate">Vibratii</string>
+    <string name="vibrate_double">Vibratii duble</string>
+    <string name="led_light">LED de notificari</string>
+
+    <string name="general_setting_title">GENERAL</string>
+    <!-- End Notifications -->
+
+    <!-- General -->
+    <string name="location_enabled_title">Acces la locatie</string>
+    <string name="location_enabled_summary">Activeaza ca sa permiti accesul la locatie.</string>
+    <string name="hide_editor_newsfeed_title">Ascunde Editorul de Status din Feed</string>
+    <string name="hide_editor_newsfeed_summary">Cand este activat, editorul de status va fi ascuns din Feed.</string>
+    <string name="stop_images_title">Nu incarca imaginile</string>
+    <string name="stop_images_summary">Cand este activat, nu se vor incarca imaginile. Niste imagini o sa ramana in cache.</string>
+    <string name="hide_sponsored_title">Ascunde continutul &#8216;Sponsorizat\'</string>
+    <string name="hide_sponsored_summary">Cand este activat, se va ascunde continutul &#8216;Sponsorizat\' (anunturi) din Feed.</string>
+    <string name="hide_birthdays_title">Ascunde Zilele de Nastere</string>
+    <string name="hide_birthdays_summary">Cand este activat, se vor ascunde zilele de nastere din Feed.</string>
+    <string name="hide_menu_bar_title">Ascunde bara de meniu</string>
+    <string name="hide_menu_bar_summary">Cand este activat, Bara de Meniu Facebook va fi ascunsa.</string>
+    <string name="hide_recently_commented">Hide recently commented</string>
+    <string name="hide_recently_commented_summary">X people recently commented on this.</string>
+    <string name="start_url">Start URL</string>
+    <string name="more">Mai multe si credite</string>
+    <string name="about_updates">Update-uri</string>
+    <!-- End general -->
+
+    <!-- About -->
+    <string name="updates">Verifica pentru o noua versiune</string>
+    <string name="updates_summary">Incarca pagina si descarca ultima versiune</string>
+    <string name="people_who_translated">Userii care au tradus aplicatia</string>
+    <string name="devs_who_helped_me">Dezvoltatorii care m-au ajutat prin raspunzandu-mi la intrebari si luand cod sursa din aplicatiile lor</string>
+    <string name="help_translations">Ajuta-ma sa traduc aplicatia in limba ta</string>
+    <string name="about_translations">Ajutor, avem nevoie de tine</string>
+    <string name="source_code">Codul-sursa pe Github</string>
+    <string name="withYou">Raporteaza bug-uri sau cere noi functii</string>
+    <string name="changelog">Jurnalul schimbarilor</string>
+    <string name="appearance_setting_title">INTERFATA</string>
+    <string name="app_themes">Tema aplicatiei</string>
+    <!-- End about -->
+
+    <!-- APPEARANCE -->
+    <string name="app_themes_summary">De aici se poate alege tema aplicatiei.</string>
+    <string name="navigation_setting_title">NAVIGATIE</string>
+    <string name="navigation_menu_settings">Itemii meniului de navigare</string>
+
+    <!-- Navigation -->
+    <string name="navigation_menu_settings_description">Aici se pot afisa/ascunde itemi din meniul de navigare.</string>
+    <string name="save_data">Economizator de date</string>
+    <string name="save_data_summary">Cand este activat, aplicatia se autoconfigureaza intr-un mod de economisire a datelor</string>
+    <string name="fab_enable">Floating Action Button</string>
+    <string name="fab_enable_summary">Show the FAB.</string>
+    <string name="fab_text">Posteaza un status</string>
+    <string name="fab_photo">Posteaza o fotografie</string>
+    <!-- Navigation: fab -->
+    <string name="fab_checkin">Check In</string>
+    <string name="fab_jump_top">Revino sus</string>
+    <string name="navigation_menu_title">MENIUL DE NAVIGARE</string>
+    <string name="menu_photos">Fotografii</string>
+    <!-- Navigation: items -->
+    <string name="menu_photos_summary">Cand este activat, butonul &#8216;Fotografii&#8217; dispare.</string>
+    <string name="menu_events">Evenimente</string>
+    <string name="menu_events_summary">Cand este activat, butonul &#8216;Evenimente&#8217; dispare.</string>
+    <string name="menu_top_stories">Povesti de top</string>
+    <string name="menu_top_stories_summary">Cand este dezactivat, butonul &#8216;Povesti de top&#8217; dispare.</string>
+    <string name="menu_most_recent">Cele mai recente</string>
+    <string name="menu_friendreq">Cereri de prietenie</string>
+    <string name="menu_friendreq_summary">Cand este dezactivat, butonul &#8216;Cereri de prietenie&#8217; dispare.</string>
+    <string name="menu_groups">Grupuri</string>
+    <string name="menu_groups_summary">Cand este dezactivat, butonul &#8216;Grupuri&#8217; dispare.</string>
+    <string name="menu_messages">Mesaje</string>
+    <string name="menu_search">Cautare</string>
+    <string name="menu_search_summary">Cand este dezactivat, butonul &#8216;Cautare&#8217; dispare.</string>
+    <string name="menu_mainmenu">Meniu Principal</string>
+    <string name="menu_mainmenu_summary">Cand este dezactivat, butonul &#8216;Meniu Principal&#8217; dispare.</string>
+    <string name="silent">Fara sunet</string>
+    <string name="navigation_drawer_open">Deschide serarul de navigatie</string>
+    <string name="navigation_drawer_close">Inchide serarul de navigatie</string>
+    <string name="nav_notifications">Notificari</string>
+    <string name="settings">Setari</string>
+    <string name="context_share_image">Distribuie imaginea</string>
+    <string name="context_share_link">Distribuie linkul</string>
+    <string name="content_copy_link_done">Link copiat in clipboard</string>
+    <string name="downloaded">Downloaded</string>
+    <string name="new_bookmark">Added:</string>
+    <string name="remove_bookmark">Removed:</string>
+    <string-array name="intervalPrefTitles">
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>5 minutos</item>
+        <item>15 minutos</item>
+        <item>30 minutos</item>
+        <item>1 hora</item>
+        <item>3 horas</item>
+        <item>6 horas</item>
+    </string-array>
+    <string-array name="Start">
+        <item>MostRecent</item>
+        <item>TopStories</item>
+        <item>Messages</item>
+    </string-array>
+</resources>

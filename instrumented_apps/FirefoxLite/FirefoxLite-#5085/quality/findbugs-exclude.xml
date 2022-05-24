@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <!-- FindBugs doesn't like the resource classes provided by both ourselves, and the android
+         support libraries. -->
+    <Match>
+        <Class name="~.*\.R\$.*"/>
+    </Match>
+    <Match>
+        <Class name="~.*\.Manifest\$.*"/>
+    </Match>
+    <Match>
+        <Class name="~.*\.*Test"/>
+    </Match>
+    <Match>
+        <Class name="~.*?Dao_Impl.*" />
+        <Method name="finalize" />
+        <Bug pattern="FI_MISSING_SUPER_CALL" />
+    </Match>
+    <Match>
+        <Class name="org.mozilla.focus.glide.GlideOptions"/>
+    </Match>
+    <Match>
+        <Class name="org.mozilla.focus.glide.GlideRequest"/>
+    </Match>
+</FindBugsFilter>

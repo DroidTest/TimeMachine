@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/incremental/mergeFdroidDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml",
+            "map": [
+                {
+                    "source": "/Users/iverson3/.gradle/caches/transforms-2/files-2.1/f3c344d16a2f389d4ba6c09be404b1d2/preference-1.1.0/res/values-zh-rCN/values-zh-rCN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "105,171,252,321,441,609,688",
+                        "endColumns": "65,80,68,119,167,78,75",
+                        "endOffsets": "166,247,316,436,604,683,759"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,35,36,37",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "2662,2728,2809,2878,3177,3345,3424",
+                        "endColumns": "65,80,68,119,167,78,75",
+                        "endOffsets": "2723,2804,2873,2993,3340,3419,3495"
+                    }
+                },
+                {
+                    "source": "/Users/iverson3/.gradle/caches/transforms-2/files-2.1/dd9d0ad8ca70d85304d03d0645d9753a/appcompat-1.2.0-beta01/res/values-zh-rCN/values-zh-rCN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,200,295,395,477,574,680,757,833,924,1016,1113,1209,1304,1397,1492,1584,1675,1766,1843,1939,2034,2129,2226,2322,2420,2568,2662",
+                        "endColumns": "94,94,99,81,96,105,76,75,90,91,96,95,94,92,94,91,90,90,76,95,94,94,96,95,97,147,93,77",
+                        "endOffsets": "195,290,390,472,569,675,752,828,919,1011,1108,1204,1299,1392,1487,1579,1670,1761,1838,1934,2029,2124,2221,2317,2415,2563,2657,2735"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,200,295,395,477,574,680,757,833,924,1016,1113,1209,1304,1397,1492,1584,1675,1766,1843,1939,2034,2129,2226,2322,2420,2568,2998",
+                        "endColumns": "94,94,99,81,96,105,76,75,90,91,96,95,94,92,94,91,90,90,76,95,94,94,96,95,97,147,93,77",
+                        "endOffsets": "195,290,390,472,569,675,752,828,919,1011,1108,1204,1299,1392,1487,1579,1670,1761,1838,1934,2029,2124,2221,2317,2415,2563,2657,3071"
+                    }
+                },
+                {
+                    "source": "/Users/iverson3/.gradle/caches/transforms-2/files-2.1/0dd806a1788253f65a6d86e7a228095f/core-1.3.0-beta01/res/values-zh-rCN/values-zh-rCN.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "34",
+                        "startColumns": "4",
+                        "startOffsets": "3076",
+                        "endColumns": "100",
+                        "endOffsets": "3172"
+                    }
+                }
+            ]
+        }
+    ]
+}

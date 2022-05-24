@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/incremental/mergeFdroidDebugResources/merged.dir/values-mk/values-mk.xml",
+            "map": [
+                {
+                    "source": "/Users/iverson3/.gradle/caches/transforms-2/files-2.1/f3c344d16a2f389d4ba6c09be404b1d2/preference-1.1.0/res/values-mk/values-mk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "105,176,263,343,487,656,742",
+                        "endColumns": "70,86,79,143,168,85,81",
+                        "endOffsets": "171,258,338,482,651,737,819"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,35,36,37",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "2820,2891,2978,3058,3387,3556,3642",
+                        "endColumns": "70,86,79,143,168,85,81",
+                        "endOffsets": "2886,2973,3053,3197,3551,3637,3719"
+                    }
+                },
+                {
+                    "source": "/Users/iverson3/.gradle/caches/transforms-2/files-2.1/0dd806a1788253f65a6d86e7a228095f/core-1.3.0-beta01/res/values-mk/values-mk.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "34",
+                        "startColumns": "4",
+                        "startOffsets": "3286",
+                        "endColumns": "100",
+                        "endOffsets": "3382"
+                    }
+                },
+                {
+                    "source": "/Users/iverson3/.gradle/caches/transforms-2/files-2.1/dd9d0ad8ca70d85304d03d0645d9753a/appcompat-1.2.0-beta01/res/values-mk/values-mk.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,317,425,511,619,738,822,904,995,1087,1183,1277,1378,1471,1566,1662,1753,1844,1930,2036,2142,2243,2350,2462,2566,2722,2820",
+                        "endColumns": "107,103,107,85,107,118,83,81,90,91,95,93,100,92,94,95,90,90,85,105,105,100,106,111,103,155,97,83",
+                        "endOffsets": "208,312,420,506,614,733,817,899,990,1082,1178,1272,1373,1466,1561,1657,1748,1839,1925,2031,2137,2238,2345,2457,2561,2717,2815,2899"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,33",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,213,317,425,511,619,738,822,904,995,1087,1183,1277,1378,1471,1566,1662,1753,1844,1930,2036,2142,2243,2350,2462,2566,2722,3202",
+                        "endColumns": "107,103,107,85,107,118,83,81,90,91,95,93,100,92,94,95,90,90,85,105,105,100,106,111,103,155,97,83",
+                        "endOffsets": "208,312,420,506,614,733,817,899,990,1082,1178,1272,1373,1466,1561,1657,1748,1839,1925,2031,2137,2238,2345,2457,2561,2717,2815,3281"
+                    }
+                }
+            ]
+        }
+    ]
+}

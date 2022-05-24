@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<versionHistory>
+    <version name="0.9.4" version="925" date="2020-02-19">
+        <title>A Wiki Housewarming Gift</title>
+        <header>Wow, I&apos;ve got some work to do.  Did I mention I got a new job since the last update?</header>
+        <bullets>
+            <bullet>The Geohashing Wiki has moved!  As such, Geohash Droid now points there.</bullet>
+            <bullet>Okay, THIS time I&apos;ve got the broken Version History entries fixed.  If you saw backslashed quotes show up in the previous version, that wasn&apos;t meant to be part of the joke; it turns out that, irritatingly, different versions of Android apparently parse single and double quotes in XML files differently.  Sorry for any confusion there.  Just remind me to always use &amp;apos; and &amp;quot; to be safe and everything should be fine.</bullet>
+            <bullet>In the never-ending quest for fanciness and schmansiness, there&apos;s finally an adaptive-style icon for Geohash Droid.</bullet>
+            <bullet>A few minor bugs here and there should be fixed.  I have no clue if anyone ran across them or not.</bullet>
+            <bullet>A whoooooooole lotta code cleanup.  Library versions, linting, simplifying, the works.  If something exploded, do let me know.</bullet>
+        </bullets>
+        <footer>There&apos;s still more to go, like fixing offline wiki post queueing and native Android 10 dark mode stuff.</footer>
+    </version>
+    <version name="0.9.3" version="924" date="2018-07-08">
+        <title>Eleven Notifications If You Count A Potential Globalhash</title>
+        <header>FINALLY, the Oreo Notifications update!</header>
+        <bullets>
+            <bullet>Notification channels!  Geohash Droid now uses Oreo-style notification channels!  There&apos;s channels for wiki-related issues, the stock pre-fetcher, and Known Locations.  You can configure them via app settings in your device&apos;s main Android settings.  Note that by default this means Known Location notifications will now make noise.</bullet>
+            <bullet>New notification options regardless!  You can now have it send up individual Known Location notifications for each location that has a nearby point or each graticule with nearby points in them.  As the helpful popup will remind you, this is limited to ten notifications at a time.</bullet>
+            <bullet>Updated all the map-related stuff to newer versions of the Google Play libraries.</bullet>
+            <bullet>Fixed potentially broken Version History screen, specifically where every line with an apostrophe got cut off.  If this turned out to be a problem for you, hopefully it&apos;s fixed now and you don&apos;t see backslashes before every apostrophe in this window.</bullet>
+        </bullets>
+        <footer>Some of these updates (mostly the map-related part) involved a lot more tearup than I was expecting.  I tested things as much as I could, but if you run into problems with this version, please file issues at the Github repo.</footer>
+    </version>
+    <version name="0.9.2.4" version="923" date="2017-06-22">
+        <title>The Concept Of An Australian Tomorrow</title>
+        <header>Here&apos;s a somewhat major change for geohashers in the 30W Rule.  You might like this one.</header>
+        <bullets>
+            <bullet>Notifications for Known Locations that are subject to the 30W Rule will now (generally) trigger for *tomorrow*, not necessarily the date of the NYSE stock value.  That is, instead of triggering for the date of the stock value, which isn&apos;t very useful in 30W graticules by the time the NYSE opens (especially in places like Australia, Japan, or New Zealand), the notification will be for the next day&apos;s hashpoints.  That, in a way, is why the 30W Rule was invented in the first place, so this makes more sense for graticules located there.</bullet>
+            <bullet>The button that accepts the currently-selected graticule in Select-A-Graticule mode now says &quot;Use This&quot;, rather than &quot;Return&quot;.  That reads a lot better, I feel.</bullet>
+        </bullets>
+        <footer>Thanks to ephphatha on GitHub for pointing the 30W notification issue out to me!  Totally forgot to account for that when I initially wrote it.</footer>
+    </version>
+    <version name="0.9.2.3" version="922" date="2017-06-12">
+        <title>Nougat Caught In Your Teeth</title>
+        <header>This update came up due to a vital change in Nougat I forgot to account for.</header>
+        <bullets>
+            <bullet>Fixed a problem where wiki posting and the stock pre-fetcher wouldn&apos;t wake back up if either were waiting for a network connection on Android N.</bullet>
+            <bullet>In the event that wiki posting STILL doesn&apos;t wake up, tapping the notification that says it&apos;s waiting for a network connection will try to nudge it into action.</bullet>
+            <bullet>Fixed the existing actions on the wiki notifications not always working properly to begin with.</bullet>
+            <bullet>Updated the wiki login method so it should continue working if the Geohashing wiki upgrades to 1.27 or newer.</bullet>
+        </bullets>
+        <footer>I&apos;m pretty sure I got the network connection wakeup bug fixed, but if there&apos;s still problems where wiki posting never realizes the network came back, please let me know on GitHub.</footer>
+    </version>
+    <version name="0.9.2.2" version="921" date="2017-02-08">
+        <title>Statically Trained Satellite Terrain</title>
+        <header>Oh.  Whoops.</header>
+        <bullets>
+            <bullet>Fixed issue where the terrain and satellite map types were switched.</bullet>
+        </bullets>
+        <footer>I&apos;ve also got a branch I&apos;m working on that uses Android&apos;s internal night mode mechanics to handle the darker night interface.  But, since that depends on your device being Marshmallow or newer (anything lower and night mode only affects docked devices), that&apos;ll probably only go up on the GitHub site as a separate version.  More on that when it&apos;s ready to test.</footer>
+    </version>
+    <version name="0.9.2.1" version="920" date="2017-01-10">
+        <title>Your Late-Night Geohash Fix</title>
+        <header>Good news for anyone who might want a night mode...</header>
+        <bullets>
+            <bullet>There&apos;s a night mode!  It&apos;s not based on time, however.  Under the Map Type menu, you&apos;ll see a new &quot;Street (night)&quot; mode.  That&apos;ll make the map dark AND darken the app&apos;s theme in general (&quot;Street (day)&quot; changes it back).  Note that I can&apos;t get night versions of the satellite or terrain maps, so those will still always be bright.</bullet>
+            <bullet>Added in a toast popup if you enter the map screen when a previous day&apos;s hashpoint is still active.  I&apos;ve been confused myself when that happens.</bullet>
+        </bullets>
+        <footer>Now that Known Locations works like it should, I&apos;ve had a suggestion or two as to how the notifications could be improved, specifically in cases where there&apos;s locations marked that might be a long way away, or lots of locations to report, or whatnot.  I&apos;ll see what I can do about that.</footer>
+    </version>
+    <version name="0.9.2" version="919" date="2016-12-09">
+        <title>I Was Still Sort Of Pulling For Neapolitan, Myself</title>
+        <header>Nougat!  It&apos;s the Nougat update!  Check this out:</header>
+        <bullets>
+            <bullet>For Nougat 7.0, Geohash Droid should behave a bit better with regards to multi-window mode.  Maybe.  I&apos;ve tested it as much as I can with a Pixel and a Nexus 9, but it should be somewhat sane and not-crashy.</bullet>
+            <bullet>The Detailed Info and Wiki displays on tablets now look different.  Now they&apos;re smaller blocks that show up over the map, rather than taking over half the screen.</bullet>
+            <bullet>For Nougat 7.1, there&apos;s a round icon (if your launcher supports them)!  Much like spinny things, everybody loves round things!</bullet>
+            <bullet>Also for Nougat 7.1, there&apos;s launcher shortcuts (also if your launcher supports them; long-tap the icon to check)!  Now you can directly launch into either the last-used graticule, the closest hashpoint, or the graticule picker, regardless of whatever your preferences say!</bullet>
+            <bullet>Updated marker strings to account for the Try Tomorrow menu option.</bullet>
+            <bullet>Hopefully mitigated most of the issues with Known Locations not triggering notifications.</bullet>
+        </bullets>
+        <footer>As far as I know, the Known Locations issue is due to the Doze/App Idle feature of Marshmallow, and is not the easiest thing to fix.  What I&apos;ve got should largely fix things, but I can&apos;t guarantee it.  It might still fire late, but at least it shouldn&apos;t be seven or so hours late.</footer>
+    </version>
+    <version name="0.9.1.5" version="918" date="2016-11-26">
+        <title>The Spiraling Shape Will Make You Go Insane</title>
+        <header>A couple neat new things this time around!  And a minor fix.</header>
+        <bullets>
+            <bullet>All stock fetching operations will time out after ten seconds (per server).  This should hopefully mitigate things if one of the stock providers has issues like what happened a few months back.</bullet>
+            <bullet>There&apos;s a spinny busy indicator thingy while a stock fetch is in progress!  Look at it spin!  Everybody loves spinny things, right?</bullet>
+            <bullet>Long-tapping on either your current location or the final destination on the Detailed Info screen will now copy the corresponding coordinates to the system clipboard.  Said coordinates will be in whatever format is shown on the screen as per your preferences (degrees/minutes/seconds).</bullet>
+        </bullets>
+        <footer>I&apos;m also aware there&apos;s some issue with the Known Locations notifier (or, more specifically, the stock pre-fetcher which should be triggering said notifications).  I think I&apos;ve got an idea what&apos;s going on there, but that&apos;s one of those annoying things that&apos;s tricky to test.  Regardless, I&apos;ll see what I can do.</footer>
+    </version>
+    <version name="0.9.1.4" version="917" date="2016-10-18">
+        <title>A Tale Of Persistence And Serialization</title>
+        <header>Well, here&apos;s a setting that slipped under the radar:</header>
+        <bullets>
+            <bullet>Fixed a bug where &quot;Only match with hashpoints in this graticule&quot; for Known Locations wasn&apos;t being honored, or, in fact, persisted at all.  If you used this, you&apos;ll need to manually turn this back on for each point you have set as a Known Location, as it defaults to false.</bullet>
+        </bullets>
+        <footer>Sorry about that.</footer>
+    </version>
+    <version name="0.9.1.3" version="916" date="2016-07-31">
+        <title>Crox, Can You Hear Me?</title>
+        <header>Yeep.  Well, something went wrong with a stock provider recently.  Plus, new feature anyway!</header>
+        <bullets>
+            <bullet>Changed the stock price provider to give priority to Peeron over Crox.  Crox went kerflooey over the weekend, apparently, and did so in a way my code wasn&apos;t expecting.  Sorry about that.</bullet>
+            <bullet>The stock pre-fetcher will now start at boot time (if you have it turned on to begin with)!  No more starting up Geohash Droid once after a reboot just to make sure it notifies you if a point is nearby!</bullet>
+        </bullets>
+        <footer>The stock provider fix is a temporary thing.  I&apos;m going to have to come up with a more robust way to handle fallbacks in that case.</footer>
+    </version>
+    <version name="0.9.1.2" version="915" date="2016-05-10">
+        <title>Boldly Looking Forward</title>
+        <header>Here&apos;s a small bug I missed:</header>
+        <bullets>
+            <bullet>Fixed an issue where if you use Last Used Graticule as the startup mode and there wasn&apos;t a stock price posted yet when you checked, changing the date wouldn&apos;t trigger a new stock lookup unless you also changed the graticule.  Now it&apos;ll remember the graticule it started with and do things right.</bullet>
+        </bullets>
+        <footer>More to come!</footer>
+    </version>
+    <version name="0.9.1.1" version="914" date="2016-05-03">
+        <title>The Old Backup Plan</title>
+        <header>Have some updates and minor feature cleanups!</header>
+        <bullets>
+            <bullet>The popup that reminds you that you need to turn on stock pre-fetching to use known locations now has a third button, one that directly goes to the Other Options section of Preferences so that you can change that right away.</bullet>
+            <bullet>The initial zoom on the known locations picker will now try to make sure all the range rings are fully on-screen.  That should fix some odd cases where it opens to a map where those rings spill way off the screen.</bullet>
+            <bullet>Added in proper preference backup stuff for pre-Marshmallow devices.  Backups should&apos;ve already been working on Marshmallow.</bullet>
+            <bullet>Updated HttpClient to newer, fresher libraries for newer, fresher wiki posting and stock fetching.</bullet>
+        </bullets>
+        <footer>Enjoy!</footer>
+    </version>
+    <version name="0.9.1" version="913" date="2016-04-28">
+        <title>That Familiar Place Down The Street</title>
+        <header>It&apos;s version 0.9.1!  There&apos;s a lot going on here!  Check it out:</header>
+        <bullets>
+            <bullet>There&apos;s a known locations system now!  Accessible through the Map Options part of Preferences, you can now add in locations that you consider to be "known".  If stock pre-fetching is on, those points will be checked for any nearby hashpoints (you can restrict each to its respective home Graticule) or the globalhash for the day, and you&apos;ll get a notification if anything&apos;s close enough.</bullet>
+            <bullet>Remember how the pre-0.9.0 versions started with the Graticule selection screen and also remembered the last Graticule you used?  Now there&apos;s a preference (again, in Map Options) to have Geohash Droid start with either of those, rather than the default of picking the nearest hashpoint regardless of which Graticule it&apos;s in!</bullet>
+            <bullet>In the options menu on the main expedition map, there&apos;s a brand new &quot;Try Tomorrow&quot; option.  That&apos;ll increment the date to tomorrow, just in case you wanted to check the entire weekend&apos;s worth of hashpoints quickly on a Friday.</bullet>
+            <bullet>The InfoBox will now fade out if either your location or the final destination are directly underneath it.  Easier to see that way.</bullet>
+            <bullet>Fixed the fact that stock pre-fetching wasn&apos;t actually working the way it should have been.</bullet>
+            <bullet>Updates to Play Services.</bullet>
+            <bullet>The usual sort of minor fixes and such.</bullet>
+        </bullets>
+        <footer>The Known Locations system is the big thing here.  I did as much testing as I reasonably could, and I think it&apos;ll work the way I&apos;m expecting it to, but there might be some glitches.  Let me know (in GitHub) if something&apos;s really wrong with it.</footer>
+    </version>
+    <version name="0.9.0.5" version="909" date="2016-02-12">
+        <title>Where The Streets Have No Name, And In Fact Aren&apos;t Even Shown On The Map</title>
+        <header>One minor feature and one bug fix later...</header>
+        <bullets>
+            <bullet>Geohash Droid will now remember the last map type you chose (street, satellite, terrain) and default to that when you start the app.</bullet>
+            <bullet>Fixed a bug where if you were in expedition mode (the main mode, where you&apos;re not picking a Graticule) with an active Globalhash, it wasn&apos;t recognizing if you changed the active date.</bullet>
+        </bullets>
+        <footer>0.9.1 might be right around the corner.</footer>
+    </version>
+    <version name="0.9.0.4" version="908" date="2016-01-19">
+        <title>-nodpi Means -nodpi</title>
+        <header>Did you know the -nodpi resource qualifier is sometimes ignored in certain cases?  I didn&apos;t!</header>
+        <bullets>
+            <bullet>Fixed an issue where sometimes the icons used to build up the infobox on wiki posts came out really really huge.</bullet>
+            <bullet>The stock prefetch notification is now dismissable, in the rare event that it doesn&apos;t go away for some reason.</bullet>
+        </bullets>
+        <footer>More actual features to come once I&apos;ve reworked a few things.</footer>
+    </version>
+    <version name="0.9.0.3" version="907" date="2016-01-07">
+        <title>Picking Up The Fragments</title>
+        <header>This should cover a slightly different device-specific issue.</header>
+        <bullets>
+            <bullet>Fixed the Graticule picker box not showing up on all devices.</bullet>
+            <bullet>Also made the same picker more robust on devices where it DID show up.</bullet>
+            <bullet>It also animates more smoothly.</bullet>
+        </bullets>
+        <footer>Once again, thanks to George McBane for the help with tracking this down and making sure it was working.</footer>
+    </version>
+    <version name="0.9.0.2" version="906" date="2015-12-26">
+        <title>Infinite Diversity In Infinite Combinations</title>
+        <header>Hopefully this bug didn&apos;t affect you, but if it did...</header>
+        <bullets>
+            <bullet>Fixed an issue where the stock price wasn&apos;t being properly downloaded for users of some Android devices.</bullet>
+            <bullet>Or some firmwares.</bullet>
+            <bullet>Or maybe some runtime environments.</bullet>
+            <bullet>Point is, it should hopefully be working right now.</bullet>
+        </bullets>
+        <footer>Thanks to George McBane for running tests on his phone to help me nail this one down.</footer>
+    </version>
+    <version name="0.9.0.1" version="905" date="2015-12-04">
+        <title>Maybe Not ALL Of Google Play Services</title>
+        <header>Just a minor update this time.</header>
+        <bullets>
+            <bullet>Trimmed down the amount of Google Play APIs used.  This should cut things down a bit and allows me to mark Geohash Droid as ad-free on the store without complaints.  It also means the app won&apos;t have that odd &quot;Accounts&quot; permission switch that never gets used.</bullet>
+            <bullet>Updated to version 8.3.0 of the Play Services I DO use.</bullet>
+        </bullets>
+        <footer>Let me know if I missed any permissions checks that the new Play Services need.</footer>
+    </version>
+    <version name="0.9.0" version="904" date="2015-11-12">
+        <title>A New Day Dawns Over The 30W Line</title>
+        <header>It&apos;s here!  It&apos;s here!  The revamped Geohash Droid is finally here!  Seriously, just look at this:</header>
+        <bullets>
+            <bullet>Completely redone Fragment-based, materials-ish interface.  Your tablet will thank you.</bullet>
+            <bullet>Brand-new Google Maps v2 API.  Navigate in comfort and style!</bullet>
+            <bullet>Marshmallow permissions, where appropriate.</bullet>
+            <bullet>All wiki calls are in the background, so you can queue up multiple requests if you don&apos;t have an internet connection.</bullet>
+            <bullet>Fixed the problem where you couldn&apos;t post to the wiki for a while regardless.  Whoops.</bullet>
+            <bullet>Newer, crisper graphics.</bullet>
+        </bullets>
+        <footer>This version should work basically as well as the previous 0.7 versions.  If something goes wrong, file issues at the GitHub repository.  Now, hopefully I can get some NEW features going...</footer>
+    </version>
+</versionHistory>

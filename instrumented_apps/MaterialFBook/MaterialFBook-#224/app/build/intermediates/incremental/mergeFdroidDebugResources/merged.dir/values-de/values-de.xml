@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="Start">
+        <item>Neueste Meldungen</item>
+        <item>Top Meldungen</item>
+        <item>Nachrichten</item>
+    </string-array>
+    <string-array name="intervalPrefTitles">
+        <item>1 Minute</item>
+        <item>2 Minuten</item>
+        <item>5 Minuten</item>
+        <item>15 Minuten</item>
+        <item>30 Minuten</item>
+        <item>1 Stunde</item>
+        <item>3 Stunden</item>
+        <item>6 Stunden</item>
+    </string-array>
+    <string-array name="scalesText">
+        <item>Standard</item>
+        <item>Mittel</item>
+        <item>Groß</item>
+        <item>Extra Groß</item>
+    </string-array>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Zur Startseite"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Nach oben"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Weitere Optionen"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Fertig"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Alle anzeigen"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"App auswählen"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"AUS"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"AN"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Strg +"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"Löschen"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"Eingabetaste"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Funktionstaste +"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta-Taste +"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Umschalttaste +"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"Leertaste"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym-Taste +"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menütaste +"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Suchen…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Suchanfrage löschen"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Suchanfrage"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Suche"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Anfrage senden"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Sprachsuche"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Teilen mit"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Mit <ns1:g id="APPLICATION_NAME">%s</ns1:g> teilen"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Minimieren"</string>
+    <string name="about_translations">Wir brauchen deine Hilfe</string>
+    <string name="about_updates">Updates</string>
+    <string name="app_name" translatable="false">MaterialFBook</string>
+    <string name="app_themes">App Designs</string>
+    <string name="app_themes_summary">Wähle aus verschiedenen App Designs.</string>
+    <string name="appearance_setting_title">AUSSEHEN</string>
+    <string name="blacklist_summary">Liste der Wörter zum Blockieren der Benachrichtigunen</string>
+    <string name="blacklist_title">Schwarze Liste</string>
+    <string name="bookmarks_header">Lesezeichen</string>
+    <string name="changelog">Änderungshistorie</string>
+    <string name="content_copy_link_done">Link in die Zwischenablage kopiert</string>
+    <string name="context_share_image">Bild teilen</string>
+    <string name="context_share_image_progress">Bild teilen…</string>
+    <string name="context_share_link">Link teilen</string>
+    <string msgid="3209159573327985035" name="copy">"Kopieren"</string>
+    <string name="devs_who_helped_me">Entwickler die mitgeholfen haben indem sie Fragen beantwortet haben oder von deren Apps Code verwendet wurde</string>
+    <string name="downloaded">Erfolgreich heruntergeladen</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"Erweitert"</string>
+    <string name="fab_checkin">Einchecken</string>
+    <string name="fab_enable">Floating Action Button</string>
+    <string name="fab_enable_summary">Zeige FAB.</string>
+    <string name="fab_jump_top">Springe nach ganz oben</string>
+    <string name="fab_photo">Poste ein Foto</string>
+    <string name="fab_text">Poste einen Status</string>
+    <string name="facebook_message">Chat Benachrichtigungen</string>
+    <string name="facebook_notifications">Facebook Benachrichtigungen</string>
+    <string name="general_setting_title">ALLGEMEIN</string>
+    <string name="help_translations">Hilf mit, die App in deine Sprache zu übersetzen</string>
+    <string name="hide_birthdays_summary">Aktiviere, um Geburtstage im News Feed zu verbergen.</string>
+    <string name="hide_birthdays_title">Verberge Geburtstage</string>
+    <string name="hide_editor_newsfeed_summary">Aktiviere, um den Status-Editor im News Feed zu verstecken.</string>
+    <string name="hide_editor_newsfeed_title">Verstecke den Status-Editor im News Feed</string>
+    <string name="hide_menu_bar_summary">Aktiviere, um die Menü-Leiste zu verbergen.</string>
+    <string name="hide_menu_bar_title">Verberge Menü-Leiste</string>
+    <string name="hide_recently_commented">Verberge kürzlich kommentierte</string>
+    <string name="hide_recently_commented_summary">X Leute haben das kommentiert.</string>
+    <string name="hide_sponsored_summary">Aktiviere, um ‘Sponsored’ Inhalte (Werbung) aus dem News Feed zu entfernen.</string>
+    <string name="hide_sponsored_title">Verstecke ‘Sponsored’ Inhalte</string>
+    <string name="interval_pref">Zeitintervall der Überprüfung auf neue Benachrichtigungen</string>
+    <string name="interval_pref_description_new">Benachrichtigunen werden alle %s kontrolliert.</string>
+    <string name="led_light">LED-Benachrichtigung</string>
+    <string name="localSwitcherSummary">Aktuelle Sprache: %s</string>
+    <string name="localSwitcherTitle">Ändern Sie die App Sprache</string>
+    <string name="location_enabled_summary">Aktivieren, um Facebook Standortzugriff zu erlauben.</string>
+    <string name="location_enabled_title">Standortzugriff</string>
+    <string name="menu_events">Veranstaltungen</string>
+    <string name="menu_events_summary">Aktivieren um ‘Veranstaltungen’ Verknüpfung in der Navigationsleiste anzuzeigen.</string>
+    <string name="menu_friendreq">Freundschaftsanfragen</string>
+    <string name="menu_friendreq_summary">Aktivieren um ‘Freundschaftsanfragen’ Verknüpfung in der Navigationsleiste anzuzeigen.</string>
+    <string name="menu_groups">Gruppen</string>
+    <string name="menu_groups_summary">Aktivieren um ‘Gruppen’ Verknüpfung in der Navigationsleiste anzuzeigen.</string>
+    <string name="menu_mainmenu">Hauptmenü</string>
+    <string name="menu_mainmenu_summary">Aktivieren um ‘Hauptmenü’ Verknüpfung in der Navigationsleiste anzuzeigen.</string>
+    <string name="menu_messages">Nachrichten</string>
+    <string name="menu_most_recent">Neueste Meldungen</string>
+    <string name="menu_photos">Fotos</string>
+    <string name="menu_photos_summary">Aktivieren um ‘Fotos’ Verknüpfung in der Navigationsleiste anzuzeigen.</string>
+    <string name="menu_search">Suche</string>
+    <string name="menu_search_summary">Aktivieren um ‘Suche’ Verknüpfung in der Navigationsleiste anzuzeigen.</string>
+    <string name="menu_top_stories">Top Meldungen</string>
+    <string name="menu_top_stories_summary">Aktivieren um ‘Top Meldungen’ Verknüpfung in der Navigationsleiste anzuzeigen.</string>
+    <string name="more">Mehr und Danksagungen</string>
+    <string name="nav_notifications">Benachrichtungen</string>
+    <string name="navigation_drawer_close">Schließe die Navigationsleiste</string>
+    <string name="navigation_drawer_open">Öffne die Navigationsleiste</string>
+    <string name="navigation_menu_settings">Elemente der Navigationsleiste</string>
+    <string name="navigation_menu_settings_description">Verbergen/Anzeigen von Elementen der Navigationsleiste.</string>
+    <string name="navigation_menu_title">NAVIGATIONSLEISTE</string>
+    <string name="navigation_setting_title">NAVIGATION</string>
+    <string name="new_black_word">Wort zum Blockieren hinzufügen</string>
+    <string name="new_bookmark">Hinzugefügt:</string>
+    <string msgid="478774118347071097" name="not_set">"Nicht festgelegt"</string>
+    <string name="notif">Benachrichtigungen</string>
+    <string name="notification_sound">Benachrichtigungston</string>
+    <string name="notification_sound_description">Wähle einen Klingelton oder lautlos: \u0020</string>
+    <string name="notification_sound_msg">Nachrichtenton</string>
+    <string name="notifications_setting_title">BENACHRICHTIGUNGEN</string>
+    <string name="notifications_settings">Benachrichtigungseinstellungen</string>
+    <string name="notifications_settings_description">Zusätzliche Einstellungen. Wähle das Zeitintervall, wähle Benachrichtigungssounds, LED und Vibration.</string>
+    <string name="people_who_translated">Übersetzer dieser App</string>
+    <string name="permission_denied">Zugriff verweigert, Aktion kann nicht ausgeführt werden.</string>
+    <string msgid="7961817945132860002" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" in Zwischenablage kopiert."</string>
+    <string name="remove_bookmark">Entfernt:</string>
+    <string name="save_data">Daten sparen - Erscheinungsbild des Feeds ändert sich!</string>
+    <string name="save_data_summary">Aktiviere wenn du oft im Mobilen Netz unterwegs bist, um Datenvolumen zu sparen. Das Erscheinungsbild des Feeds ändert sich!</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Suche"</string>
+    <string name="settings">Einstellungen</string>
+    <string name="silent">Stumm</string>
+    <string name="source_code">Quelltext auf Github</string>
+    <string name="start_url">Start-URL</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stop_images_summary">Aktivere, um keine Bilder herunterzuladen. Einige Bilder könnten im Cache bleiben.</string>
+    <string name="stop_images_title">Bilder nicht laden</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="textScale">Textgröße</string>
+    <string name="updates">Prüfe auf neue Version</string>
+    <string name="updates_summary">Lade die neueste Version von der Website herunter</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"AUS"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"AN"</string>
+    <string name="vibrate">Vibration</string>
+    <string name="vibrate_double">Zweimal vibrieren</string>
+    <string name="withYou">Melde Fehler oder wünsche dir neue Funktionen</string>
+</resources>

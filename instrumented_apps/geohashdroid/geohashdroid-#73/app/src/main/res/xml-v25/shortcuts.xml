@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="closest"
+        android:enabled="true"
+        android:icon="@mipmap/shortcut_closest"
+        android:shortcutShortLabel="@string/shortcut_closest_short"
+        android:shortcutLongLabel="@string/shortcut_closest_long">
+        <intent
+            android:action="net.exclaimindustries.geohashdroid.START_CLOSEST_HASHPOINT"
+            android:targetPackage="net.exclaimindustries.geohashdroid"
+            android:targetClass="net.exclaimindustries.geohashdroid.activities.CentralMap"/>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="lastused"
+        android:enabled="true"
+        android:icon="@mipmap/shortcut_last_used"
+        android:shortcutShortLabel="@string/shortcut_last_used_short"
+        android:shortcutLongLabel="@string/shortcut_last_used_long">
+        <intent
+            android:action="net.exclaimindustries.geohashdroid.START_LAST_USED"
+            android:targetPackage="net.exclaimindustries.geohashdroid"
+            android:targetClass="net.exclaimindustries.geohashdroid.activities.CentralMap"/>
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="picker"
+        android:enabled="true"
+        android:icon="@mipmap/shortcut_picker"
+        android:shortcutShortLabel="@string/shortcut_picker_short"
+        android:shortcutLongLabel="@string/shortcut_picker_long">
+        <intent
+            android:action="net.exclaimindustries.geohashdroid.START_GRATICULE_PICKER"
+            android:targetPackage="net.exclaimindustries.geohashdroid"
+            android:targetClass="net.exclaimindustries.geohashdroid.activities.CentralMap"/>
+    </shortcut>
+</shortcuts>

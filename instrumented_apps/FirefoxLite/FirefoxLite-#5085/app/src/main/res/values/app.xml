@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources>
+    <string name="app_name" translatable="false">Firefox Lite</string>
+    <string name="app_name_private" translatable="false">Firefox Lite - Private browsing</string>
+
+    <!-- This String is used in the User Agent -->
+    <string name="useragent_appname" translatable="false">Rocket</string>
+    
+    <string name="search_engine_name_google" translatable="false">Google</string>
+    <string name="travel_hotel_rating" translatable="false">%.1f/%d</string>
+</resources>

@@ -1,0 +1,870 @@
+[
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_notifications.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_notifications.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/layout_activity_main.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_fab_menu.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_fab_menu.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_arrow_back.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_arrow_back.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_menu_mainmenu.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_menu_mainmenu.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_error.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_error.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_fab_photo.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_fab_photo.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_copy_url.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_copy_url.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_menu_photos.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_menu_photos.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_notifications.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_notifications.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_menu_settings.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_menu_settings.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_fab_photo.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_fab_photo.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_error.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_error.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_menu_friendreq.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_menu_friendreq.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_delete.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_delete.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/layout_menu_badge_full.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/layout/menu_badge_full.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_bookmarks.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_bookmarks.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_fab_text.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_fab_text.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable_ic_launcher_144.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/drawable/ic_launcher_144.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_menu_photos.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_menu_photos.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/menu_menu_search.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/menu/menu_search.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_message.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_message.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_arrow_back.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_arrow_back.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_fab_menu.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_fab_menu.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable_gradient.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/drawable/gradient.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_menu_settings.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_menu_settings.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_fab_checkin.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_fab_checkin.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_menu_settings.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_menu_settings.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_menu_friendreq.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_menu_friendreq.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_menu_groups.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_menu_groups.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/layout_cooking_a_toast.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/layout/cooking_a_toast.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_bookmarks.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_bookmarks.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_fab_checkin.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_fab_checkin.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_menu_groups.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_menu_groups.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_fab_jump_top.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_fab_jump_top.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_menu_search.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_menu_search.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_menu_most_recent.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_menu_most_recent.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_menu_photos.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_menu_photos.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_menu_search.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_menu_search.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_copy_url.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_copy_url.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_menu_friendreq.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_menu_friendreq.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_menu_most_recent.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_menu_most_recent.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_menu_mainmenu.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_menu_mainmenu.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_menu_most_recent.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_menu_most_recent.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/layout_activity_photo.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/layout/activity_photo.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_download.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_download.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_fab_checkin.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_fab_checkin.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_menu_search.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_menu_search.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_download.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_download.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_menu_groups.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_menu_groups.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_menu_top_stories.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_menu_top_stories.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/anim_fab_slide_out_to_left.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/anim/fab_slide_out_to_left.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_menu_top_stories.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_menu_top_stories.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_material.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/drawable-hdpi/ic_material.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/xml_navigation_menu_settings.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/xml/navigation_menu_settings.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/menu_photo.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/menu/photo.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_menu_settings.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_menu_settings.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_menu_friendreq.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_menu_friendreq.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_menu_search.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_menu_search.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_menu_top_stories.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_menu_top_stories.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_download.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_download.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_error.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_error.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_menu_search.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_menu_search.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_fab_jump_top.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_fab_jump_top.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_fab_jump_top.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_fab_jump_top.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_bookmarks.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_bookmarks.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_share.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_share.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_menu_events.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_menu_events.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/layout_app_bar_main.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/layout/app_bar_main.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_notifications.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_notifications.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_menu_mainmenu.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_menu_mainmenu.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_fab_menu.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_fab_menu.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/layout_nav_header_main.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/layout/nav_header_main.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_material.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/drawable-xxhdpi/ic_material.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_share.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_share.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_arrow_back.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_arrow_back.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_fab_checkin.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_fab_checkin.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_fab_text.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_fab_text.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_menu_groups.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_menu_groups.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_menu_photos.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_menu_photos.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_message.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_message.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_fab_jump_top.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_fab_jump_top.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_menu_mainmenu.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_menu_mainmenu.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/xml-v26_notifications_settings.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/xml-v26/notifications_settings.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_download.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_download.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_fab_menu.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_fab_menu.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/layout_content_main.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/layout/content_main.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_fab_menu.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_fab_menu.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_error.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_error.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_message.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_message.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_material.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/drawable-ldpi/ic_material.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_error.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_error.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_copy_url.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_copy_url.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_notifications.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_notifications.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/menu_main.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/menu/main.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_menu_most_recent.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_menu_most_recent.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_bookmarks.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_bookmarks.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/anim_fab_scale_up.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/anim/fab_scale_up.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_download.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_download.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_message.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_message.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_bookmarks.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_bookmarks.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_notifications.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_notifications.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_fab_checkin.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_fab_checkin.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/xml_notifications_settings.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/xml/notifications_settings.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_menu_events.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_menu_events.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_menu_groups.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_menu_groups.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_fab_text.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_fab_text.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/anim_fab_scale_down.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/anim/fab_scale_down.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_menu_settings.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_menu_settings.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_menu_mainmenu.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_menu_mainmenu.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_fab_menu.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_fab_menu.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/layout_activity_settings.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/layout/activity_settings.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_download.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_download.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_share.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_share.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/layout_dialog_color_picker.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/layout/dialog_color_picker.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_menu_settings.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_menu_settings.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_material.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/drawable-xxxhdpi/ic_material.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_menu_friendreq.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_menu_friendreq.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_delete.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_delete.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_notifications.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_notifications.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/xml_settings.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/xml/settings.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_arrow_back.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_arrow_back.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_message.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_message.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_delete.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_delete.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_menu_events.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_menu_events.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/layout_chip_input.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/layout/chip_input.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_fab_menu.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_fab_menu.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_bookmarks.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_bookmarks.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_message.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_message.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_error.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_error.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable_launch_screen.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/drawable/launch_screen.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_delete.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_delete.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/anim_fab_slide_in_from_left.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/anim/fab_slide_in_from_left.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_arrow_back.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_arrow_back.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_download.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_download.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_menu_friendreq.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_menu_friendreq.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/layout_activity_video.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/layout/activity_video.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_share.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_share.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_fab_jump_top.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_fab_jump_top.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_menu_most_recent.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_menu_most_recent.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_message.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_message.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_menu_mainmenu.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_menu_mainmenu.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_menu_events.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_menu_events.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_fab_jump_top.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_fab_jump_top.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_material.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/drawable-xhdpi/ic_material.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_menu_friendreq.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_menu_friendreq.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_arrow_back.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_arrow_back.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_fab_text.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_fab_text.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_delete.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_delete.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_arrow_back.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_arrow_back.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_copy_url.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_copy_url.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_menu_top_stories.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_menu_top_stories.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_menu_settings.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_menu_settings.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_menu_mainmenu.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_menu_mainmenu.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_notifications.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_notifications.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_fab_checkin.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_fab_checkin.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/anim_fab_slide_out_to_right.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/anim/fab_slide_out_to_right.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_menu_top_stories.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_menu_top_stories.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_delete.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_delete.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_menu_groups.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_menu_groups.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/anim_fab_slide_in_from_right.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/anim/fab_slide_in_from_right.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-hdpi_ic_share.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-hdpi/ic_share.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_menu_most_recent.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_menu_most_recent.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_fab_photo.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_fab_photo.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_fab_text.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_fab_text.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_menu_events.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_menu_events.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_menu_events.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_menu_events.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_menu_photos.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_menu_photos.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_menu_photos.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_menu_photos.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_menu_events.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_menu_events.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_fab_photo.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_fab_photo.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_menu_groups.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_menu_groups.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_fab_checkin.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_fab_checkin.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_delete.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_delete.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_menu_most_recent.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_menu_most_recent.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_menu_search.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_menu_search.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/menu_activity_main_drawer.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/menu/activity_main_drawer.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_copy_url.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_copy_url.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_bookmarks.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_bookmarks.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_copy_url.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_copy_url.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_error.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_error.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_share.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_share.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_fab_text.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_fab_text.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable_circle.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/drawable/circle.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_menu_photos.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_menu_photos.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_menu_top_stories.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_menu_top_stories.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_launcher_foreground.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_material.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/drawable-mdpi/ic_material.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_fab_photo.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_fab_photo.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_menu_search.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_menu_search.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xhdpi_ic_fab_jump_top.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xhdpi/ic_fab_jump_top.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-mdpi_ic_fab_photo.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-mdpi/ic_fab_photo.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxhdpi_ic_fab_text.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxhdpi/ic_fab_text.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_copy_url.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_copy_url.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/xml_more.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/xml/more.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/layout_bookmarks_listview.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/res/layout/bookmarks_listview.xml"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-ldpi_ic_fab_photo.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-ldpi/ic_fab_photo.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-xxxhdpi_ic_share.png.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-xxxhdpi/ic_share.png"
+    },
+    {
+        "merged": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/intermediates/res/merged/fdroid/debug/drawable-anydpi-v21_ic_menu_top_stories.xml.flat",
+        "source": "/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/build/generated/res/pngs/fdroid/debug/drawable-anydpi-v21/ic_menu_top_stories.xml"
+    }
+]

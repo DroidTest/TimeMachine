@@ -1,0 +1,46 @@
+
+include ':feature-tabs'
+project(':feature-tabs').projectDir = new File(rootDir, 'components/feature/tabs')
+
+include ':HttpRequest'
+project(':HttpRequest').projectDir = new File(rootDir, 'components/utils/HttpRequest')
+
+include ':httptask'
+project(':httptask').projectDir = new File(rootDir, 'components/utils/httptask')
+
+include ':urlutils'
+project(':urlutils').projectDir = new File(rootDir, 'components/utils/urlutils')
+
+include ':fileutils'
+project(':fileutils').projectDir = new File(rootDir, 'components/utils/fileutils')
+
+include ':icon'
+project(':icon').projectDir = new File(rootDir, 'components/utils/icon')
+
+include ':logger'
+project(':logger').projectDir = new File(rootDir, 'components/utils/logger')
+
+include ':threadutils'
+project(':threadutils').projectDir = new File(rootDir, 'components/utils/threadutils')
+
+include ':cachedrequestloader'
+project(':cachedrequestloader').projectDir = new File(rootDir, 'components/utils/cachedrequestloader')
+
+include ':telemetry-annotation'
+project(':telemetry-annotation').projectDir = new File(rootDir, 'components/service/telemetry-annotation')
+
+include ':telemetry-compiler'
+project(':telemetry-compiler').projectDir = new File(rootDir, 'components/service/telemetry-compiler')
+
+include ':permissionhandler'
+project(':permissionhandler').projectDir = new File('components/utils/android-permission-handler/permissionhandler')
+
+include ':strictmodeviolator'
+project(':strictmodeviolator').projectDir = new File(rootDir, 'components/utils/strictmodeviolator')
+
+include ':app'
+include ':firebase'
+include ':third_party:subsampling-scale-image-view'
+include ':third_party:glide:library'
+include ':third_party:glide:annotation'
+include ':third_party:glide:disklrucache'

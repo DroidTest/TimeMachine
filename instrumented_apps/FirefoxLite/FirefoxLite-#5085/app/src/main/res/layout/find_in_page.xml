@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/find_in_page"
+    android:elevation="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_gravity="bottom"
+    android:background="?colorFindInPageBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/find_in_page_query_text"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="@string/find_in_page_input"
+        android:inputType="textNoSuggestions"
+        android:lines="1"
+        android:maxLines="1"
+        android:textColor="?colorFindInPageTextColor"
+        android:textCursorDrawable="@drawable/cursor"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/find_in_page_result_text"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/find_in_page_input" />
+
+    <TextView
+        android:id="@+id/find_in_page_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:textColor="?colorFindInPageTextColor"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/find_in_page_prev_btn"
+        app:layout_constraintStart_toEndOf="@+id/find_in_page_query_text"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10/20" />
+
+    <ImageButton
+        android:id="@+id/find_in_page_prev_btn"
+        style="@style/FindInPageButton"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/accessibility_find_previous_result"
+        android:src="@drawable/ic_arrowhead_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/find_in_page_next_btn"
+        app:layout_constraintStart_toEndOf="@+id/find_in_page_result_text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/find_in_page_next_btn"
+        style="@style/FindInPageButton"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/accessibility_find_next_result"
+        android:src="@drawable/ic_arrowhead_down"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/find_in_page_close_btn"
+        app:layout_constraintStart_toEndOf="@+id/find_in_page_prev_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/find_in_page_close_btn"
+        style="@style/FindInPageButton"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/accessibility_dismiss_find_in_page"
+        android:src="@drawable/ic_close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/find_in_page_next_btn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

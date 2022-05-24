@@ -1,0 +1,54 @@
+body, html {
+    background: #fafafa;
+    color: #737373;
+    font-family: sans-serif;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+body{
+    padding-left: 37px;
+    padding-right: 37px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+body.rights{
+    padding-left: 37px;
+    padding-right: 37px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+a {
+    color: #0A84FF;
+}
+
+/* Make only about page links ("learn more") white */
+.about a {
+    color: #0A84FF;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+a.underline {
+    text-decoration: underline;
+    font-weight:normal;
+}
+
+p.subtitle {
+    text-align: center;
+    margin: 0;
+}
+
+img#wordmark {
+    /* We need to set the dp size here, because by default webview assumes the image is not
+       density specific (but since it's an android resource, we get a density specific version). */
+    width: 189px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 32px;
+}

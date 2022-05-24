@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="singleClickEntries">
+        <item>Nichts</item>
+        <item>App Drawer öffnen</item>
+    </string-array>
+    <string-array name="gestureEntries">
+        <item>Nichts</item>
+        <item>Minibar Einstellungen</item>
+        <item>Wallpaper aussuchen</item>
+        <item>Bildschirm sperren</item>
+        <item>RAM freigeben</item>
+        <item>Geräteeinstellungen</item>
+        <item>Launcher Einstellungen</item>
+        <item>Lautstärke Dialog</item>
+        <item>Öffne App Drawer</item>
+    </string-array>
+    <string-array name="desktopStyleEntries">
+        <item>Normal</item>
+        <item>Alle Apps zeigen (Experimentell)</item>
+    </string-array>
+</resources>

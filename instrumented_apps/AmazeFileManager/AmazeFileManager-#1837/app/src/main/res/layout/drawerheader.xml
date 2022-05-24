@@ -1,0 +1,22 @@
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:paddingBottom="8dp"
+    android:layout_height="@dimen/drawer_header_height_with_padding"
+    android:minHeight="@dimen/drawer_header_height_with_padding"
+    android:clickable="false">
+    <RelativeLayout android:id="@+id/drawer_header_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/drawer_header_height"
+        android:minHeight="@dimen/drawer_header_height"
+        android:clickable="false">
+
+        <View
+            android:id="@+id/drawer_header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/drawer_header_height"
+            android:minHeight="@dimen/drawer_header_height"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="Start">
+        <item>Seneste</item>
+        <item>TopHistorier</item>
+        <item>Beskeder</item>
+    </string-array>
+    <string-array name="intervalPrefTitles">
+        <item>1 minut</item>
+        <item>2 minutter</item>
+        <item>5 minutter</item>
+        <item>15 minutter</item>
+        <item>30 minutter</item>
+        <item>1 time</item>
+        <item>3 timer</item>
+        <item>6 timer</item>
+    </string-array>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Find hjem"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Gå op"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Flere valgmuligheder"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Udfør"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Se alle"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Vælg en app"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"FRA"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"TIL"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"slet"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Fn+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"mellemrum"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Søg…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Ryd forespørgsel"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Søgeforespørgsel"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Søg"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Indsend forespørgsel"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Talesøgning"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Del med"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Del med <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Skjul"</string>
+    <string name="about_translations">Hjælp, vi har brug for dig</string>
+    <string name="about_updates">Opdateringer</string>
+    <string name="app_themes">Apptemaer</string>
+    <string name="app_themes_summary">Du kan vælge forskellige apptemaer.</string>
+    <string name="appearance_setting_title">UDSEENDE</string>
+    <string name="changelog">Ændringslog</string>
+    <string name="content_copy_link_done">Link kopieret til udklipsholder</string>
+    <string name="context_share_image">Del billede</string>
+    <string name="context_share_image_progress">Deler billede…</string>
+    <string name="context_share_link">Del link</string>
+    <string msgid="3209159573327985035" name="copy">"Kopiér"</string>
+    <string name="devs_who_helped_me">Udviklere, som har hjulpet mig med at svare på mine spørgsmål og ved at tilbyde kode fra deres apps</string>
+    <string name="downloaded">Hentet</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"Avanceret"</string>
+    <string name="fab_checkin">Check Ind</string>
+    <string name="fab_enable">Flydende handlingsknap</string>
+    <string name="fab_enable_summary">Vis den flydende handlingsknap.</string>
+    <string name="fab_jump_top">Gå til toppen</string>
+    <string name="fab_photo">Læg billede op</string>
+    <string name="fab_text">Lav statusopdatering</string>
+    <string name="facebook_message">Beskednotifikationer</string>
+    <string name="facebook_notifications">Facebook-notifikationer</string>
+    <string name="general_setting_title">GENERELT</string>
+    <string name="help_translations">Hjælp mig med at oversætte appen til dit sprog</string>
+    <string name="hide_birthdays_summary">Skjul fødselsdage fra feedet, begivenheder og notifikationer.</string>
+    <string name="hide_birthdays_title">Skjul fødselsdage</string>
+    <string name="hide_editor_newsfeed_summary">Aktivér for at skjule status editor fra Nyhedsfeedet.</string>
+    <string name="hide_editor_newsfeed_title">Skjul Status editor i Nyhedsfeedet</string>
+    <string name="hide_menu_bar_summary">Aktivér for at skjule Facebooks menubjælke.</string>
+    <string name="hide_menu_bar_title">Skjul menubjælke</string>
+    <string name="hide_recently_commented">Skjul nyligt kommenterede</string>
+    <string name="hide_recently_commented_summary">X personer har for nyligt kommenteret dette.</string>
+    <string name="hide_sponsored_summary">Skjul ‘Sponsoreret’ indhold (reklamer) fra feedet.</string>
+    <string name="hide_sponsored_title">Skjul ‘Sponsoreret’ indhold</string>
+    <string name="interval_pref">Tidsinterval for tjek</string>
+    <string name="interval_pref_description_new">Notifikationer vil blive opdateret hvert %s.</string>
+    <string name="led_light">LED-lys</string>
+    <string name="location_enabled_summary">Aktivér denne for at give Facebook adgang til din placering.</string>
+    <string name="location_enabled_title">Placeringsadgang</string>
+    <string name="menu_events">Begivenheder</string>
+    <string name="menu_events_summary">Vis ‘Begivenheder’ knap i navigationsskuffen.</string>
+    <string name="menu_friendreq">Venneanmodninger</string>
+    <string name="menu_friendreq_summary">Vis ‘Venneanmodninger’ knap i navigationsskuffen.</string>
+    <string name="menu_groups">Grupper</string>
+    <string name="menu_groups_summary">Vis ‘Grupper’ knap i navigationsskuffen.</string>
+    <string name="menu_mainmenu">Hovedmenu</string>
+    <string name="menu_mainmenu_summary">Vis ‘Hovedmenu’ knap i navigationsskuffen.</string>
+    <string name="menu_messages">Beskeder</string>
+    <string name="menu_most_recent">Seneste</string>
+    <string name="menu_photos">Fotos</string>
+    <string name="menu_photos_summary">Vis ‘Fotos’ knap i navigationsskuffen.</string>
+    <string name="menu_search">Søg</string>
+    <string name="menu_search_summary">Vis ‘Søg’ knap i navigationsskuffen.</string>
+    <string name="menu_top_stories">Tophistorier</string>
+    <string name="menu_top_stories_summary">Vis ‘Top historier’ knap i navigationsskuffen.</string>
+    <string name="more">Mere og anerkendelser</string>
+    <string name="nav_notifications">Notifikationer</string>
+    <string name="navigation_drawer_close">Luk navigationsskuffen</string>
+    <string name="navigation_drawer_open">Åben navigationsskuffen</string>
+    <string name="navigation_menu_settings">Navigationsmenu indhold</string>
+    <string name="navigation_menu_settings_description">Du kan vise/skjule emner fra navigationsmenuen.</string>
+    <string name="navigation_menu_title">NAVIGATIONSMENU</string>
+    <string name="navigation_setting_title">NAVIGATION</string>
+    <string name="new_bookmark">Tilføjet:</string>
+    <string msgid="478774118347071097" name="not_set">"Ikke angivet"</string>
+    <string name="notif">Notifikationer</string>
+    <string name="notification_sound">Notifikationslyd</string>
+    <string name="notification_sound_description">Vælg en ringetone eller stilhed: \u0020</string>
+    <string name="notification_sound_msg">Beskedlyd</string>
+    <string name="notifications_setting_title">NOTIFIKATIONER</string>
+    <string name="notifications_settings">Notifikationsindstillinger</string>
+    <string name="notifications_settings_description">Yderligere indstillinger. Vælg tidsinterval, konfigurer lyde, LED og vibration.</string>
+    <string name="people_who_translated">Brugere, som har oversat app\'en</string>
+    <string name="permission_denied">Adgang nægtet. Kan ikke fuldføre handlingen</string>
+    <string msgid="7961817945132860002" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" blev kopieret til udklipsholderen."</string>
+    <string name="remove_bookmark">Fjernet:</string>
+    <string name="save_data">Begræns dataforbrug</string>
+    <string name="save_data_summary">Indlæs Facebook i en enkel udgave og deaktiver badges, profilinfo og opdateringer.</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Søg"</string>
+    <string name="settings">Indstillinger</string>
+    <string name="silent">Lydløs</string>
+    <string name="source_code">Kildekode på Github</string>
+    <string name="start_url">Start URL</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stop_images_summary">Aktivér for ikke at hente billeder. Nogle billeder forbliver i cachen.</string>
+    <string name="stop_images_title">Hent ikke billeder</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="updates">Check for ny version</string>
+    <string name="updates_summary">Indlæs siden og hent den nyeste version</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"FRA"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"TIL"</string>
+    <string name="vibrate">Vibration</string>
+    <string name="vibrate_double">Dobbelt vibration</string>
+    <string name="withYou">Rapportér fejl eller foreslå nye funktioner</string>
+</resources>

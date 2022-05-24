@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="Start">
+        <item>MostRecent</item>
+        <item>TopStories</item>
+        <item>Messages</item>
+    </string-array>
+    <string-array name="intervalPrefTitles">
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>5 minutos</item>
+        <item>15 minutos</item>
+        <item>30 minutos</item>
+        <item>1 hora</item>
+        <item>3 horas</item>
+        <item>6 horas</item>
+    </string-array>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Portami a casa"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Torna indietro"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Altre opzioni"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Fine"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Mostra tutto"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Scelta di un\'app"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"OFF"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"ON"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"ALT +"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"CTRL +"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"CANC"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"INVIO"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"FUNZIONE +"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"META +"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"MAIUSC +"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"SPAZIO"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"SYM +"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"MENU +"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Cerca…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Cancella query"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Query di ricerca"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Cerca"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Invia query"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Ricerca vocale"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Condividi con"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Condividi tramite <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Comprimi"</string>
+    <string name="about_translations">¡Help, we need you!</string>
+    <string name="about_updates">Updates</string>
+    <string name="app_themes">App themes</string>
+    <string name="app_themes_summary">You can choose different app themes.</string>
+    <string name="appearance_setting_title">APPEARANCE</string>
+    <string name="changelog">Changelog</string>
+    <string name="content_copy_link_done">Link copiato negli appunti</string>
+    <string name="context_share_image">Condividi immagine</string>
+    <string name="context_share_image_progress">Condividendo immagine…</string>
+    <string name="context_share_link">Condividi link</string>
+    <string msgid="3209159573327985035" name="copy">"Copia"</string>
+    <string name="devs_who_helped_me">Developers who helped me asking my questions and taking code from their apps</string>
+    <string name="downloaded">Downloaded</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"Avanzate"</string>
+    <string name="fab_checkin">Condividi posizione</string>
+    <string name="fab_enable">Floating Action Button</string>
+    <string name="fab_enable_summary">Show the FAB.</string>
+    <string name="fab_jump_top">Torna in Alto</string>
+    <string name="fab_photo">Condividi una foto</string>
+    <string name="fab_text">Condividi uno stato</string>
+    <string name="facebook_message">Facebook messagges</string>
+    <string name="facebook_notifications">Facebook Notifiche</string>
+    <string name="general_setting_title">GENERAL</string>
+    <string name="help_translations">Help me to translate the app to your language</string>
+    <string name="hide_birthdays_summary">When enabled, will hide birthdays from the News Feed.</string>
+    <string name="hide_birthdays_title">Hide Birthdays</string>
+    <string name="hide_editor_newsfeed_summary">Quando attiva, l\'editor di stato sarà nascosto dal News Feed.</string>
+    <string name="hide_editor_newsfeed_title">Nascondi l\'editor di stato nel News Feed</string>
+    <string name="hide_menu_bar_summary">When enabled, the Facebook Menu bar will be hidden.</string>
+    <string name="hide_menu_bar_title">Hide Menu bar</string>
+    <string name="hide_recently_commented">Hide recently commented</string>
+    <string name="hide_recently_commented_summary">X people recently commented on this.</string>
+    <string name="hide_sponsored_summary">Quando attiva, verrà nascosta la pubblicità nel News Feed.</string>
+    <string name="hide_sponsored_title">Nascondi Contenuti “Sponsorizzati”</string>
+    <string name="interval_pref">Time interval for checking</string>
+    <string name="interval_pref_description_new">Notifications will be checked every %s.</string>
+    <string name="led_light">LED light</string>
+    <string name="location_enabled_summary">Attivala per permettere a Toffeed di ottenere la tua posizione.</string>
+    <string name="location_enabled_title">Accesso alla posizione</string>
+    <string name="menu_events">Events</string>
+    <string name="menu_events_summary">Hide ‘Events’ button on navigation drawer.</string>
+    <string name="menu_friendreq">Friend Requests</string>
+    <string name="menu_friendreq_summary">Hide ‘Friend Requests’ button on navigation drawer.</string>
+    <string name="menu_groups">Groups</string>
+    <string name="menu_groups_summary">Hide ‘Groups’ button on navigation drawer.</string>
+    <string name="menu_mainmenu">Main menu</string>
+    <string name="menu_mainmenu_summary">Hide ‘Main menu’ button on navigation drawer.</string>
+    <string name="menu_messages">Messages</string>
+    <string name="menu_most_recent">Most Recent</string>
+    <string name="menu_photos">Photos</string>
+    <string name="menu_photos_summary">Hide ‘Photos’ button on navigation drawer.</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_search_summary">Hide ‘Search’ button on navigation drawer.</string>
+    <string name="menu_top_stories">Top stories</string>
+    <string name="menu_top_stories_summary">Hide ‘Top stories’ button on navigation drawer.</string>
+    <string name="more">More and credits</string>
+    <string name="nav_notifications">Notifiche</string>
+    <string name="navigation_drawer_close">Chiudi navigation drawer</string>
+    <string name="navigation_drawer_open">Apri navigation drawer</string>
+    <string name="navigation_menu_settings">Navigation menu items</string>
+    <string name="navigation_menu_settings_description">You can show/hide items in the navigation menu.</string>
+    <string name="navigation_menu_title">NAVIGATION MENU</string>
+    <string name="navigation_setting_title">NAVIGATION</string>
+    <string name="new_bookmark">Added:</string>
+    <string msgid="478774118347071097" name="not_set">"Non impostato"</string>
+    <string name="notif">Notifiche</string>
+    <string name="notification_sound">Notification sound</string>
+    <string name="notification_sound_description">Choose a ringtone or silence: \u0020</string>
+    <string name="notification_sound_msg">Message sound</string>
+    <string name="notifications_setting_title">NOTIFICHE</string>
+    <string name="notifications_settings">Notifiche Impostazioni</string>
+    <string name="notifications_settings_description">Additional settings. Choose time interval, set up sounds, LED and vibration.</string>
+    <string name="people_who_translated">Users who translated the app</string>
+    <string name="permission_denied">Permesso negato</string>
+    <string msgid="7961817945132860002" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\"copiato negli appunti."</string>
+    <string name="remove_bookmark">Removed:</string>
+    <string name="save_data">Save data</string>
+    <string name="save_data_summary">When enabled, the app autoconfigure to save data</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Cerca"</string>
+    <string name="settings">Impostazioni</string>
+    <string name="silent">No sound</string>
+    <string name="source_code">Source code on Github</string>
+    <string name="start_url">Start URL</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stop_images_summary">Quando attiva, non verranno visualizzate le immagini. Alcune immagini potrebbero rimanere nella cache.</string>
+    <string name="stop_images_title">Non visualizzare le immagini</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="updates">Check for a new version</string>
+    <string name="updates_summary">Load the page and download the latest version</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"OFF"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"ON"</string>
+    <string name="vibrate">Vibrazione</string>
+    <string name="vibrate_double">Doppia Vibrazione</string>
+    <string name="withYou">Report bugs or requst new features</string>
+</resources>

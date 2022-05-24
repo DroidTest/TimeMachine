@@ -15,7 +15,8 @@ from collections import deque
 from adb_messages_queue import AdbMessagesQueue
 from sysevent_generator import SysEventGenerator
 from circular_restore_strategy import CircularRestoreStrategy
-
+from datetime import datetime
+from subprocess import call
 import coverage_manager
 
 import csv
@@ -39,22 +40,13 @@ class Executor:
 
     def __init__(self, monkey, state_graph, strategy, pkg_name, time_limit):
 
-        #self.vm = machine
-
-
         self.monkey_controller = monkey
         self.state_graph = state_graph
         self.strategy = strategy
         self.adb_messages = AdbMessagesQueue()
         self.logger = log_watcher.LogWatcher(self.adb_messages)
         self.monitor = state_monitor.StateMonitor(self.adb_messages)
-
-
-        # self.sys_event_generator = SysEventGenerator(machine.ip, machine.adb_port, time_limit)
         self.sys_event_generator = SysEventGenerator(time_limit)
-
-
-
         self.logger_thread = None
         self.monitor_thread = None
         self.sys_event_thread = None
@@ -70,14 +62,9 @@ class Executor:
         self.num_restore = 0
 
 
-    # def prepare_vm(self):
-    #
-    #     self.vm.launchVM()
-    #     self.vm.reconnect_adb()
-        
 
     def set_app_under_test(self,app_name):
-        os.system('adb -s '+ 'emulator-5554'+" shell setprop 'PackageName' '" + app_name + "'")
+        os.system('adb -s '+ RunParameters.AVD_SERIAL+" shell setprop 'PackageName' '" + app_name + "'")
 
 
     def start_monkey(self, app_name):
@@ -118,16 +105,16 @@ class Executor:
         crash_t=threading.Thread(target=self.dump_crash_logs)
         crash_t.setDaemon(True)
         crash_t.start()
-    
-    def start_output(self):
-        
-        output_t=threading.Thread(target=self.output)
+
+    def start_output(self, app_package_name, app_class_files_path):
+
+        output_t = threading.Thread(target=self.output, args=(app_package_name, app_class_files_path,))
         output_t.setDaemon(True)
         output_t.start()
 
     
     
-    def run(self, app_name, recent_path_size, timeout):
+    def run(self, app_name, recent_path_size, timeout, app_class_files_path):
         
         #launching the app
         self.init_app(app_name)
@@ -136,19 +123,21 @@ class Executor:
         self.num_restore=0
         start_time=time.time()
         self.start_sys_event_generator()
-        self.start_output()
+        self.start_output(app_name, app_class_files_path)
 
         while (time.time() - start_time) < timeout:
 
         
             log_proc=state_monitor.get_monitor_proc(app_name)
             monkey_watcher=self.start_monkey(app_name)
-            self.start_crash_watcher() 
-            
-            self.start_exec(log_proc,monkey_watcher,recent_path,recent_path_size)
+            self.start_crash_watcher()
 
-            coverage_manager.pull_coverage_files(self.num_restore)
-            coverage_manager.compute_current_coverage()
+            self.start_exec(log_proc, monkey_watcher, recent_path, recent_path_size, app_name, app_class_files_path)
+
+            coverage_manager.pull_coverage_files(self.num_restore, app_name, app_class_files_path,
+                                                 RunParameters.AVD_SERIAL)
+
+            coverage_manager.compute_current_coverage(app_class_files_path)
             current_coverage = coverage_manager.read_current_coverage()
             print "--the current line coverage : " + str(current_coverage)
 
@@ -156,16 +145,11 @@ class Executor:
             fittest_state=self.strategy.get_k_neighbours_fittest_state()
             print "--the fittest state is " + str(fittest_state)
 
+            print "--load the fittest state..."
+            os.system("../../scripts/load_snapshot.sh " + str(fittest_state) + " " + RunParameters.AVD_PORT + " > /dev/null 2>&1")
+            os.system("adb -s " + RunParameters.AVD_SERIAL + " wait-for-device")
 
 
-
-            # self.vm.restore_snapshot(str(fittest_state))
-            os.system("./load_snapshot.bash "+str(fittest_state))
-
-
-
-
-            # self.vm.reconnect_adb()
             self.monkey_controller.kill_monkey()
             state = self.state_graph.retrieve(fittest_state)
             state.add_restore_count()
@@ -179,7 +163,7 @@ class Executor:
         self.monkey_controller.kill_monkey()
 
 
-    def start_exec(self, log_proc, monkey_watcher, recent_path, recent_path_size):
+    def start_exec(self, log_proc, monkey_watcher, recent_path, recent_path_size, app_package_name, app_class_files_path):
         
         current_coverage = coverage_manager.read_current_coverage()
         event_num=0    
@@ -193,11 +177,14 @@ class Executor:
                 print "no app info in logs ---"
                 break
             
-            if log_watcher.poll(1):
-               line=log_proc.stdout.readline()
-            else:
-               continue
-
+            try:
+                if log_watcher.poll(1):
+                   line=log_proc.stdout.readline()
+                else:
+                   continue
+            except select.error:
+                print "select.error catched!"
+                pass
         
             #parsing the line, skip if the line is empty or there is no state_id
             state_info = self.parse_line(line)
@@ -249,11 +236,13 @@ class Executor:
                         #rewarding
                     parent = self.state_graph.retrieve(self.state_id_being_fuzzed)
                     child = self.state_graph.retrieve(id)
-                    
-                    coverage_manager.pull_coverage_files("temp")
-                    coverage_manager.compute_current_coverage()             # output in coverage.txt
+
+                    coverage_manager.pull_coverage_files("temp", app_package_name, app_class_files_path,
+                                                         RunParameters.AVD_SERIAL)
+
+                    coverage_manager.compute_current_coverage(app_class_files_path)  # output in coverage.txt
                     new_coverage = coverage_manager.read_current_coverage()
-                    print "--coverage when the new state is triggered: " + str(new_coverage) + " current coverage: " + str(current_coverage)
+                    print "--coverage when the new state is triggered: " + str(new_coverage) + " current jacoco line coverage rate : " + str(current_coverage)
                     
                     
                     if new_coverage > current_coverage:
@@ -261,11 +250,7 @@ class Executor:
                             
                         if id != "OOAUT": 
                             print "--taking snapshot..."
-
-
-                            # self.vm.take_snapshot(id, "", True)
-                            os.system("./take_snapshot.bash "+ id)
-
+                            os.system("../../scripts/take_snapshot.sh " + id + " " + RunParameters.AVD_PORT + " > /dev/null 2>&1")
 
                             self.state_graph.retrieve(id).solid = True
 
@@ -297,7 +282,7 @@ class Executor:
     def bring_app_to_front(self,pkg_name):
 
         try:
-            cmd="adb -s " + 'emulator-5554' +" shell dumpsys activity recents | grep realActivity="+ pkg_name + "  | cut -d'=' -f2 | xargs adb shell am start "
+            cmd="adb -s " + RunParameters.AVD_SERIAL +" shell dumpsys activity recents | grep realActivity="+ pkg_name + "  | cut -d'=' -f2 | xargs adb -s " + RunParameters.AVD_SERIAL +" shell am start "
             os.system(cmd + " > /dev/null 2>&1")
         except Exception, e:
             print "resumed app failed."
@@ -306,18 +291,29 @@ class Executor:
     def init_app(self, app_name):
 
         print "launching app under test..."
-        os.system("adb shell monkey -p " + app_name + "  1") 
+        cmd="adb -s " + RunParameters.AVD_SERIAL + " shell monkey -p " + app_name + "  1"
+        print cmd
+        while True:
+            p = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+            output = str(p.stdout.read()).strip()
+            if "No activities found to run" in output:
+                print "ERROR: launch failed! Try Again!"
+                time.sleep(5)
+            elif "Events injected" in output:
+                print "SUCCESS: app is launched!"
+                break
+            else:
+                print "New Message"
+                break
         print "takes a while to complete starting animation ..."
         time.sleep(5)
 
         self.bring_app_to_front(self.pkg_name)
         time.sleep(5)
+
         print "--taking snapshot for the initial state..."
         self.state_graph.add_node("INITIAL")
-
-        # self.vm.take_snapshot("INITIAL", "", True)
-        os.system("./take_snapshot.bash INITIAL")
-
+        os.system("../../scripts/take_snapshot.sh INITIAL "+RunParameters.AVD_PORT +" > /dev/null 2>&1")
         self.state_graph.retrieve("INITIAL").solid = True
 
     def get_state_id(self, line):
@@ -359,7 +355,7 @@ class Executor:
 
         return info
     
-    def output(self):
+    def output(self, app_package_name, app_class_files_path):
         
         with open(RunParameters.OUTPUT_FILE, "a") as csv_file:
             writer = csv.writer(csv_file, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
@@ -372,8 +368,10 @@ class Executor:
                         num_snapshots = num_snapshots+1
                 
                 #read coverage
-                coverage_manager.pull_coverage_files("temp")
-                coverage_manager.compute_current_coverage()             # output in coverage.txt
+                coverage_manager.pull_coverage_files("temp", app_package_name, app_class_files_path,
+                                                     RunParameters.AVD_SERIAL)
+
+                coverage_manager.compute_current_coverage(app_class_files_path)             # output in coverage.txt
                 current_coverage = coverage_manager.read_current_coverage()
 
                 # write files
@@ -387,9 +385,7 @@ class Executor:
 
     def dump_crash_logs(self):
         
-        # cmd = "adb -s " + 'emulator-'+ ":"+'5554' +"  logcat AndroidRuntime:E *:S"
-        cmd = "adb -s " + "emulator-5554" +"  logcat AndroidRuntime:E *:S"
-
+        cmd = "adb -s " + RunParameters.AVD_SERIAL +" logcat AndroidRuntime:E *:S"
         p = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE, universal_newlines=True, close_fds=True)
         fw = open(RunParameters.CRASH_FILE, "a")
         while True:
@@ -399,42 +395,62 @@ class Executor:
             if p.poll() != None:
                 print "crash watcher is termined..."
                 break
+
+        now = datetime.now()
+        current_time = now.strftime("%Y-%m-%d-%H:%M:%S")
+        fw.write("[" + current_time + "]" + "\n")
         fw.close()
 
 
 if __name__ == '__main__':
-    # vm.VM.machine_name = sys.argv[1]
-    # '5554' = sys.argv[2]
-    # vm.VM.ssh_port = sys.argv[3]
-    RunParameters.OPEN_SOURCE = False
+    RunParameters.APP_DIR = sys.argv[1]
     RunParameters.RUN_PKG = sys.argv[2]
-    RunParameters.RUN_TIME = float(sys.argv[3])
+    RunParameters.APK_FILE_NAME = sys.argv[3]
+    RunParameters.RUN_TIME = float(sys.argv[4])
+    RunParameters.OUTPUT_DIR = sys.argv[5]
+    RunParameters.AVD_SERIAL = sys.argv[6]
+    RunParameters.AVD_PORT = sys.argv[7]
+    RunParameters.AVD_NAME = sys.argv[8]
 
-    RunParameters.OUTPUT_FILE= "../../output/"  +  "data.csv"
-    RunParameters.CRASH_FILE= "../../output/" +  "crashes.log"
-
-
-    # machine = vm.VM(RunParameters.RUN_GUI, '5554')  # headless or gui
+    RunParameters.OUTPUT_FILE= RunParameters.OUTPUT_DIR  +  "/data.csv"
+    RunParameters.CRASH_FILE= RunParameters.OUTPUT_DIR  +  "/crashes.log"
+    RunParameters.RUN_TIME_FILE = RunParameters.OUTPUT_DIR  +  "/run_time.log"
 
     graph = state_graph.StateGraph()
     monkey_controller = fuzzers.MonkeyController()
 
     strategy = CircularRestoreStrategy(graph, 3)
     executor = Executor( monkey_controller, graph, strategy, RunParameters.RUN_PKG, RunParameters.RUN_TIME)
-    # executor.prepare_vm()
     executor.set_app_under_test(RunParameters.RUN_PKG)
     time.sleep(3)
 
-    if RunParameters.OPEN_SOURCE:
+    APP_CLASS_FILES = RunParameters.APP_DIR+"/class_files.json"
+    import json
+    tmp_file = open(APP_CLASS_FILES, "r")
+    tmp_file_dict = json.load(tmp_file)
+    tmp_file.close()
+    app_path_info_dict = tmp_file_dict[RunParameters.APK_FILE_NAME]
+    class_files_path_list = app_path_info_dict['classfiles']
+    CLASS_FILES_PATH = ""
+    for class_files_path in class_files_path_list:
+        CLASS_FILES_PATH += ' --classfiles ' + os.path.join(RunParameters.APP_DIR , class_files_path)
+    print "CLASS_FILE_PATH: " + CLASS_FILES_PATH
 
-        # os.system('adb -s ' + 'emulator-' + ':' + '5554' + ' shell am instrument -e coverage true -w ' + RunParameters.RUN_PKG + '/.EmmaInstrument.EmmaInstrumentation &')
-        os.system('adb -s emulator-5554 shell am instrument -e coverage true -w ' + RunParameters.RUN_PKG + '/.EmmaInstrument.EmmaInstrumentation &')
-
-        time.sleep(5)
+    # record testing starting time
+    fw = open(RunParameters.RUN_TIME_FILE, "a")
+    now = datetime.now()
+    current_time = now.strftime("%Y-%m-%d-%H:%M:%S")
+    fw.write(current_time)
+    fw.close()
    
-    executor.run(RunParameters.RUN_PKG, 10, RunParameters.RUN_TIME)
+    executor.run(RunParameters.RUN_PKG, 10, RunParameters.RUN_TIME, CLASS_FILES_PATH)
+
+    # record testing ending time
+    fw = open(RunParameters.RUN_TIME_FILE, "a")
+    now = datetime.now()
+    current_time = now.strftime("%Y-%m-%d-%H:%M:%S")
+    fw.write(current_time + "\n")
+    fw.close()
 
     graph.dump()
-    # machine.power_off_VM()
-
 

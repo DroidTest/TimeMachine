@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="info">Info</string>
+    <string name="uninstall">Deinstallieren</string>
+    <string name="add_widget">Widget</string>
+    <string name="remove">Entfernen</string>
+    <string name="allApps">Alle Apps</string>
+    <string name="crash">Etwas ging schief … starte OpenLauncher neu.</string>
+
+    <string name="toast_rename">Umbenennen</string>
+    <string name="toast_notenoughspace">Nicht genügend Platz</string>
+    <string name="toast_appuninstalled">Die App wurde deinstalliert.</string>
+    <string name="toast_freeram" formatted="false">Freier Speicher: %d mb frei gegeben %d mb</string>
+    <string name="toast_freeallram" formatted="false">Freier Speicher: %d mb dein Ram ist in einem guten Zustand</string>
+    <string name="toast_plzenabledeviceadmin">Bitte \"Geräteadministrator\" aktivieren.</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="ok">OK</string>
+    <string name="set_as_home">Home</string>
+    <string name="search_apps">Suche Anwendungen …</string>
+
+    <string name="wallpaper">Wallpaper</string>
+    <string name="wallpaper_set">Bestimme Wallpaper</string>
+    <string name="wallpaper_blur">Wallpaper verwischen</string>
+    <string name="wallpaper_pick">Suche Wallpaper aus</string>
+    <string name="wallpaper_unable_to_blur">Kann Blureffekt nicht anwenden.</string>
+
+    <string name="unnamed">Ohne Namen : - (</string>
+
+
+    // Intro
+
+    <string name="intro_skip">Überspringen</string>
+    <string name="intro_finish">Los geht\'s!</string>
+
+    <string name="intro1_title">OpenLauncher</string>
+    <string name="intro1_text">Danke, dass du dich für Open Launcher entschieden hast. Er ist komplett quelloffen und wird ständig
+        weiter entwickelt. Hier eine kurze Einführung …</string>
+
+    <string name="intro2_title">Minibar</string>
+    <string name="intro2_text">Wische vom linken Bildschirmrand nach rechts, um die Minibar zu öffnen. Dort gelangst du zu den
+        Einstellungen, kannst das Wallpaper ändern und weitere Dinge machen …</string>
+
+    <string name="intro3_title">Einstellungen</string>
+    <string name="intro3_text">Hier kannst du deinen Desktop, den App Drawer, das Dock und … Probier\'s einfach aus!</string>
+
+
+    // MiniBar
+
+    <string name="minibar"></string>
+    <string name="minibar_1">Wallpaper aussuchen oder unscharf machen</string>
+    <string name="minibar_2">Sperre sofort den Bildschirm, braucht die Berechtigung \"Geräteadministrator\".</string>
+    <string name="minibar_3">Setze Ram frei, beende laufende Prozesse.</string>
+    <string name="minibar_4">Verknüpfung zu den Systemeinstellungen.</string>
+    <string name="minibar_5">OpenLauncher Einstellungsseite.</string>
+    <string name="minibar_7">Öffne den Lautstärkedialog.</string>
+    <string name="minibar_8">Öffne den App Drawer.</string>
+
+
+    // About
+
+    <string name="about">Über Open Launcher</string>
+    <string name="about_libs">Open Source Bibliotheken</string>
+    <string name="about_rate">Bewerte die App</string>
+    <string name="about_credit">Beteiligte</string>
+
+
+    // Settings
+
+    <string name="settings">Einstellungen</string>
+
+    <string name="settings_column">Spalten</string>
+    <string name="settings_row">Reihen</string>
+    <string name="settings_iconPack_title">Wähle ein Icon Pack aus</string>
+    <string name="settings_iconPack_toast">Du must zuerst die Berechtigung \"Manifest.permission.READ_EXTERNAL_STORAGE\" gewähren.</string>
+
+    <string name="settings_drawer_style_paged">Karten</string>
+    <string name="settings_drawer_style_vertical">Vertikal</string>
+    <string name="settings_single_click_title">Klick Aktion</string>
+    <string name="settings_double_click_title">Doppelklick Aktion</string>
+    <string name="settings_pinch_title">Zusammenkneifen Aktion</string>
+    <string name="settings_unpinch_title">Auseinander Ziehen Aktion</string>
+    <string name="settings_swipe_down_title">Nach unten Wischen Aktion</string>
+    <string name="settings_swipe_up_title">Nach oben Wischen Aktion</string>
+
+    <string name="settings_group_desktop">Desktop</string>
+    <string name="settings_group_dock">Dock</string>
+    <string name="settings_group_drawer">App Drawer</string>
+    <string name="settings_group_color">Farben</string>
+    <string name="settings_group_icons">Icons</string>
+    <string name="settings_group_input">Gesten</string>
+    <string name="settings_group_other">Anderes</string>
+
+    <string name="settings_desktopStyle">Stil</string>
+    <string name="settings_desktopStyle_summary">Wähle zwischen verschiedenen Stilen für deinen Desktop.</string>
+    <string name="settings_desktopSearch">Suchleiste</string>
+    <string name="settings_desktopSearch_summary">Zeige eine Suchleiste am oberen Desktoprand.</string>
+    <string name="settings_desktopSize">Größe</string>
+    <string name="settings_desktopSize_summary">Bestimme die Gittergröße des Desktops.</string>
+    <string name="settings_desktopFull">Vollbild</string>
+    <string name="settings_desktopFull_summary">Aktiviere den Vollbildmodus für deinen Desktop.</string>
+    <string name="settings_desktopIndicator">Seitenindikator</string>
+    <string name="settings_desktopIndicator_summary">Zeige den Seitenindikator auf dem Desktop an.</string>
+    <string name="settings_desktopLabel_summary">Zeige Anwendungs- und Ordnernamen auf dem Desktop.</string>
+
+    <string name="settings_dockLabel">Beschriftung</string>
+    <string name="settings_dockLabel_summary">Zeige Anwendungs- und Ordnernamen im Dock.</string>
+    <string name="settings_dockSize">Größe</string>
+    <string name="settings_dockSize_summary">Bestimme die Größe des Docks.</string>
+
+    <string name="settings_drawerStyle">Stil</string>
+    <string name="settings_drawerStyle_summary">Wähle zwischen einer Karten- oder einer vertikalen Ansicht.</string>
+    <string name="settings_drawerCard">Karten</string>
+    <string name="settings_drawerCard_summary">Benutze Karten für den Drawer Hintergrund.</string>
+    <string name="settings_drawerSearch">Suchleiste</string>
+    <string name="settings_drawerSearch_summary">Kann nur in der vertikalen Ansicht genutzt werden.</string>
+    <string name="settings_drawerSearchIcon">Suchleiste Icon</string>
+    <string name="settings_drawerSearchIcon_summary">Benutze das dunkle Standardicon in der Suchleiste.</string>
+    <string name="settings_drawerSize">Größe</string>
+    <string name="settings_drawerSize_summary">Bestimme die Gittergröße des App Drawers.</string>
+    <string name="settings_drawerPage">Merke letzte Seite</string>
+    <string name="settings_drawerPage_summary">Es wird sich nicht automatisch die erste Seite öffnen, wenn du den App Drawer
+        erneut öffnest.</string>
+    <string name="settings_drawerIndicator">Seitenindikator/Scrollbar</string>
+    <string name="settings_drawerIndicator_summary">Zeige den Seitenindikator bzw. die Scrollbar im Drawer an.</string>
+
+    <string name="settings_singleClick">Einfacher Klick</string>
+    <string name="settings_singleClick_summary">Einfacher Klick Aktion.</string>
+    <string name="settings_doubleClick">Doppelklick</string>
+    <string name="settings_doubleClick_summary">Doppelklick Aktion.</string>
+    <string name="settings_pinch">Zusammenkneifen</string>
+    <string name="settings_pinch_summary">Zusammenkneifen Aktion.</string>
+    <string name="settings_unpinch">Auseinander Ziehen</string>
+    <string name="settings_unpinch_summary">Auseinander Ziehen Aktion.</string>
+    <string name="settings_swipeDown">Nach unten Wischen</string>
+    <string name="settings_swipeDown_summary">Nach unten Wischen Aktion.</string>
+    <string name="settings_swipeUp">Nach oben Wischen</string>
+    <string name="settings_swipeUp_summary">Nach oben Wischen Aktion.</string>
+    <string name="settings_desktopSwipe">Drawer: Wischen</string>
+    <string name="settings_desktopSwipe_summary">Wische auf dem Desktop um den App Drawer zu öffnen.</string>
+
+    <string name="settings_colorDock">Dock</string>
+    <string name="settings_colorDock_summary">Dock Hintergrundfarbe.</string>
+    <string name="settings_colorDrawer">Drawer</string>
+    <string name="settings_colorDrawer_summary">Drawer Hintergrundfarbe.</string>
+    <string name="settings_colorCard">Karten</string>
+    <string name="settings_colorCard_summary">Hintergrundfarbe für die App Drawer Karten.</string>
+    <string name="settings_colorLabel">Beschriftung</string>
+    <string name="settings_colorLabel_summary">Farbe für die Beschriftungen in den Ordnern und im App Drawer.</string>
+    <string name="settings_colorFolder">Ordner</string>
+    <string name="settings_colorFolder_summary">Hintergrundfarbe für die Ordner auf dem Desktop.</string>
+
+    <string name="settings_iconSize">Größe</string>
+    <string name="settings_iconSize_summary">Größe für alle Anwendungsicons.</string>
+    <string name="settings_iconPack">Icon Pack</string>
+    <string name="settings_iconPack_summary">Wähle ein installiertes Icon Pack.</string>
+    <string name="settings_iconHide">Anwendungen ausblenden</string>
+    <string name="settings_iconHide_summary">Blende ausgewählte Anwendungen im App Drawer aus.</string>
+
+    <string name="settings_othersRestart">Neustart</string>
+    <string name="settings_othersRestart_summary">Starte den Launcher neu, um alle Änderungen zu übernehmen.</string>
+
+    <string name="settings_backup">Sicherung</string>
+    <string name="settings_backup_summary">Sichere deine Einstellungen oder stelle sie wieder her.</string>
+    <string name="settings_backup_titleBackup">Sicherung</string>
+    <string name="settings_backup_titleRestore">Wiederherstellung</string>
+    <string name="settings_backup_success">Erfolgreich ausgeführt.</string>
+    <string name="settings_backup_success_not">Etwas ging schief.</string>
+
+
+    //Icon hide
+
+    <string name="request_dummy_text">Hello world!</string>
+    <string name="request_please_wait2">Suche nach installierten Anwendungen. Bitte warten.</string>
+    <string name="request_toast">Nichts ausgewählt. Alle Anwendungen im Drawer anzeigen?</string>
+    <string name="minibar_0">Edit</string>
+
+</resources>

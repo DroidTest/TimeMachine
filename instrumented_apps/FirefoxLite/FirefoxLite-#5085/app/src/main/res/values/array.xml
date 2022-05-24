@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources>
+    <!-- data saving path entries -->
+    <string-array name="data_saving_path_entries">
+        <item>@string/setting_dialog_sd_card</item>
+        <item>@string/setting_dialog_internal_storage</item>
+    </string-array>
+
+    <!-- data saving path values-->
+    <!-- ordering of this array DOES matter, it effects Settings.shouldSaveToExternalStorage() -->
+    <string-array name="data_saving_path_values">
+        <item>@string/pref_value_saving_path_sd_card</item>
+        <item>@string/pref_value_saving_path_internal_storage</item>
+    </string-array>
+
+    <!-- clean browsing data entries -->
+    <string-array name="clean_browsing_data_entries">
+        <item>@string/setting_dialog_browsing_history</item>
+        <item>@string/setting_dialog_form_history</item>
+        <item>@string/setting_dialog_cookies</item>
+        <item>@string/setting_dialog_cache</item>
+    </string-array>
+
+    <!-- clean browsing data values -->
+    <string-array name="clean_browsing_data_values">
+        <item>@string/pref_value_clear_browsing_history</item>
+        <item>@string/pref_value_clear_form_history</item>
+        <item>@string/pref_value_clear_cookies</item>
+        <item>@string/pref_value_clear_cache</item>
+    </string-array>
+
+
+    <!-- life feed developer settings entries -->
+    <string-array name="life_feed_settings_entries">
+        <item>Default</item>
+        <item>News</item>
+        <item>E-commerce</item>
+    </string-array>
+
+    <!-- life feed developer settings values -->
+    <string-array name="life_feed_settings_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <array name="travel_placeholders">
+        <item>@drawable/travel_card1</item>
+        <item>@drawable/travel_card2</item>
+        <item>@drawable/travel_card3</item>
+        <item>@drawable/travel_card4</item>
+        <item>@drawable/travel_card5</item>
+    </array>
+</resources>

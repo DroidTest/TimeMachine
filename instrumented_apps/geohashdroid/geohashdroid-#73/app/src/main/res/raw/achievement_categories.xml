@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<categories>
+    <category name="BasicLocations" title="achievement_category_basic_locations_title" />
+    <category name="LuckyLocations" title="achievement_category_lucky_locations_title" />
+    <category name="GettingThere" title="achievement_category_getting_there_title" />
+    <category name="FunAndGames" title="achievement_category_fun_and_games_title" />
+    <category name="SingleChallenge" title="achievement_category_single_challenge_title" />
+    <category name="MultipleChallenge" title="achievement_category_multiple_challenge_title" />
+    <category name="Interaction" title="achievement_category_interaction_title" />
+    <category name="Timing" title="achievement_category_timing_title" />
+    <category name="Superiority" title="achievement_category_superiority_title" />
+    <category name="Consolation" title="achievement_category_consolation_title" />
+</categories>

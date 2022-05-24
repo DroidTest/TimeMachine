@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+          package="net.exclaimindustries.geohashdroid"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          android:installLocation="auto"
+          android:versionCode="925"
+          android:versionName="0.9.4">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="22"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="22"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:description="@string/app_description"
+        android:icon="@mipmap/ic_launcher_new"
+        android:roundIcon="@mipmap/ic_launcher_new_round"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.GeohashDroid"
+        android:backupAgent=".util.GHDBackupAgent"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <uses-library android:name="com.google.android.maps"/>
+
+        <activity
+            android:name=".activities.CentralMap"
+            android:label="@string/app_name"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"
+                android:minSdkVersion="25"/>
+        </activity>
+        <activity
+            android:name=".activities.KnownLocationsPicker"
+            android:label="@string/title_known_locations"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".activities.LoginPromptDialog"
+            android:label="@string/title_logindialog"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog">
+        </activity>
+        <activity
+            android:name=".activities.PreferencesScreen"
+            android:label="@string/title_preferences">
+        </activity>
+
+        <activity
+            android:name=".activities.DetailedInfoActivity"
+            android:label="@string/detail_activity_title">
+        </activity>
+
+        <activity
+            android:name=".activities.WikiActivity"
+            android:label="@string/wiki_activity_title">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyDHV2X0q_fXu9t_vsy_a5j9k9_e-thmn0s"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIxajkVFxG7E4azqw2ZbbW9yvUaUSn2l4Lc7tfFA" />
+
+        <service
+            android:name=".services.StockService"
+            android:label="@string/title_stockservice"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".services.AlarmService"
+            android:label="@string/title_alarmservice"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".services.WikiService"
+            android:label="@string/title_wikiservice"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".services.WikiService$WikiServiceJobService"
+            android:label="@string/title_wikijobservice"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true">
+        </service>
+        <service
+            android:name=".services.AlarmService$AlarmServiceJobService"
+            android:label="@string/title_alarmjobservice"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true">
+        </service>
+
+        <receiver
+            android:name=".services.AlarmService$StockReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="net.exclaimindustries.geohashdroid.STOCK_RESULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".services.AlarmService$NetworkReceiver"
+            android:enabled="false"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".services.AlarmService$StockAlarmReceiver"
+            android:exported="false">
+        </receiver>
+        <receiver
+            android:name=".services.WikiService$WikiServiceConnectivityListener"
+            android:enabled="false"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".services.AlarmService$BootReceiver"
+                  android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".JacocoInstrument.SMSInstrumentedReceiver">
+            <intent-filter>
+                <action android:name="edu.gatech.m3.emma.COLLECT_COVERAGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

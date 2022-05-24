@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Copyright (C) 2014 Arpit Khurana <arpitkh96@gmail.com>, Vishal Nehra <vishalmeham2@gmail.com>, Luca D'Amico (Luca91)
+
+    This file is part of Amaze File Manager.
+
+    Amaze File Manager is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.amaze.filemanager">
+
+    <permission android:name="com.amaze.filemanager.permission.CONTROL_FTP_SERVER"
+        android:protectionLevel="dangerous" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.amaze.cloud.permission.ACCESS_PROVIDER" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <uses-feature android:name="android.software.leanback"
+        android:required="false" />
+
+    <application
+        android:name=".utils.application.AppConfig"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        tools:replace="android:label"
+        android:label="@string/appbar_name"
+        android:banner="@drawable/about_header">
+
+        <activity
+            android:label="@string/appbar_name"
+            android:launchMode="singleInstance"
+            android:name=".activities.MainActivity"
+            android:theme="@style/appCompatLight">
+
+            <intent-filter android:label="@string/appbar_name">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+                <data android:mimeType="*/*" />
+                <category android:name="android.intent.category.OPENABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.RINGTONE_PICKER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <data android:mimeType="application/zip" />
+                <data android:mimeType="application/rar" />
+                <data android:mimeType="application/x-gzip" />
+                <data android:mimeType="application/x-rar-compressed"/>
+                <data android:mimeType="application/x-bzip2" />
+                <data android:mimeType="application/x-xz" />
+                <data android:mimeType="application/x-7z-compressed" />
+                <!--<category android:name="android.intent.category.OPENABLE" />-->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="com.amaze.filemanager" />
+            </intent-filter>
+
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW" />
+                <data android:mimeType="resource/folder" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="com.amaze.filemanager" />
+            </intent-filter>
+
+            <intent-filter android:label="@string/intent_save_as">
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:label="@string/setting"
+            android:name=".activities.PreferencesActivity"
+            android:theme="@style/appCompatLight">
+            <intent-filter>
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:label="@string/textreader"
+            android:name=".activities.TextEditorActivity"
+            android:theme="@style/appCompatLight">
+            <intent-filter
+                tools:ignore="AppLinkUrlError"
+                android:label="Amaze Text Editor">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+                <data android:mimeType="application/javascript" />
+                <data android:mimeType="application/json" />
+                <data android:mimeType="application/xml" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:label="@string/databasereader"
+            android:name=".activities.DatabaseViewerActivity"
+            android:theme="@style/appCompatLight"
+            android:screenOrientation="locked">
+            <intent-filter
+                tools:ignore="AppLinkUrlError"
+                android:label="Amaze Database Reader">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="db/*" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".activities.AboutActivity"
+            android:theme="@style/aboutLight"
+            android:label="About"
+            />
+
+        <service
+            android:name = ".asynchronous.services.ExtractService"
+            android:label = "Extracting"
+            >
+        </service>
+        <service
+            android:name = ".asynchronous.services.ZipService"
+            android:label = "Compressing"
+            >
+        </service>
+        <service
+            android:name = ".asynchronous.services.CopyService"
+            android:label = "Copying"
+            >
+        </service>
+
+        <service android:name=".asynchronous.services.EncryptService"
+            android:label="@string/crypt_encrypting"
+            />
+
+        <service android:name=".asynchronous.services.DecryptService"
+            android:label="@string/crypt_decrypting"
+            />
+
+        <service
+            android:name=".asynchronous.services.ftp.FtpService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="com.amaze.filemanager.permission.CONTROL_FTP_SERVER"/>
+
+        <service android:name=".asynchronous.services.ftp.FtpTileService"
+            android:icon="@drawable/ic_ftp_dark"
+            android:label="@string/ftp"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action
+                    android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".asynchronous.services.ftp.FtpReceiver"
+            android:exported="true"
+            android:permission="com.amaze.filemanager.permission.CONTROL_FTP_SERVER">
+            <intent-filter>
+                <action android:name="com.amaze.filemanager.services.ftpservice.FTPReceiver.ACTION_START_FTPSERVER" />
+                <action android:name="com.amaze.filemanager.services.ftpservice.FTPReceiver.ACTION_STOP_FTPSERVER" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.amaze.filemanager"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver android:name=".JacocoInstrument.SMSInstrumentedReceiver">
+            <intent-filter>
+                <action android:name="edu.gatech.m3.emma.COLLECT_COVERAGE" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

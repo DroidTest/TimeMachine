@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <dimen name="drawer_width">304dp</dimen>
+    <dimen name="fastscroller_track_height">70dp</dimen>
+    <dimen name="fastscroller_track_padding">3dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="search_view_margin">10dp</dimen>
+    <dimen name="search_view_back_margin_left_right">16dp</dimen>
+    <dimen name="search_view_info_margin_left_right">16dp</dimen>
+
+    <dimen name="minimal_material_padding">16dp</dimen>
+    <dimen name="check_icon_margin_bottom_right">10dp</dimen>
+    <dimen name="icon_width">72dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_height">56dp</dimen>
+    <dimen name="minimal_row_height">100dp</dimen>
+    <dimen name="minimal_row_size">72dp</dimen>
+    <dimen name="minimal_icon_size">40dp</dimen>
+    <dimen name="minimal_icon_parent_width">56dp</dimen>
+    <dimen name="tick_icon_size">20dp</dimen>
+    <dimen name="check_icon_size_grid">40dp</dimen>
+    <dimen name="check_icon_padding">4dp</dimen>
+    <dimen name="icon_margin_top">16dp</dimen>
+
+    <dimen name="dialog_category">14sp</dimen>
+    <dimen name="dialog_list">16sp</dimen>
+
+    <dimen name="material_generic">16dp</dimen>
+    <dimen name="material_generic_medium">32dp</dimen>
+    <dimen name="material_generic_large">72dp</dimen>
+    <dimen name="material_generic_card_elevation">4dp</dimen>
+    <dimen name="material_generic_title">16sp</dimen>
+    <dimen name="material_generic_title_summary">12sp</dimen>
+    <dimen name="material_generic_list_item">72dp</dimen>
+
+    <dimen name="material_sheet_row_height_title">56dp</dimen>
+    <dimen name="material_sheet_row_height_content">48dp</dimen>
+    <dimen name="height_divider">1dp</dimen>
+
+    <dimen name="spacebetweenitems_properties_dialog">10dp</dimen>
+
+    <dimen name="list_header_height">48dp</dimen>
+    <dimen name="list_header_textsize">16sp</dimen>
+
+    <!-- Copy value from material-dialogs library -->
+    <dimen name="md_dialog_frame_margin">24dp</dimen>
+    <dimen name="md_content_padding_bottom">8dp</dimen>
+    <dimen name="md_content_textsize">16sp</dimen>
+    <dimen name="md_content_padding_top">8dp</dimen>
+
+    <dimen name="dialogPreferredPadding">24dp</dimen>
+
+</resources>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <CheckBoxPreference
+        app:iconSpaceReserved="false"
+        android:defaultValue="false"
+        android:key="acra.disable"
+        android:summary="Send crash reports via email (NO PERSONAL INFORMATION)"
+        android:title="Disable ACRA" />
+    <me.zeeroooo.materialfb.ui.MFBPreferenceCategory android:title="@string/navigation_setting_title">
+        <androidx.preference.ListPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="Most_recent"
+            android:entries="@array/Start"
+            android:entryValues="@array/StartValues"
+            android:key="start_url"
+            android:summary="%s"
+            android:title="@string/start_url" />
+        <androidx.preference.ListPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="en"
+            android:entries="@array/appLocalesNames"
+            android:entryValues="@array/appLocales"
+            android:key="localeSwitcher"
+            android:summary="@string/localSwitcherSummary"
+            android:title="@string/localSwitcherTitle" />
+        <androidx.preference.ListPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="1"
+            android:entries="@array/scalesText"
+            android:entryValues="@array/scales"
+            android:key="textScale"
+            android:summary="%s"
+            android:title="@string/textScale" />
+        <me.zeeroooo.materialfb.ui.MFBSwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            android:key="location_enabled"
+            android:summary="@string/location_enabled_summary"
+            android:title="@string/location_enabled_title" />
+        <me.zeeroooo.materialfb.ui.MFBSwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="true"
+            android:key="hide_editor_newsfeed"
+            android:summary="@string/hide_editor_newsfeed_summary"
+            android:title="@string/hide_editor_newsfeed_title" />
+        <me.zeeroooo.materialfb.ui.MFBSwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            android:key="stop_images"
+            android:summary="@string/stop_images_summary"
+            android:title="@string/stop_images_title" />
+        <me.zeeroooo.materialfb.ui.MFBSwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="true"
+            android:key="hide_sponsored"
+            android:summary="@string/hide_sponsored_summary"
+            android:title="@string/hide_sponsored_title" />
+        <me.zeeroooo.materialfb.ui.MFBSwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            android:key="hide_birthdays"
+            android:summary="@string/hide_birthdays_summary"
+            android:title="@string/hide_birthdays_title" />
+        <me.zeeroooo.materialfb.ui.MFBSwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="true"
+            android:key="hide_menu_bar"
+            android:summary="@string/hide_menu_bar_summary"
+            android:title="@string/hide_menu_bar_title" />
+        <me.zeeroooo.materialfb.ui.MFBSwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            android:key="comments_recently"
+            android:summary="@string/hide_recently_commented_summary"
+            android:title="@string/hide_recently_commented" />
+    </me.zeeroooo.materialfb.ui.MFBPreferenceCategory>
+    <me.zeeroooo.materialfb.ui.MFBPreferenceCategory android:title="@string/appearance_setting_title">
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            android:key="color_picker"
+            android:summary="@string/app_themes_summary"
+            android:title="@string/app_themes" />
+    </me.zeeroooo.materialfb.ui.MFBPreferenceCategory>
+    <me.zeeroooo.materialfb.ui.MFBPreferenceCategory android:title="@string/notifications_setting_title">
+        <me.zeeroooo.materialfb.ui.MFBSwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            android:key="notif"
+            android:title="@string/notif" />
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            android:dependency="notif"
+            android:key="notifications_settings"
+            android:summary="@string/notifications_settings_description"
+            android:title="@string/notifications_settings" />
+    </me.zeeroooo.materialfb.ui.MFBPreferenceCategory>
+    <me.zeeroooo.materialfb.ui.MFBPreferenceCategory android:title="@string/general_setting_title">
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            android:key="navigation_menu_settings"
+            android:summary="@string/navigation_menu_settings_description"
+            android:title="@string/navigation_menu_settings" />
+        <me.zeeroooo.materialfb.ui.MFBSwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="false"
+            android:key="save_data"
+            android:summary="@string/save_data_summary"
+            android:title="@string/save_data" />
+        <me.zeeroooo.materialfb.ui.MFBSwitchPreference
+            app:iconSpaceReserved="false"
+            android:defaultValue="true"
+            android:key="fab_enable"
+            android:summary="@string/fab_enable_summary"
+            android:title="@string/fab_enable" />
+    </me.zeeroooo.materialfb.ui.MFBPreferenceCategory>
+    <me.zeeroooo.materialfb.ui.MFBPreferenceCategory android:title="@string/more">
+        <androidx.preference.Preference
+            app:iconSpaceReserved="false"
+            android:key="more_and_credits"
+            android:title="@string/more" />
+    </me.zeeroooo.materialfb.ui.MFBPreferenceCategory>
+</androidx.preference.PreferenceScreen>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Notifications -->
+    <string name="notifications_setting_title">דיווחים</string>
+    <string name="notif">דיווחים</string>
+    <string name="facebook_message">דיווח על הודעות</string>
+    <string name="facebook_notifications">דיווחי פייסבוק</string>
+    <string name="notification_sound_description">נא לבחור בצלצול או בשקט: \u0020</string>
+    <string name="notifications_settings">הגדרות דיווחים</string>
+    <string name="notifications_settings_description">הגדרות נוספות. נא לבחור בהפרשי זמן, הגדרת צלילים, נורית ורטט.</string>
+    <string name="interval_pref">הפרשי זמנים לבדיקה</string>
+    <string name="notification_sound">צליל דיווח</string>
+    <string name="interval_pref_description_new">דיווחים ייבדקו כל %s.</string>
+    <string name="notification_sound_msg">צליל הודעה</string>
+    <string name="vibrate">רטט</string>
+    <string name="vibrate_double">רטט כפול</string>
+    <string name="led_light">נורית</string>
+
+    <string name="general_setting_title">כללי</string>
+    <!-- End Notifications -->
+
+    <!-- General -->
+    <string name="location_enabled_title">גישה למיקום</string>
+    <string name="location_enabled_summary">הפעלת תכונה זו תאפשר לפייסבוק לאתר את המיקום שלך.</string>
+    <string name="hide_editor_newsfeed_title">הסתרת עורך הודעות המצב בציר החדשות</string>
+    <string name="hide_editor_newsfeed_summary">אם תכונה זו פעילה, עורך הודעות המצב יוסתר בציר החדשות.</string>
+    <string name="stop_images_title">לא לטעון תמונות</string>
+    <string name="stop_images_summary">כשאפשרות זו פעילה, לא תתקבלנה תמונות. חלק מהתמונות עשויות עדיין להופיע מזיכרון המטמון.</string>
+    <string name="hide_sponsored_title">הסתרת תוכן &#8216;ממומן&#8217;</string>
+    <string name="hide_sponsored_summary">הסתרת תוכן &#8216;ממומן&#8217; (פרסומות) מציר הזמן.</string>
+    <string name="hide_birthdays_title">הסתרת ימי הולדת</string>
+    <string name="hide_birthdays_summary">הסתרת ימי הולדת מציר הזמן, לרבות אירועים ודיווחים.</string>
+    <string name="hide_menu_bar_title">הסתרת סרגל התפריטים</string>
+    <string name="hide_menu_bar_summary">כאשר תכונה זו פעילה, סרגל התפריט של פייסבוק יוסתר.</string>
+    <string name="hide_recently_commented">הסתרת תגובות אחרונות</string>
+    <string name="hide_recently_commented_summary">X אנשים הגיבו על זה לאחרונה.</string>
+    <string name="start_url">כתובת התחלה</string>
+    <string name="more">עוד ותודות</string>
+    <string name="about_updates">עדכונים</string>
+    <!-- End general -->
+
+    <!-- About -->
+    <string name="updates">חיפוש גרסה חדשה</string>
+    <string name="updates_summary">טעינת העמוד והורדת הגרסה העדכנית ביותר</string>
+    <string name="people_who_translated">משתמשים שתרגמו את היישומון</string>
+    <string name="devs_who_helped_me">מתכנתים שעזרו לי וענו לשאלותי לרבות תרומת קוד מהיישומונים שלהם</string>
+    <string name="help_translations">אשמח לקבל עזרה בתרגום היישומון לשפה שלך</string>
+    <string name="about_translations">עזרה, אנחנו צריכים אותך</string>
+    <string name="source_code">קוד המקור ב־Github</string>
+    <string name="withYou">דיווח על תקלות או בקשה של תכונות חדשות</string>
+    <string name="changelog">יומן שינויים</string>
+    <string name="appearance_setting_title">מראה</string>
+    <string name="app_themes">ערכות עיצוב יישומון</string>
+    <!-- End about -->
+
+    <!-- APPEARANCE -->
+    <string name="app_themes_summary">ניתן לבחור ערכות עיצוב שונות ליישומון.</string>
+    <string name="navigation_setting_title">ניווט</string>
+    <string name="navigation_menu_settings">פריטים בתפריט הניווט</string>
+
+    <!-- Navigation -->
+    <string name="navigation_menu_settings_description">ניתן להציג/להסתיר פריטים בתפריט הניווט.</string>
+    <string name="save_data">הפחתת כמות נתונים</string>
+    <string name="save_data_summary">טעינת פייסבוק במצב בסיסי מנטרל גם את הטלאים ואת פרטי הפרופיל.</string>
+    <string name="fab_enable">כפתור פעולה צף</string>
+    <string name="fab_enable_summary">הצגת הכפתור הצף.</string>
+    <string name="fab_text">פרסום הודעת מצב</string>
+    <string name="fab_photo">פרסום תמונה</string>
+    <!-- Navigation: fab -->
+    <string name="fab_checkin">סימון מיקום</string>
+    <string name="fab_jump_top">קפיצה למעלה</string>
+    <string name="navigation_menu_title">תפריט ניווט</string>
+    <string name="menu_photos">תמונות</string>
+    <!-- Navigation: items -->
+    <string name="menu_photos_summary">הצגת הכפתור &#8216;תמונות&#8217; במגירת הניווט.</string>
+    <string name="menu_events">אירועים</string>
+    <string name="menu_events_summary">הצגת הכפתור &#8216;אירועים&#8217; במגירת הניווט.</string>
+    <string name="menu_top_stories">סיפורים מובילים</string>
+    <string name="menu_top_stories_summary">הצגת הכפתור &#8216;סיפורים מובילים&#8217; במגירת הניווט.</string>
+    <string name="menu_most_recent">העדכניים ביותר</string>
+    <string name="menu_friendreq">בקשות חברות</string>
+    <string name="menu_friendreq_summary">הצגת הכפתור &#8216;בקשות חברות&#8217; במגירת הניווט.</string>
+    <string name="menu_groups">קבוצות</string>
+    <string name="menu_groups_summary">הצגת הכפתור &#8216;קבוצות&#8217; במגירת הניווט.</string>
+    <string name="menu_messages">הודעות</string>
+    <string name="menu_search">חיפוש</string>
+    <string name="menu_search_summary">הצגת הכפתור &#8216;חיפוש&#8217; במגירת הניווט.</string>
+    <string name="menu_mainmenu">תפריט ראשי</string>
+    <string name="menu_mainmenu_summary">הצגת הכפתור &#8216;תפריט ראשי&#8217; במגירת הניווט.</string>
+    <string name="silent">ללא צליל</string>
+    <string name="navigation_drawer_open">פתיחת מגירת הניווט</string>
+    <string name="navigation_drawer_close">סגירת מגירת הניווט</string>
+    <string name="nav_notifications">דיווחים</string>
+    <string name="settings">הגדרות</string>
+    <string name="context_share_image">שיתוף התמונה</string>
+    <string name="context_share_link">שיתוף הקישור</string>
+    <string name="context_share_image_progress">התמונה משותפת…</string>
+    <string name="content_copy_link_done">הקישור הועתק ללוח הגזירים</string>
+    <string name="permission_denied">ההרשאה נדחיתה, לא ניתן להשלים את הפעולה</string>
+    <string name="downloaded">התקבל</string>
+    <string name="new_bookmark">נוספו:</string>
+    <string name="remove_bookmark">הוסרו:</string>
+    <string-array name="intervalPrefTitles">
+        <item>דקה אחת</item>
+        <item>2 דקות</item>
+        <item>5 דקות</item>
+        <item>רבע שעה</item>
+        <item>חצי שעה</item>
+        <item>שעה</item>
+        <item>3 שעות</item>
+        <item>6 שעות</item>
+    </string-array>
+    <string-array name="Start">
+        <item>עדכניים_ביותר</item>
+        <item>סיפורים_מובילים</item>
+        <item>הודעות</item>
+    </string-array>
+</resources>

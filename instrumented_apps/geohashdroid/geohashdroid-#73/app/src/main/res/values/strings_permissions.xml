@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_permission_location">Location Permission Needed</string>
+
+    <string name="explain_permission_location">Geohashing, by its nature, is almost entirely location-based.  Without location permissions, you won\'t be able to do anything that involves tracking your location, including automatically finding the closest hashpoint, seeing how far you are from a point, or putting your location on wiki posts.</string>
+    <string name="explain_permission_location_wiki">Without location permissions, you can\'t make wiki posts that include your current location either in the text or stamped on the image.</string>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="accessibility_version_bullet">Bulletpoint</string>
+    <string name="accessibility_wiki_thumbnail">Wiki picture thumbnail</string>
+</resources>

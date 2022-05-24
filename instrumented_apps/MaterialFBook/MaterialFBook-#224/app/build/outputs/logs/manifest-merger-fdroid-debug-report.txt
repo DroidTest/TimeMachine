@@ -1,0 +1,587 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:2:1-121:12
+INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:2:1-121:12
+INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:2:1-121:12
+INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:2:1-121:12
+MERGED from [androidx.preference:preference:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/f3c344d16a2f389d4ba6c09be404b1d2/preference-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.2.0-alpha06] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/fcadcd1add9915b6fb6b4a809d2d99a1/material-1.2.0-alpha06/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.2.0-beta01] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/dd9d0ad8ca70d85304d03d0645d9753a/appcompat-1.2.0-beta01/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/b31a6de604cefb66c4c5448f5bea230c/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/b67ad2359946a617c0d37c5a9a2afd8f/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:17:1-123:12
+MERGED from [ch.acra:acra-mail:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/67ba0100e73ca275b61cf92f439c85f0/jetified-acra-mail-5.5.0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/23e80da3f8e0f40f68ddd592d921a7a9/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/fec7ccd69695085694269a8ba694cbb4/lifecycle-extensions-2.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/cf1da9c41e6198acdce79fdbe11e96c3/fragment-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0-beta01] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/6785b0fec7bd4e96a61de68df980c013/jetified-appcompat-resources-1.2.0-beta01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/6a40e98f5d080f7d3082480b97704113/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/721fc5600d2ea79def5abfd8cae41a84/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/591876b1dcb09215eb14effd58bb0c8a/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/3615873fe2183265d75a71cdae04aa0a/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/3d11cc332d99af123a0c9d5eca897337/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/10384b909e23a7e3bf9b6a0f942c182c/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/353caa6eb2661044b6396e87a3b19c67/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.room:room-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/41195f5f1d717472806274eadea63cc3/room-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/7259d1326a560c03ab8638ecae148466/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/aade5036fd713c689a8b71226dd2e6b7/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/70269a53b172b8a72b99f43de73ef356/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/4eee44ded595b908b3be17329b5cd603/jetified-activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/04160c90573c0b3df2dd593667f4017e/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/a89f8c6b640b3423358adca8f3a45835/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/f91a350a306928090355aa8f228b55f0/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1ef74dfc4dd65a980b72076a78ebf2da/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/63ccfb95c151684353cf89e8572c00cd/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.0-beta01] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/0dd806a1788253f65a6d86e7a228095f/core-1.3.0-beta01/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/2ac2d512250fbf66c377e24f834fc40a/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/bb9ad1d7819dcbfc066cf0bf0c85a45d/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/7213cb50d73007f14324a21621b28f64/jetified-gifdecoder-4.11.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/6131cf7dd16afa950639500f339b3074/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/8cfc91d8736ce5bfe84d325476fca741/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/d183187f67afe032ed5918e180b3907f/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/59e268035014b48b5b6127d03a8921e6/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/b425dd1f3b3d51d60fe8a0562b76ed3c/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/c6a88932cd5a86b531a78d76b0fefb57/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/a93a19f6912466e3f5c79dff373320e4/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/db21dda1bf74d1b8efa4f2cb2ab7c9db/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/5eae8f4faf5f13ee74a74554f04ccea0/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/8b3a880152e4548fb92eb3a7844da647/sqlite-framework-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/5dd3b52c7ac0b73b62e46ba534a41191/sqlite-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:17:1-48:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/aa0b407efe63a64c23ec5a4414cd2e4a/jetified-lifecycle-service-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/70da45aeafc7d986eac1de3cd9652579/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/3ffd260a9e0bd7722774caa20e3c387b/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/e3afdc53f846ebada4b3fa27bbf946a5/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/d15297d5c56cad3d5a61041edf7f823c/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:2:1-121:12
+INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:2:1-121:12
+INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:2:1-121:12
+	package
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:3:5-37
+		INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:2:1-121:12
+		INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:2:1-121:12
+		INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:4:5-35
+application
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:6:5-109:19
+MERGED from [com.google.android.material:material:1.2.0-alpha06] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/fcadcd1add9915b6fb6b4a809d2d99a1/material-1.2.0-alpha06/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.0-alpha06] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/fcadcd1add9915b6fb6b4a809d2d99a1/material-1.2.0-alpha06/AndroidManifest.xml:22:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/b31a6de604cefb66c4c5448f5bea230c/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/b31a6de604cefb66c4c5448f5bea230c/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:27:5-121:19
+MERGED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:27:5-121:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/fec7ccd69695085694269a8ba694cbb4/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/fec7ccd69695085694269a8ba694cbb4/lifecycle-extensions-2.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.core:core:1.3.0-beta01] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/0dd806a1788253f65a6d86e7a228095f/core-1.3.0-beta01/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.0-beta01] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/0dd806a1788253f65a6d86e7a228095f/core-1.3.0-beta01/AndroidManifest.xml:24:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/7213cb50d73007f14324a21621b28f64/jetified-gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/7213cb50d73007f14324a21621b28f64/jetified-gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/8cfc91d8736ce5bfe84d325476fca741/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/8cfc91d8736ce5bfe84d325476fca741/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:26:5-46:19
+MERGED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:26:5-46:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:22:5-28:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.0-beta01] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/0dd806a1788253f65a6d86e7a228095f/core-1.3.0-beta01/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:14:9-35
+	android:label
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:12:9-41
+	android:hardwareAccelerated
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:10:9-43
+	android:fullBackupContent
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:9:9-41
+	android:roundIcon
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:13:9-54
+	android:icon
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:8:9-35
+	android:theme
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:15:9-40
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:7:9-28
+activity#me.zeeroooo.materialfb.activities.MainActivity
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:17:9-82:20
+	android:launchMode
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:20:13-44
+	android:windowSoftInputMode
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:23:13-55
+	android:resizeableActivity
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:21:13-46
+	android:configChanges
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:19:13-79
+	android:theme
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:22:13-42
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:18:13-52
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:24:13-28:29
+action#android.intent.action.MAIN
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:25:17-69
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:25:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:27:17-77
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:27:27-74
+intent-filter#action:name:android.intent.action.SEND+category:name:android.intent.category.DEFAULT+data:mimeType:image/*+data:mimeType:text/plain+data:mimeType:video/*
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:29:13-37:29
+action#android.intent.action.SEND
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:30:25-66
+category#android.intent.category.DEFAULT
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:32:17-76
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:32:27-73
+data
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+	android:host
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:45:21-50
+	android:scheme
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+	android:mimeType
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:23-49
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:facebook.com+data:host:facebook.com+data:host:m.facebook.com+data:host:m.facebook.com+data:host:mbasic.facebook.com+data:host:mbasic.facebook.com+data:host:mobile.facebook.com+data:host:mobile.facebook.com+data:host:touch.facebook.com+data:host:touch.facebook.com+data:host:www.facebook.com+data:host:www.facebook.com+data:scheme:fb+data:scheme:http+data:scheme:http+data:scheme:http+data:scheme:http+data:scheme:http+data:scheme:http+data:scheme:https+data:scheme:https+data:scheme:https+data:scheme:https+data:scheme:https+data:scheme:https
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:38:13-81:29
+action#android.intent.action.VIEW
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:39:17-69
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:39:25-66
+category#android.intent.category.BROWSABLE
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:42:17-78
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:42:27-75
+activity#me.zeeroooo.materialfb.activities.PhotoActivity
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:84:9-89:44
+	android:launchMode
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:87:13-44
+	android:resizeableActivity
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:88:13-46
+	android:configChanges
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:86:13-72
+	android:theme
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:89:13-41
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:85:13-53
+activity#me.zeeroooo.materialfb.activities.SettingsActivity
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:91:9-100:20
+	android:parentActivityName
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:95:13-66
+	android:launchMode
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:94:13-44
+	android:resizeableActivity
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:96:13-46
+	android:configChanges
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:93:13-79
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:92:13-56
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:97:13-99:60
+	android:value
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:99:17-57
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:98:17-63
+activity#me.zeeroooo.materialfb.activities.VideoActivity
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:102:9-107:44
+	android:launchMode
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:105:13-44
+	android:resizeableActivity
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:106:13-46
+	android:configChanges
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:104:13-72
+	android:theme
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:107:13-41
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:103:13-53
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:111:5-79
+MERGED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:24:5-79
+MERGED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:111:22-76
+uses-permission#android.permission.VIBRATE
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:112:5-66
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:112:22-63
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:113:5-79
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:113:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:114:5-80
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:114:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:115:5-81
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:115:22-78
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:116:5-81
+MERGED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:25:5-81
+MERGED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:116:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:117:5-68
+MERGED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:23:5-68
+MERGED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:23:5-68
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:117:22-65
+uses-permission#android.permission.INTERNET
+ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:119:5-67
+	android:name
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:119:22-64
+uses-sdk
+INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+MERGED from [androidx.preference:preference:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/f3c344d16a2f389d4ba6c09be404b1d2/preference-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/f3c344d16a2f389d4ba6c09be404b1d2/preference-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.2.0-alpha06] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/fcadcd1add9915b6fb6b4a809d2d99a1/material-1.2.0-alpha06/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.0-alpha06] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/fcadcd1add9915b6fb6b4a809d2d99a1/material-1.2.0-alpha06/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.2.0-beta01] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/dd9d0ad8ca70d85304d03d0645d9753a/appcompat-1.2.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0-beta01] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/dd9d0ad8ca70d85304d03d0645d9753a/appcompat-1.2.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/b31a6de604cefb66c4c5448f5bea230c/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.11.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/b31a6de604cefb66c4c5448f5bea230c/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/b67ad2359946a617c0d37c5a9a2afd8f/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/b67ad2359946a617c0d37c5a9a2afd8f/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:21:5-44
+MERGED from [ch.acra:acra-mail:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/67ba0100e73ca275b61cf92f439c85f0/jetified-acra-mail-5.5.0/AndroidManifest.xml:21:5-23:41
+MERGED from [ch.acra:acra-mail:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/67ba0100e73ca275b61cf92f439c85f0/jetified-acra-mail-5.5.0/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/23e80da3f8e0f40f68ddd592d921a7a9/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/23e80da3f8e0f40f68ddd592d921a7a9/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/fec7ccd69695085694269a8ba694cbb4/lifecycle-extensions-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/fec7ccd69695085694269a8ba694cbb4/lifecycle-extensions-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/cf1da9c41e6198acdce79fdbe11e96c3/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/cf1da9c41e6198acdce79fdbe11e96c3/fragment-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0-beta01] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/6785b0fec7bd4e96a61de68df980c013/jetified-appcompat-resources-1.2.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0-beta01] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/6785b0fec7bd4e96a61de68df980c013/jetified-appcompat-resources-1.2.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/6a40e98f5d080f7d3082480b97704113/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/6a40e98f5d080f7d3082480b97704113/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/721fc5600d2ea79def5abfd8cae41a84/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/721fc5600d2ea79def5abfd8cae41a84/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/591876b1dcb09215eb14effd58bb0c8a/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/591876b1dcb09215eb14effd58bb0c8a/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/3615873fe2183265d75a71cdae04aa0a/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/3615873fe2183265d75a71cdae04aa0a/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/3d11cc332d99af123a0c9d5eca897337/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/3d11cc332d99af123a0c9d5eca897337/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/10384b909e23a7e3bf9b6a0f942c182c/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/10384b909e23a7e3bf9b6a0f942c182c/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/353caa6eb2661044b6396e87a3b19c67/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/353caa6eb2661044b6396e87a3b19c67/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/41195f5f1d717472806274eadea63cc3/room-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/41195f5f1d717472806274eadea63cc3/room-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/7259d1326a560c03ab8638ecae148466/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/7259d1326a560c03ab8638ecae148466/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/aade5036fd713c689a8b71226dd2e6b7/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/aade5036fd713c689a8b71226dd2e6b7/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/70269a53b172b8a72b99f43de73ef356/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/70269a53b172b8a72b99f43de73ef356/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/4eee44ded595b908b3be17329b5cd603/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/4eee44ded595b908b3be17329b5cd603/jetified-activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/04160c90573c0b3df2dd593667f4017e/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/04160c90573c0b3df2dd593667f4017e/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/a89f8c6b640b3423358adca8f3a45835/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/a89f8c6b640b3423358adca8f3a45835/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/f91a350a306928090355aa8f228b55f0/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/f91a350a306928090355aa8f228b55f0/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1ef74dfc4dd65a980b72076a78ebf2da/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1ef74dfc4dd65a980b72076a78ebf2da/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/63ccfb95c151684353cf89e8572c00cd/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/63ccfb95c151684353cf89e8572c00cd/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.0-beta01] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/0dd806a1788253f65a6d86e7a228095f/core-1.3.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0-beta01] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/0dd806a1788253f65a6d86e7a228095f/core-1.3.0-beta01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/2ac2d512250fbf66c377e24f834fc40a/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/2ac2d512250fbf66c377e24f834fc40a/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/bb9ad1d7819dcbfc066cf0bf0c85a45d/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/bb9ad1d7819dcbfc066cf0bf0c85a45d/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/7213cb50d73007f14324a21621b28f64/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/7213cb50d73007f14324a21621b28f64/jetified-gifdecoder-4.11.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/6131cf7dd16afa950639500f339b3074/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/6131cf7dd16afa950639500f339b3074/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/8cfc91d8736ce5bfe84d325476fca741/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/8cfc91d8736ce5bfe84d325476fca741/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/d183187f67afe032ed5918e180b3907f/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/d183187f67afe032ed5918e180b3907f/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/59e268035014b48b5b6127d03a8921e6/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/59e268035014b48b5b6127d03a8921e6/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/b425dd1f3b3d51d60fe8a0562b76ed3c/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/b425dd1f3b3d51d60fe8a0562b76ed3c/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/c6a88932cd5a86b531a78d76b0fefb57/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/c6a88932cd5a86b531a78d76b0fefb57/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/a93a19f6912466e3f5c79dff373320e4/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/a93a19f6912466e3f5c79dff373320e4/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/db21dda1bf74d1b8efa4f2cb2ab7c9db/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/db21dda1bf74d1b8efa4f2cb2ab7c9db/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/5eae8f4faf5f13ee74a74554f04ccea0/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/5eae8f4faf5f13ee74a74554f04ccea0/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/8b3a880152e4548fb92eb3a7844da647/sqlite-framework-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/8b3a880152e4548fb92eb3a7844da647/sqlite-framework-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/5dd3b52c7ac0b73b62e46ba534a41191/sqlite-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/5dd3b52c7ac0b73b62e46ba534a41191/sqlite-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:22:5-24:41
+MERGED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:22:5-24:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/aa0b407efe63a64c23ec5a4414cd2e4a/jetified-lifecycle-service-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/aa0b407efe63a64c23ec5a4414cd2e4a/jetified-lifecycle-service-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/70da45aeafc7d986eac1de3cd9652579/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/70da45aeafc7d986eac1de3cd9652579/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/3ffd260a9e0bd7722774caa20e3c387b/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/3ffd260a9e0bd7722774caa20e3c387b/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/e3afdc53f846ebada4b3fa27bbf946a5/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/e3afdc53f846ebada4b3fa27bbf946a5/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/d15297d5c56cad3d5a61041edf7f823c/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/d15297d5c56cad3d5a61041edf7f823c/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+		ADDED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+provider#androidx.work.impl.WorkManagerInitializer
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:28:9-34:35
+	android:authorities
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:30:13-68
+	android:multiprocess
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:33:13-40
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:32:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:34:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:31:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:29:13-69
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:36:9-41:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:39:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:40:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:41:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:38:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:37:13-88
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:42:9-48:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:45:13-70
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:46:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:47:13-69
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:48:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:44:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:43:13-84
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:50:9-55:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:53:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:54:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:55:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:52:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:51:13-88
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:56:9-66:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:59:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:60:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:61:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:58:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:57:13-106
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:62:13-65:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:63:17-87
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:63:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:64:17-90
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:64:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:67:9-77:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:70:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:71:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:72:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:69:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:68:13-104
+intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:73:13-76:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:74:17-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:74:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:75:17-76
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:75:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:78:9-88:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:81:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:82:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:83:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:80:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:79:13-104
+intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:84:13-87:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:85:17-83
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:85:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:86:17-82
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:86:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:89:9-98:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:92:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:93:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:94:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:91:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:90:13-103
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:95:13-97:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:96:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:96:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:99:9-110:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:102:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:103:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:104:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:101:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:100:13-88
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:105:13-109:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:106:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:106:25-76
+action#android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:107:17-73
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:107:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:108:17-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:108:25-78
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:111:9-120:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:114:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:115:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:116:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:113:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:112:13-99
+intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:117:13-119:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:118:17-98
+	android:name
+		ADDED from [androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:118:25-95
+service#org.acra.sender.LegacySenderService
+ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:27:9-31:39
+	android:process
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:31:13-36
+	android:enabled
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:29:13-63
+	android:exported
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:28:13-63
+service#org.acra.sender.JobSenderService
+ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:32:9-37:39
+	android:process
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:37:13-36
+	android:enabled
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:34:13-60
+	android:exported
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:35:13-37
+	android:permission
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:36:13-69
+	android:name
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:33:13-60
+provider#org.acra.attachment.AcraContentProvider
+ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:39:9-45:51
+	android:process
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:44:13-36
+	android:grantUriPermissions
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:43:13-47
+	android:authorities
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:41:13-56
+	android:exported
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:42:13-37
+	tools:replace
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:45:13-48
+	android:name
+		ADDED from [ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:40:13-67
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79

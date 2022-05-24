@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="known_locations_search">Search (or long-tap the map)</string>
+    <string name="known_locations_search_description">Search</string>
+    <string name="known_locations_tap_to_add">Tap to add location</string>
+    <string name="known_locations_tap_to_edit">Tap to edit location</string>
+    <string name="known_locations_title_add">Add new location</string>
+    <string name="known_locations_title_edit">Edit location</string>
+    <string name="known_locations_add_name">Location name</string>
+    <string name="known_locations_add_name_hint">Name</string>
+    <string name="known_locations_add_range">Notification range</string>
+    <string name="known_locations_add_restrict">Only match with hashpoints in this graticule (and globalhashes)</string>
+    <string name="known_locations_delete">Delete this location</string>
+
+    <string name="known_locations_prefetch_is_off">It looks like you\'ve got stock prefetching turned off.  In order for Geohash Droid to notify you if a hashpoint is near a known location, you\'ll need to turn that on.  The known locations can still appear on the main map regardless, though.</string>
+
+    <string name="known_locations_range_imperial_1">Really close (~1.2mi)</string>
+    <string name="known_locations_range_imperial_2">Pretty close (~3.1mi)</string>
+    <string name="known_locations_range_imperial_3">Sort of close (~6.2mi)</string>
+    <string name="known_locations_range_imperial_4">Not all that close (~12.4mi)</string>
+
+    <string name="known_locations_range_metric_1">Really close (~2km)</string>
+    <string name="known_locations_range_metric_2">Pretty close (~5km)</string>
+    <string name="known_locations_range_metric_3">Sort of close (~10km)</string>
+    <string name="known_locations_range_metric_4">Not all that close (~20km)</string>
+
+    <string name="known_locations_alarm_title">The hashpoint for %1$s is nearby!</string>
+    <string name="known_locations_alarm_title_global">The Globalhash for %1$s is nearby!</string>
+    <string name="known_locations_alarm_distance">It\'s just %1$s away from %2$s!</string>
+
+    <plurals name="known_locations_alarm_group_title">
+        <item quantity="one">There\'s a nearby hashpoint!</item>
+        <item quantity="other">There\'s some nearby hashpoints!</item>
+    </plurals>
+
+    <plurals name="known_locations_alarm_group_text">
+        <item quantity="one">Exactly one, in fact!</item>
+        <item quantity="other">%1$d of them, to be exact!</item>
+    </plurals>
+
+    <plurals name="known_locations_alarm_more">
+        <item quantity="one">(it\'s also close to %1$d more known location!)</item>
+        <item quantity="other">(it\'s also close to %1$d more known locations!)</item>
+    </plurals>
+
+    <string name="known_locations_search_error_no_results">That search didn\'t turn up any results.</string>
+    <string name="known_locations_search_error_no_geocoder">It doesn\'t look like there\'s any way to perform a location lookup on this device.  Do you have a basic geocoder installed?</string>
+    <string name="known_locations_search_error_io_error">Something went wrong performing the search.  Do you have a network connection?</string>
+    <string name="known_locations_search_error_internal_error">Some sort of internal error occurred.  Oops.</string>
+</resources>

@@ -1,0 +1,481 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.android.gms.oss-licenses-plugin'
+apply plugin: 'androidx.navigation.safeargs.kotlin'
+apply from: '../buildSrc/pmd.gradle'
+apply from: '../buildSrc/checkstyle.gradle'
+apply from: '../buildSrc/findbugs.gradle'
+apply from: 'buildscripts/l10n.gradle'
+apply plugin: 'jacoco'
+
+android {
+    compileSdkVersion Versions.compile_sdk
+    buildToolsVersion Versions.build_tools
+    defaultConfig {
+        applicationId "org.mozilla.rocket"
+        minSdkVersion Versions.min_sdk
+        targetSdkVersion Versions.target_sdk
+        versionCode Versions.version_code
+        versionName Versions.version_name
+        if (SystemEnv.auto_screenshot == "1") {
+            testInstrumentationRunner "org.mozilla.focus.test.runner.ScreenshotTestRunner"
+            testInstrumentationRunnerArguments clearPackageData: 'true'
+        } else {
+            // general UI test, using notAnnotation to filter out auto screenshot classes
+            testInstrumentationRunner "org.mozilla.focus.test.runner.CustomTestRunner"
+            testInstrumentationRunnerArguments clearPackageData: 'true', notAnnotation: 'org.mozilla.focus.annotation.ScreengrabOnly,androidx.test.filters.FlakyTest'
+        }
+        testInstrumentationRunnerArgument 'disableAnalytics', 'true'
+
+        multiDexEnabled true
+
+        vectorDrawables {
+            useSupportLibrary false
+            generatedDensities = []
+        }
+
+        def bitrise_build_number = System.getenv("BITRISE_BUILD_NUMBER")
+        if (bitrise_build_number?.trim()) {
+            versionCode bitrise_build_number.toInteger()
+            versionNameSuffix "(" + bitrise_build_number + ")"
+        }
+
+        // used by Room, to test migrations
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation": "$projectDir/schemas".toString()]
+            }
+        }
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+        kotlinOptions {
+            jvmTarget = JavaVersion.VERSION_1_8
+        }
+
+        kapt {
+            arguments {
+                arg("projectRootDir", project.rootDir.toString())
+            }
+        }
+    }
+
+    dexOptions {
+        preDexLibraries true
+    }
+
+    bundle {
+        language {
+            enableSplit = false
+        }
+        density {
+            enableSplit = false
+        }
+        abi {
+            enableSplit = true
+        }
+    }
+
+    // We have a three dimensional build configuration:
+    // BUILD TYPE (debug, release)
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            def userName = System.getenv("USER")
+            applicationIdSuffix ".debug." + userName
+            versionNameSuffix applicationIdSuffix
+            testCoverageEnabled true
+        }
+        // Use a separate buildType for coverage: testCoverageEnabled produces slower code (4-5x slower
+        // in places that I've benchmarked), and more importantly seems to break debugging with Android Studio
+        // for some developers (i.e. variables can't be inspected or seen).
+        coverage {
+            initWith debug
+            applicationIdSuffix ".coverage"
+            testCoverageEnabled true
+            matchingFallbacks = ["debug"]
+        }
+        // special build type to develop Firebase related stuff
+        firebase {
+            initWith debug
+            applicationIdSuffix ".debug.firebase"
+
+            versionNameSuffix applicationIdSuffix
+            matchingFallbacks = ["debug"]
+        }
+    }
+
+    testOptions {
+        animationsDisabled = true
+        unitTests.returnDefaultValues = true
+        unitTests.includeAndroidResources = true
+    }
+
+    // used by Room, to test migrations
+    sourceSets {
+        androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
+
+    flavorDimensions "product", "engine"
+
+    productFlavors {
+        focus {
+            resConfigs Localization.KEPT_LOCALE
+            dimension "product"
+        }
+
+        preview {
+            dimension "product"
+            applicationIdSuffix ".beta"
+            versionNameSuffix ".beta"
+        }
+
+        // We can build with two engines: webkit or gecko
+        webkit {
+            dimension "engine"
+        }
+
+    }
+
+    variantFilter { variant ->
+        def flavors = variant.flavors*.name
+        // We only need a nightly release for now
+        if (flavors.contains("preview") && variant.buildType.name != "release") {
+            setIgnore(true)
+        }
+    }
+
+    sourceSets {
+        test {
+            resources {
+                // Make the default asset folder available as test resource folder. Robolectric seems
+                // to fail to read assets for our setup. With this we can just read the files directly
+                // and do not need to rely on Robolectric.
+                srcDir "${projectDir}/src/main/assets/"
+            }
+        }
+
+        preview {
+            res.srcDir 'src/preview/res'
+        }
+
+        // used by Room, to test migrations
+        androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
+
+    androidExtensions {
+        experimental = true
+        defaultCacheImplementation = "SPARSE_ARRAY"
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    mavenCentral()
+}
+
+
+dependencies {
+    implementation project(':telemetry-annotation')
+    kapt project(':telemetry-compiler')
+
+    implementation project(':third_party:subsampling-scale-image-view')
+    implementation project(':third_party:glide:annotation')
+    implementation project(':third_party:glide:library')
+    kapt "com.github.bumptech.glide:compiler:${Versions.glide}"
+
+    implementation project(':firebase')
+    implementation project(':feature-tabs')
+    implementation project(':HttpRequest')
+    implementation project(':httptask')
+    implementation project(':urlutils')
+    implementation project(':fileutils')
+    implementation project(':icon')
+    implementation project(':logger')
+    implementation project(':threadutils')
+    implementation project(':cachedrequestloader')
+    implementation project(':permissionhandler')
+    implementation project(':strictmodeviolator')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
+
+    implementation "androidx.legacy:legacy-support-v4:${Versions.support}"
+    implementation "androidx.appcompat:appcompat:${Versions.appcompat}"
+    implementation "com.google.android.material:material:${Versions.material}"
+    implementation "androidx.cardview:cardview:${Versions.cardview}"
+    implementation "androidx.recyclerview:recyclerview:${Versions.recyclerview}"
+    implementation "androidx.constraintlayout:constraintlayout:${Versions.constraint}"
+    implementation "androidx.viewpager2:viewpager2:${Versions.viewpager2}"
+    implementation "androidx.preference:preference:${Versions.preference}"
+    implementation "androidx.palette:palette:${Versions.palette}"
+    implementation "androidx.core:core-ktx:${Versions.ktx}"
+
+    // Architecture components
+    implementation "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
+    implementation "androidx.lifecycle:lifecycle-common-java8:${Versions.lifecycle}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:${Versions.viewmodel}"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.viewmodel}"
+    implementation "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
+    implementation "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
+    implementation "androidx.room:room-runtime:${Versions.room}"
+    kapt "androidx.room:room-compiler:${Versions.room}"
+    implementation "androidx.paging:paging-runtime:${Versions.paging}"
+    implementation "androidx.paging:paging-runtime-ktx:${Versions.paging}"
+
+    implementation ("androidx.work:work-runtime:${Versions.arch_work}")
+    // to fix dependency conflicts between work-runtime and firebase-inappmessaging-display
+    implementation("com.google.guava:guava:${Versions.guava_android}") {
+        // has conflicts with existing library
+        exclude group: 'com.google.code.findbugs', module: 'jsr305'
+        exclude group: 'com.google.code.gson', module: 'gson'
+    }
+
+    implementation("com.google.code.findbugs:annotations:${Versions.findbugs}", {
+        // We really only need the SuppressFBWarnings annotation, everything else can be ignored.
+        // Without this we get weird failures due to dependencies.
+        transitive = false
+    })
+
+    implementation "org.mozilla.components:browser-session:${Versions.android_components}"
+    implementation "org.mozilla.components:service-telemetry:${Versions.android_components}"
+    implementation "org.mozilla.components:browser-domains:${Versions.android_components}"
+    implementation "org.mozilla.components:ui-autocomplete:${Versions.android_components}"
+    implementation "org.mozilla.components:lib-fetch-httpurlconnection:${Versions.android_components}"
+    implementation "org.mozilla.components:concept-fetch:${Versions.android_components}"
+    implementation "org.mozilla.components:concept-engine:${Versions.android_components}"
+    implementation "org.mozilla.components:browser-engine-system:${Versions.android_components}"
+
+    implementation "com.adjust.sdk:adjust-android:${Versions.adjust}"
+    implementation "com.android.installreferrer:installreferrer:${Versions.android_installreferrer}"
+
+    implementation "com.airbnb.android:lottie:${Versions.lottie}"
+
+    // Dagger 2
+    implementation "com.google.dagger:dagger:${Versions.dagger}"
+    kapt "com.google.dagger:dagger-compiler:${Versions.dagger}"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutine}"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutine}"
+
+    testImplementation "junit:junit:${Versions.junit}"
+    testImplementation "org.robolectric:robolectric:${Versions.robolectric}"
+    testImplementation "org.mockito:mockito-core:${Versions.mockito}"
+
+    testImplementation "org.json:json:${Versions.json}"
+    testImplementation "androidx.test:core:${Versions.test_core}"
+    testImplementation "androidx.arch.core:core-testing:${Versions.arch_core_testing}"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutines_test}"
+
+    androidTestImplementation "org.mockito:mockito-android:${Versions.mockito}"
+
+    androidTestImplementation "androidx.annotation:annotation:${Versions.annotation}"
+    androidTestImplementation "androidx.room:room-testing:${Versions.room}"
+    androidTestImplementation "androidx.arch.core:core-testing:${Versions.arch_core_testing}"
+    androidTestImplementation "androidx.test.ext:junit:${Versions.test_ext}"
+    androidTestImplementation "androidx.test:runner:${Versions.test_runner}"
+    androidTestImplementation "androidx.test.uiautomator:uiautomator:${Versions.uiautomator}"
+    androidTestImplementation "androidx.test.espresso:espresso-core:${Versions.espresso}"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:${Versions.espresso}"
+    androidTestImplementation "androidx.test.espresso:espresso-idling-resource:${Versions.espresso}"
+    androidTestImplementation "androidx.test.espresso:espresso-intents:${Versions.espresso}"
+    androidTestImplementation "androidx.test.espresso:espresso-web:${Versions.espresso}"
+    androidTestImplementation "com.squareup.okhttp3:mockwebserver:${Versions.mockwebserver}"
+    androidTestImplementation "com.jraska:falcon:${Versions.jraska_falcon}"
+    androidTestImplementation("tools.fastlane:screengrab:${Versions.fastlane_screengrab}", {
+        exclude group: 'com.android.support.test.uiautomator', module: 'uiautomator-v18'
+    })
+
+    // LeakCanary
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:${Versions.leakcanary}"
+    firebaseImplementation "com.squareup.leakcanary:leakcanary-android:${Versions.leakcanary}"
+
+    implementation "com.google.android.play:core:${Versions.play}"
+}
+
+// There is a issue with Appcompat 1.1.0 which has the WebView crash on Android 5 devices.
+// https://issuetracker.google.com/issues/141132133
+// We downgraded the libraries to 1.1.0-rc1 and need to check and upgrade to 1.2.0 in the future.
+configurations.all {
+    resolutionStrategy {
+        force "androidx.appcompat:appcompat:${Versions.appcompat}"
+    }
+}
+
+// -------------------------------------------------------------------------------------------------
+// Generate blocklists
+// -------------------------------------------------------------------------------------------------
+
+def blockListOutputDir = 'src/webkit/res/raw'
+
+task buildBlocklists(type: Copy) {
+    from('../shavar-prod-lists') {
+        include '*.json'
+    }
+    into blockListOutputDir
+
+    // Android can't handle dashes in the filename, so we need to rename:
+    rename 'disconnect-blacklist.json', 'blocklist.json'
+    rename 'disconnect-entitylist.json', 'entitylist.json'
+    // google_mapping.json already has an expected name
+}
+
+clean.doLast {
+    file(blockListOutputDir).deleteDir()
+}
+
+tasks.whenTaskAdded { task ->
+    def name = task.name
+    if (name.contains("generate") && name.contains("Webkit") && name.contains("Resources")) {
+        task.dependsOn buildBlocklists
+    }
+}
+
+// -------------------------------------------------------------------------------------------------
+// Adjust: Read token from environment variable (Only release builds)
+// -------------------------------------------------------------------------------------------------
+
+android.applicationVariants.all { variant ->
+    def variantName = variant.getName()
+
+    print(variantName + ": ")
+
+    // release and nightly will have Adjust. just nightly will use sandbox environment.
+    if (variantName.contains("Release")) {
+        def token = System.getenv("ADJUST_TOKEN_FOCUS") ?: null
+
+        if (token != null) {
+            buildConfigField 'String', 'ADJUST_TOKEN', '"' + token + '"'
+            if (variantName.contains("preview")) {
+                buildConfigField 'String', 'ADJUST_ENVIRONMENT', 'com.adjust.sdk.AdjustConfig.ENVIRONMENT_SANDBOX'
+            } else if (variantName.contains("focus")) {
+                buildConfigField 'String', 'ADJUST_ENVIRONMENT', 'com.adjust.sdk.AdjustConfig.ENVIRONMENT_PRODUCTION'
+            } else {
+                buildConfigField 'String', 'ADJUST_ENVIRONMENT', 'null'
+            }
+            println "Added adjust token set from environment variable"
+
+            def tracker = System.getenv("ADJUST_SIDELOAD_TRACKER") ?: null
+            if (tracker != null) {
+                buildConfigField 'String', 'ADJUST_DEFAULT_TRACKER', '"' + tracker + '"'
+            } else {
+                buildConfigField 'String', 'ADJUST_DEFAULT_TRACKER', 'null'
+                logger.error(variant.getName() + ": Not setting adjust default tracker (environment variable not set)")
+            }
+        } else {
+            buildConfigField 'String', 'ADJUST_TOKEN', 'null'
+            buildConfigField 'String', 'ADJUST_ENVIRONMENT', 'null'
+            buildConfigField 'String', 'ADJUST_DEFAULT_TRACKER', 'null'
+            println("Not setting adjust token (environment variable not set)")
+        }
+    } else {
+        buildConfigField 'String', 'ADJUST_TOKEN', 'null'
+        buildConfigField 'String', 'ADJUST_ENVIRONMENT', 'null'
+        buildConfigField 'String', 'ADJUST_DEFAULT_TRACKER', 'null'
+
+        println("Not setting adjust token (Not a focus release build)")
+    }
+    if (variant.buildType.name == "release" || variant.buildType.name == "firebase") {
+        variant.getAssembleProvider().configure() {
+            it.doFirst {
+                if (SystemEnv.google_app_id == null || SystemEnv.default_web_client_id == null ||
+                        SystemEnv.firebase_database_url == null || SystemEnv.gcm_defaultSenderId == null ||
+                        SystemEnv.google_api_key == null || SystemEnv.google_crash_reporting_api_key == null ||
+                        SystemEnv.project_id == null) {
+                    logger.warn("If you want to enable Firebase, please follow the steps:")
+                    logger.warn("1. Download google-services.json and put it in the folder where you run below command.")
+                    logger.warn("2. Run 'python./tools/firebase/firebase_setup.py' and follow the steps.\n")
+                }
+            }
+        }
+    }
+
+    // setup FxA end point
+    def fxaClientId = System.getenv("FXA_CLIENT_ID")
+    def fxaApiUrl = System.getenv("FXA_API_URL")
+    def fxaEmailVerifyUrl = System.getenv("FXA_EMAIL_VERIFY_URL")
+    def fxaSettingsUrl = System.getenv("FXA_SETTINGS_URL")
+    def isRelease = variantName.contains("Release")
+    // fxa related info is required in release build
+    if (isRelease && (fxaClientId == null || fxaApiUrl == null || fxaEmailVerifyUrl == null)) {
+        logger.warn("FXA Related Info Not set")
+    }
+    buildConfigField 'String', 'FXA_CLIENT_ID', '"' + fxaClientId + '"'
+    buildConfigField 'String', 'FXA_API_URL', '"' + fxaApiUrl + '"'
+    buildConfigField 'String', 'FXA_EMAIL_VERIFY_URL', '"' + fxaEmailVerifyUrl + '"'
+    buildConfigField 'String', 'FXA_SETTINGS_URL', '"' + fxaSettingsUrl + '"'
+
+}
+
+tasks.whenTaskAdded { task ->
+    if (name.contains("compile")) {
+        task.dependsOn generatePreviewLocaleList
+        task.dependsOn generateFocusLocaleList
+    }
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+    kotlinOptions {
+        kotlinOptions.allWarningsAsErrors = true
+    }
+}
+
+afterEvaluate {
+    check.dependsOn 'findbugs', 'pmd', 'checkstyle', 'checkTelemetryDocDirty', 'ktlint'
+}
+
+task checkTelemetryDocDirty() {
+
+    doLast {
+        Process p = Runtime.getRuntime().exec("git diff ./docs/events.md ./docs/view.sql")
+        p.waitFor()
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(p.getInputStream()));
+
+        StringBuilder sb = new StringBuilder()
+        String line = ""
+        while ((line = reader.readLine()) != null) {
+            sb.append(line + "\n")
+        }
+        if (sb.length() > 0) {
+            throw new GradleException("events.md is drity, please commit the change first.\n" + sb.toString())
+        }
+    }
+}
+
+// -------------------------------------------------------------------------------------------------
+// Generate strings.xml with customized translated strings
+// -------------------------------------------------------------------------------------------------
+
+task updateCustomizedStrings(type: Exec) {
+        commandLine 'python', '../tools/l10n/attach-local-strings.py'
+}
+
+import org.mozilla.rocket.CheckPermissionsTask
+task checkPermissionsTask(type: CheckPermissionsTask) {
+    def PERMISSIONS_FILE_NAME = "acceptable_permissions.txt"
+    permissionsFilePath = "$project.projectDir/$PERMISSIONS_FILE_NAME"
+    aapt2DirPath = System.getenv("AAPT2_DIR_PATH") ?: ""
+    apkFilePaths = []
+    doFirst {
+        android.applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def filePath = output.outputFile
+                if (filePath.exists()) {
+                    apkFilePaths.add(filePath)
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/error_banner_height"
+              android:clickable="true">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/error_text"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/standard_padding"
+        android:textSize="16sp"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/close"
+        android:layout_gravity="center_vertical"
+        style="@style/GeohashDroid.Button.Borderless"
+        android:src="@drawable/cancel_button"
+        android:contentDescription="@string/close_label"
+        android:visibility="gone"/>
+</LinearLayout>

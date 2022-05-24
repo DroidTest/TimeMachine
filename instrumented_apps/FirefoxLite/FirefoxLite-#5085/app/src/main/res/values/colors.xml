@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources>
+    <color name="paletteBlack100">#FF000000</color>
+    <color name="paletteBlack87">#DE000000</color>
+    <color name="paletteBlack67">#AB000000</color>
+    <color name="paletteBlack64">#A3000000</color>
+    <color name="paletteBlack54">#8B000000</color>
+    <color name="paletteBlack50">#80000000</color>
+    <color name="paletteLightBlack100">#FF272727</color>
+    <color name="paletteLightBlack30">#4D272727</color>
+    <color name="paletteLightBlack20">#33272727</color>
+    <color name="paletteDarkGreyA100">#FF323232</color>
+    <color name="paletteDarkGreyB100">#FF2A2A2E</color>
+    <color name="paletteDarkGreyC100">#FF38383D</color>
+    <color name="paletteDarkGreyC60">#9938383D</color>
+    <color name="paletteDarkGreyC30">#4D38383D</color>
+    <color name="paletteDarkGreyC10">#1938383D</color>
+    <color name="paletteDarkGreyC0">#0038383D</color>
+    <color name="paletteDarkGreyD100">#FF737373</color>
+    <color name="paletteDarkGreyD50">#7F737373</color>
+    <color name="paletteDarkGreyE100">#B1B1B3</color>
+    <color name="paletteDarkGreyE54">#8AB1B1B3</color>
+    <color name="paletteDarkGreyE50">#80B1B1B3</color>
+    <color name="paletteDarkGreyE30">#4DB1B1B3</color>
+    <color name="paletteDarkGreyE16">#29B1B1B3</color>
+    <color name="paletteLightGreyA100">#FFE4E4E4</color>
+    <color name="paletteLightGreyB100">#FFF9F9FA</color>
+    <color name="paletteLightGreyC100">#FFEFF0F3</color>
+    <color name="paletteLightGreyD100">#FFFAFAFA</color>
+    <color name="paletteWhite100">#FFFFFFFF</color>
+    <color name="paletteWhite80">#CCFFFFFF</color>
+    <color name="paletteWhite70">#B3FFFFFF</color>
+    <color name="paletteWhite60">#99FFFFFF</color>
+    <color name="paletteWhite50">#7FFFFFFF</color>
+    <color name="paletteWhite30">#4DFFFFFF</color>
+    <color name="paletteWhite20">#33FFFFFF</color>
+    <color name="paletteWhite10">#19FFFFFF</color>
+    <color name="paletteWhite5">#0DFFFFFF</color>
+    <color name="paletteDarkBlueA100">#FF253058</color>
+    <color name="paletteDarkBlueB100">#FF1E2950</color>
+    <color name="paletteDarkBlueC100">#FF0A84FF</color>
+    <color name="paletteDarkBlueC54">#8A0A84FF</color>
+    <color name="paletteDarkBlueC30">#4D0A84FF</color>
+    <color name="paletteDarkBlueC20">#330A84FF</color>
+    <color name="paletteDarkBlueC16">#290A84FF</color>
+    <color name="paletteLightBlue100">#FF41B7E6</color>
+    <color name="palettePurple100">#FFC85DEF</color>
+    <color name="palettePurple50">#80C85DEF</color>
+    <color name="palettePeach100">#FFEC1C52</color>
+
+    <color name="about_logo_color">#FF353857</color>
+
+    <color name="sharedColorAppPaletteMain3">#FF0E86FF</color>
+
+    <color name="sharedColorAppPaletteGray2">#FF757575</color>
+    <color name="sharedColorAppPaletteGray3">#FFB2B2B2</color>
+    <color name="sharedColorAppPaletteGray4">#7FB2B2B2</color>
+
+    <color name="editBookmarkInputDisabled">#7F999EA1</color>
+    <color name="editBookmarkInputActive">@color/paletteLightBlack100</color>
+    <color name="editBookmarkInputInactive">#FF999EA1</color>
+
+    <color name="editBookmarkLabelDisabled">@color/paletteDarkGreyD50</color>
+    <color name="editBookmarkLabelActive">@color/paletteDarkBlueC100</color>
+    <color name="editBookmarkLabelInactive">@color/paletteDarkGreyD100</color>
+
+    <color name="editBookmarkOutlineDisabled">@color/paletteLightBlack20</color>
+    <color name="editBookmarkOutlineActive">@color/paletteDarkBlueC100</color>
+    <color name="editBookmarkOutlineInactive">@color/paletteLightBlack100</color>
+
+    <color name="colorPrimary">#FF363B40</color>
+    <color name="colorPrimaryDark">#c85def</color>
+    <color name="colorAccent">@color/paletteDarkBlueC100</color>
+
+    <color name="colorGradientStart">#011E4B</color>
+    <color name="colorGradientCenter">#FF83377B</color>
+    <color name="colorGradientEnd">#85329E</color>
+
+    <color name="colorDivider">#E0E0E0</color>
+    <color name="colorListPanelBottomDivider">#D7D7DB</color>
+
+    <color name="colorActiveGradientStart">#FF9B3A4D</color>
+    <color name="colorActiveGradientCenter">#FF82377D</color>
+    <color name="colorActiveGradientEnd">#FF3E4C8A</color>
+
+    <color name="colorProgressGradientStart">#00DCFC</color>
+    <color name="colorProgressGradientEnd">#00A2FE</color>
+
+    <color name="coloInactiveGradientStart">#FF503B44</color>
+    <color name="colorInactiveGradientCenter">#FF493A50</color>
+    <color name="colorInactiveGradientEnd">#FF383F53</color>
+
+    <color name="colorAutocompleteHighlight">@color/paletteDarkBlueC20</color>
+
+    <color name="colorFloatingActionButtonTint">@color/paletteLightGreyB100</color>
+
+    <color name="colorUrlInputBackground">#B2000000</color>
+
+    <color name="snackbarBackground">@color/paletteWhite20</color>
+    <color name="snackbarTextColor">@color/paletteWhite100</color>
+
+    <color name="searchHintTextColor">@color/paletteWhite100</color>
+
+    <color name="onboarding_indicator_default">@color/paletteWhite50</color>
+    <color name="onboarding_indicator_selected">@color/paletteWhite100</color>
+    <color name="onboarding_text_highlight">@color/paletteLightBlack100</color>
+    <color name="onboarding_text_normal">@color/paletteDarkGreyD100</color>
+
+    <color name="colorMenuBackground">@color/paletteLightGreyB100</color>
+    <color name="colorMenuIconForeground">@color/paletteLightBlack100</color>
+    <color name="colorMenuIconDarkForeground">@color/paletteWhite100</color>
+    <color name="colorMenuLabelDefault">@color/paletteDarkGreyD100</color>
+    <color name="colorMenuLabelActive">@color/sharedColorAppPaletteMain3</color>
+
+    <color name="url_bg_inactive_default">#EEEEEE</color>
+    <color name="url_bar_divider_default">#EEEEEE</color>
+
+    <color name="colorDownloadText">@color/paletteLightBlack100</color>
+    <color name="colorDownloadSubText">@color/paletteDarkGreyD100</color>
+    <color name="colorDownloadBackground">@color/paletteLightGreyB100</color>
+
+    <color name="colorScreenshotViewerBackground">@color/paletteLightGreyB100</color>
+    <color name="colorScreenshotViewerToolBarBLineBorder">#62C6EE</color>
+    <color name="colorScreenshotViewerToolBarBackground">@color/paletteLightBlue100</color>
+    <color name="colorScreenshotViewerActionIconPressed">@color/sharedColorAppPaletteMain3</color>
+    <color name="colorScreenshotViewerActionIconDisabled">#8DD3F0</color>
+    <color name="colorScreenshotViewerActionIconBackgroundPressed">@color/paletteWhite50</color>
+    <color name="colorScreenshotViewerInfoDialogText">@color/sharedColorAppPaletteGray2</color>
+    <color name="window_background_screenshot">#CC26384B</color>
+    <color name="colorScreenshotItemBorder">@color/sharedColorAppPaletteGray3</color>
+    <color name="colorScreenshotItemBackground">#EDEDF0</color>
+
+    <color name="colorUrlBarLockIcon">#12BC00</color>
+    <color name="colorSuggestionBox">@color/paletteLightGreyA100</color>
+
+    <color name="colorPromotionDialogDivider">@color/paletteLightGreyA100</color>
+    <color name="colorPromotionDialogSecBtn">@color/sharedColorAppPaletteGray2</color>
+
+    <color name="notificationAccent">#00C8D7</color>
+
+    <!-- Tab Tray -->
+    <color name="tabTrayBackgroundTop">#2493DB</color>
+    <color name="tabTrayBackgroundBottom">#63EAE8</color>
+    <color name="tabTrayItemIconBackground">@color/sharedColorAppPaletteGray3</color>
+    <color name="tabTrayItemOutlineSelected">@color/paletteDarkBlueC100</color>
+    <color name="tabTrayCloseAll">@color/paletteDarkBlueC100</color>
+
+    <color name="bookmarkEditToolbarBackground">@color/paletteLightBlue100</color>
+    <color name="bookmarkEditToolbarText">@color/bookmark_edit_action_text</color>
+
+    <!-- Private Mode -->
+    <color name="privateBackground">#38383D</color>
+    <color name="privateModeWidgetnBackground">#414146</color>
+
+    <color name="myShotOnBoardingBackground">#B3111111</color>
+
+    <!--  Home Screen -->
+    <color name="homeArcPanelBackground">@color/paletteLightGreyB100</color>
+    <color name="homeArcPanelBackgroundNight">#414146</color>
+    <color name="homeSearchPanelBackground">#F4F4F4</color>
+    <color name="homeSearchPanelBackgroundNight">@color/paletteDarkGreyC100</color>
+    <color name="homeShoppingSearchButtonTint">@color/paletteLightBlack100</color>
+    <color name="homeShoppingSearchButtonTintNight">@color/paletteWhite100</color>
+    <color name="homeShoppingSearchButtonBackground">@color/paletteWhite100</color>
+    <color name="homeShoppingSearchButtonBackgroundNight">#414146</color>
+
+    <!-- Content common -->
+    <color name="contentHeaderTextColor">#0C0C0D</color>
+    <color name="contentHeaderTextColor87">#DE0C0C0D</color>
+
+    <!-- Shopping Search -->
+    <color name="shoppingSearchInputBackgroundGradientStart">#FF3C61</color>
+    <color name="shoppingSearchInputBackgroundGradientCenter">#FF803E</color>
+    <color name="shoppingSearchInputBackgroundGradientEnd">#FDBC61</color>
+    <color name="shoppingSearchIcon">#FF5654</color>
+    <color name="shoppingSearchPreferencesToolbarBackground">#212121</color>
+
+    <!--  Shopping -->
+    <color name="colorProductPrice">#EC6255</color>
+    <color name="colorProductDiscount">#EC1C52</color>
+
+    <!-- MSRP -->
+    <color name="msrpRedDotColor">#EC1C52</color>
+    <color name="msrpMissionListBgColor">#FAFAFA</color>
+    <color name="msrpMissionListSeparatorColor">#F0F0F0</color>
+
+    <!--  Content Hub  -->
+    <color name="contentHubRedDotColor">#EC1C52</color>
+
+</resources>

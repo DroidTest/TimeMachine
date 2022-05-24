@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The name element is an internal reference.  We want to display the string
+     referenced by the title element.  So, y'know, they can be one-worders. -->
+
+<!-- Options require a type (string, number, date), a param (where this option
+     will be fed into the template), and a title (what will be displayed as a
+     description of the option, a string ID). -->
+
+<achievements>
+    <achievement name="LandGeohash" template="Land_geohash" title="achievement_land_geohash_title"
+    	description="achievement_land_geohash_desc" icon="achievement_land_geohash_icon"
+    	category="BasicLocations">
+        <options />
+    </achievement>
+    <achievement name="AirGeohash" template="Air_geohash" title="achievement_air_geohash_title"
+    	description="achievement_air_geohash_desc" icon="achievement_air_geohash_icon"
+        category="BasicLocations">
+        <options />
+    </achievement>
+    <achievement name="UndergroundGeohash" template="Goingdeep_geohash" title="achievement_underground_geohash_title"
+    	description="achievement_underground_geohash_desc" icon="achievement_underground_geohash_icon"
+        category="BasicLocations">
+        <options />
+    </achievement>
+    <achievement name="WaterGeohash" template="Water_geohash" title="achievement_water_geohash_title"
+    	description="achievement_water_geohash_desc" icon="achievement_water_geohash_icon"
+        category="BasicLocations">
+        <options />
+    </achievement>
+    <achievement name="UnderwaterGeohash" template="Underwater_geohash" title="achievement_underwater_geohash_title"
+    	description="achievement_underwater_geohash_desc" icon="achievement_underwater_geohash_icon"
+        category="BasicLocations">
+        <options />
+    </achievement>
+    <achievement name="WalkingOnWaterGeohash" template="Walking_on_water_geohash_achievement" title="achievement_onwater_geohash_title"
+    	description="achievement_onwater_geohash_desc" icon="achievement_onwater_geohash_icon"
+        category="BasicLocations">
+        <options />
+    </achievement>
+
+    <achievement name="AdmitOne" template="Admit_One_template" title="achievement_admitone_title"
+        description="achievement_admitone_desc" icon="achievement_admitone_icon"
+        category="LuckyLocations">
+        <options />
+    </achievement>
+    <achievement name="CoffinPotato" template="Coffin_potato" title="achievement_coffin_potato_title"
+        description="achievement_coffinpotato_desc" icon="achievement_coffinpotato_icon"
+        category="LuckyLocations">
+        <options>
+            <option type="string" param="deceased" title="achievement_option_coffin_potato_deceased" />
+        </options>
+    </achievement>
+    <achievement name="CouchPotato" template="Couch_potato_achievement" title="achievement_couch_potato_title"
+        description="achievement_couch_potato_desc" icon="achievement_couch_potato_icon"
+        category="LuckyLocations">
+        <options />
+    </achievement>
+    <achievement name="CrossBridge" template="Cross_that_bridge" title="achievement_cross_bridge_title"
+        description="achievement_cross_bridge_desc" icon="achievement_cross_bridge_icon"
+        category="LuckyLocations">
+        <options />
+    </achievement>
+    <achievement name="Cubicle" template="Cubicle_geohash" title="achievement_cubicle_title"
+        description="achievement_cubicle_desc" icon="achievement_cubicle_icon"
+        category="LuckyLocations">
+        <options />
+    </achievement>
+    <!-- Missing: GeoSquishy (requires more variants than I know what to do with) -->
+    <achievement name="Golf" template="Golf_geohash" title="achievement_golf_title"
+        description="achievement_golf_desc" icon="achievement_golf_icon"
+        category="LuckyLocations">
+        <options />
+    </achievement>
+    <achievement name="HashCollision" template="Hash_collision" title="achievement_hash_collision_title"
+        description="achievement_hash_collision_desc" icon="achievement_hash_collision_icon"
+        category="LuckyLocations">
+        <options />
+    </achievement>
+    <achievement name="HolyHash" template="Holy_hash" title="achievement_holy_hash_title"
+        description="achievement_holy_hash_desc" icon="achievement_holy_hash_icon"
+        category="LuckyLocations">
+        <options />
+    </achievement>
+    <achievement name="Phonebooth" template="Phonebooth_stuffing" title="achievement_phonebooth_title"
+        description="achievement_phonebooth_desc" icon="achievement_phonebooth_icon"
+        category="LuckyLocations">
+        <options />
+    </achievement>
+    <achievement name="Pub" template="Pub_geohash" title="achievement_pub_title"
+        description="achievement_pub_desc" icon="achievement_pub_icon"
+        category="LuckyLocations">
+        <options />
+    </achievement>
+    <achievement name="RestrictedArea" template="Restricted_area" title="achievement_restricted_area_title"
+        description="achievement_restricted_area_desc" icon="achievement_restricted_area_icon"
+        category="LuckyLocations">
+        <options />
+    </achievement>
+    <achievement name="SpeedRacer" template="Speed_racer_geohash" title="achievement_speed_racer_title"
+        description="achievement_speed_racer_desc" icon="achievement_speed_racer_icon"
+        category="LuckyLocations">
+        <options />
+    </achievement>
+    <!-- Missing: A Tale Of Two Hashes (requires two parts, not sure how to handle that yet) -->
+</achievements>

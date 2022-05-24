@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="root_preferences">
+    <!-- Empty default: we use an empty string to indicate "system default" language being selected -->
+    <!--suppress AndroidDomInspection -->
+    <org.mozilla.focus.widget.LocaleListPreference
+        android:layout="@layout/focus_preference"
+        android:key="@string/pref_key_locale"
+        android:title="@string/preference_language"
+        android:defaultValue=""/>
+
+    <org.mozilla.focus.search.SearchEnginePreference
+        android:layout="@layout/focus_preference"
+        android:title="@string/preference_search_engine_default"
+        android:key="@string/pref_key_search_engine" />
+
+    <org.mozilla.focus.widget.CleanBrowsingDataPreference
+        android:layout="@layout/focus_preference"
+        android:positiveButtonText="@string/setting_dialog_clear_data"
+        android:negativeButtonText="@string/setting_dialog_cancel"
+        android:defaultValue="@array/clean_browsing_data_values"
+        android:entryValues="@array/clean_browsing_data_values"
+        android:entries="@array/clean_browsing_data_entries"
+        android:title="@string/preference_privacy_storage_clear_browsing_data"
+        android:key="@string/pref_key_storage_clear_browsing_data" />
+
+    <org.mozilla.focus.widget.DataSavingPathPreference
+        android:layout="@layout/focus_preference"
+        android:title="@string/preference_privacy_storage_save_downloads_to"
+        android:key="@string/pref_key_storage_save_downloads_to" />
+
+    <Preference
+        android:layout="@layout/focus_preference"
+        android:title="@string/preference_night_mode_brightness"
+        android:key="@string/pref_key_night_mode_brightness" />
+
+    <org.mozilla.focus.widget.TurboSwitchPreference
+        android:layout="@layout/focus_preference"
+        android:key="@string/pref_key_turbo_mode"
+        android:title="@string/preference_turbo_mode"
+        android:summary="@string/preference_learn_more" />
+
+    <org.mozilla.focus.widget.DefaultBrowserPreference
+        android:layout="@layout/focus_preference"
+        android:key="@string/pref_key_default_browser"
+        android:title="@string/preference_default_browser" />
+
+    <Preference
+        android:layout="@layout/focus_preference"
+        android:title="@string/preference_add_private_browsing_shortcut"
+        android:key="@string/pref_key_private_mode_shortcut" />
+
+    <org.mozilla.focus.widget.TelemetrySwitchPreference
+        android:layout="@layout/preference_telemetry"
+        android:title="@string/preference_mozilla_telemetry"
+        android:persistent="false" />
+
+    <Preference
+        android:layout="@layout/focus_preference"
+        android:title="@string/menu_give_feedback"
+        android:key="@string/pref_key_give_feedback" />
+
+    <Preference
+        android:layout="@layout/focus_preference"
+        android:title="@string/menu_share_with_friends"
+        android:key="@string/pref_key_share_with_friends" />
+
+    <!-- AboutPreference performs some string substitutions, so that we can show "About <AppName>".
+         We keep a plain "About" as the title here in xml as a fallback, but AboutPreference
+         will use the substitution regardless of what is set here. -->
+    <org.mozilla.focus.widget.AboutPreference
+        android:layout="@layout/focus_preference"
+        android:title="@string/menu_about"
+        android:key="@string/pref_key_about" />
+
+    <!-- Preferences for experimental features, only visible in dev-build -->
+    <PreferenceCategory
+        android:key="@string/pref_key_category_experiment"
+        android:title="For experiment">
+
+        <SwitchPreference
+            android:key="@string/pref_key_performance_block_java_script"
+            android:layout="@layout/focus_preference"
+            android:title="Block JavaScript" />
+
+    </PreferenceCategory>
+
+    <!-- Preferences for debugging purpose, only visible in dev-build -->
+    <PreferenceCategory
+        android:key="@string/pref_key_category_debug"
+        android:title="For debugging">
+
+        <Preference
+            android:key="@string/pref_key_debug_page"
+            android:layout="@layout/focus_preference"
+            android:title="Debug Page"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

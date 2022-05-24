@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="Start">
+        <item>Недавне приче</item>
+        <item>Најважније приче</item>
+        <item>Поруке</item>
+    </string-array>
+    <string-array name="intervalPrefTitles">
+        <item>1 минуту</item>
+        <item>2 минуте</item>
+        <item>5 минута</item>
+        <item>15 минута</item>
+        <item>30 минута</item>
+        <item>1 сат</item>
+        <item>3 сата</item>
+        <item>6 сати</item>
+    </string-array>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Идите на почетну"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Идите нагоре"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Још опција"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Готово"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Прикажи све"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Изаберите апликацију"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"ИСКЉУЧЕНО"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"УКЉУЧЕНО"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"тастер за размак"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Претражите…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Обришите упит"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Претражите упит"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Претражите"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Пошаљите упит"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Гласовна претрага"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Делите помоћу"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Делите помоћу апликације <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Скупи"</string>
+    <string name="about_translations">Помозите</string>
+    <string name="about_updates">Надоградње</string>
+    <string name="app_themes">Теме апликације</string>
+    <string name="app_themes_summary">Избор различитих тема апликације.</string>
+    <string name="appearance_setting_title">ИЗГЛЕД</string>
+    <string name="changelog">Дневник измена</string>
+    <string name="content_copy_link_done">Веза копирана на клипборд</string>
+    <string name="context_share_image">Подели слику</string>
+    <string name="context_share_image_progress">Делим слику…</string>
+    <string name="context_share_link">Подели везу</string>
+    <string msgid="3209159573327985035" name="copy">"Копирај"</string>
+    <string name="devs_who_helped_me">Програмери који су помогли развој и њихов изворни кôд</string>
+    <string name="downloaded">Преузето</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"Напредно"</string>
+    <string name="fab_checkin">Објави локацију</string>
+    <string name="fab_enable">Плутајуће дугме радњи</string>
+    <string name="fab_enable_summary">Приказ плутајућег дугмета радњи.</string>
+    <string name="fab_jump_top">Скочи на врх</string>
+    <string name="fab_photo">Објави фотографију</string>
+    <string name="fab_text">Објави текст</string>
+    <string name="facebook_message">Обавештења о порукама</string>
+    <string name="facebook_notifications">Обавештења са Фејсбука</string>
+    <string name="general_setting_title">ОПШТЕ</string>
+    <string name="help_translations">Превођењем апликације</string>
+    <string name="hide_birthdays_summary">Скрива рођендане са почетне странице, догађаја и обавештења.</string>
+    <string name="hide_birthdays_title">Сакриј рођендане</string>
+    <string name="hide_editor_newsfeed_summary">Скрива поље за објављивање са почетне странице.</string>
+    <string name="hide_editor_newsfeed_title">Сакриј уређивач објава са почетне</string>
+    <string name="hide_menu_bar_summary">Скрива плаву траку менија са врха.</string>
+    <string name="hide_menu_bar_title">Сакриј траку менија</string>
+    <string name="hide_recently_commented">Сакриј недавне коментаре</string>
+    <string name="hide_recently_commented_summary">Скрива „икс људи је недавно коментарисало ово“.</string>
+    <string name="hide_sponsored_summary">Скрива спонзорисани садржај (рекламе) са почетне странице.</string>
+    <string name="hide_sponsored_title">Сакриј спонзорисани садржај</string>
+    <string name="interval_pref">Интервал провере</string>
+    <string name="interval_pref_description_new">Обавештења се проверавају сваких %s.</string>
+    <string name="led_light">ЛЕД светло</string>
+    <string name="location_enabled_summary">Омогућује Фејсбуку приступ локацији вашег уређаја.</string>
+    <string name="location_enabled_title">Приступ локацији</string>
+    <string name="menu_events">Догађаји</string>
+    <string name="menu_events_summary">Приказ дугмета „Догађаји“ у фиоци навигације.</string>
+    <string name="menu_friendreq">Захтеви за пријатељство</string>
+    <string name="menu_friendreq_summary">Приказ дугмета „Захтеви за пријатељство“ у фиоци навигације.</string>
+    <string name="menu_groups">Групе</string>
+    <string name="menu_groups_summary">Приказ дугмета „Групе“ у фиоци навигације.</string>
+    <string name="menu_mainmenu">Главни мени</string>
+    <string name="menu_mainmenu_summary">Приказ дугмета „Главни мени“ у фиоци навигације.</string>
+    <string name="menu_messages">Поруке</string>
+    <string name="menu_most_recent">Недавне приче</string>
+    <string name="menu_most_recent_summary">Приказ дугмета „Недавне приче“ у фиоци навигације.</string>
+    <string name="menu_photos">Фотографије</string>
+    <string name="menu_photos_summary">Приказ дугмета „Фотографије“ у фиоци навигације.</string>
+    <string name="menu_search">Претрага</string>
+    <string name="menu_search_summary">Приказ дугмета „Претрага“ у фиоци навигације.</string>
+    <string name="menu_top_stories">Најважније приче</string>
+    <string name="menu_top_stories_summary">Приказ дугмета „Најважније приче“ у фиоци навигације.</string>
+    <string name="more">О програму и заслуге</string>
+    <string name="nav_notifications">Обавештења</string>
+    <string name="navigation_drawer_close">Затвори фиоку навигације</string>
+    <string name="navigation_drawer_open">Отвори фиоку навигације</string>
+    <string name="navigation_menu_settings">Ставке менија навигације</string>
+    <string name="navigation_menu_settings_description">Приказ/скривање ставки у менију навигације.</string>
+    <string name="navigation_menu_title">МЕНИ НАВИГАЦИЈЕ</string>
+    <string name="navigation_setting_title">НАВИГАЦИЈА</string>
+    <string name="new_bookmark">Додат:</string>
+    <string msgid="478774118347071097" name="not_set">"Није подешено"</string>
+    <string name="notif">Обавештења</string>
+    <string name="notification_sound">Звук обавештења</string>
+    <string name="notification_sound_description">Изаберите звук или тишину: \u0020</string>
+    <string name="notification_sound_msg">Звук за поруку</string>
+    <string name="notifications_setting_title">ОБАВЕШТЕЊА</string>
+    <string name="notifications_settings">Поставке обавештења</string>
+    <string name="notifications_settings_description">Додатне поставке. Одредите интервал, поставите звук, ЛЕД и вибрирање.</string>
+    <string name="people_who_translated">Преводиоци ове апликације</string>
+    <string name="permission_denied">Приступ одбијен, не могу да завршим радњу</string>
+    <string msgid="7961817945132860002" name="preference_copied">"Резиме „<ns1:g id="SUMMARY">%1$s</ns1:g>“ је копиран у привремену меморију."</string>
+    <string name="remove_bookmark">Уклоњен:</string>
+    <string name="save_data">Режим мале потрошње</string>
+    <string name="save_data_summary">Учитавање Фејсбука у основном режиму, без беџева и ажурирања информација профила.</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Претражите"</string>
+    <string name="settings">Поставке</string>
+    <string name="silent">Без звука</string>
+    <string name="source_code">Изворни кôд на Гитхабу</string>
+    <string name="start_url">Почетак</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stop_images_summary">Без учитавања слика. Неке слике ће се можда учитати из кеша.</string>
+    <string name="stop_images_title">Не учитавај слике</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="updates">Провера новог издања</string>
+    <string name="updates_summary">Учитава страницу и преузима најновије издање</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"ИСКЉУЧЕНО"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"УКЉУЧЕНО"</string>
+    <string name="vibrate">Вибрирање</string>
+    <string name="vibrate_double">Двоструко вибрирање</string>
+    <string name="withYou">Пријавом грешака или захтева</string>
+</resources>

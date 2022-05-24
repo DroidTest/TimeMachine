@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_cat_map">Map options</string>
+    <string name="pref_cat_other">Other options</string>
+    <string name="pref_cat_wiki">Wiki options</string>
+
+    <string name="pref_autozoom_title">Auto-rezoom to ideal view</string>
+    <string name="pref_autozoom_on">Re-zoom any time the map is (re)loaded</string>
+    <string name="pref_autozoom_off">Only re-zoom when changing the expedition or rotating/stopping the app</string>
+
+    <string name="pref_infobox_title">Info box</string>
+    <string name="pref_infobox_on">Show an info box on the map</string>
+    <string name="pref_infobox_off">Don\'t show an info box on the map</string>
+
+    <string name="pref_units_title">Distance units</string>
+    <string name="pref_units_dialogtitle">Select units</string>
+    <string name="pref_units_metric">Metric (km)</string>
+    <string name="pref_units_imperial">Imperial (miles)</string>
+
+    <string name="pref_coordunits_title">Coordinate units</string>
+    <string name="pref_coordunits_dialogtitle">Select units</string>
+    <string name="pref_coordunits_degrees">Degrees (38.040°N)</string>
+    <string name="pref_coordunits_minutes">Minutes (38° 2.40′N)</string>
+    <string name="pref_coordunits_seconds">Seconds (38° 2′ 23.7″N)</string>
+
+    <string name="pref_nearbypoints_title">Show nearby points</string>
+    <string name="pref_nearbypoints_on">Put markers on the meetup points in nearby graticules</string>
+    <string name="pref_nearbypoints_off">Don\'t draw nearby markers</string>
+
+    <string name="pref_knownlocations_title">Manage known locations</string>
+    <string name="pref_showknownlocations_title">Show known locations</string>
+    <string name="pref_showknownlocations_on">Place markers on main map</string>
+    <string name="pref_showknownlocations_off">Don\'t show markers on main map</string>
+
+    <string name="pref_stockcachesize_title">Stock cache size</string>
+    <string name="pref_stockcachesize_off">Don\'t use a stock cache database</string>
+    <string name="pref_stockcachesize_10">Ten entries</string>
+    <string name="pref_stockcachesize_15">Fifteen entries</string>
+    <string name="pref_stockcachesize_25">Twenty-five entries</string>
+    <string name="pref_stockcachesize_50">Fifty entries</string>
+    <string name="pref_stockcachesize_100">One hundred entries</string>
+
+    <string name="pref_wikiusername_title">Wiki username</string>
+    <string name="pref_wikiusername_dialogtitle">Enter your username</string>
+    <string name="pref_wikiusername_hint">Username</string>
+
+    <!-- This one has a summary because we're not about to display the password raw, now, are we? -->
+    <string name="pref_wikipassword_title">Wiki password</string>
+    <string name="pref_wikipassword_summary">Password used to log into the geohashing wiki</string>
+    <string name="pref_wikipassword_dialogtitle">Enter your password</string>
+    <string name="pref_wikipassword_hint">Password</string>
+
+    <string name="pref_wikiphonetime_title">Post with phone\'s time</string>
+    <string name="pref_wikiphonetime_on">Use the time on the phone instead of the wiki\'s time for wiki posts</string>
+    <string name="pref_wikiphonetime_off">Use the standard wiki time signature for wiki posts</string>
+
+    <string name="pref_usestockservice_title">Prefetch stocks</string>
+    <string name="pref_usestockservice_on">Try to prefetch each day\'s stock value</string>
+    <string name="pref_usestockservice_off">Only fetch stock values on-demand</string>
+
+    <string name="pref_stockwipe_title">Clear stock cache</string>
+    <string name="pref_stockwipe_dialog_text">Are you sure you want to clear all stock cache data?</string>
+
+    <string name="dialog_stockwipe_yes">Yes, clear it</string>
+    <string name="dialog_stockwipe_no">No, cancel</string>
+    <string name="toast_stockwipe_success">The stock cache database has been cleared.</string>
+    <string name="toast_stockwipe_failure">There was a problem clearing the stock cache database.</string>
+
+    <string name="pref_reset_bugging_me_title">Reset \"Stop Reminding Me\" prompts</string>
+    <string name="pref_reset_butting_me_dialog_text">Are you sure you want to be reminded of all the things you didn\'t want to be reminded of?</string>
+
+    <string name="dialog_reset_bugging_me_yes">Yes, start reminding me</string>
+    <string name="dialog_reset_bugging_me_no">No, keep not reminding me</string>
+    <string name="toast_reset_bugging_me_success">You will be reminded.</string>
+
+    <string name="pref_startup_title">Startup behavior</string>
+    <string name="pref_startup_dialogtitle">On startup, it should…</string>
+    <string name="pref_startup_useclosest">Find the closest hashpoint</string>
+    <string name="pref_startup_lastused">Start with the last-used graticule</string>
+    <string name="pref_startup_graticulepicker">Start with the graticule picker</string>
+
+    <string name="pref_knownnotification_title">Known location notifications</string>
+    <string name="pref_knownnotification_dialogtitle">If multiple known locations match for the day…</string>
+    <string name="pref_knownnotification_onlyonce">Notify once with the closest match</string>
+    <string name="pref_knownnotification_oncepergraticule">Notify once per graticule</string>
+    <string name="pref_knownnotification_onceperlocation">Notify once per known location</string>
+    <string name="pref_knownnotification_never">Don\'t notify at all</string>
+
+    <string name="pref_knownnotification_reminder_title">Because I\'m not a monster, that\'s why</string>
+    <string name="pref_knownnotification_pergraticule_reminder">Even with this option set, a maximum of ten notifications will be displayed (graticules with closer matching known locations will take precedence).</string>
+    <string name="pref_knownnotification_perlocation_reminder">Even with this option set, a maximum of ten notifications will be displayed (the closest matching known locations will take precedence).</string>
+    <!-- This one should never been seen. -->
+    <string name="pref_knownnotification_fallback_reminder">Even with this option set, a maximum of ten notifications will be displayed.</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.mozilla.rocket.shopping.search.ui.ShoppingSearchResultTabFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:clipChildren="false"
+        app:elevation="0dp">
+
+        <org.mozilla.rocket.shopping.search.ui.CollapsingUrlBar
+            android:id="@+id/url_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:minHeight="25dp"
+            app:iconResId="@drawable/ic_search_black"
+            app:layout_scrollFlags="scroll|enterAlways|snap|exitUntilCollapsed" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <org.mozilla.rocket.widget.LockableViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        app:layout_anchor="@id/bottom_bar"
+        app:layout_anchorGravity="top">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/paletteLightGreyC100" />
+
+        <HorizontalScrollView
+            android:id="@+id/tab_layout_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/shopping_search_tab_bar_height"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toTopOf="@id/bottom_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/paletteLightGreyB100"
+                android:orientation="horizontal">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/common_margin_m2"
+                    app:tabBackground="@drawable/shopping_search_tab_item_selector"
+                    app:tabIndicatorColor="@android:color/transparent"
+                    app:tabMode="scrollable"
+                    app:tabPaddingEnd="@dimen/common_margin_m4"
+                    app:tabPaddingStart="@dimen/common_margin_m4"
+                    app:tabSelectedTextColor="@android:color/white"
+                    app:tabTextAppearance="@style/ShoppingSearchTabText"
+                    app:tabTextColor="@color/paletteDarkGreyE100" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/preferenceButton"
+                        android:layout_width="36dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/common_margin_m1"
+                        android:background="@color/paletteLightGreyB100"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_shopping_search_preferences" />
+                </FrameLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <org.mozilla.rocket.content.view.BottomBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fixed_menu_height"
+        android:layout_gravity="bottom"
+        android:background="@color/paletteLightGreyB100" />
+
+    <FrameLayout
+        android:id="@+id/video_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:visibility="gone" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

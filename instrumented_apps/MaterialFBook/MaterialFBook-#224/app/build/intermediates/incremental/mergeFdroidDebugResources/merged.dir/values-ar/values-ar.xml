@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="Start">
+        <item>MostRecent</item>
+        <item>TopStories</item>
+        <item>Messages</item>
+    </string-array>
+    <string-array name="intervalPrefTitles">
+        <item>دقيقة</item>
+        <item>دقيقتان</item>
+        <item>5 دقائق</item>
+        <item>15 دقيقة</item>
+        <item>30 دقيقة</item>
+        <item>ساعة</item>
+        <item>3 ساعات</item>
+        <item>6 ساعات</item>
+    </string-array>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"التوجه إلى المنزل"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"التنقل إلى أعلى"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"خيارات أكثر"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"تم"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"عرض الكل"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"اختيار تطبيق"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"إيقاف"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"تفعيل"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"حذف"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"فضاء"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"القائمة+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"بحث…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"محو طلب البحث"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"طلب بحث"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"البحث"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"إرسال طلب البحث"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"بحث صوتي"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"مشاركة مع"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"مشاركة مع <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"تصغير"</string>
+    <string name="about_translations">ساعدني، أنا أحتاج دعمك</string>
+    <string name="about_updates">التحديثات</string>
+    <string name="app_themes">سمات التطبيق</string>
+    <string name="app_themes_summary">يمكنك اختيار سمة مختلفة للتطبيق.</string>
+    <string name="appearance_setting_title">المظهر</string>
+    <string name="changelog">سجل التغييرات</string>
+    <string name="content_copy_link_done">تم نسخ الرابط في الحافظة</string>
+    <string name="context_share_image">مشاركة الصورة</string>
+    <string name="context_share_image_progress">جار مشاركة الصورة…</string>
+    <string name="context_share_link">مشاركة الرابط</string>
+    <string msgid="3209159573327985035" name="copy">"نسخ"</string>
+    <string name="devs_who_helped_me">المطورون الذين ساعدوني وأجابوا أسئلتي وسمحوا لي بنسخ بعض الأكواد البرمجية من تطبيقاتهم</string>
+    <string name="downloaded">تم التحميل</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"إعدادات متقدمة"</string>
+    <string name="fab_checkin">تحقق</string>
+    <string name="fab_enable">الزر العائم</string>
+    <string name="fab_enable_summary">إظهار الزر العائم.</string>
+    <string name="fab_jump_top">قفز إلى الأعلى</string>
+    <string name="fab_photo">نشر صورة</string>
+    <string name="fab_text">نشر حالة</string>
+    <string name="facebook_message">رسالة جديدة</string>
+    <string name="facebook_notifications">إشعار من فيسبوك</string>
+    <string name="general_setting_title">عام</string>
+    <string name="help_translations">ساعدني في ترجمة هذا التطبيق إلى لغتك</string>
+    <string name="hide_birthdays_summary">إخفاء تواريخ الميلاد من الصفحة الرئيسية، الأحداث والإشعارات.</string>
+    <string name="hide_birthdays_title">إخفاء تواريخ الميلاد</string>
+    <string name="hide_editor_newsfeed_summary">عند التفعيل ، سيتم إخفاء محرر الحالة في صفحة الأخبار.</string>
+    <string name="hide_editor_newsfeed_title">إخفاء محرر الحالة في صفحة الأخبار</string>
+    <string name="hide_menu_bar_summary">عند التفعيل ، سيتم إخفاء شريط القوائم.</string>
+    <string name="hide_menu_bar_title">إخفاء القائمة</string>
+    <string name="hide_recently_commented">Hide recently commented</string>
+    <string name="hide_recently_commented_summary">X people recently commented on this.</string>
+    <string name="hide_sponsored_summary">إخفاء ‘الإعلانات’ من الصفحة الرئيسية.</string>
+    <string name="hide_sponsored_title">إخفاء ‘الإعلانات’ </string>
+    <string name="interval_pref">الفاصل الزمني لكل فحص</string>
+    <string name="interval_pref_description_new">سيتم البحث عن إشعارات جديدة كل % ثانية.</string>
+    <string name="led_light">ضوء الإشعارات</string>
+    <string name="location_enabled_summary">تفعيل هذا سوف يسمح للفيسبوك بتحديد موقعك الجغرافي.</string>
+    <string name="location_enabled_title">تحديد الموقع الجغرافي</string>
+    <string name="menu_events">الأحداث</string>
+    <string name="menu_events_summary">إظهار ‘زر الأحداث’ في درج التنقل.</string>
+    <string name="menu_friendreq">طلبات الصداقة</string>
+    <string name="menu_friendreq_summary">إظهار ‘زر طلبات الصداقة’  في درج التنقل.</string>
+    <string name="menu_groups">المجموعات</string>
+    <string name="menu_groups_summary">إظهار ‘زر المجموعات’  في درج التنقل.</string>
+    <string name="menu_mainmenu">القائمة الرئيسية</string>
+    <string name="menu_mainmenu_summary">إظهار ‘زر القائمة الرئيسية ’  في درج التنقل.</string>
+    <string name="menu_messages">Messages</string>
+    <string name="menu_most_recent">آخر الأخبار</string>
+    <string name="menu_photos">الصور</string>
+    <string name="menu_photos_summary">إظهار ‘زر الصور ’ في درج التنقل.</string>
+    <string name="menu_search">البحث</string>
+    <string name="menu_search_summary">إظهار ‘زر البحث ’  في درج التنقل.</string>
+    <string name="menu_top_stories">أهم الأخبار</string>
+    <string name="menu_top_stories_summary">إظهار ‘زر أهم الأخبار’  في درج التنقل.</string>
+    <string name="more">المزيد</string>
+    <string name="nav_notifications">الإشعارات</string>
+    <string name="navigation_drawer_close">غلق درج التنقل</string>
+    <string name="navigation_drawer_open">فتح درج التنقل</string>
+    <string name="navigation_menu_settings">عناصر قائمة التنقل</string>
+    <string name="navigation_menu_settings_description">يمكنك إظهار/إخفاء عناصر قائمة التنقل.</string>
+    <string name="navigation_menu_title">قائمة التنقل</string>
+    <string name="navigation_setting_title">التنقل</string>
+    <string name="new_bookmark">Added:</string>
+    <string msgid="478774118347071097" name="not_set">"لم يتمّ تحديد قيمة."</string>
+    <string name="notif">الإشعارات</string>
+    <string name="notification_sound">صوت الإشعارات</string>
+    <string name="notification_sound_description">اختر نغمة الإشعار ، أو الوضع الصامت \u0020</string>
+    <string name="notification_sound_msg">صوت الرسالة</string>
+    <string name="notifications_setting_title">الإشعارات</string>
+    <string name="notifications_settings">إعدادات الإشعارات</string>
+    <string name="notifications_settings_description">إعدادات إضافية. اختر الفاصل الزمني, اختر الأصوات,لون مصباح الإشعارات ، الاهتزاز.</string>
+    <string name="people_who_translated">الأشخاص الذين قاموا بترجمة التطبيق</string>
+    <string name="permission_denied">تم رفض إعطاء الصلاحيات المطلوبة، للأسف لا يمكن إتمام طلبك</string>
+    <string msgid="7961817945132860002" name="preference_copied">"تم نسخ \"<ns1:g id="SUMMARY">%1$s</ns1:g>\" إلى الحافظة."</string>
+    <string name="remove_bookmark">Removed:</string>
+    <string name="save_data">وضع توفير البيانات</string>
+    <string name="save_data_summary">تحميل النسخة الأساسية من فيسبوك وإخفاء الأشرطة وبيانات الملفات الشخصية. والتحديثات.</string>
+    <string msgid="730395136688082741" name="search_menu_title">"البحث"</string>
+    <string name="settings">الإعدادات</string>
+    <string name="silent">صامت</string>
+    <string name="source_code">الكود المصدري على موقع جٍتْهَب</string>
+    <string name="start_url">Start URL</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stop_images_summary">عند التفعيل ، لن يتم تحميل الصور ، لكن بعض الصور القديمة قد تظل موجودة في ذاكرة التخزين.</string>
+    <string name="stop_images_title">عدم تحميل الصور</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>، <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="updates">ابحث عن التحديثات</string>
+    <string name="updates_summary">افتح الصفحة وحمل أحدث نسخة</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"إيقاف"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"تفعيل"</string>
+    <string name="vibrate">الإهتزاز</string>
+    <string name="vibrate_double">الإهتزاز المزدوج</string>
+    <string name="withYou">بلّغ عن الأخطاء، أو اطلب مزايا جديدة</string>
+</resources>

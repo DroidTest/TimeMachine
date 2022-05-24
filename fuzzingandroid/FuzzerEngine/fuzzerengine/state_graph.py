@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import heapq
 import math
-from utils import K_Path_Traveller 
+from utils import K_Path_Traveller
 from collections import Counter
 
 
@@ -10,15 +10,15 @@ class State:
     MAX_FITNESS = 200.0
 
     def __init__(self, uid):
-        self.uid = uid                              # Unique ID representing this state
-        self.out_nodes = {}                         # Direct, reachable successor states
-        self.hit_count = 1                          # Number of times this state was naturally reached
-        self.transitions_triggered = 0              # Number of times this state was fuzzed (1 time fuzz = generate a transition to another state)
-        self.restore_count = 0                      # number of time this state was chosen to be restored in VirtualBox
-        self.number_events_to_transition = []       # number of events which trigger a transition to another state
-        self.controllable_widgets = 0               # Number of controllable widgets
-        self.fitness_score = 100.0                  # Used for selection (start at 100)
-        self.num_transitions_to_existing_state = 0   # How many times the state was fuzzed and transitioned to an existing state
+        self.uid = uid  # Unique ID representing this state
+        self.out_nodes = {}  # Direct, reachable successor states
+        self.hit_count = 1  # Number of times this state was naturally reached
+        self.transitions_triggered = 0  # Number of times this state was fuzzed (1 time fuzz = generate a transition to another state)
+        self.restore_count = 0  # number of time this state was chosen to be restored in VirtualBox
+        self.number_events_to_transition = []  # number of events which trigger a transition to another state
+        self.controllable_widgets = 0  # Number of controllable widgets
+        self.fitness_score = 100.0  # Used for selection (start at 100)
+        self.num_transitions_to_existing_state = 0  # How many times the state was fuzzed and transitioned to an existing state
         self.penalty = 0.1
         self.reward = 0.1
 
@@ -27,6 +27,7 @@ class State:
 
     def add_child(self, child_node):
         self.out_nodes[child_node.uid] = child_node
+
     #    self.adjust_fitness_score()
 
     def add_hit_count(self):
@@ -37,16 +38,18 @@ class State:
 
     def add_transitions_triggered(self):
         self.transitions_triggered = self.transitions_triggered + 1
-     #   self.adjust_fitness_score()
+
+    #   self.adjust_fitness_score()
 
     def set_controllable_widgets(self, nr_widgets):
         self.controllable_widgets = nr_widgets
+
     #    self.adjust_fitness_score()
 
     def add_event_sequence_to_transition(self, event_seq_len):
         self.number_events_to_transition.append(event_seq_len)
-        #print self.number_events_to_transition
-        #self.adjust_fitness_score()
+        # print self.number_events_to_transition
+        # self.adjust_fitness_score()
 
     def get_average_events_to_transition(self):
         if len(self.number_events_to_transition) == 0:
@@ -56,7 +59,7 @@ class State:
 
     def add_transition_to_existing_state(self):
         self.num_transitions_to_existing_state = self.num_transitions_to_existing_state + 1
-        #if self.num_transitions_to_existing_state > self.MAX_TRANSITIONS_TO_EXISTING_STATE:
+        # if self.num_transitions_to_existing_state > self.MAX_TRANSITIONS_TO_EXISTING_STATE:
         self.penalize_state()
 
     def add_transition_to_high_coverage(self, child):
@@ -78,8 +81,8 @@ class State:
         if self.fitness_score < 0:
             self.fitness_score = 0
 
-        #self.penalty = self.penalty + 0.2
-        #self.reward = 0.1
+        # self.penalty = self.penalty + 0.2
+        # self.reward = 0.1
 
         if self.penalty > 1.00:
             self.penalty = 1.00
@@ -94,12 +97,12 @@ class State:
         if self.fitness_score > State.MAX_FITNESS:
             self.fitness_score = State.MAX_FITNESS
 
-        #self.penalty = 0.1
-        #self.reward = self.reward + self.reward
+        # self.penalty = 0.1
+        # self.reward = self.reward + self.reward
         if self.reward > 1.00:
             self.reward = 1.00
 
-    #def adjust_fitness_score(self):
+    # def adjust_fitness_score(self):
     #    if self.num_transitions_to_existing_state > State.MAX_TRANSITIONS_TO_EXISTING_STATE:
     #        self.penalize_state()
     #        self.num_transitions_to_existing_state = 0
@@ -111,10 +114,10 @@ class State:
         formatted_output = formatted_output + ' hit: ' + str(self.hit_count)
         formatted_output = formatted_output + ' restore: ' + str(self.restore_count)
         formatted_output = formatted_output + ' trans: ' + str(self.transitions_triggered)
-        #formatted_output = formatted_output + ' widgets: ' + str(self.controllable_widgets)
+        # formatted_output = formatted_output + ' widgets: ' + str(self.controllable_widgets)
         formatted_output = formatted_output + ' fitness: ' + str(self.fitness_score)
         formatted_output = formatted_output + ' old trans: ' + str(self.num_transitions_to_existing_state)
-        #formatted_output = formatted_output + ' num_events: '
+        # formatted_output = formatted_output + ' num_events: '
         for n in self.number_events_to_transition:
             formatted_output = formatted_output + str(n) + ','
         formatted_output = formatted_output + '\n'
@@ -126,12 +129,11 @@ class State:
 
         return formatted_output
 
-class StateGraph:
 
+class StateGraph:
     states = {}  # used as static variable containing all states
 
-
-    def is_exist(self,uid):
+    def is_exist(self, uid):
         """
         identify whether the state exists in the graph
         :param uid: uid of the state to be checked
@@ -142,8 +144,7 @@ class StateGraph:
         else:
             return True
 
-
-    def retrieve(self,uid):
+    def retrieve(self, uid):
         """
         retrieve the state in the graph with uid
         :param uid:
@@ -155,7 +156,7 @@ class StateGraph:
         else:
             return None
 
-    def retrieve2(self,uid):
+    def retrieve2(self, uid):
         """
         retrieve the state in the graph with uid
         :param uid:
@@ -166,7 +167,6 @@ class StateGraph:
             return [StateGraph.states[uid]]
         else:
             return None
-
 
     def add_node(self, state_id):
         if state_id in StateGraph.states:
@@ -193,21 +193,22 @@ class StateGraph:
             print str(StateGraph.states[key])
 
     def get_nlargerest(self, p):
-        frequent_nodes = heapq.nlargest(int(len(StateGraph.states) * p), StateGraph.states.items(), key=lambda x: x[1].hit_count)
+        frequent_nodes = heapq.nlargest(int(len(StateGraph.states) * p), StateGraph.states.items(),
+                                        key=lambda x: x[1].hit_count)
         # print ([(x[0], x[1].transitions_triggered) for x in frequent_nodes])
 
         print "Frequent nodes "
         print frequent_nodes
         return frequent_nodes
-    
+
     def get_least_fittest_nodes(self, p):
-        frequent_nodes = heapq.nsmallest(int(math.ceil(len(StateGraph.states) * p)), StateGraph.states.items(), key=lambda x: x[1].fitness_score)
+        frequent_nodes = heapq.nsmallest(int(math.ceil(len(StateGraph.states) * p)), StateGraph.states.items(),
+                                         key=lambda x: x[1].fitness_score)
 
         print "Least interesting nodes: "
         print " p * num_states : " + str(math.ceil(len(StateGraph.states) * p))
         print frequent_nodes
         return frequent_nodes
-
 
     def get_nfittest(self, num_nodes):
         frequent_nodes = heapq.nlargest(num_nodes, StateGraph.states.items(), key=lambda x: x[1].fitness_score)
@@ -216,18 +217,18 @@ class StateGraph:
         print frequent_nodes
         return frequent_nodes
 
-    #def get_least_visit_node(self):
+    # def get_least_visit_node(self):
     #    return min(StateGraph.states.items(), key=lambda x: (x[1].hit_count + x[1].restore_count))[1]
 
-    def get_fittest_state(self,strategy):
-        #print "Debug:" + str(strategy) + str(type(strategy))
+    def get_fittest_state(self, strategy):
+        # print "Debug:" + str(strategy) + str(type(strategy))
         if strategy == 0:
             print "using fittest score ..."
             return max(filter(lambda x: x[1].solid, StateGraph.states.items()), key=lambda x: x[1].fitness_score)[1]
         if strategy == 1:
             print " using hit_count ..."
-            return min(filter(lambda x: x[1].solid, tateGraph.states.items()), key=lambda x: (x[1].hit_count + x[1].restore_count))[1]
-
+            return min(filter(lambda x: x[1].solid, StateGraph.states.items()),
+                       key=lambda x: (x[1].hit_count + x[1].restore_count))[1]
 
     def get_avg_fitness(self):
         if len(StateGraph.states.items()) == 0:
@@ -242,29 +243,29 @@ class StateGraph:
     def compute_frequent_node_portion(self, nodes, top_portion):
         if len(set(nodes)) == 0:
             return 0
-        return float(len([True for x in Counter([x[0] for x in self.get_nlargerest(top_portion)] + nodes).items() if x[1] >= 2])) / float(len(set(nodes)))
+        return float(len([True for x in Counter([x[0] for x in self.get_nlargerest(top_portion)] + nodes).items() if
+                          x[1] >= 2])) / float(len(set(nodes)))
 
     def compute_least_fittest_nodes_portion(self, recent_states, top_portion):
-        num=0
+        num = 0
         unfit_states = self.get_least_fittest_nodes(top_portion)
-        
+
         print "unfit_states::::: " + str(unfit_states)
 
         if len(set(recent_states)) == 0:
             return 0
-        
+
         for state in recent_states:
             print "recent::::" + str(state)
             for element in unfit_states:
                 if state == element[0]:
-                    num = num+1
+                    num = num + 1
                     print "comming in..."
-            print "num :: " + str(num) + "  :: " + str(len(recent_states)) + " portion: " + str(float(float(num)/float(len(recent_states))))
-        return float(float(num)/float(len(recent_states)))
+            print "num :: " + str(num) + "  :: " + str(len(recent_states)) + " portion: " + str(
+                float(float(num) / float(len(recent_states))))
+        return float(float(num) / float(len(recent_states)))
 
-
-        #return float(len([True for x in Counter([x[0] for x in self.get_least_fittest_nodes(top_portion)] + nodes).items() if x[1] >= 2])) / float(len(set(nodes)))
-
+        # return float(len([True for x in Counter([x[0] for x in self.get_least_fittest_nodes(top_portion)] + nodes).items() if x[1] >= 2])) / float(len(set(nodes)))
 
     @staticmethod
     def get_total_transitions():
@@ -273,8 +274,7 @@ class StateGraph:
     def get_snapshots(self):
         return filter(lambda x: x[1].solid, StateGraph.states.items())
 
-            
-        
+
 if __name__ == '__main__':
 
     state_graph = StateGraph()
@@ -294,7 +294,7 @@ if __name__ == '__main__':
     print s.uid
     state_graph.get_nlargerest(0.7)
 
-    p = ['1','3','4']
-   # print state_graph.compute_portion(p,0.7)
+    p = ['1', '3', '4']
+    # print state_graph.compute_portion(p,0.7)
 
     state_graph.dump()

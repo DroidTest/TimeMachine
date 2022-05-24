@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <me.zeeroooo.materialfb.ui.MFBPreferenceCategory android:title="@string/about_updates">
+        <Preference
+            app:iconSpaceReserved="false"
+            android:key="changelog"
+            android:title="@string/changelog" />
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:key="mfb_version"
+            android:title="@string/updates">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/ZeeRooo/MaterialFBook/releases" />
+        </androidx.preference.PreferenceScreen>
+    </me.zeeroooo.materialfb.ui.MFBPreferenceCategory>
+    <me.zeeroooo.materialfb.ui.MFBPreferenceCategory android:title="@string/source_code">
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:title="@string/source_code">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/ZeeRooo/MaterialFBook" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen android:title="@string/licence"
+            app:iconSpaceReserved="false">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://raw.githubusercontent.com/ZeeRooo/MaterialFBook/master/LICENCE" />
+        </androidx.preference.PreferenceScreen>
+    </me.zeeroooo.materialfb.ui.MFBPreferenceCategory>
+    <me.zeeroooo.materialfb.ui.MFBPreferenceCategory android:title="@string/devs_who_helped_me">
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="SlimSocial for Facebook"
+            android:title="rignaneseleo">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/rignaneseleo/SlimSocial-for-Facebook" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="Toffeed"
+            android:title="JakeLane">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/JakeLane/Toffeed" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="Folio for Facebook"
+            android:title="creativetrendsapps">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/creativetrendsapps/FolioforFacebook" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="FaceSlim"
+            android:title="indywidualny">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/indywidualny/FaceSlim" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="Glide"
+            android:title="bumptech">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/bumptech/glide" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="jsoup"
+            android:title="Jonathan Hedley">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/jhy/jsoup" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="acra"
+            android:title="ACRA">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/ACRA/acra" />
+        </androidx.preference.PreferenceScreen>
+    </me.zeeroooo.materialfb.ui.MFBPreferenceCategory>
+    <me.zeeroooo.materialfb.ui.MFBPreferenceCategory android:title="@string/people_who_translated">
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="akkk33"
+            android:title="Arabic">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/akkk33" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="mhtorp"
+            android:title="Danish">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/mhtorp" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="Sebacestmoi"
+            android:title="French" />
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="fabsmusicjunkie"
+            android:title="German">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/fabsmusicjunkie" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="yarons"
+            android:title="Hebrew">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/yarons" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="István Vass"
+            android:title="Hungarian">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://forum.xda-developers.com/member.php?u=2946536" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="Aditya Prasetyo"
+            android:title="Indonesian">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://forum.xda-developers.com/member.php?u=4563814" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="GorranKurd"
+            android:title="Kurdish">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://forum.xda-developers.com/member.php?u=4604711" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="alekksander"
+            android:title="Polish">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/alekksander" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="abacate123"
+            android:title="Portuguese">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/abacate123" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="nishimura-san"
+            android:title="Romanian">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://forum.xda-developers.com/member.php?u=4995498" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="maxel85"
+            android:title="Russian" />
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="PoP992"
+            android:title="Serbian">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/PoP992" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="Me, ZeeRooo"
+            android:title="Spanish">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://forum.xda-developers.com/member.php?u=7490500" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="Baran Aydin"
+            android:title="Turkish" />
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="ngoisaosang"
+            android:title="Vietnamese">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/ngoisaosang" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="Nigusu"
+            android:title="Amharic" />
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="asereze"
+            android:title="Sardinian">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/asereze" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="Irriep Nala Novram"
+            android:title="Breton" />
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:summary="sfilmak"
+            android:title="Ukrainian">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/sfilmak" />
+        </androidx.preference.PreferenceScreen>
+    </me.zeeroooo.materialfb.ui.MFBPreferenceCategory>
+    <me.zeeroooo.materialfb.ui.MFBPreferenceCategory android:title="@string/about_translations">
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:title="@string/help_translations">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.transifex.com/yaron/materialfbook/translate/" />
+        </androidx.preference.PreferenceScreen>
+        <androidx.preference.PreferenceScreen
+            app:iconSpaceReserved="false"
+            android:title="@string/withYou">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://github.com/ZeeRooo/MaterialFBook/issues" />
+        </androidx.preference.PreferenceScreen>
+    </me.zeeroooo.materialfb.ui.MFBPreferenceCategory>
+</androidx.preference.PreferenceScreen>

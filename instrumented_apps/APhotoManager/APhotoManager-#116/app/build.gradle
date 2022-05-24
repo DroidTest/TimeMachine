@@ -1,0 +1,151 @@
+
+
+apply plugin: 'com.android.application'
+apply plugin: 'maven'
+// markdown in javadoc
+// https://github.com/Abnaxos/pegdown-doclet
+apply plugin: 'ch.raffael.pegdown-doclet'
+
+
+android {
+    // appXXX are defined in gradle.properties
+    compileSdkVersion = Integer.valueOf(appCompileSdkVersion)
+    buildToolsVersion = appBuildToolsVersion
+
+    defaultConfig {
+        // fdroid-release 'de.k3b.android.androFotoFinder'
+        // main-develop-branch 'de.k3b.android.androFotoFinder.dev'
+        applicationId 'de.k3b.android.androFotoFinder'
+		
+        minSdkVersion 14
+        targetSdkVersion 21
+
+		// non-fdroid release
+        // appXXX are defined in gradle.properties
+        // versionCode = Long.valueOf(appVersionCode)
+        // versionName = appVersionName
+
+		// fdroid release only
+        // unfortunately fdroid needs magic numbers to detect version infos
+		// published 0.5.1.160629 (17)
+		// published 0.5.1.160712 (18)
+		// published 0.5.2.160726 (19)
+        // not published 0.5.2.160920 (20)
+        // 0.5.3.160927 (21)    mapsforge offline maps; *.gpx and *.kml files
+        // 0.5.4.161111 (22)
+        // 0.5.4.161112 (23)
+        // 0.5.5.161220 (24)    Image Picker
+        // 0.6.0.170309 (25)    Tag support (fdroid build failed)
+        // 0.6.0.170315 (26)    Bugfix for new Tag support (fdroid build failed)
+        // 0.6.0.170402 (27)    language updates. (fdroid build failed)
+        // 0.6.0.170404 (28)    same as 0.6.0.170402. try to fix fdroid build
+        // 0.6.0.170421 (29)    bugfix Map
+        // 0.6.0.170502 (30)    workaround "android stock icon as activity icon breaks aapt check in frdoid build"
+        // 0.6.1.170803 (31)    edit exif; enhanced media scanner
+        // 0.6.1.170816 (32)    Bugfix crash android-7.1
+        // 0.6.2.171114 (33)    Bugfix: non-root android-5 (or newer) direcotry picker not working because of permissions. Necessary for copy/move file commands.
+        // 0.6.2.171126 (34)    Bugfix Crash (NullPointerException) in mediascanner after updating exif
+        // 0.6.3.180211 (35)    Extended Applocking; Autoprocessingmode for copy/move; Private images
+        // 0.6.4.180314 (36)    Buggy: Fix/Improved Autoprocessingmode, Menu "open in filemanager" & "rename folder"-Crash in Settings
+        // 0.6.4.180321 (37)    Bugfix for 0.6.4.180314 (36)
+
+        versionCode = 37
+        versionName = '0.6.4.180321'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    buildTypes {
+        debug {
+			// shrinkResources true
+            // minifyEnabled true
+			minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+			shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+	
+	lintOptions {
+		// http://stackoverflow.com/questions/31350350/generating-signed-apk-error7-missingtranslation-in-build-generated-res-gen
+		// MissingTranslation : not all crowdwin translations are complete so ignore them
+		// ValidFragment : local (dialog-)fragment class for customized direcotry picker is fragile but on rotation code makes shure that dialog is closed. 
+        disable 'MissingTranslation','ValidFragment', 'ContentDescription', 'AndroidLintPluralsCandidate', 'AndroidLintRtlHardcoded'
+
+        abortOnError false
+    }
+}
+
+// task from https://stackoverflow.com/questions/45848521/how-to-sync-android-project-by-gradle-task/45856729#45856729
+import java.util.regex.Pattern
+task('increaseVersionCode') << {
+    def buildFile = file("build.gradle")
+    def pattern = Pattern.compile("versionCode\\s+(\\d+)")
+    def manifestText = buildFile.getText()
+    def matcher = pattern.matcher(manifestText)
+    matcher.find()
+    def versionCode = Integer.parseInt(matcher.group(1))
+    def manifestContent = matcher.replaceAll("versionCode " + ++versionCode)
+    buildFile.write(manifestContent)
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':fotolib2')
+
+    // compile project(':k3b-geoHelper')
+    compile 'com.github.k3b:k3b-geoHelper:1.1.5'
+
+    // https://github.com/nostra13/Android-Universal-Image-Loader
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    // zoomable image view
+    // from https://github.com/chrisbanes/PhotoView
+    // compile 'com.github.chrisbanes.photoview:library:1.2.3'
+    // compile project(':fotoview.library')
+    // compile 'com.github.k3b.PhotoView:library:v1.2.6.k3b-SNAPSHOT' // via jitpack.io
+    compile 'com.github.k3b:PhotoView:v1.2.6.k3b-5-SNAPSHOT' // via jitpack.io
+
+    // for view-pager
+    // https://mvnrepository.com/artifact/com.android.support/support-v4
+    implementation group: 'com.android.support', name: 'support-v4', version: '23.3.0'
+
+    //compile 'com.android.support:support-v4:21.0.2'
+    // compile 'com.android.support:support-v4:23.1.1'
+    // compile 'com.android.support:support-v4:21.0.2'
+    // compile 'com.android.support:appcompat-v7:21.0.2'
+    // exif support
+    // https://github.com/drewnoakes/metadata-extractor/wiki/GettingStarted licence: http://www.apache.org/licenses/LICENSE-2.0
+    // 2.10.1 includes more recent xmpcore that generates java-8 bytecode not supported by android yet
+    compile ('com.drewnoakes:metadata-extractor:2.10.1') { transitive = false; } // 2.8.1
+	
+	// compile 'com.adobe.xmp:xmpcore:6.1.10' // update for drewnoakes:metadata-extractor requires java-8 compiler does not run on my android-4.4.
+	compile 'com.adobe.xmp:xmpcore:5.1.2' // current version for drewnoakes:metadata-extractor
+
+    // compile 'com.github.k3b:slideDateTimePicker:v1.0.5' // via jitpack.io
+
+    // compile 'org.apache.commons:commons-configuration2:2.1.1'
+
+    // this is osmdroid
+    // compile 'org.osmdroid:osmdroid-android:5.4:release@aar'
+    // compile ('org.osmdroid:osmdroid-mapsforge:5.4:release@aar')
+    compile 'org.osmdroid:osmdroid-android:6.0.1'
+    compile ('org.osmdroid:osmdroid-mapsforge:6.0.1')
+
+
+    //Mapsforge rendering and database support, which is LGPL
+    compile 'org.mapsforge:mapsforge-map-android:0.6.1'
+    compile 'org.mapsforge:mapsforge-map:0.6.1'
+
+    compile 'org.slf4j:slf4j-api:1.7.7@jar'
+    compile 'eu.lp0.slf4j:slf4j-android:1.7.7-1@jar'
+
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.slf4j:slf4j-simple:1.7.7'
+}

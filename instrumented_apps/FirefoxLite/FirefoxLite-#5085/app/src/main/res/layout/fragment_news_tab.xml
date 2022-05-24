@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_tab_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paletteWhite100"
+    android:orientation="vertical"
+    tools:context="org.mozilla.rocket.content.news.ui.NewsTabFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:title="@string/label_menu_news">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/news_setting"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_gravity="end"
+            android:src="@drawable/news_setting"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:visibility="gone" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/news_refresh_button"
+            android:layout_width="?android:attr/actionBarSize"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_gravity="end"
+            android:src="@drawable/action_refresh"
+            android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/news_tab"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_margin_m7"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@color/paletteDarkGreyC100"
+        app:tabTextColor="@color/paletteDarkGreyC30"
+        app:tabIndicatorColor="@color/paletteDarkGreyC100"
+        app:tabIndicatorFullWidth="false"
+        app:tabUnboundedRipple="true"
+        app:tabTextAppearance="@style/ContentTabText" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/paletteLightGreyA100" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/news_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

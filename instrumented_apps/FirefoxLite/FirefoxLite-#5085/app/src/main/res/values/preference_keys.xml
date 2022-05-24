@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="pref_key_search_engine" translatable="false"><xliff:g id="preference_key">pref_search_engine</xliff:g></string>
+
+    <string name="pref_key_privacy_block_ads" translatable="false"><xliff:g id="preference_key">pref_privacy_block_ads</xliff:g></string>
+    <string name="pref_key_privacy_block_analytics" translatable="false"><xliff:g id="preference_key">pref_privacy_block_analytics</xliff:g></string>
+    <string name="pref_key_privacy_block_social" translatable="false"><xliff:g id="preference_key">pref_privacy_block_social</xliff:g></string>
+    <string name="pref_key_privacy_block_other" translatable="false"><xliff:g id="preference_key">pref_privacy_block_other</xliff:g></string>
+    <string name="pref_key_privacy_block_abpindo" translatable="false"><xliff:g id="preference_key">pref_privacy_block_abpindo</xliff:g></string>
+    <string name="pref_key_turbo_mode" translatable="false"><xliff:g id="preference_key">pref_privacy_turbo_mode</xliff:g></string>
+
+    <string name="pref_key_performance_block_webfonts" translatable="false"><xliff:g id="preference_key">pref_performance_block_webfonts</xliff:g></string>
+    <string name="pref_key_performance_block_images" translatable="false"><xliff:g id="preference_key">pref_performance_block_images</xliff:g></string>
+    <string name="pref_key_performance_block_java_script" translatable="false"><xliff:g id="preference_key">pref_performance_block_java_script</xliff:g></string>
+
+    <string name="pref_key_default_browser" translatable="false"><xliff:g id="preference_key">pref_default_browser</xliff:g></string>
+    <string name="pref_key_default_browser_name" translatable="false"><xliff:g id="preference_key">pref_default_browser_name</xliff:g></string>
+
+    <string name="pref_key_telemetry" translatable="false"><xliff:g id="preference_key">pref_telemetry</xliff:g></string>
+
+    <string name="pref_key_give_feedback" translatable="false"><xliff:g id="preference_key">pref_give_feedback</xliff:g></string>
+    <string name="pref_key_share_with_friends" translatable="false"><xliff:g id="preference_key">pref_share_with_friends</xliff:g></string>
+    <string name="pref_key_private_mode_shortcut" translatable="false"><xliff:g id="preference_key">pref_private_mode_shortcut</xliff:g></string>
+    <string name="pref_key_about" translatable="false"><xliff:g id="preference_key">pref_about</xliff:g></string>
+    <string name="pref_key_help" translatable="false"><xliff:g id="preference_key">pref_help</xliff:g></string>
+    <string name="pref_key_rights" translatable="false"><xliff:g id="preference_key">pref_rights</xliff:g></string>
+    <string name="pref_key_night_mode_brightness" translatable="false"><xliff:g id="preference_key">pref_night_mode_brightness</xliff:g></string>
+    <string name="pref_key_night_mode_enable" translatable="false"><xliff:g id="preference_key">pref_night_mode_enable</xliff:g></string>
+    <string name="pref_key_brightness" translatable="false"><xliff:g id="preference_key">pref_night_mode_brightness_value</xliff:g></string>
+    <string name="pref_key_night_mode_brightness_dirty" translatable="false"><xliff:g id="preference_key">pref_night_mode_brightness_dirty</xliff:g></string>
+
+    <string name="pref_key_locale" translatable="false"><xliff:g id="preference_key">pref_locale</xliff:g></string>
+    <string name="pref_key_s_tracker_token" translatable="false"><xliff:g id="preference_key">pref_key_s_tracker_token</xliff:g></string>
+    <string name="pref_key_experiment_bucket" translatable="false"><xliff:g id="preference_key">pref_key_experiment_bucket</xliff:g></string>
+    <string name="pref_key_is_under_experiment" translatable="false"><xliff:g id="preference_key">pref_key_is_under_experiment</xliff:g></string>
+
+    <string name="pref_key_webview_version" translatable="false"><xliff:g id="preference_key">pref_webview_version</xliff:g></string>
+
+    <string name="pref_key_focus_tab_id" translatable="false"><xliff:g id="preference_key">pref_key_focus_tab_id</xliff:g></string>
+
+    <string name="pref_key_category_experiment" translatable="false"><xliff:g id="preference_key">pref_category_experiment</xliff:g></string>
+
+    <string name="pref_key_category_debug" translatable="false"><xliff:g id="preference_key">pref_key_category_debug</xliff:g></string>
+    <string name="pref_key_debug_page" translatable="false"><xliff:g id="preference_key">pref_key_debug_page</xliff:g></string>
+
+    <!-- data saving -->
+    <string name="pref_key_data_saving_block_ads" translatable="false"><xliff:g id="preference_key">pref_data_saving_block_ads</xliff:g></string>
+    <string name="pref_key_data_saving_block_webfonts" translatable="false"><xliff:g id="preference_key">pref_data_saving_block_webfonts</xliff:g></string>
+    <string name="pref_key_data_saving_block_images" translatable="false"><xliff:g id="preference_key">pref_data_saving_block_images</xliff:g></string>
+    <string name="pref_key_data_saving_block_tab_restore" translatable="false"><xliff:g id="preference_key">pref_data_saving_block_tab_restore</xliff:g></string>
+
+    <!-- storage and cache -->
+    <string name="pref_key_storage_clear_browsing_data" translatable="false"><xliff:g id="preference_key">pref_clear_browsing_data</xliff:g></string>
+    <string name="pref_key_removable_storage_available_on_create" translatable="false"><xliff:g id="preference_key">pref_removable_available_on_create</xliff:g></string>
+    <string name="pref_key_storage_save_downloads_to" translatable="false"><xliff:g id="preference_key">pref_save_downloads_to</xliff:g></string>
+    <string name="pref_key_showed_storage_message" translatable="false"><xliff:g id="preference_key">pref_showed_storage_message</xliff:g></string>
+
+    <!-- rate app -->
+    <string name="pref_key_app_create_counter" translatable="false"><xliff:g id="preference_key">pref_app_create_counter</xliff:g></string>
+    <string name="pref_key_did_show_rate_app_dialog" translatable="false"><xliff:g id="preference_key">pref_did_show_rate_app_dialog</xliff:g></string>
+    <string name="pref_key_did_show_rate_app_notification" translatable="false"><xliff:g id="preference_key">pref_did_show_rate_app_notification</xliff:g></string>
+    <string name="pref_key_did_dismiss_rate_app_dialog" translatable="false"><xliff:g id="preference_key">pref_did_dismiss_rate_app_dialog</xliff:g></string>
+
+    <!-- share app -->
+    <string name="pref_key_did_show_share_app_dialog" translatable="false"><xliff:g id="preference_key">pref_did_show_share_app_dialog</xliff:g></string>
+
+    <!-- clear browsing data-->
+    <string name="pref_value_clear_browsing_history" translatable="false"><xliff:g id="preference_key">pref_clear_browsing_history</xliff:g></string>
+    <string name="pref_value_clear_form_history" translatable="false"><xliff:g id="preference_key">pref_clear_form_history</xliff:g></string>
+    <string name="pref_value_clear_cookies" translatable="false"><xliff:g id="preference_key">pref_clear_cookies</xliff:g></string>
+    <string name="pref_value_clear_cache" translatable="false"><xliff:g id="preference_key">pref_clear_cache</xliff:g></string>
+
+    <!-- data saving path values-->
+    <string name="pref_value_saving_path_sd_card" translatable="false"><xliff:g id="preference_key">pref_saving_path_sd_card</xliff:g></string>
+    <string name="pref_value_saving_path_internal_storage" translatable="false"><xliff:g id="preference_key">pref_saving_path_internal_storage</xliff:g></string>
+
+    <!-- default browser-->
+    <string name="pref_key_did_show_default_browser_setting" translatable="false"><xliff:g id="preference_key">pref_did_show_default_browser_setting</xliff:g></string>
+    <string name="pref_key_setting_click_counter" translatable="false"><xliff:g id="preference_key">pref_setting_click_counter</xliff:g></string>
+
+    <!-- Unread Myshot -->
+    <string name="pref_has_unread_my_shot" translatable="false"><xliff:g id="preference_key">pref_has_unread_my_shot</xliff:g></string>
+
+    <string name="pref_int_last_prompt_in_app_update_version"><xliff:g id="preference_key">pref_last_prompt_in_app_update_version</xliff:g></string>
+
+    <!-- Private Mode - turbo mode setting -->
+    <string name="pref_key_pb_boolean_turbo_enabled" translatable="false"><xliff:g id="preference_key">pref_key_pb_turbo_enabled</xliff:g></string>
+
+    <!-- Private Mode - count of the times user leave private mode -->
+    <string name="pref_key_pb_int_leave_count" translatable="false"><xliff:g id="preference_key">pref_key_pb_leave_count</xliff:g>></string>
+    <string name="pref_key_pb_boolean_shortcut_created" translatable="false"><xliff:g id="preference_key">pref_key_pb_shortcut_created</xliff:g>></string>
+
+    <!-- Hashed FCM Token   -->
+    <string name="pref_int_fcm_token" translatable="false"><xliff:g id="preference_key">pref_int_fcm_token</xliff:g></string>
+
+    <!-- Server Push Debugging   -->
+    <string name="pre_bool_is_server_push_enabled" translatable="false"><xliff:g id="preference_key">pre_bool_is_server_push_enabled</xliff:g></string>
+
+</resources>

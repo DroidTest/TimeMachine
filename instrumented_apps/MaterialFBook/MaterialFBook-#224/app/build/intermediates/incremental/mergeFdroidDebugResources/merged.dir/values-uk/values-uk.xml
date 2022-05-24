@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="Start">
+        <item>Останні</item>
+        <item>Рекомендовані</item>
+        <item>Повідомлення</item>
+    </string-array>
+    <string-array name="intervalPrefTitles">
+        <item>1 хвилина</item>
+        <item>2 хвилини</item>
+        <item>5 хвилин</item>
+        <item>15 хвилин</item>
+        <item>30 хвилин</item>
+        <item>1 година</item>
+        <item>3 години</item>
+        <item>6 годин</item>
+    </string-array>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Перейти на головну"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Перейти вгору"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Більше опцій"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Готово"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Показати всі"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Вибрати програму"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"ЗНИЖКА"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"УВІМК."</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"пробіл"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Введіть пошуковий запит…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Очистити запит"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Пошуковий запит"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Пошук"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Наіслати запит"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Голосовий пошук"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Поділитися:"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Поділитися через додаток <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Згорнути"</string>
+    <string name="about_translations">Ви потрібні нам</string>
+    <string name="about_updates">Оновлення</string>
+    <string name="add">Закладки</string>
+    <string name="app_themes">Теми додатку</string>
+    <string name="app_themes_summary">Ви можете обрати різні стилі оформлення додатку.</string>
+    <string name="appearance_setting_title">ОФОРМЛЕННЯ</string>
+    <string name="applying_changes">Застосовуємо зміни</string>
+    <string name="changelog">Список змін</string>
+    <string name="clearcache">Очищати кеш при виході</string>
+    <string name="clearcache_summary">Це займе більше часу при відкритті додатку</string>
+    <string name="content_copy_link_done">Посилання скопійовано в буфер обміну</string>
+    <string name="context_copy_image_link">Скопіювати посилання на зображення</string>
+    <string name="context_copy_link">Скопіювати посилання</string>
+    <string name="context_save_image">Зберегти зображення</string>
+    <string name="context_share_image">Поділитись зображенням</string>
+    <string name="context_share_image_progress">Ділимось зображенням…</string>
+    <string name="context_share_link">Поділитись посиланням</string>
+    <string msgid="3209159573327985035" name="copy">"Скопіювати"</string>
+    <string name="default_user">Користувач</string>
+    <string name="devs_who_helped_me">Розробники, які допомогли мені з моїми питаннями та кодом своїх додатків.</string>
+    <string name="downloaded">Збережено</string>
+    <string name="error_facebook_error">Щось пішло не так на стороні Facebook</string>
+    <string name="error_facebook_noconnection">Не можу під\'єднатись до Facebook</string>
+    <string name="error_login">Щось пішло не так. Будь ласка, спробуйте увійти ще раз</string>
+    <string name="error_super_wrong">Щось пішло зовсім не так</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"Додатково"</string>
+    <string name="fab_checkin">Відмітитись</string>
+    <string name="fab_enable">Плаваюча кнопка</string>
+    <string name="fab_enable_summary">Показувати плаваючу кнопку.</string>
+    <string name="fab_jump_top">Вгору</string>
+    <string name="fab_photo">Завантажити зображення</string>
+    <string name="fab_text">Оновити статус</string>
+    <string name="facebook_message">Сповіщення про повідомлення</string>
+    <string name="facebook_notifications">Сповіщення Facebook</string>
+    <string name="file_logger_needs_permission">Доступ до пам\'яті відсутній. Немає можливості зберегти лог</string>
+    <string name="general_setting_title">Загальні</string>
+    <string name="header_profile_pic">Світлина профілю</string>
+    <string name="help_translations">Допоможіть перевести додаток на Вашу мову</string>
+    <string name="hide_birthdays_summary">Прибрати дні народження зі стрічки, заходів та сповіщень</string>
+    <string name="hide_birthdays_title">Прибрати дні народження</string>
+    <string name="hide_editor_newsfeed_summary">При увімкненні редактор статусу буде приховано зі стрічки новин.</string>
+    <string name="hide_editor_newsfeed_title">Прибрати редактор статусу зі стрічки новин</string>
+    <string name="hide_menu_bar_summary">При увімкненні верхнє меню Facebook буде приховане.</string>
+    <string name="hide_menu_bar_title">Прибрати верхнє меню</string>
+    <string name="hide_recently_commented">Прибрати сповіщення про нещодавні коментарі</string>
+    <string name="hide_recently_commented_summary">X людей прокоментувало це теж.</string>
+    <string name="hide_sponsored_summary">Прибрати ‘Рекомендований’ контент (реклама) зі стрічки новин.</string>
+    <string name="hide_sponsored_title">Прибрати ‘Рекомендований’ контент</string>
+    <string name="ic_menu_exitapp">Закрити додаток</string>
+    <string name="ic_menu_exitapp_summary">Показувати кнопку ‘Закрити додаток’ в боковому меню.</string>
+    <string name="ic_menu_fblogout">Вийти</string>
+    <string name="ic_menu_fblogout_summary">Показувати кнопку ‘Вийти’ в боковому меню.</string>
+    <string name="interval_pref">Інтервал перевірки сповіщень</string>
+    <string name="interval_pref_description_new">Сповіщення будуть перевірятись кожні %s.</string>
+    <string name="led_light">LED</string>
+    <string name="loading">Завантаження</string>
+    <string name="location_enabled_summary">Увімкніть, щоб Facebook мав доступ до Вашої геолокації.</string>
+    <string name="location_enabled_title">Доступ до геолокації</string>
+    <string name="login_button">Увійти</string>
+    <string name="menu_back">Назад</string>
+    <string name="menu_back_summary">Показувати кнопку ‘Назад’ в боковому меню.</string>
+    <string name="menu_events">Заходи</string>
+    <string name="menu_events_summary">Показувати кнопку ‘Заходи’ в боковому меню.</string>
+    <string name="menu_friendreq">Запити</string>
+    <string name="menu_friendreq_summary">Показувати кнопку ‘Запити’ в боковому меню.</string>
+    <string name="menu_groups">Групи</string>
+    <string name="menu_groups_summary">Показувати кнопку ‘Групи’ в боковому меню.</string>
+    <string name="menu_mainmenu">Головне меню</string>
+    <string name="menu_mainmenu_summary">Показувати кнопку ‘Головне меню’ в боковому меню.</string>
+    <string name="menu_messages">Повідомлення</string>
+    <string name="menu_most_recent">Останні історії</string>
+    <string name="menu_most_recent_summary">Показувати кнопку ‘Останні історії’ в боковому меню.</string>
+    <string name="menu_photos">Зображення</string>
+    <string name="menu_photos_summary">Показувати кнопку ‘Зображення’ в боковому меню.</string>
+    <string name="menu_search">Пошук</string>
+    <string name="menu_search_summary">Показувати кнопку ‘Пошук’ в боковому меню.</string>
+    <string name="menu_top_stories">Найкращі історії</string>
+    <string name="menu_top_stories_summary">Показувати кнопку ‘Найкращі історії’ в боковому меню.</string>
+    <string name="messaging_enabled_summary">При увімкненні відкриватимуться повідомлення Facebook. Вимкніть, якщо у Вас є додаток Messenger.</string>
+    <string name="messaging_enabled_title">Обмін повідомленнями</string>
+    <string name="more">Більше та подяки</string>
+    <string name="nav_notifications">Сповіщення</string>
+    <string name="navigation_drawer_close">Закрити бокове меню</string>
+    <string name="navigation_drawer_open">Відкрити бокове меню</string>
+    <string name="navigation_menu_settings">Пункти меню навігації</string>
+    <string name="navigation_menu_settings_description">Ви можете приховати або показати пункти меню навігації</string>
+    <string name="navigation_menu_title">МЕНЮ НАВІГАЦІЇ</string>
+    <string name="navigation_setting_title">НАВІГАЦІЯ</string>
+    <string name="new_bookmark">Додано:</string>
+    <string name="not_logged_in">Ви не увійшли</string>
+    <string msgid="478774118347071097" name="not_set">"Не налаштовано"</string>
+    <string name="notif">Сповіщення</string>
+    <string name="notification_sound">Звук сповіщень</string>
+    <string name="notification_sound_description">Оберіть рінгтон або тишу: \u0020</string>
+    <string name="notification_sound_msg">Звук повідомлень</string>
+    <string name="notifications_setting_title">СПОВІЩЕННЯ</string>
+    <string name="notifications_settings">Налаштування сповіщень</string>
+    <string name="notifications_settings_description">Додаткові налаштування. Оберіть інтервал перевірки сповіщень, налаштуйте звуки, LED та вібрацію.</string>
+    <string name="people_who_translated">Користувачі, які переклали додаток</string>
+    <string name="permission_denied">Дозвіл не отримано, не можу завершити дію</string>
+    <string msgid="7961817945132860002" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\": скопійовано в буфер обміну."</string>
+    <string name="remove_bookmark">Видалено:</string>
+    <string name="save_data">Режим збереження трафіку</string>
+    <string name="save_data_summary">Завантажувати Facebook в базовій версії та вимкнути завантаження інформації про Ваш профіль.</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Пошук"</string>
+    <string name="settings">Налаштування</string>
+    <string name="silent">Без звуку</string>
+    <string name="source_code">Відкритий код на Github</string>
+    <string name="start_url">Початковий URL</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stop_images_summary">При увімкненні зображення не будуть завантажуватись. Деякі зображення збережені в кеші</string>
+    <string name="stop_images_title">Не завантажувати зображення</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="sync_problem">Файли Cookie не можуть бути синхронізовані. Спробуйте перезапустити додаток</string>
+    <string name="updates">Перевірити на наявність нової версії</string>
+    <string name="updates_summary">Відкрити сторінку та завантажити останню версію</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"ВИМКНЕНО"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"УВІМКНЕНО"</string>
+    <string name="vibrate">Вібрація</string>
+    <string name="vibrate_double">Подвійна вібрація</string>
+    <string name="web_themes">Веб-теми</string>
+    <string name="web_themes_summary">Ви можете обрати різні веб-теми.</string>
+    <string name="withYou">Сповістити про баг або запропонувати нові функції</string>
+</resources>

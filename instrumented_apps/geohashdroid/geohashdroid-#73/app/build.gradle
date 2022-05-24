@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+apply plugin: 'jacoco'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "net.exclaimindustries.geohashdroid"
+        minSdkVersion 16
+        targetSdkVersion 29
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        debug {
+            testCoverageEnabled true
+        }
+    }
+}
+
+repositories {
+    jcenter()
+    google()
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.guava:guava:24.1-jre'
+    implementation 'cz.msebera.android:httpclient:4.4.1.1'
+    implementation 'org.opensextant:geodesy:2.0.1'
+    implementation 'androidx.core:core:1.2.0'
+}

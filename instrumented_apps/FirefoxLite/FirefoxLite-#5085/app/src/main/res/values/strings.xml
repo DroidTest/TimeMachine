@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="utf-8"?><!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources>
+    <string name="mozilla" translatable="false">Mozilla</string>
+    <string name="firefox" translatable="false">Firefox</string>
+    <string name="mpl" translatable="false">Mozilla Public License</string>
+    <!-- Label used for buttons, e.g. in dialogs -->
+    <string name="action_cancel">CANCEL</string>
+    <!-- Label used for buttons, e.g. in dialogs -->
+    <string name="action_ok">OK</string>
+
+    <!-- This text is shown in the URL bar when it's empty -->
+    <string name="urlbar_hint">Search or enter address</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="menu_about">About</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_rights">Your Rights</string>
+    <string name="menu_give_feedback">Give feedback</string>
+    <string name="menu_share_with_friends">Share with friends</string>
+
+    <!-- This is the title of a dialog that shows all the share targets (apps or contacts) when
+         sharing an URL. -->
+    <string name="share_dialog_title">Share via</string>
+
+    <!-- Watermark/Hint for the find in page input field. -->
+    <string name="find_in_page_input">Find in page</string>
+
+    <!-- String to show the number of results found in the page and the
+        position the user is at. The first argument is the position, the second argument is the total. -->
+    <string name="find_in_page_result">%1$d/%2$d</string>
+
+    <!-- String to be read by the accessibility service presenting the number of results found in the page
+        and the position the user is at. The first argument is the position, the second argument is the total. -->
+    <string name="accessibility_find_in_page_result">%1$d out of %2$d</string>
+
+    <!-- String to be read by the accessibility service when focusing the next result button. -->
+    <string name="accessibility_find_next_result">Find next result</string>
+    <!-- String to be read by the accessibility service when focusing the previous result button. -->
+    <string name="accessibility_find_previous_result">Find previous result</string>
+    <!-- String to be read by the accessibility service when focusing the dismiss button in the "find in page" UI. -->
+    <string name="accessibility_dismiss_find_in_page">Dismiss find in page</string>
+
+
+    <!-- This is the label of an action we offer when the user selects text in other third-party apps.
+         Clicking this action will launch Rocket and perform a search in the default search engine.
+         Please keep the "Firefox Rocket" part and don't localize the product name. -->
+    <string name="text_selection_search_action">Search in Firefox Lite</string>
+
+    <!-- Content of "about Rocket". Argument 1 is the major body of the content #about_content_body.
+         Argument 2,4,6,8 is the urls.
+         Argument 3,5,7,9 is the Label of the urls. -->
+    <string name="about_content" translatable="false"><![CDATA[
+<p>%1$s<br/>
+<a href="%2$s">%3$s</a></p><br/><br/>
+<a href="%4$s">%5$s</a><br/><br/>
+<a href="%6$s">%7$s</a><br/><br/>
+<a href="%8$s">%9$s</a><br/><br/>
+<a href="%10$s">%11$s</a><br/><br/>
+    ]]></string>
+
+    <!-- Content of about Rocket.
+    %1$s is the app name of the content. i.e.x. Firefox Rocket
+    %2$s is "Mozilla" -->
+    <string name="about_content_body">%1$s is a fast and lightweight browser produced by %2$s. Our mission is to foster a healthy, open internet.</string>
+    <string name="about_link_learn_more">Learn more</string>
+    <string name="about_link_support">Support</string>
+    <string name="about_link_your_rights">Your Rights / Licenses</string>
+    <string name="about_link_privacy">Privacy Notice</string>
+    <!--Life Feed is an information panel covering content that might help our customers' life. It covers from the most popular topics to the hottest deals, including news, games, coupon...etc.-->
+    <string name="life_feed">Life Feed</string>
+    <!-- The %1$s here is a placeholder for "Life Feed". Life Feed is an information panel covering content that might help our customers' life. It covers from the most popular topics to the hottest deals, including news, games, coupon...etc.-->
+    <string name="about_link_life_feed">Learn more about %1$s</string>
+
+    <!-- This label is shown below the name of the default search engine in settings -->
+    <string name="preference_search_engine_default">Default search engine</string>
+
+    <string name="preference_language">Language</string>
+    <!-- This is shown when the user hasn't set a Rocket specific language, i.e. when Rocket
+         is using the system default language. -->
+    <string name="preference_language_systemdefault">System default</string>
+
+    <!-- This is the title of the dialog for selecting a new default search engine -->
+    <string name="preference_dialog_title_search_engine">Default search engine</string>
+   
+    <!-- This is the title of the dialog for choosing news source -->
+    <string name="preference_dialog_title_news_source">News source</string>
+   
+    <string name="preference_data_saving_block_images">Block images</string>
+
+    <!-- Settings Privacy and storage-->
+    <string name="preference_privacy_storage_clear_browsing_data">Clear browsing data</string>
+    <string name="preference_privacy_storage_save_downloads_to">Save downloads to </string>
+
+    <!-- This preference does not set Firefox Lite as the default browser but instead links to Android's
+     "default apps" screen, on older Android versions, we try to reset user's current default
+     browser and let user choose again if they want to always open links with Firefox Lite. -->
+    <string name="preference_default_browser">Set as default browser</string>
+    <!-- In the "Make default browser" preference entry, there is an optional description field
+    which is empty before the entry is tapped. When a user taps the entry and the change is
+    applying, this message is shown as the description. -->
+    <string name="preference_default_browser_is_setting">Changing settings…</string>
+
+    <string name="preference_turbo_mode">Turbo mode</string>
+
+    <string name="preference_mozilla_telemetry">Send usage data</string>
+
+    <!-- Item in Preferences that shows the app name wants to send telemetry. Parameter %1$s is the app name, i.e. Firefox Rocket.
+    %2$s is "Mozilla"-->
+    <string name="preference_mozilla_telemetry_summary">%2$s strives to collect only what we need to provide and improve %1$s for everyone.</string>
+    <string name="preference_learn_more">Learn more</string>
+
+    <!-- Item in Preferences that shows the about page. -->
+    <string name="preference_about">About</string>
+
+    <!-- Item in Preferences that shows the night mode adjust brightness widget. -->
+    <string name="preference_night_mode_brightness">Night mode brightness</string>
+   
+    <!-- After users have tried night mode once, the next time the user opens menu we would like to show them how they can long press the Night Mode icon to show a widget for brightness adjustments. -->
+    <string name="night_mode_on_boarding_message">Long press to adjust brightness</string>
+  
+    <!-- Content description (not visible, for screen readers etc.): Clear text in URL bar -->
+    <string name="content_description_clear_input">Clear input</string>
+
+    <!-- Content description (not visible, for screen readers etc.): Clicking on the website overlay
+     while in typing mode will dismiss and go back to the browser. This text will be read when the
+     overlay if it gain focus. -->
+    <string name="content_description_dismiss_input">Dismiss</string>
+
+    <!-- Content description (not visible, for screen readers etc.): Lock icon showed in the URL bar for
+     https pages.. -->
+    <string name="content_description_lock">Secure connection</string>
+
+    <!-- This text is not visible. Instead it will be read by the accessibility service once we start
+     loading a website -->
+    <string name="accessibility_announcement_loading">Loading</string>
+
+    <!-- This text is not visible. Instead it will be read by the accessibility service once we
+     finished loading a website -->
+    <string name="accessibility_announcement_loading_finished">Website loaded</string>
+
+    <!-- Content description (not visible, for screen readers etc.): "Three dot" menu button. -->
+    <string name="content_description_menu">More options</string>
+
+    <!-- Content description (not visible, for screen readers etc.): Navigate forward (browsing history) -->
+    <string name="content_description_forward">Navigate forward</string>
+
+    <!-- Content description (not visible, for screen readers etc.): Reload current website -->
+    <string name="content_description_reload">Reload website</string>
+
+    <!-- Content description (not visible, for screen readers etc.): Navigate back (browsing history) -->
+    <string name="content_description_back">Navigate back</string>
+
+    <!-- Content description (not visible, for screen readers etc.): Stop loading the current website. This button will turn into the refresh button once loading has been completed (see content_description_reload) -->
+    <string name="content_description_stop">Stop loading website</string>
+
+    <!-- Content description (not visible, for screen readers etc.): Custom Tab exit button - closes the custom tab and returns to the previous app. -->
+    <string name="content_description_customtab_exit">Return to previous app</string>
+
+    <!-- Content description (not visible, for screen readers etc.): This is the description for the switch in the menu that temporarily disables/enables
+         content blocking for the current session -->
+    <string name="content_description_blocking_switch">Block trackers</string>
+
+    <!-- This text is the title of a dialog shown if no app could be found for a custom link protocol. -->
+    <string name="external_app_prompt_no_app_title">Find an app that can open link</string>
+    <!-- This text is shown in a dialog if no app could be found for a custom link protocol. Argument 1 is the name of the app (i.e. Firefox Rocket) and %2$s is the name of
+         the app store installed on the device (usually that's Google Play). -->
+    <string name="external_app_prompt_no_app">None of the apps on your device are able to open this link. You can leave %1$s to search %2$s for an app that can.</string>
+
+
+    <string name="error_page_message" translatable="false"><![CDATA[
+      <ul>
+        <li>%1$s</li>
+        <li>%2$s</li>
+      </ul>
+    ]]></string>
+    <!-- The page html title (i.e. the <title> tag content) -->
+    <string name="error_page_title">Webpage not available</string>
+    <string name="error_page_recover_a">Make sure you are connected to the internet</string>
+    <string name="error_page_recover_b">Check the address</string>
+    <string name="error_page_button">TRY AGAIN</string>
+    <string name="error_page_title_unsupported_scheme">The address wasn’t understood</string>
+    <string name="error_page_content_text_unsupported_scheme">You might need to install other software to open this address.</string>
+
+
+    <!-- Label used in the contextmenu shown when long-pressing on a link -->
+    <string name="contextmenu_link_share">Share link</string>
+    <!-- Label used in the contextmenu shown when long-pressing on a link -->
+    <string name="contextmenu_link_copy">Copy link address</string>
+    <!-- Label used in the contextmenu shown when long-pressing on an image -->
+    <string name="contextmenu_image_share">Share image</string>
+    <!-- Label used in the contextmenu shown when long-pressing on an image -->
+    <string name="contextmenu_image_copy">Copy image address</string>
+    <!-- Label used in the contextmenu shown when long-pressing on an image -->
+    <string name="contextmenu_image_save">Save image</string>
+    <!-- Label used in the contextmenu shown when long-pressing on a link -->
+    <string name="contextmenu_open_in_new_tab">Open link in new tab</string>
+    <!-- Label used in the contextmenu shown when long-pressing on a image -->
+    <string name="contextmenu_open_image_in_new_tab">Open image in new tab</string>
+
+    <!-- First run tour -->
+    <!-- title for first page of FirstRun, Argument 1 will be formatted by product name -->
+    <string name="first_run_page1_title">Thanks for choosing %1$s</string>
+    <!-- Message for first page of FirstRun, %1$s will be "Mozilla" -->
+    <string name="first_run_page1_text">A browser made by %1$s, the non-profit committed to a free and open web.</string>
+    <string name="first_run_page2_title">Browse faster than ever</string>
+    <string name="first_run_page2_text">Use turbo mode to block tracking ads so you can browse at blazing speeds. If sites seem broken, just tap off the turbo mode switch in the menu.</string>
+    <string name="first_run_page3_title">Save data = Save money</string>
+    <string name="first_run_page3_text">Save on data costs by blocking tracking ads. Save even more when you enable image blocking.</string>
+    <string name="first_run_page4_title">Screenshot the whole page</string>
+    <string name="first_run_page4_text">Take screenshot of an entire page scroll. Read it offline without using data or tap it to revisit the web page.</string>
+    <string name="first_run_page5_title">Next-level privacy</string>
+    <string name="first_run_page5_text">Browse without a trace, and block a wide range of common web trackers by default. Ensure the security of your confidential data.</string>
+    <!-- The %1$s here is a placeholder for "Life Feed", the %2$s is "Learn more" which is localized in preference_learn_more. Life Feed is an information panel covering content that might help our customers' life. It covers from the most popular topics to the hottest deals, including news, games, coupon...etc.-->
+    <string name="first_run_page6_text">Just one flip, keep yourself updated with the “%1$s” - a variety of contents from the most popular topics to the hottest deals. %2$s</string>
+    <!-- Title message shown in a privacy on-boarding page. It means to prevent websites from tracking you. -->
+    <string name="first_run_page7_title">Prevent from being tracked</string>
+    <string name="first_run_page7_text">Now you can check how many trackers are blocked in private mode.</string>
+   
+    <string name="first_run_upgrade_page_title">We heard your feedback!</string>
+
+    <string name="new_name_upgrade_page_title">We have a new look!</string>
+    <!-- The %1$s here is a placeholder for "Firefox Lite"-->
+    <string name="new_name_upgrade_page_text">With the evolved product, we bring you a newly refreshed %1$s, with new name and new logo.</string>
+   
+    <!-- The %s here is a placeholder for "multiple tabs" (paired with first_run_upgrade_page_text1_highlight) -->
+    <string name="first_run_upgrade_page_text1">1. Multitask by opening %s at the same time!</string>
+    <string name="first_run_upgrade_page_text1_highlight">multiple tabs</string>
+
+    <!-- The %s here is a placeholder for "adding them to the home screen!" (paired with first_run_upgrade_page_text2_highlight) -->
+    <string name="first_run_upgrade_page_text2">2. Access your favorite sites quickly by %s</string>
+    <string name="first_run_upgrade_page_text2_highlight">adding them to the home screen!</string>
+   
+    <string name="firstrun_close_button">OK, got it!</string>
+    <string name="firstrun_skip_button">Skip</string>
+    <string name="firstrun_next_button">Next</string>
+
+    <!-- Menu labels -->
+    <!-- Zerda Need l10n -->
+    <!-- Menu text for bookmark -->
+    <string name="label_menu_bookmark">Bookmarks</string>
+    <string name="label_menu_download">Downloads</string>
+    <!-- Menu text for find in page. -->
+    <string name="label_menu_find_in_page">Find in page</string>
+    <string name="label_menu_clear_cache">Clear cache</string>
+    <string name="label_menu_history">History</string>
+    <string name="label_menu_share">Share</string>
+    <string name="label_menu_my_shots">Screenshots</string>
+    <string name="label_menu_capture_page">Capture page</string>
+    <string name="label_menu_turbo_mode">Turbo mode</string>
+    <!-- Menu text for night mode. -->
+    <string name="label_menu_night_mode">Night mode</string>
+    <string name="label_menu_block_ads">Block Ads</string>
+    <string name="label_menu_block_image">Block images</string>
+    <string name="label_menu_settings">Settings</string>
+    <string name="label_menu_exit">Exit</string>
+    <!-- Menu text for adding websites to users' home screen. -->
+    <string name="label_menu_add_to_home_screen">Add to home screen</string>
+
+    <!-- Message shown after user denied location permission prompt. -->
+    <string name="permission_toast_location_deny">Location permission is denied.</string>
+    <!-- Message shown after user denied storage permission prompt. -->
+    <string name="permission_toast_storage_deny">Storage permission is denied.</string>
+    <string name="permission_handler_permission_dialog_setting">settings</string>
+    <string name="permission_dialog_not_now">not now</string>
+    <string name="permission_toast_location">Location not available. Give permission to access your location.</string>
+    <string name="permission_toast_storage">Storage not available. Give permission to store photos and files on your device.</string>
+
+    <!-- When the webpage request access to geolocation a dialog will popup.
+        This is the title of the permission request dialog. Argument 1 is the url of the website. -->
+    <string name="geolocation_dialog_message">%1$s \nwants to access your location.</string>
+    <!-- A checkbox option in the dialog which ask users to give geolocation permission to the site.
+        Users' decision will be remembered and future display of the dialog will be skipped if this
+        option is checked. These memorized decisions will be wiped out if the App is restarted.
+        %1$s is the App name (Firefox Rocket). -->
+    <string name="geolocation_dialog_message_cache_it">Don’t ask again for this site until %1$s restarts</string>
+    <string name="geolocation_dialog_allow">ALLOW</string>
+    <string name="geolocation_dialog_block">BLOCK</string>
+
+    <!-- Setting Clear browsing data dialog-->
+    <string name="setting_dialog_clear_data">Clear Data</string>
+    <string name="setting_dialog_cancel">Cancel</string>
+    <string name="setting_dialog_browsing_history">Browsing history</string>
+    <string name="setting_dialog_search_history">Search history</string>
+    <string name="setting_dialog_form_history">Form history</string>
+    <string name="setting_dialog_cookies">Cookies</string>
+    <string name="setting_dialog_cache">Cache</string>
+
+    <!-- Download list-->
+    <string name="no_downloads">No downloads</string>
+    <string name="download_started">Downloading…</string>
+    <string name="download_file_not_supported">Download protocol not supported</string>
+    <string name="cannot_find_the_file">Cannot find the file</string>
+    <string name="cannot_delete_the_file">Cannot delete the file.</string>
+    <string name="download_completed">%1$s downloaded</string>
+    <string name="download_deleted">%1$s was deleted</string>
+    <string name="download_cancel">Download canceled</string>
+    <string name="undo">Undo</string>
+    <string name="open">Open</string>
+
+    <!-- The message that indicates users can long press this menu button to see all download status in the panel. -->
+    <string name="menu_longpress_downloads">Long press to open Downloads</string>
+   
+    <!-- Download status-->
+    <!-- File download status is paused -->
+    <string name="pause">paused</string>
+    <!-- File download status is pending -->
+    <string name="pending">Pending</string>
+    <!-- File download status is running -->
+    <string name="running">downloading</string>
+    <!-- File download status is successful -->
+    <string name="successful">Successful</string>
+    <!-- File download status is failed -->
+    <string name="failed">failed</string>
+    <!-- File download status is unknown -->
+    <string name="unknown">Unknown</string>
+
+    <!-- Setting data saving path dialog -->
+    <string name="setting_dialog_sd_card">SD card</string>
+    <string name="setting_dialog_internal_storage">Internal storage</string>
+
+    <!--BrowsingHistoryActivity-->
+    <string name="browsing_history_clear_btn">CLEAR BROWSING HISTORY</string>
+    <string name="browsing_history_empty_view_msg">No browsing history</string>
+    <string name="browsing_history_date_today">Today</string>
+    <string name="browsing_history_date_yesterday">Yesterday</string>
+    <string name="browsing_history_menu_delete">Delete</string>
+    <string name="browsing_history_dialog_confirm_clear_message">Clear all browsing history?</string>
+    <string name="browsing_history_dialog_btn_clear">Clear</string>
+
+    <!-- Remove the item from Download file panel -->
+    <string name="remove_from_list">Remove from list</string>
+
+    <!-- Remove the item from Download file panel and delete the file -->
+    <string name="delete_file">Delete file</string>
+
+    <!-- Long Screenshot -->
+    <!-- Message that is shown for a few seconds after a successful screenshot capture. -->
+    <string name="screenshot_saved">Screenshot saved</string>
+    <!-- Message that is shown for a few seconds after a failed screenshot capture. -->
+    <string name="screenshot_failed">Failed to capture screenshot</string>
+    <!-- Message shown when screenshot is being captured. -->
+    <string name="screenshot_illustration">Capturing screenshot of entire page…</string>
+    <!-- The label of an action that gives users an option to view the captured screenshot. This is shown alongside the temporary message which notify users of a successful screenshot capture. -->
+    <string name="screenshot_view">VIEW</string>
+    <!-- The label of an action that gives users an option to edit the captured screenshot. This is shown alongside the temporary message which notify users of a successful screenshot capture. -->
+    <string name="screenshot_edit">EDIT</string>
+    <!-- The label of an action that gives users an option to delete the captured screenshot. This is shown alongside the temporary message which notify users of a successful screenshot capture. -->
+    <string name="screenshot_delete">DELETE</string>
+    <!-- The label of an action that gives users an option to share the captured screenshot. This is shown alongside the temporary message which notify users of a successful screenshot capture. -->
+    <string name="screenshot_share">SHARE</string>
+
+    <!-- Snack bar message -->
+    <string name="message_fallback_save_to_primary_external">No SD card detected. File was saved to internal storage.</string>
+    <string name="message_start_to_save_to_removable_storage">File saved to SD card</string>
+    <string name="message_removable_storage_space_not_enough">SD card is almost full. File was saved to internal storage.</string>
+
+    <!-- ScreenshotGridFragment-->
+    <string name="screenshot_grid_empty_text_title">No screenshots</string>
+
+    <!-- This string is followed by the image of the button, keep the trailing whitespace.
+        Final result: 'Tap [image] on the menu to capture an entire web page'. -->
+    <string name="screenshot_grid_empty_text_msg_prefix">Tap&#160;</string>
+
+    <!-- This string is preceded by the image of the button, keep the leading whitespace.
+        Final result: 'Tap [image] on the menu to capture an entire web page'. -->
+    <string name="screenshot_grid_empty_text_msg_postfix">&#160;&#160;on the menu to capture\nan entire web page.</string>
+
+    <!-- Title of the subpage showing screenshot info. -->
+    <string name="screenshot_image_viewer_dialog_title">Info</string>
+    <!-- A row displaying an attribute of a screenshot and the attribute name. %1$s is the attribute and the name of this attribute is Date: When the screenshot is taken. -->
+    <string name="screenshot_image_viewer_dialog_info_time1">Date: %1$s</string>
+    <!-- A row displaying an attribute of a screenshot and the attribute name. %1$s is the attribute and the name of this attribute is Category: Which category does the screenshotted page fall in. -->
+    <string name="screenshot_image_viewer_dialog_info_category">Category: %1$s</string>
+    <!-- A row displaying an attribute of a screenshot and the attribute name. %1$s is the attribute and the name of this attribute is Resolution: The height and the width of the screenshot. -->
+    <string name="screenshot_image_viewer_dialog_info_resolution1">Resolution: %1$s</string>
+    <!-- A row displaying an attribute of a screenshot and the attribute name. %1$s is the attribute and the name of this attribute is Size: The disk size of the saved screenshot file. -->
+    <string name="screenshot_image_viewer_dialog_info_size1">Size: %1$s</string>
+    <!-- A row displaying an attribute of a screenshot and the attribute name. %1$s is the attribute and the name of this attribute is Title: The title of the screenshotted web page. -->
+    <string name="screenshot_image_viewer_dialog_info_title1">Title: %1$s</string>
+    <!-- A row displaying an attribute of a screenshot and the attribute name. %1$s is the attribute and the name of this attribute is URL: The url of the screenshotted web page. -->
+    <string name="screenshot_image_viewer_dialog_info_url1">URL: %1$s</string>
+    <string name="screenshot_image_viewer_dialog_delete_msg">Delete this image?</string>
+
+    <!-- Title for file picker when user trying to upload a file -->
+    <string name="file_picker_title">Choose a file to upload</string>
+
+    <!-- Toast message -->
+    <string name="message_enable_turbo_mode">Turbo mode enabled</string>
+    <string name="message_disable_turbo_mode">Turbo mode disabled</string>
+    <string name="message_enable_block_image">Now blocking images</string>
+    <string name="message_disable_block_image">Now showing images</string>
+    <string name="message_clear_cache_fail">Unable to clear cache</string>
+    <string name="message_storage_unavailable_cancel_download">Storage inaccessible. Download canceled.</string>
+    <string name="message_exit_app">Press BACK again to exit</string>
+
+    <!-- Message indicate how much cache file cause disk storage was cleared.
+        Argument 1 is the amount, i.e. 15.0 MB cache cleared -->
+    <string name="message_cleared_cached">%1$s cache cleared</string>
+    <string name="message_cleared_browsing_data">Browsing data cleared</string>
+    <string name="message_deleted_screenshot">Screenshot deleted</string>
+    <string name="message_cannot_find_screenshot">Cannot display the screenshot</string>
+
+    <!-- Remove Top site item -->
+    <string name="remove">Remove</string>
+    <!-- Pin Top site item -->
+    <string name="pin_site">Pin site</string>
+     
+    <!-- In-app message to update to latest build. -->
+    <!-- Show a toast message when start downloading the new apk from google play. -->
+    <string name="update_to_latest_app_toast">Downloading latest build…</string>
+    <!-- Show notification so users can tap to update the apk -->
+    <string name="update_to_latest_app_notification">Latest build has been downloaded. Tap to update.</string>
+    <!-- Show snack bar so users can tap to update the apk -->
+    <string name="update_to_latest_app_snack_bar_message">Latest build downloaded</string>
+    <!-- Show snack bar so users can tap to update the apk -->
+    <string name="update_to_latest_app_snack_bar_update">UPDATE</string>
+   
+    <!-- In-app notification, Privacy policy update -->
+    <string name="privacy_policy_update_notification_title">Product Update Notice</string>
+    <string name="privacy_policy_update_notification_action">To make Firefox Lite better for you and everyone, we made some changes to our privacy policy. Tap to learn more.</string>
+
+
+    <!--In-app Promotion, Set default browser-->
+    <!--Show a toast message when user set Firefox Lite as default browser successfully. The %1$s is Firefox Lite.-->
+    <string name="message_set_default_success">Thanks for choosing %1$s!</string>
+    <!--Message shown after user tried to set Firefox Lite as default browser, and be directed to system settings then back, but we detect the default browser is still not Firefox Lite. The %1$s is Firefox Lite.-->
+    <string name="message_set_default_incomplet">Would you like to finish setting %1$s as your default browser?</string>
+    <!--Title for setting default browser dialog popped after user tap Set as default browser. The dialog is for guiding users that they be directed to system settings page to complete the settings. The %1$s is Firefox Lite.-->
+    <string name="setting_default_browser_instruction_system_settings">Set %1$s as your default browser in 30 seconds</string>
+    <!--Title for setting default browser dialog popped after user tap Set as default browser. The dialog is for guiding users that they need to choose Firefox Lite and check Always. The %1$s is Firefox Lite.-->
+    <string name="setting_default_browser_instruction_open_external_link">How to always browse with %1$s?</string>
+    <!--Text shown in the setting default browser instruction, the complete sentence is "Select Browser app", but we separate the sentences for code implementing purpose. "Browser app" is replaced with %1$s, so that we can identify the text of placeholder and show it as Bold font.-->
+    <string name="instruction_select">Select %1$s</string>
+    <string name="browser_app">Browser app</string>
+    <!--Text shown in the setting default browser instruction, the complete sentence is "Tap Always", but we separate the sentences for code implementing purpose. "Always" is replaced with %1$s, so that we can identify the text of placeholder and show it as Bold font.-->
+    <string name="instruction_tap">Tap %1$s</string>
+    <string name="always">Always</string>
+    <!--Button on the dialog of setting default browser. Tap this button will go to system settings-->
+    <string name="setting_default_browser_instruction_button">Go to settings</string>
+   
+    <!--In-app Promotion, Rate the App-->
+    <!-- The title of the Message to prompt users to rate Rocket on Play Store, %1$s is the App name i.e. Rocket. -->
+    <string name="rate_app_dialog_text_title">Love %1$s?</string>
+    <string name="rate_app_dialog_text_content">Thank you for choosing our product. Your feedback is important to us.</string>
+    <string name="rate_app_dialog_btn_go_rate">Rate Us</string>
+    <string name="rate_app_notification_action_rate">RATE US</string>
+    <string name="rate_app_dialog_btn_feedback">Leave Feedback</string>
+    <string name="rate_app_notification_action_feedback">FEEDBACK</string>
+
+    <string name="rate_app_feedback_url" translatable="false">https://qsurvey.mozilla.com/s3/New-Firefox-Lite-2-0-Input</string>
+
+    <!--In-app Promotion, Share app.-->
+    <!-- The title of the Message to prompt users to share Rocket with friends, %1$s is the App name i.e. Rocket. -->
+    <string name="share_app_dialog_text_title">Share %1$s with friends!</string>
+    <string name="share_app_dialog_text_content">- Fast and lightweight\n- Smart Shopping Search\n- Free Games, trending news</string>
+    <string name="share_app_dialog_btn_share">Share</string>
+    <string name="share_app_google_play_url" translatable="false">https://mzl.la/2kScptw</string>
+    <!-- The message template used when user shares Rocket with friends. %1$s is the App name i.e. Rocket, and %2$s is the Google Play url, and %3$s is "Mozilla"-->
+    <string name="share_app_promotion_text">Hey, check out this fast and lightweight browser from %3$s. %1$s %2$s</string> 
+    
+    <!-- In-app message to update Firefox Lite -->
+    <string name="update_app_dialog_btn_update_now">UPDATE NOW!</string>
+    <string name="update_app_dialog_btn_later">LATER</string>
+   
+    <!-- Text shown in the "Your rights" screen.
+    %1$s will be replaced with the name of the app (e.g. Firefox Rocket)
+    %2$s will be replaced by "Mozilla"-->
+    <string name="your_rights_content1"><![CDATA[%1$s is free and open source software made by %2$s and other contributors.]]></string>
+
+    <!-- Text shown in the "Your rights" screen.
+    %1$s will be replaced with the name of the app (e.g. Firefox Rocket)
+    %2$s will be replaced with a URL linking to the MPL (e.g. https://www.mozilla.org/en-US/MPL/)
+    %3$s will be replaced by "Mozilla Public License" -->
+    <string name="your_rights_content2"><![CDATA[%1$s is made available to you under the terms of the <a href="%2$s">%3$s</a> and other open source licenses.]]></string>
+
+    <!-- Text shown in the "Your rights" screen.
+    %1$s will be replaced with the name of the app (e.g. Firefox Rocket)
+    %2$s will be replaced with a URL linking to the trademark policy (e.g. https://www.mozilla.org/foundation/trademarks/policy/)
+    %3$s will be replaced by "Mozilla"
+    %4$s will be replaced by "Firefox"-->
+    <string name="your_rights_content3"><![CDATA[You are not granted any rights or licenses to the trademarks of the Mozilla Foundation or any party, including the %3$s, %4$s or %1$s names or logos. Additional information may be found <a href="%2$s">here</a>.]]></string>
+
+    <!-- Text shown in the "Your rights" screen.
+    %1$s will be replaced with the name of the app (e.g. Firefox Rocket)
+    %2$s will be replaced with a URL linking to the list of licenses used by the dependencies.-->
+    <string name="your_rights_content4"><![CDATA[Additional source code for %1$s is available under various other free and open source <a href="%2$s">licenses</a>.]]></string>
+
+    <!-- Text shown in the "Your rights" screen.
+    %1$s will be replaced with the name of the app (e.g. Firefox Rocket)
+    %2$s will be replaced with a URL linking to the GPL
+    %3$s will be replaced with a URL linking to the tracking protection wiki page (e.g. https://wiki.mozilla.org/Security/Tracking_protection#Lists) -->
+    <string name="your_rights_content5"><![CDATA[%1$s also uses blocklists provided by Disconnect, Inc. as separate and independent works under the <a href="%2$s">GNU General Public License v3</a>, and available <a href="%3$s">here</a>.]]></string>
+
+    <!-- Title for survey notification posted after launching the app on the 3rd time
+    %1$s will be replaced with an emoticon -->
+    <string name="survey_notification_title">We need you! %1$s</string>
+
+    <!-- Subtitle for survey notification posted after launching the app on the 3rd time -->
+    <string name="survey_notification_description">Shape a better product for Indonesia</string>
+
+    <string name="survey_notification_url" translatable="false">https://qsurvey.mozilla.com/s3/Rocket-Existing-User-Survey&amp;sglocale=%1$s</string>
+
+    <!-- A message that is shown for a few seconds that indicates there's a new tab loaded in the background. -->
+    <string name="new_background_tab_hint">New tab opened</string>
+
+    <!-- The label of an action that gives users an option to switch the newly loaded background tab to the foreground. This is shown alongside the temporary message which notify users a new tab is opened. -->
+    <string name="new_background_tab_switch">SWITCH</string>
+
+    <!-- Sticky notification to inform user we are in the process of changing default browser -->
+    <string name="setting_default_browser_notification_title">Changing settings…</string>
+    <string name="setting_default_browser_notification_text">It may take a while</string>
+    <string name="setting_default_browser_notification_clickable_text">Tap to set default browser</string>
+
+    <!-- Button on tab tray that can closes all tabs at once -->
+    <string name="tab_tray_close_tabs_btn_text">Close all</string>
+
+    <!-- Confirm message shown on the dialog popped after user clicks close-all-tabs button -->
+    <string name="tab_tray_close_tabs_dialog_msg">Close all tabs?</string>
+
+    <!-- This is the title of Themeing on-boarding dialog -->
+    <string name="themetoy_onboarding_title">Color your life!</string>
+
+    <!-- This is the description of Themeing on-boarding dialog -->
+    <string name="themetoy_onboarding_description">Double click on the home background to switch themes.</string>
+
+    <!-- Message shown for a few seconds after a bookmark is saved. -->
+    <string name="bookmark_saved">Bookmark saved</string>
+    <!-- Message shown for a few seconds after a bookmark is removed. -->
+    <string name="bookmark_removed">Bookmark removed</string>
+    <!-- An action that is shown along with bookmark_saved to give user an option to edit the saved bookmark. -->
+    <string name="bookmark_saved_edit">EDIT</string>
+    <!-- Title of the bookmark editing page -->
+    <string name="title_activity_edit_bookmark">Edit bookmark</string>
+    <!-- The only action available in bookmark editing page. Press this label to save the edited bookmark. -->
+    <string name="bookmark_edit_save">SAVE</string>
+    <!-- The label of the textbox where user can type the name of the bookmark -->
+    <string name="bookmark_edit_name">Name</string>
+    <!-- The label of the textbox where user can type the url of the bookmark -->
+    <string name="bookmark_edit_location">Location</string>
+    <!-- Message shown for a few seconds after bookmark edit is saved. -->
+    <string name="bookmark_edit_success">Bookmark updated</string>
+    <!-- Message shown in Bookmarks panel when the bookmark list is empty. -->
+    <string name="bookmarks_empty_view_msg">No bookmarks</string>
+    <!-- Label for editing a bookmark which is available next to the bookmark item. -->
+    <string name="edit_bookmark">Edit</string>
+
+    <!-- Content portal -->
+    <!-- Title of news portal page -->
+    <string name="label_menu_news">News</string>
+    <string name="label_menu_latest_top_trending_news">Latest &amp; Top Trending News</string>
+    <!-- Button on the news portal page when a newer list is found. When a user tap it, the page will refresh and show the latest list. -->
+    <string name="news_update_btn">New update</string>
+    <!-- Title of news preferences -->
+    <string name="title_news_preferences">News Settings</string>
+    <!-- This is the dialog for choosing news language -->
+    <string name="news_language_dialog_title">Language</string>
+    <string name="news_language_dialog_option_english">English</string>
+    <string name="news_language_dialog_option_hindi">Hindi</string>
+    <string name="news_language_dialog_option_marathi">Marathi</string>
+    <string name="news_language_dialog_option_kannada">Kannada</string>
+    <string name="news_language_dialog_option_gujarati">Gujarati</string>
+    <string name="news_language_dialog_option_malayalam">Malayalam</string>
+    <string name="news_language_dialog_option_tamil">Tamil</string>
+    <string name="news_language_dialog_option_telugu">Telugu</string>
+    <string name="news_language_dialog_option_urdu">Urdu</string>
+    <string name="news_language_dialog_option_nepali">Nepali</string>
+    <string name="news_language_dialog_option_asamiya">Asamiya</string>
+    <string name="news_language_dialog_option_punjabi">Punjabi</string>
+    <string name="news_language_dialog_option_bengali">Bengali</string>
+    <!-- This is the panel for editing show or hide news categories-->
+    <string name="news_category_title">Interests</string>
+    <string name="news_category_option_top_news">Top-news</string>
+    <string name="news_category_option_india">India</string>
+    <string name="news_category_option_world">World</string>
+    <string name="news_category_option_technology">Technology</string>
+    <string name="news_category_option_education">Education</string>
+    <string name="news_category_option_politics">Politics</string>
+    <string name="news_category_option_career">Career</string>
+    <string name="news_category_option_cricket">Cricket</string>
+    <string name="news_category_option_sports">Sports</string>
+    <string name="news_category_option_entertainment">Entertainment</string>
+    <string name="news_category_option_business">Business</string>
+    <string name="news_category_option_health">Health</string>
+    <string name="news_category_option_movie_reviews">Movie-reviews</string>
+    <string name="news_category_option_automobile">Automobile</string>
+    <string name="news_category_option_regional">Regional</string>
+    <string name="news_category_option_travel">Travel</string>
+    <string name="news_category_option_lifestyle">Lifestyle</string>
+    <string name="news_category_option_food">Food</string>
+    <string name="news_category_option_video">Video</string>
+    <string name="news_category_option_city">City</string>
+    <string name="news_category_option_events">Events</string>
+    <string name="news_category_option_religion">Religion</string>
+    <string name="news_category_option_crime">Crime</string>
+    <string name="news_category_option_astrology">Astrology</string>
+    <string name="news_category_option_science">Science</string>
+    <string name="news_category_option_jokes">Jokes</string>
+    <!--"Nation" is one of the news category meaning local news. Its position is same as Top-News/Technology/Education...-->
+    <string name="news_category_option_nation">Nation</string>
+    
+    <!-- A prefix that shows before the logo of a given partner. This string tries to show a user that the service he/she is using is provided by this given partner. -->
+    <string name="logo_text">Service provided by</string>
+
+    <string name="coupon_valid_description" translatable="false">Berlaku hingga %s</string>
+   
+   <!-- Recommended news onboarding title. -->
+   <string name="recommended_news_title">Recommended News For You</string>
+   <!-- Recommended news onboarding content.
+   The %1$s here is a placeholder for "Learn more" which directs users to SUMO page with detail information about the feature. -->
+   <string name="recommended_news_content">Tap “Yes” to begin seeing news recommended for you by our AI news engine. You can turn off recommendations and control your settings anytime in News->Settings. %1$s</string>
+   <!-- Recommended news choose your preferred language -->
+   <string name="recommended_news_preference_language">Choose Your Preferred\nNews Language</string>
+   <!-- Recommended news toggle title -->
+   <string name="recommended_news_preference_toggle">Personalized news experience</string>
+   <!-- Disable personalized experience for news. -->
+   <string name="recommended_news_preference_disable_dialog">Do you want to disable the recommended news? Tap “YES” to just display the latest news articles.</string>
+   <!-- Enable personalized experience for news. -->
+   <string name="recommended_news_preference_enable_dialog">Do you want to enable the recommended news feature? Tap “YES” to start seeing a recommended selection of news articles.</string>
+
+    <!-- Private Browsing-->
+
+    <!-- This is used in the menu. User can click the menu item and open a private tab. -->
+    <string name="private_tab">Private tab</string>
+
+    <!-- This is the title that, when in private browsing mode, will be shown in the Home page (The page with search box). -->
+    <string name="private_browsing_title">Private Browsing</string>
+    <!-- A notification will be shown when entering private browsing mode, this is the message of the notification notifying the user that tapping the notification will erase the private browsing history. -->
+    <string name="private_browsing_erase_message">Erase private browsing history</string>
+    <!-- A notification will be shown when entering private browsing mode, this is the label of the action that when tapped, will open Rocket. -->
+    <string name="private_browsing_open_action">OPEN</string>
+    <!-- A message shown briefly after user have cleared the private browsing history via tapping the notification. -->
+    <string name="private_browsing_erase_done">Your private browsing\nhistory has been erased.</string>
+    <!-- Show how many trackers blocked on tracker blocked panel. In front of "Trackers blocked", show the number of blocking trackers. --> 
+    <string name="private_browsing_tracker_blocked">Trackers blocked</string>
+    <!-- A description is shown below the switch of block trackers when opening tracker blocked panel -->
+    <string name="private_browsing_tracker_blocked_description">Enjoy browsing with extra protection.</string>
+    <!-- Message to prompt users to add private mode shortcut to their device's home. -->
+    <string name="private_browsing_dialog_add_shortcut_title">Access private mode in one click! Want to add private mode shortcut to homescreen?</string>
+    <string name="private_browsing_dialog_add_shortcut_no">No, thanks</string>
+    <string name="private_browsing_dialog_add_shortcut_yes">Yes</string>
+
+    <string name="private_browsing_dialog_add_shortcut_title_v2">Add private mode shortcut</string>
+    <string name="private_browsing_dialog_add_shortcut_content_v2">Access private mode quickly from your homescreen.</string>
+    <string name="private_browsing_dialog_add_shortcut_no_v2">NO, THANKS</string>
+    <string name="private_browsing_dialog_add_shortcut_yes_v2">YES, ADD IT NOW!</string>
+    <!-- Message shown after user denied add private mode shortcut's prompt. -->
+    <string name="private_browsing_dialog_add_shortcut_no_toast">You can add private mode shortcut later in settings.</string>
+    <!-- Name of Private mode shortcut. %1$s will be replaced with the name of the app (e.g. Firefox Lite) -->
+    <string name="private_browsing_shortcut_name">%1$s - Private browsing</string>
+    <!-- Item in Preferences that users can add private mode shortcut to their device' home. -->
+    <string name="preference_add_private_browsing_shortcut">Add private mode shortcut to Home screen</string>
+   
+    <!-- Message shown when the user is using screenshot for the first time. Guide them how to go to "My shots". -->
+    <string name="my_shot_on_boarding_message">View your screenshots here!</string>
+    <!-- The notice shown along with the message when the user captures screenshot for the first time -->
+    <string name="my_shot_on_boarding_category_message">To improve your product experience, we collect information about your screenshots’ categories.</string>
+
+    <!-- Title on web auth dialog. This dialog hint user authentication is required to proceed to the website. -->
+    <string name="http_auth_dialog_title">Authentication required</string>
+    <!-- Text on an input username field in web auth dialog. This hint user to input username here. -->
+    <string name="http_auth_dialog_user_name">Username</string>
+    <!-- Text on an input password field in web auth dialog. This hint user to input password here. -->
+    <string name="http_auth_dialog_password">Password</string>
+
+    <!-- Name of low priority notification channel, this will be shown on the app info page in the system setting -->
+    <string name="low_priority_notification_channel">Hidden notifications</string>
+    
+    <string name="about_link_terms_of_service">Terms of Service</string>
+   
+    
+    <!--Shopping Vertical-->
+    <!--Artboard Name: 1.1 Shopping Search Overview-->
+    <!--Shopping Search Onboarding-->
+    <string name="shopping_search_onboarding_title">Find great prices</string>
+    <!--Shopping Search Onboarding Message, and would need to localize "Smart Shopping Search"-->
+    <string name="shopping_search_onboarding_body">Compare prices across many online stores with Smart Shopping Search.</string>
+    <!--Smart Shopping Search onboarding message-->
+    <string name="shopping_search_onboarding_body_A">Compare prices easily on popular shopping sites.</string> 
+    <!--Smart Shopping Search onboarding message-->
+    <string name="shopping_search_onboarding_body_B">Start saving today. Search and compare prices on popular sites.</string>
+    <!--Shopping Search Input Placeholder-->
+    <string name="shopping_search_placeholder">Enter a product name</string>
+    <!--Shopping Search Prompt Message, and would need to localize "Smart Shopping Search"-->
+    <string name="shopping_search_prompt_message_body">Compare prices across many online stores with Smart Shopping Search.</string>
+    <string name="shopping_search_prompt_message_button">Search</string>
+    <!--Switch UI Onboarding-->
+    <string name="shopping_switch_ui_onboarding_body">Tap the shopping sites below to browse more results, or tap this button to edit.</string>
+    <string name="shopping_switch_ui_onboarding_button">OK</string>
+
+    <!--Artboard Name: 2.2 Switch UI Preference Behaviors-->
+    <!--Switch UI Preferences-->
+    <string name="shopping_switch_ui_preferences_title">Shopping Search Settings</string>
+    <string name="shopping_switch_ui_preferences_subtitle">Sites to compare</string>
+
+    <!--Artboard Name: 3.1 Switch UI Navigation - Activity Switch-->
+    <!--Switch UI Tab Tray. %1$s is the keyword user input -->
+    <string name="shopping_switch_ui_tabtray_title">Shopping Search: “%1$s”</string>
+    <string name="shopping_switch_ui_tabtray_title_no_keyword">Shopping Search</string>
+
+    <!--Artboard Name: 3.3 Switch UI Navigation - Tab Tray-->
+    <!--Closing dialog content.-->
+    <string name="shopping_closing_dialog_close">Close All</string>
+    <string name="shopping_closing_dialog_cancel">Cancel</string>
+    <string name="shopping_closing_dialog_body">Close all shopping search results?</string>
+
+    <!--Artboard Name: 4.1 Shopping Deals Overview-->
+    <!--Shopping Home-->
+    <string name="shopping_vertical_title">Shopping</string>
+    <string name="shopping_vertical_category_1">Deals</string>
+    <string name="shopping_vertical_category_2">Coupons</string>
+    <string name="shopping_vertical_category_3">Vouchers</string>
+    <!--Shopping Deals-->
+    <string name="shopping_deal_subcategory_1">Top Rated</string>
+    <string name="shopping_deal_subcategory_2">Best Sellers</string>
+
+    <!--Artboard Name: 5.2 Shopping Coupons Update-->
+    <!--Shopping Coupons-->
+    <string name="shopping_coupon_expire_zero">Expired</string>
+    <string name="shopping_coupon_expire_one">1 day left</string>
+    <!--%1$d is the decimal for how many days left till the shopping coupon expired.-->
+    <string name="shopping_coupon_expire_other">%1$d days left</string>
+
+
+    <!--Gaming Vertical-->
+    <!--Gaming Home-->
+    <string name="gaming_vertical_title">Game</string>
+    <string name="gaming_vertical_category_1">Instant play</string>
+    <string name="gaming_vertical_category_2">Download to play</string>
+    <!--"New" is a small tag to let users know that it is a new game.-->
+    <string name="gaming_vertical_new">New</string>
+    
+    <!--Gaming Contextual Hint-->
+    <string name="gaming_vertical_hint_title">Fast access to your favourite games</string>
+    <string name="gaming_vertical_hint_body">Long press to create a shortcut to your home screen.</string>
+    <string name="gaming_vertical_hint_button">OK</string>
+    <string name="gaming_vertical_shortcut_message">shortcut created.</string>
+    
+    <!--Gaming Longpress Menu-->
+    <string name="gaming_vertical_menu_option_1">Share game</string>
+    <string name="gaming_vertical_menu_option_2">Create shortcut on home screen</string>
+    <string name="gaming_vertical_menu_option_3">Remove from list</string>
+    
+    <!--Gaming Share Message. %1$s is the url of the game -->
+    <string name="gaming_vertical_share_message">I’m playing a really cool game. Check it out!\n%1$s</string>
+
+    <!--Gaming Genres-->
+    <string name="gaming_vertical_genre_1">Recently played</string>
+    <string name="gaming_vertical_genre_2">Game of the week</string>
+    <string name="gaming_vertical_genre_3">My game</string>
+    <string name="gaming_vertical_genre_4">Most played</string>
+    <string name="gaming_vertical_genre_5">Offline games</string>
+    <string name="gaming_vertical_genre_6">Strategy</string>
+    <string name="gaming_vertical_genre_7">Adventure</string>
+    <string name="gaming_vertical_genre_8">Action</string>
+    <string name="gaming_vertical_genre_9">Arcade</string>
+    <string name="gaming_vertical_genre_10">Puzzle &amp; Logic</string>
+    <string name="gaming_vertical_genre_11">Sports &amp; Racing</string>
+    <string name="gaming_vertical_genre_12">Girls</string>
+
+    <!-- Home 2.0 -->
+    <!-- Onboarding for existing users to upgrage to Firefox Lite 2.0. %1$s will be replaced with the name of the app (e.g. Firefox Lite) -->
+    <string name="onboarding_2_introduction_title">Brand-new %1$s</string>
+    <string name="onboarding_2_introduction_description">A fast and lightweight browser, now with cool features! We have added smart shopping search and content to make browsing more fun!</string>
+    <!-- Onboarding for new users to introduce Firefox Lite 2.0 -->
+    <!-- Introduce Content & Services -->
+    <string name="onboarding_2_content_services_news_shopping_games">Tap to read trending news, find good deals, or have fun playing the hottest free games!</string>
+    <string name="onboarding_2_content_services_news_games">Tap to read trending news or have fun playing the hottest free games!</string>
+    <string name="onboarding_2_content_services_games">Tap to play the hottest free games to have fun!</string>
+    <string name="onboarding_2_content_services_message" translatable="false">@string/onboarding_2_content_services_news_travel</string>
+    <string name="onboarding_2_content_services_news_travel">Tap to read trending news, plan your next trip and more!</string>
+    <!-- Introduce Smart Shopping Search -->
+    <string name="onboarding_2_smart_shopping_search_title">Smart Shopping Search</string>
+    <string name="onboarding_2_smart_shopping_search_description">Comparing prices across different online stores is super easy, try it now!</string>
+    <string name="home_search_bar_text">Search…</string>
+    
+    <!-- Content & Services -->
+    <!-- Title of Content & Services -->
+    <string name="home_content_services">Content &amp; Services</string>
+    <string name="home_discovery">Discovery</string>
+    <!-- Actions in context menu. Users can long press an item then show the context menu to select an action -->
+    <string name="content_home_context_menu_add_to_home_screen">Add to Home screen</string>
+    <string name="content_home_context_menu_share_link">Share link</string>
+    <!-- Error message. E.g. when open a service and server is not working then show error message to users -->
+    <string name="content_home_error_message">Oops!\nSomething went wrong</string>
+
+    <!-- Private mode home 2.0 -->
+    <!-- Title of Private mode -->
+    <string name="private_home_title">Advanced Private Browsing</string>
+    <!-- Description of Private mode -->
+    <!-- The %1$s here is a placeholder for "prevent you from being tracked"-->
+    <string name="private_home_description_1">Now you can browse privately, no history, no passwords recorded and other people who use this device won’t see your activity.\n\nOur Advanced Private Browsing can even %1$s by advertisers and websites, which most private modes cannot.</string>
+    <string name="private_home_description_2">prevent you from being tracked</string>
+
+    <!--MSRP Vertical-->
+ 
+    <!--Logoman-->
+    <!-- The %1$s here is a placeholder for the prize, ex: shopping voucher-->   
+    <string name="msrp_logoman_message">Win a %1$s</string>
+ 
+    <!--Contextual hint-->
+    <!-- The %1$s here is a placeholder for the prize, ex: shopping voucher--> 
+    <string name="msrp_home_hint">Try Shopping, News, Game everyday to win %1$s</string>
+
+    
+    <!--Reward-->
+    <string name="msrp_reward_title">Reward</string>
+    <string name="msrp_reward_category_1">Mission</string>
+    <string name="msrp_reward_category_2">Gift</string>
+    <string name="msrp_reward_challenge_title">Try Shopping, News, Game for 7 days in a row!</string>                                            
+    <!-- The %1$s here is a placeholder for "date"-->   
+    <string name="msrp_reward_challenge_expire">Expires %1$s</string>
+
+    <!--Challenge-->
+    <string name="msrp_challenge_title">7-day challenge for Rp 15,000 Shopee voucher</string>  
+    <string name="msrp_challenge_description">Rp 15,000 Shopee voucher</string>    
+    <string name="msrp_challenge_details_title_1">Join the 7-Day challenge</string>
+    <!-- The %1$s here is a placeholder for "Firefox Lite"--> 
+    <string name="msrp_challenge_details_body_1">Try Shopping, News, Game on %1$s Home by simply clicking the buttons for seven days in a row.</string>
+    <string name="msrp_challenge_details_title_2">Use your Firefox account to redeem your reward</string>
+    <!-- The %1$s here is a placeholder for "Enter your email address to get started."-->
+    <string name="msrp_challenge_details_body_2">%1$s Make sure you sign in to the account you want to use before you complete your redemption.</string>
+    <string name="msrp_challenge_details_sign_in_to_start">Enter your email address to get started.</string>
+    <!--"I'm In!" is a button where users can press to join the reward program-->
+    <string name="msrp_challenge_button_1">I’m In!</string>
+    <!-- The %1$s here is a placeholder for "Terms of Use"-->
+    <string name="msrp_challenge_tou">By clicking “I’m In!” you are agreeing to our %1$s</string>
+    <string name="msrp_challenge_tou_terms_of_use">Terms of Use</string>
+    <!--"Leave mission" is a button for users to exit the reward program-->
+    <string name="msrp_challenge_button_2">Leave mission</string>
+    <!--"How to redeem" is the title for a section to let users know how to redeem the voucher--> 
+    <string name="msrp_challenge_separator">How to redeem</string>
+    <string name="msrp_challenge_button_4">Use Firefox account to redeem</string>
+    
+    <!--Challenge (Leaving confirmation)-->
+    <string name="msrp_challenge_leaving_body">All your progress will be deleted. Are you sure?</string>
+    <string name="msrp_challenge_leaving_button_1">CANCEL</string>
+    <string name="msrp_challenge_leaving_button_2">LEAVE</string>
+    
+    
+    <!--Challenge  completed (popup)-->
+    <string name="msrp_completed_popup_title">Congratulations!</string>
+    <string name="msrp_completed_popup_body">Thanks for trying out some of our new features. We hope you’ve enjoyed using them!</string>
+    <string name="msrp_completed_popup_button1">Use Firefox account to redeem</string>
+    <string name="msrp_completed_popup_button2">Later</string>
+    
+    <!--Challenge completed (full screen)-->
+    <string name="msrp_challenge_completed_title">Congratulations!</string>
+    <string name="msrp_challenge_completed_body">Thanks for trying out some of our new features. We hope you’ve enjoyed using them!</string>
+    <string name="msrp_challenge_button_5">Redeem later</string>
+    
+    <!--Voucher-->
+    <!-- The %1$s here is a placeholder for "reward title" ex. Amazon voucher-->
+    <string name="msrp_voucher_title">Your %1$s is ready!</string>
+    <string name="msrp_voucher_body_1">Voucher is valid for a limited time only. We reserve the right to modify or cancel voucher at any time.</string>
+    <string name="msrp_voucher_body_2">We reserve the right, at its sole discretion, to change, modify, add or remove portions of these Terms of Use, at any time.</string>
+    <!-- The %1$s here is a placeholder for "date"--> 
+    <string name="msrp_voucher_expire">Expires %1$s</string>
+    <string name="msrp_voucher_button_2">Copy voucher and go shopping</string>
+    <string name="msrp_voucher_button_1">Copy</string>
+    <string name="msrp_voucher_toast">Voucher code copied</string>
+    <string name="msrp_voucher_nostock">The voucher is out of stock</string>
+    <!-- The %1$s here is a placeholder for "Contact us"-->
+    <string name="msrp_faq">Any questions? %1$s.</string>
+    <string name="msrp_contact_us">Contact us</string>
+    <!--Coupon-->
+    <!-- The %1$s here is a placeholder for "reward title" ex. Amazon voucher-->
+    <string name="msrp_coupon_title" translatable="false">Your %1$s is ready!</string>
+    <string name="msrp_coupon_body_1" translatable="false">Voucher is valid for a limited time only. We reserve the right to modify or cancel voucher at any time.</string>
+    <string name="msrp_coupon_body_2" translatable="false">We reserve the right, at its sole discretion, to change, modify, add or remove portions of these Terms of Use, at any time.</string>
+    <!-- The %1$s here is a placeholder for "date"--> 
+    <string name="msrp_coupon_expire" translatable="false">Expires %1$s</string>
+    <string name="msrp_coupon_button_2" translatable="false">Copy voucher and go shopping</string>
+    <string name="msrp_coupon_button_1" translatable="false">Copy</string>
+    
+    <!--Redeem-->
+    <string name="msrp_reward_redeem_redeem">Redeem</string>
+    <string name="msrp_reward_redeem_voucher">Voucher</string>
+    <string name="msrp_reward_redeem_coupon" translatable="false">Voucher</string>
+    
+    <!--Suspicious account activity-->
+    <string name="msrp_disqualification_title_1">Warning: multiple Firefox accounts detected</string>
+    <string name="msrp_disqualification_body_1">Only one Firefox account may be used to participate in the 7-Day challenge. If you switch and use another account, you will be disqualified from this challenge.</string>
+    <string name="msrp_disqualification_button_1">I understand</string>
+    
+    <string name="msrp_disqualification_title_2">Final warning: multiple Firefox accounts detected</string>
+    
+    <string name="msrp_disqualification_title_3">Account disabled</string>
+    <string name="msrp_disqualification_body_3">You can no longer participate in the 7-Day challenge.</string>
+    <string name="msrp_disqualification_button_3">Close</string>
+    
+    
+    <!--Check-in toasts for each day-->
+    <string name="msrp_completed_toast_day1">Great! You have successfully completed your first daily challenge!</string>
+    <string name="msrp_completed_toast_day2">Cool! You have completed the second daily challenge!</string>
+    <string name="msrp_completed_toast_day3">Awesome! You have completed the third daily challenge, keep it up!</string>
+    <string name="msrp_completed_toast_day4">Congrats! You have completed the fourth daily challenge!</string>
+    <string name="msrp_completed_toast_day5">Terrific! You have completed the fifth daily challenge!</string>
+    <string name="msrp_completed_toast_day6">Wow! You are just one day away from getting the voucher!</string>
+    <!-- The %1$s here is a placeholder for "Firefox Lite"-->  
+    <string name="msrp_completed_toast_day7">You’ve completed the challenge! Please go back to %1$s Home to redeem your voucher!</string>
+    
+    <!--Notifications for last 3 days-->
+    <!-- The %1$s here is a placeholder for "reward title" ex. Amazon voucher-->  
+    <string name="msrp_notification_reminder">Want to win a %1$s? Don’t forget to try Shopping, News, Game today!</string>    
+    <!--No data-->
+    <string name="msrp_reward_challenge_nodata">All challenges completed</string>
+    <string name="msrp_reward_redeem_nodata">All rewards collected</string>
+    
+    <!--Error messages-->
+    <string name="msrp_reward_challenge_nointernet">Make sure you are connected to the internet</string>
+    <string name="msrp_reward_challenge_error_button">TRY AGAIN</string>
+    <string name="msrp_reward_challenge_error">Oops! Something went wrong</string>
+    
+    <!--Activity killed-->
+    <string name="msrp_activitykilled_snackbar_button">REDEEM</string>
+    <string name="msrp_activitykilled_snackbar_body">You’ve won a shopping voucher!</string>
+   
+    <!--Travel Vertical--> 
+    <!--travel home-->
+    <string name="travel_vertical_title">Travel</string>
+    <!--explore is a verb which means the action for finding new destinations-->
+    <string name="travel_vertical_category_1">Explore</string>
+    <!--bucket list is a noun which means the place for collecting all favorite items like destinations-->
+    <string name="travel_vertical_category_2">Bucket List</string>
+
+    <!--featured destinations-->
+    <string name="travel_destination_subcategory_1">Travel on a budget</string>
+    <string name="travel_destination_subcategory_2">Best cities for winter holiday</string>
+
+    <!--this is a title of the search bar for finding destinations-->
+    <string name="travel_find_destination_title">Where do you want to go?</string>
+    <!--this is a placeholder in the search bar which contains a destination as an example-->
+    <string name="travel_find_destination_placeholder_1">Try “Bali”…</string>
+
+
+    <!--detail page -->
+    <!--this is a subcategory title. The %1$s here is a placeholder for destination name like Bali-->
+    <string name="travel_detail_page_subcategory_content">Explore %1$s</string>
+    <!--this is a subcategory title-->
+    <string name="travel_detail_page_subcategory_hotel">Popular hotels</string>
+    <!--this is the button for seeing more deals on the booking website-->
+    <string name="travel_more">More</string>
+
+    <!--Instagram content. the %1$s here is the destination name-->
+    <string name="travel_content_ig_link">#%1$s on Instagram</string>
+    <!--Youtube content. the %1$s here is how many times of video viewing-->
+    <string name="travel_content_yt_view_count">%1$s views</string>
+    <!--Youtube content. this is single time of video viewing-->
+    <string name="travel_content_yt_view_count_single_view">1 view</string>
+    <!--Wiki content-->
+    <string name="travel_content_wiki_source_name">Wikipedia</string>
+
+    <!--detail information for the hotel room-->
+    <string name="travel_hotel_detail_1">Free Wi-Fi</string>
+    <string name="travel_hotel_detail_2">No credit cards required</string>
+    <string name="travel_hotel_detail_3">Pay upon check in</string>
+    <!--the "from" here is indicating that the price is the minimal price-->
+    <string name="travel_hotel_price_from">From</string>
+
+
+    <!--bucket list -->
+    <!--text in the empty state -->
+    <string name="travel_empty_state_text">“I haven’t been everywhere, but it’s on my list.”</string>
+    <string name="travel_empty_state_text_2" translatable="false">- Susan Sontag</string>
+    <!--button for entering the search page-->
+    <string name="travel_empty_state_button">Explore a city</string>
+
+    <!--snackbar message after saving a destination-->
+    <string name="travel_snack_bar_saved_message">Saved in your bucket list.</string>
+    <!--view is a verb. and this is a button which will lead users to see the bucket list page-->
+    <string name="travel_snack_bar_button">VIEW</string>
+
+    <!--onboarding message for the save function. the %1$s here is the destination name -->
+    <string name="travel_onboarding_save_title">Love %1$s?</string>
+    <!--the %1$s here is the destination name -->
+    <string name="travel_onboarding_save_description">Save %1$s in your Bucket List to get quick access to travel guides and the best prices.</string>
+    <!--onboarding button-->
+    <string name="travel_onboarding_save_button">OK</string>
+
+    <!--search page -->
+    <!--introduce what can be type in the field-->
+    <string name="travel_find_destination_placeholder_2">Enter a destination</string>
+    <!--this is a title indicates that users will see search results from google after tapping on the following option. the %1$s here is google. -->
+    <string name="travel_search_engine_1">See results in %1$s</string>
+    <!--!NOT USE! this is a title indicates that users will see search results summerized by smart travel search after tapping on the following options. -->
+    <string name="travel_search_engine_2" translatable="false">See results in smart travel search</string>
+    <!--!NOT USE! this is a title indicates that users will see search results summerized by Travel Discovery after tapping on the following options. the %1$s here is Firefox Lite.-->
+    <string name="travel_search_engine_fxlite" translatable="false">See results in %1$s Travel Discovery</string>   
+    <!--this is a title of search suggestions from Firefox Lite Travel Discovery. the first %1$s is Firefox Lite, and the %2$s is Travel Discovery.-->
+    <string name="travel_search_engine_fxlite_new">See results in %1$s %2$s</string>
+    <!--The product feature "Travel Discovery"-->
+    <string name="travel_discovery" translatable="false">Travel Discovery</string>
+
+    <!--error message for no results state-->
+    <string name="travel_no_result_state_text">Hmm. No results found.</string>
+    <!--button for searching the keyword on Google. the %1$s here is GOOGLE-->
+    <string name="travel_google_search_button">SEARCH ON %1$s</string>
+
+ 
+    <!--Dialog-->
+    <!--dialog title for introducing Firefox Lite Travel Discovery-->
+    <string name="travel_dialog_1_title">Discover More!</string>
+    <!--!NOT USE! dialog description for introducing the feature. The %1$s here is Firefox Lite.-->
+    <string name="travel_dialog_1_description" translatable="false">Explore things to do, accommodations, and more in %1$s Travel Discovery.</string>
+    <!--dialog description for introducing the feature. the first %1$s is Firefox Lite, and the %2$s is Travel Discovery.-->
+    <string name="travel_dialog_1_description_new">Explore things to do, accommodations, and more in %1$s %2$s.</string>
+    <!--!NOT USE! Action button for seeing the search result in Firefox Lite Travel Discovery-->
+    <string name="travel_dialog_1_action_1" translatable="false">TRY TRAVEL DISCOVERY</string>
+    <!--Action button for seeing the search result in Firefox Lite Travel Discovery. the %1$s is Travel Discovery.-->
+    <string name="travel_dialog_1_action_1_new">TRY %1$s</string>
+    <!--Action button for dismissing this prompt-->
+    <string name="travel_dialog_1_action_2">NO, THANKS</string>
+
+    <!--!NOT USE! dialog title for asking if users want to change default search engine-->
+    <string name="travel_dialog_2_title" translatable="false">Enjoy Using Travel Discovery?</string>
+    <!--dialog title for asking if users want to change default search engine. the %1$s is Travel Discovery.-->
+    <string name="travel_dialog_2_title_new">Enjoy Using %1$s?</string>
+    <!--!NOT USE! dialog description for introducing how it works. The %1$s here is Firefox Lite.-->
+    <string name="travel_dialog_2_description" translatable="false">You can set %1$s Travel Disovery as your default search engine for travel.</string>
+    <!--dialog description for introducing how it works. The first %1$s is Firefox Lite, and the %2$s is Travel Discovery.-->
+    <string name="travel_dialog_2_description_new">You can set %1$s %2$s as your default search engine for travel.</string>
+    <!--checkbox for not showing this dialog again-->
+    <string name="travel_dialog_2_checkbox">Do not ask me again</string>
+    <!--Action button for setting Travel Discovery as default search engine-->
+    <string name="travel_dialog_2_action">SET AS DEFAULT</string>
+
+</resources>

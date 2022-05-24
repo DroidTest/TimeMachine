@@ -2,6 +2,7 @@
 import subprocess
 import threading
 import select
+from config_fuzzer import RunParameters
 
 def get_monitor(pkg_name):
 
@@ -9,7 +10,7 @@ def get_monitor(pkg_name):
         package_id = get_package_id(pkg_name)
 
         print package_id
-        cmd = 'adb -s ' + 'emulator-5554' + ' shell logcat | grep controllable_widgets'
+        cmd = 'adb -s ' + RunParameters.AVD_SERIAL + ' shell logcat | grep controllable_widgets'
 
         print(cmd)
 
@@ -25,7 +26,7 @@ def get_monitor(pkg_name):
 
 def get_monitor_proc(pkg_name):
     package_id = get_package_id(pkg_name)
-    cmd = 'adb -s ' + 'emulator-5554' + ' shell logcat | grep controllable_widgets'
+    cmd = 'adb -s ' + RunParameters.AVD_SERIAL + ' shell logcat | grep controllable_widgets'
     print(cmd)
     p = subprocess.Popen(cmd.split(), stdout=subprocess.PIPE, universal_newlines=True)
 

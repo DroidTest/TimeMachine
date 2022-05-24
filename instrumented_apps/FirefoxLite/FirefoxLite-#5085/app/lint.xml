@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<lint>
+    <!-- While we are developing the app and importing/exporting strings from the l10n repository
+         there will always be missing or extra translations. Just printing a warning is enough.
+         No need to fail the builds. -->
+    <issue id="MissingTranslation" severity="warning" />
+
+    <!-- Ignore support library lint bug: https://code.google.com/p/android/issues/detail?id=227098
+         (Present in 25.3.1, despite claims of being fixed in 23) -->
+    <issue id="InconsistentLayout">
+        <ignore path="**/appcompat-v7/**/res/layout/notification_template_custom_big.xml"/>
+    </issue>
+
+    <!-- We're currently doing bad practice, i.e. duplicating the app_name resource in main and
+         preview. However we are also about to change this architecture so let's whitelist it for
+         now.
+    -->
+    <issue id="DuplicateDefinition">
+        <ignore path="src/preview/res/values/app.xml"/>
+    </issue>
+</lint>

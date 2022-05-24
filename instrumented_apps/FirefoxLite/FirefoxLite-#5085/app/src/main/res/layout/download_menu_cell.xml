@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp" />
+
+    <LinearLayout
+        android:id="@+id/text_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toEndOf="@+id/img"
+        android:layout_toStartOf="@+id/menu_action"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/DownloadListMainText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDownloadText"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_marginTop="@dimen/common_margin_m1"
+            android:layout_marginBottom="@dimen/common_margin_m1"
+            android:visibility="gone"
+            android:progressTint="@color/paletteDarkBlueC100"
+            android:progressBackgroundTint="@color/paletteLightGreyA100"
+            style="@android:style/Widget.ProgressBar.Horizontal"/>
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorDownloadSubText"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"/>
+    </LinearLayout>
+
+    <ImageView android:id="@+id/menu_action"
+        android:padding="14dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/download_item_action"
+        android:background="@drawable/ripple_circle"
+        android:layout_gravity="center"/>
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:baselineAligned="false"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/about_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/standard_padding"
+            android:contentDescription="@string/about_icon_description"
+            android:src="@mipmap/ic_launcher_new"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/about_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/about_background"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/standard_padding"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/about_title"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/about_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/about_background"
+                android:gravity="center_horizontal"
+                android:text="@string/app_description"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/about_description"/>
+
+            <TextView
+                android:id="@+id/about_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/about_background"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/standard_padding"
+                android:text="@string/about_version"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/about_version"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/standard_padding">
+
+            <TextView
+                android:id="@+id/about_by"
+                style="@style/AboutText"
+                android:text="@string/about_by"/>
+
+            <TextView
+                android:id="@+id/about_with"
+                style="@style/AboutText"
+                android:text="@string/about_with"/>
+
+            <TextView
+                android:id="@+id/about_based_on"
+                style="@style/AboutText"
+                android:text="@string/about_based_on"/>
+
+            <TextView
+                android:id="@+id/about_asset_studio"
+                style="@style/AboutText"
+                android:autoLink="web"
+                android:text="@string/about_asset_studio"/>
+
+            <TextView
+                android:id="@+id/ProjectLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="@string/url_project"
+                android:textSize="@dimen/about_urls"/>
+
+            <TextView
+                android:id="@+id/GeohashLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:autoLink="web"
+                android:gravity="center"
+                android:text="@string/url_geohash"
+                android:textSize="@dimen/about_urls"/>
+
+            <TextView
+                android:id="@+id/about_disclaimer"
+                style="@style/AboutText"
+                android:autoLink="web"
+                android:text="@string/about_disclaimer"
+                android:textSize="@dimen/about_disclaimer"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

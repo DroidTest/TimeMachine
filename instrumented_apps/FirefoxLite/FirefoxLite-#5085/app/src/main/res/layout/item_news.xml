@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/common_margin_m3"
+    android:layout_marginEnd="@dimen/common_margin_m3"
+    android:layout_marginBottom="@dimen/common_margin_m2"
+    android:clipToPadding="false"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/paletteLightGreyA100"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_news_inner_height"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <ImageView
+            android:id="@+id/news_item_image"
+            android:layout_width="@dimen/item_news_inner_width"
+            android:layout_height="@dimen/item_news_inner_height"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/news_item_headline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/news_item_headline"
+            style="@style/Body1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_margin_m3"
+            android:layout_marginTop="@dimen/common_margin_m3"
+            android:layout_marginEnd="@dimen/common_margin_m3"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/paletteBlack100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/news_item_image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="New title..." />
+
+        <TextView
+            android:id="@+id/news_item_source"
+            style="@style/Body5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/common_margin_m3"
+            android:layout_marginTop="@dimen/common_margin_m2"
+            android:layout_marginEnd="@dimen/common_margin_m1"
+            android:layout_marginBottom="@dimen/common_margin_m2"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="1"
+            android:textColor="@color/paletteDarkGreyD100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/news_item_time"
+            app:layout_constraintStart_toEndOf="@id/news_item_image"
+            app:layout_constraintTop_toBottomOf="@id/news_item_headline"
+            tools:text="BBC News BBC News BBC News BBC News BBC News" />
+
+        <TextView
+            android:id="@+id/news_item_time"
+            style="@style/Body5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_margin_m2"
+            android:layout_marginEnd="@dimen/common_margin_m3"
+            android:layout_marginBottom="@dimen/common_margin_m2"
+            android:maxLines="1"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/paletteDarkGreyD100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="2 hours ago" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

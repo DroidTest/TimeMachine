@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources>
+    <item name="share" type="id" />
+    <item name="settings" type="id" />
+    <item name="open_default" type="id" />
+    <item name="open_select_browser" type="id" />
+    <item name="custom_tab_menu_item" type="id" />
+    <item name="finish" type="id" />
+    <item name="next" type="id" />
+    <item name="main_list" type="id" />
+    <item name="content_image" type="id" />
+    <item name="first_run_bg_odd" type="id" />
+    <item name="first_run_bg_even" type="id" />
+    <item name="status" type="id"/>
+    <item name="row_id" type="id"/>
+    <item name="empty_view_container" type="id"/>
+    <item name="empty_view_text" type="id"/>
+    <item name="empty_view_image" type="id"/>
+    <item name="telemetry_category_name" type="id"/>
+    <item name="telemetry_subcategory_id" type="id"/>
+
+    <!-- Menu Items -->
+    <item name="menu_bookmark" type="id"/>
+    <item name="menu_download" type="id"/>
+    <item name="menu_history" type="id"/>
+    <item name="menu_screenshots" type="id"/>
+    <item name="menu_turbomode" type="id"/>
+    <item name="btn_private_browsing" type="id"/>
+    <item name="menu_night_mode" type="id"/>
+    <item name="menu_blockimg" type="id"/>
+    <item name="menu_find_in_page" type="id"/>
+    <item name="menu_delete" type="id"/>
+    <item name="menu_preferences" type="id"/>
+    <item name="menu_exit" type="id"/>
+
+    <!-- Bottom Bar Items -->
+    <item name="bottom_bar_tab_counter" type="id"/>
+    <item name="bottom_bar_menu" type="id"/>
+    <item name="bottom_bar_home" type="id"/>
+    <item name="bottom_bar_search" type="id"/>
+    <item name="bottom_bar_capture" type="id"/>
+    <item name="bottom_bar_pin_shortcut" type="id"/>
+    <item name="bottom_bar_bookmark" type="id"/>
+    <item name="bottom_bar_refresh" type="id"/>
+    <item name="bottom_bar_share" type="id"/>
+    <item name="bottom_bar_next" type="id"/>
+    <item name="bottom_bar_private_home" type="id"/>
+    <item name="bottom_bar_delete" type="id"/>
+    <item name="bottom_bar_tracker" type="id"/>
+    <item name="bottom_bar_back" type="id"/>
+    <item name="bottom_bar_open_in_new_tab" type="id"/>
+    <item name="bottom_bar_shopping_search" type="id"/>
+
+    <!--  Spotlight Dialog  -->
+    <item name="spotlight_anchor_view" type="id"/>
+    <item name="spotlight_placeholder" type="id"/>
+</resources>

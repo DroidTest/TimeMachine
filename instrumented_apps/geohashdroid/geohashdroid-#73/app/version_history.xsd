@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="versionHistory" type="versionHistoryType"/>
+
+    <xs:complexType name="versionHistoryType">
+        <xs:sequence>
+            <xs:element name="version" maxOccurs="unbounded" minOccurs="1"
+                        type="versionType"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="versionType">
+        <xs:sequence>
+            <xs:element name="title" type="xs:string"/>
+            <xs:element name="header" type="xs:string"/>
+            <xs:element name="bullets" type="bulletsType"/>
+            <xs:element name="footer" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="name" type="xs:string" use="required"/>
+        <xs:attribute name="version" type="xs:string" use="required"/>
+        <xs:attribute name="date" type="xs:date" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="bulletsType">
+        <xs:sequence>
+            <xs:element name="bullet" maxOccurs="unbounded" minOccurs="0"
+                        type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:minHeight="100dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/properties_dialog_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacebetweenitems_properties_dialog"
+            android:background="?selectableItemBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/name"
+                android:textSize="@dimen/material_generic_title"/>
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculating"
+                android:textSize="@dimen/material_generic_title_summary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/properties_dialog_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacebetweenitems_properties_dialog"
+
+            android:background="?selectableItemBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/location"
+                android:textSize="@dimen/material_generic_title"/>
+
+            <TextView
+                android:id="@+id/t6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculating"
+                android:textSize="@dimen/material_generic_title_summary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/properties_dialog_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacebetweenitems_properties_dialog"
+            android:background="?selectableItemBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/size_capitalized"
+                android:textSize="@dimen/material_generic_title"/>
+
+            <TextView
+                android:id="@+id/t7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculating"
+                android:textSize="@dimen/material_generic_title_summary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/properties_dialog_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacebetweenitems_properties_dialog"
+            android:background="?selectableItemBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/date"
+                android:textSize="@dimen/material_generic_title"/>
+
+            <TextView
+                android:id="@+id/t8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculating"
+                android:textSize="@dimen/material_generic_title_summary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/properties_dialog_md5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacebetweenitems_properties_dialog"
+            android:background="?selectableItemBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_md5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/md5"
+                android:textSize="@dimen/material_generic_title"/>
+
+            <TextView
+                android:id="@+id/t9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculating"
+                android:textSize="@dimen/material_generic_title_summary"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/properties_dialog_sha256"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacebetweenitems_properties_dialog"
+            android:background="?selectableItemBackground"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_sha256"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/hash_sha256"
+                android:textSize="@dimen/material_generic_title"/>
+
+            <TextView
+                android:id="@+id/t10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculating"
+                android:textSize="@dimen/material_generic_title_summary"/>
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingStart="-7dp"
+          android:paddingLeft="-7dp"
+          android:paddingRight="-7dp">
+            <CheckBox
+              android:id="@+id/nomediacheckbox"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:fontFamily="sans-serif-medium"
+              android:text="@string/hide_media"
+              android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="125dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/permission"
+        android:id="@+id/permissionsButton"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/permtable"
+        android:visibility="gone"
+        layout="@layout/permissiontable"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/set"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set"
+        android:visibility="gone"/>
+</LinearLayout>

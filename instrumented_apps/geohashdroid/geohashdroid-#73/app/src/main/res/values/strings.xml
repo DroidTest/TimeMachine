@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Geohash Droid</string>
+    <string name="app_description">A simple Geohashing app</string>
+
+    <!-- api_map_key should be defined elsewhere and not uploaded to Git -->
+
+    <string name="title_stockservice">GHD Stock Checking Service</string>
+    <string name="title_alarmservice">GHD Stock Alarm Service</string>
+    <string name="title_wikiservice">GHD Wiki Service</string>
+    <string name="title_wikijobservice">GHD Wiki Service Job Service</string>
+    <string name="title_alarmjobservice">GHD Stock Alarm Service Job Service</string>
+    <string name="title_logindialog">Update Wiki Login</string>
+    <string name="title_preferences">Preferences</string>
+    <string name="title_about">About Geohash Droid</string>
+    <string name="title_versionhistory">Version History</string>
+    <string name="title_graticule_picker">Tap a graticule or enter one below</string>
+    <string name="title_known_locations">Known Locations Manager</string>
+
+    <string name="title_part_globalhash">Globalhash</string>
+
+    <string name="graticule_label">Graticule</string>
+    <string name="exit_graticule_label">Use This</string>
+    <string name="date_label">Date</string>
+    <string name="wiki_label">Wiki</string>
+    <string name="what_label">What\'s Geohashing?</string>
+
+    <string name="search_label">Waiting for your location&#8230;</string>
+
+    <string name="ok_label">Okay</string>
+    <string name="cool_label">Cool</string>
+    <string name="gotcha_label">Gotcha</string>
+    <string name="stop_reminding_me_label">Stop reminding me</string>
+    <string name="go_to_preference">Take me there</string>
+    <string name="backtomap_label">Back to the map</string>
+    <string name="closest_label">Find Closest</string>
+    <string name="globalhash_label">Globalhash!</string>
+    <string name="today_label">Today</string>
+
+    <string name="cancel_label">Cancel</string>
+    <string name="darn_label">Darn!</string>
+    <string name="close_label">Close</string>
+
+    <string name="dialog_date_picker_title">Select Date</string>
+
+    <string name="dialog_switch_graticule_okay">Yes, change</string>
+    <string name="dialog_switch_graticule_cancel">No, stay here</string>
+
+    <string name="dialog_switch_graticule_text">The point for that graticule is %1$s from your current location.  Do you want to switch to it?</string>
+    <string name="dialog_switch_graticule_unknown">Do you want to switch to this graticule?</string>
+
+    <string name="standby_title">Stand by&#8230;</string>
+    <string name="unknown_title">Unknown</string>
+    <string name="location_unknown">Location unknown</string>
+    <string name="stock_label">Fetching stock data&#8230;</string>
+    <string name="error_not_yet_posted">There hasn\'t been a stock price posted for that date.</string>
+    <string name="error_not_yet_posted_today">There hasn\'t been a stock price posted yet today.</string>
+    <string name="error_server_failure">There was a problem talking to the stock price server.  Please try again later.</string>
+    <string name="error_no_connection">You\'re not connected to the internet.</string>
+    <string name="warning_outside_of_projection">That hashpoint lies outside the map\'s projection, so it might not show up.</string>
+    <string name="error_no_data_to_maps">There\'s no active expedition to send to Maps.</string>
+    <string name="error_no_data_to_radar">There\'s no active expedition to send to a radar.</string>
+    <string name="error_no_data_to_wiki">There\'s no active expedition to send to the wiki.</string>
+    <string name="error_no_message">You need to put in a message to send it to the wiki.</string>
+    <string name="error_no_picture">You didn\'t pick a picture for a picture post.</string>
+
+    <string name="detail_activity_title">Details</string>
+    <string name="wiki_activity_title">Post to wiki</string>
+
+    <string name="send_to_maps_point_name">Geohash for %1$s</string>
+
+    <string name="marker_title_today_hashpoint">Today\'s Geohash point</string>
+    <string name="marker_title_today_globalpoint">Today\'s Globalhash point</string>
+    <string name="marker_title_retro_hashpoint">Geohash point for %1$s</string>
+    <string name="marker_title_retro_globalpoint">Globalhash point for %1$s</string>
+    <string name="marker_title_nearby_today_hashpoint">Today\'s Geohash point at %1$s</string>
+    <string name="marker_title_nearby_retro_hashpoint">Geohash point for %1$s at %2$s</string>
+
+    <string name="marker_title_tomorrow_hashpoint">Tomorrow\'s Geohash point</string>
+    <string name="marker_title_tomorrow_globalpoint">Tomorrow\'s Globalhash point</string>
+    <string name="marker_title_nearby_tomorrow_hashpoint">Tomorrow\'s Geohash point at %1$s</string>
+
+    <string name="marker_title_doubletomorrow_hashpoint">The day after tomorrow\'s Geohash point</string>
+    <string name="marker_title_doubletomorrow_globalpoint">The day after tomorrow\'s Globalhash point</string>
+    <string name="marker_title_nearby_doubletomorrow_hashpoint">The day after tomorrow\'s Geohash point at %1$s</string>
+
+    <string name="toast_close_enough">You\'re there!  This is as close to the point as GPS accuracy gets.  Yay!</string>
+    <string name="toast_not_today_reminder">You aren\'t looking at today\'s hashpoint at the moment.  If you want today, you\'ll need to change the date.</string>
+
+    <string name="content_desc_zoom">Zoom/Recenter</string>
+    <string name="content_desc_zoom_cancel">Cancel</string>
+    <string name="content_desc_zoom_fit_both">Fit both the final destination and your location</string>
+    <string name="content_desc_zoom_final_destination">Center on final destination</string>
+    <string name="content_desc_zoom_your_location">Center on your location</string>
+
+    <string name="menu_item_map_type">Map type</string>
+    <string name="menu_item_about">About</string>
+    <string name="menu_item_send_to_maps">Send to Maps</string>
+    <string name="menu_item_radar">Radar</string>
+    <string name="menu_item_tomorrow">Try Tomorrow</string>
+
+    <string name="menu_item_map_type_street">Street (day)</string>
+    <string name="menu_item_map_type_sat">Satellite</string>
+    <string name="menu_item_map_type_terrain">Terrain</string>
+    <string name="menu_item_map_type_night">Street (night)</string>
+
+    <string name="infobox_accuracy_low">(Accuracy low)</string>
+    <string name="infobox_accuracy_really_low">(Accuracy really low)</string>
+
+    <string name="details_finish">Finish</string>
+    <string name="details_you">You</string>
+    <string name="details_dist">Distance:</string>
+    <string name="details_accuracy">(Accurate to %1$s)</string>
+    <string name="details_toast_no_location">Nothing copied to clipboard &#8212; Your location is currently unknown.</string>
+    <string name="details_toast_stand_by">Nothing copied to clipboard &#8212; Stand by&#8230;</string>
+    <string name="details_toast_your_location">Copied your current coordinates to the clipboard.</string>
+    <string name="details_toast_final_location">Copied the hashpoint\'s coordinates to the clipboard.</string>
+    <string name="details_clip_your_location">Geohash Droid: Current user location</string>
+    <string name="details_clip_final_location">Geohash Droid: Hashpoint location for %1$s</string>
+
+    <string name="hint_lat">Lat</string>
+    <string name="hint_lon">Lon</string>
+    <string name="hint_message">Message</string>
+    <string name="hint_caption">Caption</string>
+
+    <string name="notification_title">Fetching stocks&#8230;</string>
+    <string name="notification_detail">(now checking %1$s)</string>
+
+    <string name="channel_wiki_title">Wiki-related</string>
+    <string name="channel_wiki_description">Notifications regarding active wiki actions, if wiki posts are queued, wiki posting errors, etc.</string>
+    <string name="channel_nearby_points_title">Nearby points</string>
+    <string name="channel_nearby_points_description">Notifications regarding hashpoints being close to user-defined locations.</string>
+    <string name="channel_stock_prefetch_title">Stock prefetcher</string>
+    <string name="channel_stock_prefetch_description">Notifications regarding the stock pre-fetcher kicking in at 9:30am ET.</string>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/InfoboxText"
+        android:drawableLeft="@drawable/final_destination_infobox"
+        android:drawableStart="@drawable/final_destination_infobox"
+        android:text="@string/standby_title"
+        android:id="@+id/infobox_hashpoint"/>
+
+    <TextView
+        style="@style/InfoboxText"
+        android:text="@string/standby_title"
+        android:drawableLeft="@drawable/current_location_infobox"
+        android:drawableStart="@drawable/current_location_infobox"
+        android:id="@+id/infobox_you"/>
+
+    <TextView
+        style="@style/InfoboxText"
+        android:text="@string/standby_title"
+        android:drawableLeft="@drawable/distance_infobox"
+        android:drawableStart="@drawable/distance_infobox"
+        android:id="@+id/infobox_distance"/>
+
+    <TextView
+        style="@style/InfoboxText"
+        android:text="@string/infobox_accuracy_low"
+        android:id="@+id/infobox_accuracy_low"
+        android:visibility="gone"/>
+
+    <TextView
+        style="@style/InfoboxText"
+        android:text="@string/infobox_accuracy_really_low"
+        android:id="@+id/infobox_accuracy_really_low"
+        android:visibility="gone"/>
+</merge>

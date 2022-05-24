@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Notification ID for when the alarm is grabbing stocks. -->
+    <item name="alarm_notification" type="id" />
+    <!-- Notification ID for listing known locations near the hashpoint. -->
+    <item name="alarm_known_location" type="id" />
+    <!-- Notification ID for listing known locations near the globalhash. -->
+    <item name="alarm_known_location_global" type="id" />
+    <!-- Notification ID for when an active wiki connection is going on. -->
+    <item name="wiki_working_notification" type="id" />
+    <!-- Notification ID for when we're waiting for a connection for the wiki or
+         some other form of input. -->
+    <item name="wiki_waiting_notification" type="id" />
+    <!-- Notification ID for when something went wrong with an image upload that
+         can be summed up as "MediaStore doesn't know what we're talking about".
+         This one should pop up in that case but isn't a queue-stopping error,
+         so it might be up with other notifications. -->
+    <item name="wiki_image_error_notification" type="id" />
+    <!-- Notification ID for any wiki errors BESIDES "something went wrong with
+         an image upload".  This one should have a PendingIntent attached to
+         help solve the problem (i.e. set a username, update password, etc). -->
+    <item name="wiki_error_notification" type="id" />
+    <!-- Notification ID for the wiki throttling our edits. -->
+    <item name="wiki_throttle_notification" type="id" />
+
+    <!-- A bunch of notification IDs for the multi-notify bit. -->
+    <item name="alarm_known_location_group" type="id" />
+    <item name="alarm_known_location_multi_0" type="id" />
+    <item name="alarm_known_location_multi_1" type="id" />
+    <item name="alarm_known_location_multi_2" type="id" />
+    <item name="alarm_known_location_multi_3" type="id" />
+    <item name="alarm_known_location_multi_4" type="id" />
+    <item name="alarm_known_location_multi_5" type="id" />
+    <item name="alarm_known_location_multi_6" type="id" />
+    <item name="alarm_known_location_multi_7" type="id" />
+    <item name="alarm_known_location_multi_8" type="id" />
+    <item name="alarm_known_location_multi_9" type="id" />
+</resources>

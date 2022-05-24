@@ -1,0 +1,20 @@
+apply from: '../../../buildSrc/android-library-base.gradle'
+apply from: '../../../buildSrc/pmd.gradle'
+apply from: '../../../buildSrc/checkstyle.gradle'
+apply from: '../../../buildSrc/findbugs.gradle'
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "androidx.appcompat:appcompat:${Versions.appcompat}"
+    implementation project(path: ':HttpRequest')
+    androidTestImplementation "androidx.test.ext:junit:${Versions.test_ext}"
+    androidTestImplementation "androidx.test:runner:${Versions.test_runner}"
+    androidTestImplementation "androidx.test.espresso:espresso-core:${Versions.espresso}"
+    androidTestImplementation "com.squareup.okhttp3:mockwebserver:${Versions.mockwebserver}"
+}
+
+afterEvaluate {
+    check.dependsOn 'findbugs', 'pmd', 'checkstyle'
+}

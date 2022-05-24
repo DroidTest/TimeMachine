@@ -1,0 +1,121 @@
+<!--
+    Copyright (C) 2014 Arpit Khurana <arpitkh96@gmail.com>, Vishal Nehra <vishalmeham2@gmail.com>
+
+    This file is part of Amaze File Manager.
+
+    Amaze File Manager is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    -->
+
+<resources>
+    <color name="safr">#5f777777</color>
+    <color name="holo_dark_background">#303030</color>
+    <color name="holo_dark_action_mode">#212121</color>
+    <color name="divider">#e0e0e0</color>
+    <color name="divider_dark_card">#575757</color>
+    <color name="divider_dark">#484848</color>
+    <color name="search_text_highlight">#FF9632</color>
+    <!-- TODO: replace this hardcoded color with default list item selection color -->
+    <color name="grid_background_light">#f2f2f2</color>
+    <!--GRAY 700 used for icons instead of black-->
+    <color name="item_light_theme">#FF616161</color>
+
+    <color name="roundedimagepaint">#BAB399</color>
+
+    <!--Colors for preference dialog pie chart-->
+    <color name="piechart_red">#FFEF5350</color>
+    <color name="piechart_green">#FF4CAF50</color>
+    <color name="piechart_blue">#FF2196F3</color>
+
+    <!-- primary color palatte -->
+    <color name="primary_red">#F44336</color>
+    <color name="primary_pink">#e91e63</color>
+    <color name="primary_purple">#9c27b0</color>
+    <color name="primary_deep_purple">#673ab7</color>
+    <color name="primary_indigo">#3f51b5</color>
+    <color name="primary_blue">#2196F3</color>
+    <color name="primary_light_blue">#03A9F4</color>
+    <color name="primary_cyan">#00BCD4</color>
+    <color name="primary_teal">#009688</color>
+    <color name="primary_green">#4CAF50</color>
+    <color name="primary_light_green">#8bc34a</color>
+    <color name="primary_amber">#FFC107</color>
+    <color name="primary_orange">#FF9800</color>
+    <color name="primary_deep_orange">#FF5722</color>
+    <color name="primary_brown">#795548</color>
+    <color name="primary_grey_900">#000000</color>
+    <color name="primary_blue_grey">#607d8b</color>
+    <color name="primary_teal_900">#004d40</color>
+
+    <!-- accent color palatte -->
+    <color name="accent_red">#F44336</color>
+    <color name="accent_pink">#e91e63</color>
+    <color name="accent_purple">#9c27b0</color>
+    <color name="accent_deep_purple">#673ab7</color>
+    <color name="accent_indigo">#3f51b5</color>
+    <color name="accent_blue">#2196F3</color>
+    <color name="accent_light_blue">#03A9F4</color>
+    <color name="accent_cyan">#00BCD4</color>
+    <color name="accent_teal">#009688</color>
+    <color name="accent_green">#4CAF50</color>
+    <color name="accent_light_green">#8bc34a</color>
+    <color name="accent_amber">#FFC107</color>
+    <color name="accent_orange">#FF9800</color>
+    <color name="accent_deep_orange">#FF5722</color>
+    <color name="accent_brown">#795548</color>
+    <color name="accent_black">#212121</color>
+    <color name="accent_blue_grey">#607d8b</color>
+    <color name="accent_super_su">#004d40</color>
+
+    <!-- colors used for files items -->
+    <color name="goback_item">#757575</color>
+    <color name="video_item">#f06292</color>
+    <color name="audio_item">#9575cd</color>
+    <color name="pdf_item">#da4336</color>
+    <color name="code_item">#00bfa5</color>
+    <color name="text_item">#e06055</color>
+    <color name="archive_item">#f9a825</color>
+    <color name="apk_item">#a4c439</color>
+    <color name="generic_item">#9e9e9e</color>
+
+    <color name="grey">#ff666666</color>
+
+    <color name="appsadapter_background">#5f33b5e5</color>
+
+    <color name="text_disabled">#f6f6f6</color>
+
+    <color name="item_background">#9f757575</color>
+    <color name="icon_background_dark">#303030</color>
+
+    <color name="text_light">#8A000000</color>
+    <color name="text_dark">#B3ffffff</color>
+
+    <!-- indicator -->
+
+    <!-- cardview foreground and background -->
+    <color name="cardView_foreground">#202020</color>
+    <color name="cardView_background">#363F45</color>
+
+    <color name="white_translucent">#80ffffff</color>
+
+    <color name="disabled_button">#BDBDBD</color>
+
+    <!--Used for white vectors -->
+    <color name="vectors_white">#FFFFFFFF</color>
+
+    <!-- Warning error for InputTextLayout -->
+    <color name="warningColor">#ffe082</color>
+    <!-- Error error for InputTextLayout -->
+    <color name="error_color_material">#F4511E</color>
+
+</resources>

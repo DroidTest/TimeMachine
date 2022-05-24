@@ -1,0 +1,25 @@
+language: android
+sudo: false
+jdk:
+    - oraclejdk8
+android:
+  components:
+    - tools
+    - android-28
+    - build-tools-28.0.3
+    - platform-tools
+before_cache:
+  - rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
+cache:
+    directories:
+      - "${TRAVIS_BUILD_DIR}/gradle/caches/"
+      - "${TRAVIS_BUILD_DIR}/gradle/wrapper/dists/"
+      - "$HOME/.gradle/caches/"
+      - "$HOME/.gradle/wrapper/"
+before_script:
+  - bash scripts/prep-key.sh
+script:
+  - ./gradlew spotlessCheck
+  - ./gradlew build
+after_success:
+    - bash scripts/update-apk.sh

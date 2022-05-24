@@ -1,0 +1,75 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply from: '../buildSrc/pmd.gradle'
+apply from: '../buildSrc/checkstyle.gradle'
+apply from: '../buildSrc/findbugs.gradle'
+
+android {
+
+
+    compileSdkVersion Versions.compile_sdk
+    defaultConfig {
+        minSdkVersion Versions.min_sdk
+    }
+
+
+    buildTypes {
+
+        // this is used by app module's firebase build type
+        debug {
+            resValue "string", "default_web_client_id", SystemEnv.default_web_client_id ?: ""
+            resValue "string", "firebase_database_url", SystemEnv.firebase_database_url ?: ""
+            resValue "string", "gcm_defaultSenderId", SystemEnv.gcm_defaultSenderId ?: ""
+            resValue "string", "google_api_key", SystemEnv.google_api_key ?: ""
+            resValue "string", "google_app_id", SystemEnv.google_app_id ?: ""
+            resValue "string", "google_crash_reporting_api_key", SystemEnv.google_crash_reporting_api_key ?: ""
+            resValue "string", "project_id", SystemEnv.project_id ?: ""
+            // plugin io.fabric should generate this build_id but somehow it just won't work here.
+            // In the log it says "Crashlytics was applied to an android-library project.
+            // Android-library support is currently an incubating feature. Contact support@fabric.io with any issues."
+            // So maybe we can do that later.
+            // Since there's no source code for me to trace, I'll do it manually.
+            // For more details, use ./gradlew help --task fabricGenerateResourcesDebug
+            resValue "string", "com.crashlytics.android.build_id", UUID.randomUUID().toString()
+        }
+
+        // this is used by app module's beta and release build types
+        release {
+            minifyEnabled false
+            resValue "string", "default_web_client_id", SystemEnv.default_web_client_id ?: ""
+            resValue "string", "firebase_database_url", SystemEnv.firebase_database_url ?: ""
+            resValue "string", "gcm_defaultSenderId", SystemEnv.gcm_defaultSenderId ?: ""
+            resValue "string", "google_api_key", SystemEnv.google_api_key ?: ""
+            resValue "string", "google_app_id", SystemEnv.google_app_id ?: ""
+            resValue "string", "google_crash_reporting_api_key", SystemEnv.google_crash_reporting_api_key ?: ""
+            resValue "string", "project_id", SystemEnv.project_id ?: ""
+            resValue "string", "com.crashlytics.android.build_id", UUID.randomUUID().toString()
+        }
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
+
+    implementation "com.google.firebase:firebase-core:${Versions.firebase_core}"
+    implementation "com.google.firebase:firebase-config:${Versions.firebase_config}"
+    api "com.google.firebase:firebase-messaging:${Versions.fcm}"
+    implementation "com.crashlytics.sdk.android:crashlytics:${Versions.crashlytics}"
+    implementation "com.google.firebase:firebase-auth:${Versions.firebase_auth}"
+    implementation ("com.google.firebase:firebase-inappmessaging-display:${Versions.firebase_iam}") {
+        // TODO: need to check if it can be moved to firebase module after this or worker manager libraries upgraded
+        // has conflicts with existing library
+        exclude group: 'com.google.code.findbugs', module: 'jsr305'
+        exclude group: 'com.google.code.gson', module: 'gson'
+    }
+}
+
+
+afterEvaluate {
+    check.dependsOn 'findbugs', 'pmd', 'checkstyle'
+}
+repositories {
+    mavenCentral()
+}

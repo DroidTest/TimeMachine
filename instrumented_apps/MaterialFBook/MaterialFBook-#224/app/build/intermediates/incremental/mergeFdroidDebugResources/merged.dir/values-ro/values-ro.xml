@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="Start">
+        <item>MostRecent</item>
+        <item>TopStories</item>
+        <item>Messages</item>
+    </string-array>
+    <string-array name="intervalPrefTitles">
+        <item>1 minuto</item>
+        <item>2 minutos</item>
+        <item>5 minutos</item>
+        <item>15 minutos</item>
+        <item>30 minutos</item>
+        <item>1 hora</item>
+        <item>3 horas</item>
+        <item>6 horas</item>
+    </string-array>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Navigați la ecranul de pornire"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Navigați în sus"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Mai multe opțiuni"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Gata"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Afișați tot"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Alegeți o aplicație"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"DEZACTIVAT"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"ACTIVAT"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"space"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Meniu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Căutați…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Ștergeți interogarea"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Termen de căutare"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Căutați"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Trimiteți interogarea"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Căutare vocală"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Trimiteți la"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Trimiteți folosind <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Restrângeți"</string>
+    <string name="about_translations">Ajutor, avem nevoie de tine</string>
+    <string name="about_updates">Update-uri</string>
+    <string name="app_themes">Tema aplicatiei</string>
+    <string name="app_themes_summary">De aici se poate alege tema aplicatiei.</string>
+    <string name="appearance_setting_title">INTERFATA</string>
+    <string name="changelog">Jurnalul schimbarilor</string>
+    <string name="content_copy_link_done">Link copiat in clipboard</string>
+    <string name="context_share_image">Distribuie imaginea</string>
+    <string name="context_share_link">Distribuie linkul</string>
+    <string msgid="3209159573327985035" name="copy">"Copiați"</string>
+    <string name="devs_who_helped_me">Dezvoltatorii care m-au ajutat prin raspunzandu-mi la intrebari si luand cod sursa din aplicatiile lor</string>
+    <string name="downloaded">Downloaded</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"Avansat"</string>
+    <string name="fab_checkin">Check In</string>
+    <string name="fab_enable">Floating Action Button</string>
+    <string name="fab_enable_summary">Show the FAB.</string>
+    <string name="fab_jump_top">Revino sus</string>
+    <string name="fab_photo">Posteaza o fotografie</string>
+    <string name="fab_text">Posteaza un status</string>
+    <string name="facebook_message">Mesaje Facebook</string>
+    <string name="facebook_notifications">Notificari Facebook</string>
+    <string name="general_setting_title">GENERAL</string>
+    <string name="help_translations">Ajuta-ma sa traduc aplicatia in limba ta</string>
+    <string name="hide_birthdays_summary">Cand este activat, se vor ascunde zilele de nastere din Feed.</string>
+    <string name="hide_birthdays_title">Ascunde Zilele de Nastere</string>
+    <string name="hide_editor_newsfeed_summary">Cand este activat, editorul de status va fi ascuns din Feed.</string>
+    <string name="hide_editor_newsfeed_title">Ascunde Editorul de Status din Feed</string>
+    <string name="hide_menu_bar_summary">Cand este activat, Bara de Meniu Facebook va fi ascunsa.</string>
+    <string name="hide_menu_bar_title">Ascunde bara de meniu</string>
+    <string name="hide_recently_commented">Hide recently commented</string>
+    <string name="hide_recently_commented_summary">X people recently commented on this.</string>
+    <string name="hide_sponsored_summary">Cand este activat, se va ascunde continutul ‘Sponsorizat\' (anunturi) din Feed.</string>
+    <string name="hide_sponsored_title">Ascunde continutul ‘Sponsorizat\'</string>
+    <string name="interval_pref">Intervalul de timp pentru verificare</string>
+    <string name="interval_pref_description_new">Notificarile vor fi verificate la fiecare %s.</string>
+    <string name="led_light">LED de notificari</string>
+    <string name="location_enabled_summary">Activeaza ca sa permiti accesul la locatie.</string>
+    <string name="location_enabled_title">Acces la locatie</string>
+    <string name="menu_events">Evenimente</string>
+    <string name="menu_events_summary">Cand este activat, butonul ‘Evenimente’ dispare.</string>
+    <string name="menu_friendreq">Cereri de prietenie</string>
+    <string name="menu_friendreq_summary">Cand este dezactivat, butonul ‘Cereri de prietenie’ dispare.</string>
+    <string name="menu_groups">Grupuri</string>
+    <string name="menu_groups_summary">Cand este dezactivat, butonul ‘Grupuri’ dispare.</string>
+    <string name="menu_mainmenu">Meniu Principal</string>
+    <string name="menu_mainmenu_summary">Cand este dezactivat, butonul ‘Meniu Principal’ dispare.</string>
+    <string name="menu_messages">Mesaje</string>
+    <string name="menu_most_recent">Cele mai recente</string>
+    <string name="menu_photos">Fotografii</string>
+    <string name="menu_photos_summary">Cand este activat, butonul ‘Fotografii’ dispare.</string>
+    <string name="menu_search">Cautare</string>
+    <string name="menu_search_summary">Cand este dezactivat, butonul ‘Cautare’ dispare.</string>
+    <string name="menu_top_stories">Povesti de top</string>
+    <string name="menu_top_stories_summary">Cand este dezactivat, butonul ‘Povesti de top’ dispare.</string>
+    <string name="more">Mai multe si credite</string>
+    <string name="nav_notifications">Notificari</string>
+    <string name="navigation_drawer_close">Inchide serarul de navigatie</string>
+    <string name="navigation_drawer_open">Deschide serarul de navigatie</string>
+    <string name="navigation_menu_settings">Itemii meniului de navigare</string>
+    <string name="navigation_menu_settings_description">Aici se pot afisa/ascunde itemi din meniul de navigare.</string>
+    <string name="navigation_menu_title">MENIUL DE NAVIGARE</string>
+    <string name="navigation_setting_title">NAVIGATIE</string>
+    <string name="new_bookmark">Added:</string>
+    <string msgid="478774118347071097" name="not_set">"Nesetată"</string>
+    <string name="notif">Notificari</string>
+    <string name="notification_sound">Sunetul de notificare</string>
+    <string name="notification_sound_description">Alege un ringtone sau deloc: \u0020</string>
+    <string name="notification_sound_msg">Sunet pentru mesaje</string>
+    <string name="notifications_setting_title">NOTIFICARI</string>
+    <string name="notifications_settings">Setarile notificarilor</string>
+    <string name="notifications_settings_description">Setari aditionale. Alege intervalul de timp, adauga sunete, LED si vibratii.</string>
+    <string name="people_who_translated">Userii care au tradus aplicatia</string>
+    <string msgid="7961817945132860002" name="preference_copied">"„<ns1:g id="SUMMARY">%1$s</ns1:g>” a fost copiat în clipboard."</string>
+    <string name="remove_bookmark">Removed:</string>
+    <string name="save_data">Economizator de date</string>
+    <string name="save_data_summary">Cand este activat, aplicatia se autoconfigureaza intr-un mod de economisire a datelor</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Căutați"</string>
+    <string name="settings">Setari</string>
+    <string name="silent">Fara sunet</string>
+    <string name="source_code">Codul-sursa pe Github</string>
+    <string name="start_url">Start URL</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stop_images_summary">Cand este activat, nu se vor incarca imaginile. Niste imagini o sa ramana in cache.</string>
+    <string name="stop_images_title">Nu incarca imaginile</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="updates">Verifica pentru o noua versiune</string>
+    <string name="updates_summary">Incarca pagina si descarca ultima versiune</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"DEZACTIVAT"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"ACTIVAT"</string>
+    <string name="vibrate">Vibratii</string>
+    <string name="vibrate_double">Vibratii duble</string>
+    <string name="withYou">Raporteaza bug-uri sau cere noi functii</string>
+</resources>

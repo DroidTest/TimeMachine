@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="UseStockService"
+        android:persistent="true"
+        android:summaryOff="@string/pref_usestockservice_off"
+        android:summaryOn="@string/pref_usestockservice_on"
+        android:title="@string/pref_usestockservice_title" />
+
+    <ListPreference
+        android:defaultValue="15"
+        android:entries="@array/pref_stockcachesize_entries"
+        android:entryValues="@array/pref_stockcachesize_values"
+        android:key="StockCacheSize"
+        android:persistent="true"
+        android:title="@string/pref_stockcachesize_title" >
+    </ListPreference>
+
+    <Preference
+        android:key="_stockWipe"
+        android:title="@string/pref_stockwipe_title" />
+
+    <Preference
+        android:key="_resetBuggingMe"
+        android:title="@string/pref_reset_bugging_me_title" />
+</PreferenceScreen>

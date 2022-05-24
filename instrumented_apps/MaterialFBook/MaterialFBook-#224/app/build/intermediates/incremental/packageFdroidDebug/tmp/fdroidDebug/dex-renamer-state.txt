@@ -1,0 +1,4 @@
+#Sun May 08 22:43:05 CST 2022
+base.0=/Users/iverson3/Desktop/own-download/MaterialFBook-\#224/app/build/intermediates/dex/fdroidDebug/mergeDexFdroidDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

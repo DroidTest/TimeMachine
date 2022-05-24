@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- There's a huge wall of wiki-related strings, especially when it comes
+         to error handling, so they all go here. -->
+
+	<string name="wiki_editor_not_logged_in">You will be posting anonymously, and are thus not be able to upload pictures.  If you do not wish to be anonymous, you need to set a wiki username and password in settings.</string>
+
+	<string name="wiki_post_message_summary">[live]</string>
+	<string name="wiki_post_picture_summary">[live picture]</string>
+	<string name="wiki_post_message_summary_retro">[retro]</string>
+	<string name="wiki_post_picture_summary_retro">[retro picture]</string>
+
+	<string name="wiki_conn_anon_pic_error">You can\'t upload pictures anonymously.  You must specify a username and password in Preferences first.</string>
+
+	<string name="wiki_error_xml">Invalid XML sent from wiki.</string>
+	<string name="wiki_error_unknown">An unknown error happened with the wiki.  Please try again.</string>
+	<string name="wiki_error_illegal_namespace">Pages in that namespace can\'t be edited.</string>
+	<string name="wiki_error_protected">You\'re not allowed to edit that page.</string>
+	<string name="wiki_error_email_confirm">Your email address isn\'t confirmed, and the wiki won\'t let you edit because of that.</string>
+	<string name="wiki_error_permission_denied">Permission denied.</string>
+	<string name="wiki_error_blocked">You\'ve been blocked from editing the wiki.</string>
+	<string name="wiki_error_rate_limit">You\'re posting way too fast.  Slow down a bit and try again in a few minutes.</string>
+	<string name="wiki_error_read_only">The wiki is in read-only mode right now.  Try again later.</string>
+	<string name="wiki_error_bad_username">That username is invalid.</string>
+    <string name="wiki_error_username_nonexistant">That username doesn\'t exist.</string>
+	<string name="wiki_error_bad_password">Your password is incorrect.</string>
+	<string name="wiki_error_bad_login">Login failed.  Please check your username or password.</string>
+	<string name="wiki_error_throttled">You\'ve tried to log in too many times.  Please wait around five minutes and try again.</string>
+	<string name="wiki_error_invalid_page">The wiki couldn\'t find that page because the page\'s name is invalid.</string>
+	<string name="wiki_error_no_create">You\'re not allowed to create pages.</string>
+	<string name="wiki_error_no_edit">You\'re not allowed to edit pages.</string>
+	<string name="wiki_error_spam">The wiki thinks that something you wrote was spam.</string>
+	<string name="wiki_error_filtered">A filter on the wiki denied your edit.</string>
+	<string name="wiki_error_too_big">What you sent was too big for the wiki.</string>
+	<string name="wiki_error_conflict">An edit conflict happened.  Someone might be right nearby, trying to edit that same page.</string>
+	<string name="wiki_error_fancy_schmansy_login">A username/password combination wasn\'t enough to log you in, and this app can\'t handle whatever else the wiki wants.  You should probably file a bug report.</string>
+	
+	<string name="wiki_dialog_append_time">Append local timestamp</string>
+	<string name="wiki_dialog_add_picture">Post a picture</string>
+	<string name="wiki_dialog_submit_message">Submit message</string>
+	<string name="wiki_dialog_submit_picture">Submit to gallery</string>
+	<string name="wiki_dialog_header">Wiki post for %1$s\n(%2$s)</string>
+    <string name="wiki_dialog_append_coordinates">Append location</string>
+    <string name="wiki_dialog_stamp_image">Draw infobox</string>
+	
+	<string name="wiki_generic_error">There was an unknown problem communicating with the wiki.</string>
+	<string name="wiki_generic_image_error">There was a problem loading that image.</string>
+
+	<string name="wiki_notification_title">Submitting wiki updates&#8230;</string>
+    <string name="wiki_notification_waiting_for_connection_title">No network connection</string>
+    <string name="wiki_notification_waiting_for_connection_content">Waiting to send wiki posts&#8230;</string>
+    <string name="wiki_notification_image_error_title">Error uploading wiki image</string>
+    <string name="wiki_notification_image_error_content">One or more images couldn\'t be accessed to be uploaded.</string>
+    <string name="wiki_notification_error_title">Error posting to the wiki</string>
+    <string name="wiki_notification_throttle_title">Wiki posts are on standby</string>
+    <string name="wiki_notification_throttle_content">Waiting a minute before retrying&#8230;</string>
+
+    <string name="wiki_notification_general_error">There was an unknown error submitting something to the wiki.</string>
+    <string name="wiki_notification_action_retry">Retry</string>
+    <string name="wiki_notification_action_skip">Skip</string>
+    <string name="wiki_notification_action_abort">Abort</string>
+    <string name="wiki_notification_action_update_login">Update</string>
+</resources>

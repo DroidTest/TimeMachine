@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <item name="visibility_visible" type="integer">0</item>
+    <item name="visibility_gone" type="integer">2</item>
+
+    <!-- Common margin -->
+    <dimen name="common_margin_m1">4dp</dimen>
+    <dimen name="common_margin_m2">8dp</dimen>
+    <dimen name="common_margin_m3">12dp</dimen>
+    <dimen name="common_margin_m4">20dp</dimen>
+    <dimen name="common_margin_m5">24dp</dimen>
+    <dimen name="common_margin_m6">40dp</dimen>
+    <dimen name="common_margin_m7">48dp</dimen>
+
+    <dimen name="common_font_size_body1">14sp</dimen>
+    <dimen name="common_font_size_btn_text2">14sp</dimen>
+
+    <dimen name="menu_elevation">8dp</dimen>
+
+    <dimen name="floating_action_button_elevation">4dp</dimen>
+    <dimen name="floating_action_button_margin">16dp</dimen>
+
+    <item name="match_parent" type="dimen">-1</item>
+    <!-- We specifically want match_parent here. If we set -1, the build breaks since integers aren't allowed.
+         If we set -1dp, the UI breaks (i.e. we don't get match_parent). For some reason adding another
+         redirection via an existing attribute works... -->
+    <dimen name="firstrun_container_width">@dimen/match_parent</dimen>
+
+    <!-- The custom tabs spec defines a maximum close button size, we need to define this here to enforce that sizing. -->
+    <dimen name="customtabs_toolbar_icon_size">24dp</dimen>
+
+    <!-- We are using a NavigationView in our context menu and it adds padding that we do not want. -->
+    <dimen name="design_navigation_padding_top_default" tools:override="true">0dp</dimen>
+    <dimen name="design_navigation_separator_vertical_padding" tools:override="true">0dp</dimen>
+    <dimen name="design_navigation_padding_bottom" tools:override="true">0dp</dimen>
+
+    <dimen name="firstrun_card_width">300dp</dimen>
+    <dimen name="firstrun_card_height">500dp</dimen>
+
+    <dimen name="first_run_upgrade_title_margin_top">36dp</dimen>
+    <dimen name="first_run_upgrade_title_margin_bottom">16dp</dimen>
+    <dimen name="first_run_upgrade_image2_size">76dp</dimen>
+
+    <dimen name="flow_layout_spacing">8dp</dimen>
+
+    <dimen name="screenshot_grid_cell_padding">8dp</dimen>
+    <dimen name="screenshot_empty_img_size">18dp</dimen>
+    <dimen name="menu_bottom_space">40dp</dimen>
+
+    <dimen name="favicon_initial_text_size">25dp</dimen>
+    <dimen name="favicon_initial_threshold_size">25px</dimen>
+    <dimen name="favicon_downscale_threshold_size">128px</dimen>
+    <dimen name="favicon_target_size">100px</dimen>
+
+    <dimen name="shortcut_icon_size">48dp</dimen>
+
+    <dimen name="home_title_bottom_margin">72dp</dimen>
+    <dimen name="home_padding_url_bar_to_top_sites">19dp</dimen>
+
+    <dimen name="top_site_width">296dp</dimen>
+    <dimen name="top_site_font_size" tools:ignore="SpUsage">11dp</dimen>
+
+    <dimen name="menu_layout_horizontal_margin">14dp</dimen>
+    <dimen name="menu_layout_top_margin">3dp</dimen>
+    <dimen name="firstrun_icon_bottom_margin">20dp</dimen>
+    <dimen name="fixed_menu_height">48dp</dimen>
+    <dimen name="home_fixed_menu_horizontal_margin">36dp</dimen>
+    <dimen name="browser_fixed_menu_horizontal_padding">40dp</dimen>
+    <dimen name="browser_tracker_popup_bottom_margin">40dp</dimen>
+    <dimen name="search_url_input_height">56dp</dimen>
+
+    <!-- Tab Tray -->
+    <dimen name="tab_tray_peekHeight">300dp</dimen>
+    <dimen name="tab_tray_item_height">64dp</dimen>
+    <dimen name="tab_tray_item_space">5dp</dimen>
+    <dimen name="tab_tray_padding">8dp</dimen>
+    <dimen name="tab_tray_new_tab_btn_height">48dp</dimen>
+    <dimen name="tab_tray_logo_man_width">200dp</dimen>
+    <dimen name="tab_tray_logo_man_height">90dp</dimen>
+    <dimen name="tab_tray_close_all_btn_text_size">14dp</dimen>
+    <dimen name="tab_tray_close_all_btn_margin_start">17dp</dimen>
+    <dimen name="tab_tray_close_all_btn_margin_end">18dp</dimen>
+    <dimen name="menu_text_padding">5dp</dimen>
+
+
+    <dimen name="tab_tray_bottom_sheet_start_margin">24dp</dimen>
+    <dimen name="tab_tray_bottom_sheet_end_margin">0dp</dimen>
+    <dimen name="pm_home_title_margin">116dp</dimen>
+
+    <dimen name="fake_input_height">48dp</dimen>
+    <dimen name="fake_input_width">306dp</dimen>
+
+    <dimen name="myshot_focus_view_radius">52dp</dimen>
+
+    <dimen name="card_padding">16dp</dimen>
+    <dimen name="card_space_width">4dp</dimen>
+
+    <dimen name="item_news_inner_width">@dimen/item_news_inner_height</dimen>
+    <dimen name="item_news_inner_height">84dp</dimen>
+
+    <dimen name="news_language_setting_card_horizontal_space">9dp</dimen>
+    <dimen name="news_language_setting_card_vertical_space">8dp</dimen>
+
+    <!--  HomeFragment  -->
+    <item name="home_firefox_logo_visibility" type="integer">@integer/visibility_gone</item>
+    <item name="content_hub_title_visibility" type="integer">@integer/visibility_gone</item>
+    <item name="top_sites_pager_indicator_visibility" type="integer">@integer/visibility_gone</item>
+    <item name="content_hub_title_top_margin" type="dimen">0dp</item>
+    <dimen name="shopping_focus_view_radius">51dp</dimen>
+    <dimen name="content_service_focus_view_width">320dp</dimen>
+    <dimen name="content_service_focus_view_radius">12dp</dimen>
+
+    <!--  MissionDetailFragment  -->
+    <item name="msrp_mission_detail_button_height" type="dimen">40dp</item>
+    <item name="msrp_mission_detail_button_text_size" type="dimen">14sp</item>
+    <item name="msrp_mission_detail_day_width" type="dimen">50dp</item>
+    <item name="msrp_mission_detail_day_radius" type="dimen">25dp</item>
+    <item name="msrp_mission_detail_day_text_size" type="dimen">12sp</item>
+    <item name="msrp_mission_detail_day_text_margin_top" type="dimen">4dp</item>
+
+    <!-- Travel - Hotel -->
+    <item name="travel_hotel_card_info_text_size" type="dimen">12sp</item>
+    <item name="travel_hotel_card_small_icon_width" type="dimen">14dp</item>
+
+    <!-- Travel - Explore -->
+    <item name="travel_explore_item_radius" type="dimen">4dp</item>
+
+    <!-- TravelCityActivity -->
+    <dimen name="travel_focus_view_radius">20dp</dimen>
+    <dimen name="travel_focus_view_height">48dp</dimen>
+    <dimen name="travel_focus_view_width">48dp</dimen>
+
+    <!-- InstantGameFragment -->
+    <dimen name="game_focus_view_radius">4dp</dimen>
+
+    <!-- Shopping Search -->
+    <dimen name="shopping_search_tab_bar_height">47dp</dimen>
+
+    <!-- Set default browser tutorial dialog -->
+    <dimen name="set_default_browser_tutorial_image_width">256dp</dimen>
+    <dimen name="set_default_browser_tutorial_flow_1_step_1_image_height">104dp</dimen>
+    <dimen name="set_default_browser_tutorial_flow_1_step_2_image_height">108dp</dimen>
+    <dimen name="set_default_browser_tutorial_flow_2_step_2_image_height">208dp</dimen>
+</resources>

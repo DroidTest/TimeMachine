@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_units_entries">
+        <item>@string/pref_units_metric</item>
+        <item>@string/pref_units_imperial</item>
+    </string-array>
+    <string-array name="pref_units_values">
+        <item>Metric</item>
+        <item>Imperial</item>
+    </string-array>
+    <string-array name="pref_coordunits_entries">
+    	<item>@string/pref_coordunits_degrees</item>
+    	<item>@string/pref_coordunits_minutes</item>
+    	<item>@string/pref_coordunits_seconds</item>
+    </string-array>
+    <string-array name="pref_coordunits_values">
+    	<item>Degrees</item>
+    	<item>Minutes</item>
+    	<item>Seconds</item>
+    </string-array>    
+    <string-array name="pref_stockcachesize_entries">
+    	<item>@string/pref_stockcachesize_off</item>
+    	<item>@string/pref_stockcachesize_10</item>
+    	<item>@string/pref_stockcachesize_15</item>
+    	<item>@string/pref_stockcachesize_25</item>
+    	<item>@string/pref_stockcachesize_50</item>
+    	<item>@string/pref_stockcachesize_100</item>
+    </string-array>
+    <!-- Yes, this apparently needs to be a string array.  ListPreference
+    	 doesn't like integer arrays. -->
+    <string-array name="pref_stockcachesize_values">
+    	<item>0</item>
+    	<item>10</item>
+    	<item>15</item>
+    	<item>25</item>
+    	<item>50</item>
+    	<item>100</item>
+    </string-array>
+    <string-array name="pref_startup_entries">
+        <item>@string/pref_startup_useclosest</item>
+        <item>@string/pref_startup_lastused</item>
+        <item>@string/pref_startup_graticulepicker</item>
+    </string-array>
+    <string-array name="pref_startup_values">
+        <item>UseClosest</item>
+        <item>LastUsed</item>
+        <item>GraticulePicker</item>
+    </string-array>
+    <string-array name="pref_knownnotification_entries">
+        <item>@string/pref_knownnotification_onlyonce</item>
+        <item>@string/pref_knownnotification_oncepergraticule</item>
+        <item>@string/pref_knownnotification_onceperlocation</item>
+        <item>@string/pref_knownnotification_never</item>
+    </string-array>
+    <string-array name="pref_knownnotification_values">
+        <item>OnlyOnce</item>
+        <item>OncePerGraticule</item>
+        <item>OncePerLocation</item>
+        <item>Never</item>
+    </string-array>
+
+    <string-array name="menu_item_map_types">
+        <item>@string/menu_item_map_type_street</item>
+        <item>@string/menu_item_map_type_night</item>
+        <item>@string/menu_item_map_type_sat</item>
+        <item>@string/menu_item_map_type_terrain</item>
+    </string-array>
+
+    <string-array name="known_locations_ranges_metric">
+        <item>@string/known_locations_range_metric_1</item>
+        <item>@string/known_locations_range_metric_2</item>
+        <item>@string/known_locations_range_metric_3</item>
+        <item>@string/known_locations_range_metric_4</item>
+    </string-array>
+
+    <string-array name="known_locations_ranges_imperial">
+        <item>@string/known_locations_range_imperial_1</item>
+        <item>@string/known_locations_range_imperial_2</item>
+        <item>@string/known_locations_range_imperial_3</item>
+        <item>@string/known_locations_range_imperial_4</item>
+    </string-array>
+
+    <!-- Remember, these are all in m. -->
+    <integer-array name="known_locations_values">
+        <item>2000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+    </integer-array>
+</resources>

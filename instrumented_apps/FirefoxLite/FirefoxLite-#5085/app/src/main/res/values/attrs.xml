@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<resources>
+    <declare-styleable name="ResizableKeyboardLayout">
+        <attr name="viewToHideWhenActivated" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="AnimatedProgressBar">
+        <attr name="wrapShiftDrawable" format="boolean" />
+        <attr name="shiftDuration" format="reference" />
+        <attr name="shiftInterpolator" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="spacing" format="integer" />
+        <attr name="maxRows" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="EqualDistributeGrid">
+        <attr name="horizontalCapacity" format="integer" />
+        <attr name="verticalGutter" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="TabCounter">
+        <attr name="drawableColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="NightMode">
+        <attr name="state_night" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CollapsingUrlBar">
+        <attr name="title" format="string"/>
+        <attr name="iconResId" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="BottomBar">
+        <attr name="dividerDrawable" format="reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/zoom_button_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_zoom_button"
+        android:background="@drawable/zoom_button_bg"
+        android:elevation="@dimen/elevation_zoom_button"
+        android:src="@drawable/zoom_button"
+        android:contentDescription="@string/content_desc_zoom"
+        android:layout_below="@+id/zoom_button_fit_both"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageButton
+        android:id="@+id/zoom_button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_zoom_button"
+        android:background="@drawable/zoom_button_bg"
+        android:elevation="@dimen/elevation_zoom_button"
+        android:src="@drawable/zoom_cancel"
+        android:contentDescription="@string/content_desc_zoom_cancel"
+        android:layout_below="@+id/zoom_button_fit_both"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageButton
+        android:id="@+id/zoom_button_fit_both"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_zoom_button"
+        android:background="@drawable/zoom_button_bg"
+        android:elevation="@dimen/elevation_zoom_button"
+        android:src="@drawable/zoom_fit_both_button"
+        android:contentDescription="@string/content_desc_zoom_fit_both"
+        android:layout_below="@+id/zoom_button_you"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageButton
+        android:id="@+id/zoom_button_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_zoom_button"
+        android:background="@drawable/zoom_button_bg"
+        android:elevation="@dimen/elevation_zoom_button"
+        android:src="@drawable/current_location_zoom"
+        android:contentDescription="@string/content_desc_zoom_your_location"
+        android:layout_below="@+id/zoom_button_destination"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageButton
+        android:id="@+id/zoom_button_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_zoom_button"
+        android:background="@drawable/zoom_button_bg"
+        android:elevation="@dimen/elevation_zoom_button"
+        android:src="@drawable/final_destination_zoom"
+        android:contentDescription="@string/content_desc_zoom_final_destination"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+</merge>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2017 by k3b.
+ *
+ * This file is part of AndroFotoFinder / #APhotoManager.
+ *
+ * This program is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License
+ * for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program. If not, see <http://www.gnu.org/licenses/>
+ */
+ -->
+
+<!-- listview-item for tags-list/picker -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     >
+
+    <ImageView
+        android:id="@+id/bookmark"
+        android:src="@android:drawable/btn_star_big_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:layout_gravity="start"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:clickable="true"
+        android:layout_weight="1"
+        />
+
+    <ImageView
+        android:id="@+id/add"
+        android:src="@android:drawable/ic_menu_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:layout_gravity="start"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:clickable="true"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/remove"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:layout_gravity="start"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:clickable="true"
+        android:layout_weight="1"
+        />
+
+	<!-- ellipsize&singleLine right align text with preceeding "..." if space is not long enough -->
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hello world"
+        android:layout_x="50px"
+        android:layout_y="22px"
+		
+		android:ellipsize="start"
+		android:singleLine="true"
+		
+        android:layout_weight="100" />
+</LinearLayout>

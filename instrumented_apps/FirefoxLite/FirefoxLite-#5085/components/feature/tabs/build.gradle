@@ -1,0 +1,25 @@
+apply from: '../../../buildSrc/android-library-base.gradle'
+apply plugin: 'kotlin-android'
+apply from: '../../../buildSrc/pmd.gradle'
+apply from: '../../../buildSrc/checkstyle.gradle'
+apply from: '../../../buildSrc/findbugs.gradle'
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin}"
+
+    testImplementation "org.robolectric:robolectric:${Versions.robolectric}"
+    testImplementation "org.mockito:mockito-core:${Versions.mockito}"
+    testImplementation "junit:junit:${Versions.junit}"
+
+    androidTestImplementation "androidx.test:runner:${Versions.test_runner}"
+    androidTestImplementation "androidx.test.espresso:espresso-idling-resource:${Versions.espresso}"
+
+    implementation "org.mozilla.components:browser-session:${Versions.android_components}"
+    implementation "org.mozilla.components:concept-engine:${Versions.android_components}"
+}
+
+afterEvaluate {
+    check.dependsOn 'findbugs', 'pmd', 'checkstyle'
+}

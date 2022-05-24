@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/gradient_background">
+        <shape>
+            <gradient
+                android:angle="315"
+                android:startColor="?themeGradientStart"
+                android:centerColor="?themeGradientCenter"
+                android:endColor="?themeGradientEnd" />
+        </shape>
+    </item>
+    <item android:id="@+id/gradient_background_night">
+        <shape>
+            <gradient
+                android:angle="270"
+                android:startColor="@color/themeGradientEndNight"
+                android:centerColor="@color/themeGradientStartNight"
+                android:endColor="@color/themeGradientStartNight" />
+        </shape>
+    </item>
+    <item android:id="@+id/background_overlay">
+        <color android:color="@android:color/black" />
+    </item>
+</layer-list>

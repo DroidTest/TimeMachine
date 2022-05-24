@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:keepScreenOn="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/detail_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/details_title_fontsize_land"/>
+
+        <LinearLayout
+            android:id="@+id/Horiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/LeftSide"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/details_padding_horiz"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/DestLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/final_destination"
+                    android:gravity="center"
+                    android:text="@string/details_finish"
+                    android:textSize="@dimen/details_subtitle_fontsize"/>
+
+                <TextView
+                    android:id="@+id/dest_lat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/standby_title"
+                    android:textSize="@dimen/details_coords_fontsize_land"/>
+
+                <TextView
+                    android:id="@+id/dest_lon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/standby_title"
+                    android:textSize="@dimen/details_coords_fontsize_land"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/you_block"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/details_padding_horiz"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/YouLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/current_location"
+                    android:gravity="center"
+                    android:text="@string/details_you"
+                    android:textSize="@dimen/details_subtitle_fontsize"/>
+
+                <TextView
+                    android:id="@+id/you_lat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/standby_title"
+                    android:textSize="@dimen/details_coords_fontsize_land"/>
+
+                <TextView
+                    android:id="@+id/you_lon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/standby_title"
+                    android:textSize="@dimen/details_coords_fontsize_land"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/distance_block"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/DistanceLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="@dimen/details_distance_padding"
+                android:text="@string/details_dist"
+                android:textSize="@dimen/details_distance_fontsize"/>
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/standby_title"
+                android:textSize="@dimen/details_distance_fontsize"/>
+
+            <TextView
+                android:id="@+id/accuracy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/details_padding_horiz"
+                android:textSize="@dimen/details_accuracy_fontsize"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/backtomap_label"/>
+
+    </LinearLayout>
+</ScrollView>

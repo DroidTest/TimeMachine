@@ -1,0 +1,452 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="me.zeeroooo.materialfb"
+4    android:installLocation="auto"
+5    android:versionCode="74"
+6    android:versionName="4.0.2" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="17"
+9-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:111:5-79
+12-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:111:22-76
+13    <uses-permission android:name="android.permission.VIBRATE" />
+13-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:112:5-66
+13-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:112:22-63
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:113:5-79
+14-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:113:22-76
+15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+15-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:114:5-80
+15-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:114:22-77
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:115:5-81
+16-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:115:22-78
+17    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+17-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:116:5-81
+17-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:116:22-78
+18    <uses-permission android:name="android.permission.WAKE_LOCK" />
+18-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:117:5-68
+18-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:117:22-65
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:119:5-67
+19-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:119:22-64
+20
+21    <application
+21-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:6:5-109:19
+22        android:name="me.zeeroooo.materialfb.MFB"
+22-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:7:9-28
+23        android:allowBackup="true"
+23-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:8:9-35
+24        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+24-->[androidx.core:core:1.3.0-beta01] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/0dd806a1788253f65a6d86e7a228095f/core-1.3.0-beta01/AndroidManifest.xml:24:18-86
+25        android:debuggable="true"
+26        android:fullBackupContent="true"
+26-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:9:9-41
+27        android:hardwareAccelerated="true"
+27-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:10:9-43
+28        android:icon="@mipmap/ic_launcher"
+28-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:11:9-43
+29        android:label="@string/app_name"
+29-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:12:9-41
+30        android:roundIcon="@mipmap/ic_launcher_round"
+30-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:13:9-54
+31        android:supportsRtl="true"
+31-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:14:9-35
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme" >
+33-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:15:9-40
+34        <activity
+34-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:17:9-82:20
+35            android:name="me.zeeroooo.materialfb.activities.MainActivity"
+35-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:18:13-52
+36            android:configChanges="orientation|screenSize|screenLayout|locale"
+36-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:19:13-79
+37            android:launchMode="singleTask"
+37-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:20:13-44
+38            android:resizeableActivity="true"
+38-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:21:13-46
+39            android:theme="@style/Splash"
+39-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:22:13-42
+40            android:windowSoftInputMode="adjustResize" >
+40-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:23:13-55
+41            <intent-filter>
+41-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:24:13-28:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:25:17-69
+42-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:25:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:27:17-77
+44-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:27:27-74
+45            </intent-filter>
+46            <intent-filter>
+46-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:29:13-37:29
+47                <action android:name="android.intent.action.SEND" />
+47-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:30:17-69
+47-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:30:25-66
+48
+49                <category android:name="android.intent.category.DEFAULT" />
+49-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:32:17-76
+49-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:32:27-73
+50
+51                <data android:mimeType="image/*" />
+51-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+51-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:23-49
+52                <data android:mimeType="video/*" />
+52-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+52-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:23-49
+53                <data android:mimeType="text/plain" />
+53-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+53-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:23-49
+54            </intent-filter>
+55            <intent-filter>
+55-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:38:13-81:29
+56                <action android:name="android.intent.action.VIEW" />
+56-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:39:17-69
+56-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:39:25-66
+57
+58                <category android:name="android.intent.category.DEFAULT" />
+58-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:32:17-76
+58-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:32:27-73
+59                <category android:name="android.intent.category.BROWSABLE" />
+59-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:42:17-78
+59-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:42:27-75
+60
+61                <data
+61-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+62                    android:host="m.facebook.com"
+62-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:45:21-50
+63                    android:scheme="http" />
+63-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+64                <data
+64-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+65                    android:host="m.facebook.com"
+65-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:45:21-50
+66                    android:scheme="https" />
+66-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+67                <data
+67-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+68                    android:host="touch.facebook.com"
+68-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:45:21-50
+69                    android:scheme="http" />
+69-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+70                <data
+70-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+71                    android:host="touch.facebook.com"
+71-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:45:21-50
+72                    android:scheme="https" />
+72-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+73                <data
+73-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+74                    android:host="facebook.com"
+74-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:45:21-50
+75                    android:scheme="http" />
+75-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+76                <data
+76-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+77                    android:host="facebook.com"
+77-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:45:21-50
+78                    android:scheme="https" />
+78-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+79                <data
+79-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+80                    android:host="www.facebook.com"
+80-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:45:21-50
+81                    android:scheme="http" />
+81-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+82                <data
+82-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+83                    android:host="www.facebook.com"
+83-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:45:21-50
+84                    android:scheme="https" />
+84-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+85                <data
+85-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+86                    android:host="mobile.facebook.com"
+86-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:45:21-50
+87                    android:scheme="https" />
+87-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+88                <data
+88-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+89                    android:host="mobile.facebook.com"
+89-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:45:21-50
+90                    android:scheme="http" />
+90-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+91                <data
+91-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+92                    android:host="mbasic.facebook.com"
+92-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:45:21-50
+93                    android:scheme="https" />
+93-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+94                <data
+94-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+95                    android:host="mbasic.facebook.com"
+95-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:45:21-50
+96                    android:scheme="http" />
+96-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+97                <data android:scheme="fb" />
+97-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:34:17-52
+97-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:46:21-42
+98            </intent-filter>
+99        </activity>
+100        <activity
+100-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:84:9-89:44
+101            android:name="me.zeeroooo.materialfb.activities.PhotoActivity"
+101-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:85:13-53
+102            android:configChanges="orientation|screenSize|screenLayout"
+102-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:86:13-72
+103            android:launchMode="singleTask"
+103-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:87:13-44
+104            android:resizeableActivity="true"
+104-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:88:13-46
+105            android:theme="@style/Media" />
+105-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:89:13-41
+106        <activity
+106-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:91:9-100:20
+107            android:name="me.zeeroooo.materialfb.activities.SettingsActivity"
+107-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:92:13-56
+108            android:configChanges="orientation|screenSize|screenLayout|locale"
+108-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:93:13-79
+109            android:launchMode="singleTask"
+109-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:94:13-44
+110            android:parentActivityName="me.zeeroooo.materialfb.activities.MainActivity"
+110-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:95:13-66
+111            android:resizeableActivity="true" >
+111-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:96:13-46
+112            <meta-data
+112-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:97:13-99:60
+113                android:name="android.support.PARENT_ACTIVITY"
+113-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:98:17-63
+114                android:value=".activities.MainActivity" />
+114-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:99:17-57
+115        </activity>
+116        <activity
+116-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:102:9-107:44
+117            android:name="me.zeeroooo.materialfb.activities.VideoActivity"
+117-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:103:13-53
+118            android:configChanges="orientation|screenSize|screenLayout"
+118-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:104:13-72
+119            android:launchMode="singleTask"
+119-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:105:13-44
+120            android:resizeableActivity="true"
+120-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:106:13-46
+121            android:theme="@style/Media" />
+121-->/Users/iverson3/Desktop/own-download/MaterialFBook-#224/app/src/main/AndroidManifest.xml:107:13-41
+122
+123        <provider
+123-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:28:9-34:35
+124            android:name="androidx.work.impl.WorkManagerInitializer"
+124-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:29:13-69
+125            android:authorities="me.zeeroooo.materialfb.workmanager-init"
+125-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:30:13-68
+126            android:directBootAware="false"
+126-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:31:13-44
+127            android:exported="false"
+127-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:32:13-37
+128            android:multiprocess="true" />
+128-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:33:13-40
+129
+130        <service
+130-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:36:9-41:35
+131            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+131-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:37:13-88
+132            android:directBootAware="false"
+132-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:38:13-44
+133            android:enabled="@bool/enable_system_alarm_service_default"
+133-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:39:13-72
+134            android:exported="false" />
+134-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:40:13-37
+135        <service
+135-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:42:9-48:35
+136            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+136-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:43:13-84
+137            android:directBootAware="false"
+137-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:44:13-44
+138            android:enabled="@bool/enable_system_job_service_default"
+138-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:45:13-70
+139            android:exported="true"
+139-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:46:13-36
+140            android:permission="android.permission.BIND_JOB_SERVICE" />
+140-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:47:13-69
+141
+142        <receiver
+142-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:50:9-55:35
+143            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+143-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:51:13-88
+144            android:directBootAware="false"
+144-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:52:13-44
+145            android:enabled="true"
+145-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:53:13-35
+146            android:exported="false" />
+146-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:54:13-37
+147        <receiver
+147-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:56:9-66:20
+148            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+148-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:57:13-106
+149            android:directBootAware="false"
+149-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:58:13-44
+150            android:enabled="false"
+150-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:59:13-36
+151            android:exported="false" >
+151-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:60:13-37
+152            <intent-filter>
+152-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:62:13-65:29
+153                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+153-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:63:17-87
+153-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:63:25-84
+154                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+154-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:64:17-90
+154-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:64:25-87
+155            </intent-filter>
+156        </receiver>
+157        <receiver
+157-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:67:9-77:20
+158            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+158-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:68:13-104
+159            android:directBootAware="false"
+159-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:69:13-44
+160            android:enabled="false"
+160-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:70:13-36
+161            android:exported="false" >
+161-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:71:13-37
+162            <intent-filter>
+162-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:73:13-76:29
+163                <action android:name="android.intent.action.BATTERY_OKAY" />
+163-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:74:17-77
+163-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:74:25-74
+164                <action android:name="android.intent.action.BATTERY_LOW" />
+164-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:75:17-76
+164-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:75:25-73
+165            </intent-filter>
+166        </receiver>
+167        <receiver
+167-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:78:9-88:20
+168            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+168-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:79:13-104
+169            android:directBootAware="false"
+169-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:80:13-44
+170            android:enabled="false"
+170-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:81:13-36
+171            android:exported="false" >
+171-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:82:13-37
+172            <intent-filter>
+172-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:84:13-87:29
+173                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+173-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:85:17-83
+173-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:85:25-80
+174                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+174-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:86:17-82
+174-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:86:25-79
+175            </intent-filter>
+176        </receiver>
+177        <receiver
+177-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:89:9-98:20
+178            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+178-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:90:13-103
+179            android:directBootAware="false"
+179-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:91:13-44
+180            android:enabled="false"
+180-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:92:13-36
+181            android:exported="false" >
+181-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:93:13-37
+182            <intent-filter>
+182-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:95:13-97:29
+183                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+183-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:96:17-79
+183-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:96:25-76
+184            </intent-filter>
+185        </receiver>
+186        <receiver
+186-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:99:9-110:20
+187            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+187-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:100:13-88
+188            android:directBootAware="false"
+188-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:101:13-44
+189            android:enabled="false"
+189-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:102:13-36
+190            android:exported="false" >
+190-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:103:13-37
+191            <intent-filter>
+191-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:105:13-109:29
+192                <action android:name="android.intent.action.BOOT_COMPLETED" />
+192-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:106:17-79
+192-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:106:25-76
+193                <action android:name="android.intent.action.TIME_SET" />
+193-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:107:17-73
+193-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:107:25-70
+194                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+194-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:108:17-81
+194-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:108:25-78
+195            </intent-filter>
+196        </receiver>
+197        <receiver
+197-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:111:9-120:20
+198            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+198-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:112:13-99
+199            android:directBootAware="false"
+199-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:113:13-44
+200            android:enabled="@bool/enable_system_alarm_service_default"
+200-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:114:13-72
+201            android:exported="false" >
+201-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:115:13-37
+202            <intent-filter>
+202-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:117:13-119:29
+203                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+203-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:118:17-98
+203-->[androidx.work:work-runtime:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/14fe426309a33d2d52969e928ec7d56c/work-runtime-2.0.0/AndroidManifest.xml:118:25-95
+204            </intent-filter>
+205        </receiver>
+206
+207        <service
+207-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:27:9-31:39
+208            android:name="org.acra.sender.LegacySenderService"
+208-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:28:13-63
+209            android:enabled="@bool/acra_enable_legacy_service"
+209-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:29:13-63
+210            android:exported="false"
+210-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:30:13-37
+211            android:process=":acra" />
+211-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:31:13-36
+212        <service
+212-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:32:9-37:39
+213            android:name="org.acra.sender.JobSenderService"
+213-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:33:13-60
+214            android:enabled="@bool/acra_enable_job_service"
+214-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:34:13-60
+215            android:exported="false"
+215-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:35:13-37
+216            android:permission="android.permission.BIND_JOB_SERVICE"
+216-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:36:13-69
+217            android:process=":acra" />
+217-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:37:13-36
+218
+219        <provider
+219-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:39:9-45:51
+220            android:name="org.acra.attachment.AcraContentProvider"
+220-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:40:13-67
+221            android:authorities="me.zeeroooo.materialfb.acra"
+221-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:41:13-56
+222            android:exported="false"
+222-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:42:13-37
+223            android:grantUriPermissions="true"
+223-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:43:13-47
+224            android:process=":acra" />
+224-->[ch.acra:acra-core:5.5.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/1600c3a9e01bacaefdfdb1d086987df2/jetified-acra-core-5.5.0/AndroidManifest.xml:44:13-36
+225        <provider
+225-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+226            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+226-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+227            android:authorities="me.zeeroooo.materialfb.lifecycle-process"
+227-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+228            android:exported="false"
+228-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+229            android:multiprocess="true" />
+229-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/iverson3/.gradle/caches/transforms-2/files-2.1/65049c3842c71bb41372c2573ad08a41/jetified-lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+230    </application>
+231
+232</manifest>

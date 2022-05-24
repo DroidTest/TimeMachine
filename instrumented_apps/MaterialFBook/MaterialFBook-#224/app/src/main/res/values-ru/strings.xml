@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Notifications -->
+    <string name="notifications_setting_title">УВЕДОМЛЕНИЯ</string>
+    <string name="notif">Уведомления</string>
+    <string name="facebook_message">Уведомления о сообщениях</string>
+    <string name="facebook_notifications">Уведомления Facebook</string>
+    <string name="notification_sound_description">Выбор рингтона: \u0020</string>
+    <string name="notifications_settings">Настройки уведомлений</string>
+    <string name="notifications_settings_description">Дополнительные настройки: выбор интервала проверки, настройка звуков, светодиода и вибрации.</string>
+    <string name="interval_pref">Интервал проверки</string>
+    <string name="notification_sound">Звук уведомлений</string>
+    <string name="interval_pref_description_new">Уведомления будут проверяться каждые %s.</string>
+    <string name="notification_sound_msg">Звук сообщений</string>
+    <string name="vibrate">Вибрация</string>
+    <string name="vibrate_double">Двойная вибрация</string>
+    <string name="led_light">Светодиод</string>
+
+    <string name="general_setting_title">ОБЩЕЕ</string>
+    <!-- End Notifications -->
+
+    <!-- General -->
+    <string name="location_enabled_title">Доступ к местоположению</string>
+    <string name="location_enabled_summary">Включите, чтобы разрешить Facebook получать ваше местоположение.</string>
+    <string name="hide_editor_newsfeed_title">Скрыть редактор статуса в ленте новостей</string>
+    <string name="hide_editor_newsfeed_summary">Если этот параметр включен, редактор статуса будет скрыт в ленте новостей.</string>
+    <string name="stop_images_title">Не загружать изображения</string>
+    <string name="stop_images_summary">Если этот параметр включен, изображения загружаться не будут. Некоторые изображения могли остаться в кэше.</string>
+    <string name="hide_sponsored_title">Скрыть &#8216;рекламный&#8217; контент</string>
+    <string name="hide_sponsored_summary">Скрыть &#8216;рекламный&#8217; контент (рекламу) из ленты</string>
+    <string name="hide_birthdays_title">Скрыть дни рождения</string>
+    <string name="hide_birthdays_summary">Дни рождения не будут отображаться в ленте, событиях и уведомлениях.</string>
+    <string name="hide_menu_bar_title">Скрыть панель меню</string>
+    <string name="hide_menu_bar_summary">Если этот параметр включен, панель меню Facebook будет скрыта.</string>
+    <string name="hide_recently_commented">Скрыть недавние комментарии</string>
+    <string name="hide_recently_commented_summary">Не показывать сообщение о недавних комментириях.</string>
+    <string name="start_url">Начальная страница</string>
+    <string name="more">Информация о программе</string>
+    <string name="about_updates">Обновления</string>
+    <!-- End general -->
+
+    <!-- About -->
+    <string name="updates">Проверить наличие новой версии</string>
+    <string name="updates_summary">Страница загрузки последней версии</string>
+    <string name="people_who_translated">Переводчики:</string>
+    <string name="devs_who_helped_me">Благодарности:</string>
+    <string name="help_translations">Помогите мне перевести приложение на ваш язык</string>
+    <string name="about_translations">Связь с разработчиком:</string>
+    <string name="source_code">Исходный код на Github</string>
+    <string name="withYou">Сообщить об ошибках или запросить новые возможности</string>
+    <string name="changelog">Список изменений</string>
+    <string name="appearance_setting_title">ВНЕШНИЙ ВИД</string>
+    <string name="app_themes">Темы приложения</string>
+    <!-- End about -->
+
+    <!-- APPEARANCE -->
+    <string name="app_themes_summary">Можно выбрать различные темы приложения.</string>
+    <string name="navigation_setting_title">ПРОСМОТР</string>
+    <string name="navigation_menu_settings">Элементы меню навигации</string>
+
+    <!-- Navigation -->
+    <string name="navigation_menu_settings_description">В меню навигации можно отобразить или скрыть элементы.</string>
+    <string name="save_data">Экономить трафик</string>
+    <string name="save_data_summary">Загружает Facebook в базовой версии, а также отключает значки и обновления сведений о профиле.</string>
+    <string name="fab_enable">Кнопка действий</string>
+    <string name="fab_enable_summary">Показать кнопку действий.</string>
+    <string name="fab_text">Опубликовать статус</string>
+    <string name="fab_photo">Опубликовать фото</string>
+    <!-- Navigation: fab -->
+    <string name="fab_checkin">Отметиться</string>
+    <string name="fab_jump_top">Перейти вверх</string>
+    <string name="navigation_menu_title">МЕНЮ ПРОСМОТРА</string>
+    <string name="menu_photos">Фото</string>
+    <!-- Navigation: items -->
+    <string name="menu_photos_summary">Показать кнопку &#8216;фото&#8217; в меню навигации.</string>
+    <string name="menu_events">События</string>
+    <string name="menu_events_summary">Показать кнопку &#8216;события&#8217; в меню навигации.</string>
+    <string name="menu_top_stories">Популярное</string>
+    <string name="menu_top_stories_summary">Показать кнопку &#8216;популярное&#8217; в меню навигации.</string>
+    <string name="menu_most_recent">Последнее</string>
+    <string name="menu_friendreq">Запросы в друзья</string>
+    <string name="menu_friendreq_summary">Показать кнопку &#8216;запросы в друзья&#8217; в меню навигации.</string>
+    <string name="menu_groups">Группы</string>
+    <string name="menu_groups_summary">Показать кнопку &#8216;группы&#8217; в меню навигации.</string>
+    <string name="menu_messages">Сообщения</string>
+    <string name="menu_search">Поиск</string>
+    <string name="menu_search_summary">Показать кнопку &#8216;поиск&#8217; в меню навигации.</string>
+    <string name="menu_mainmenu">Главное меню</string>
+    <string name="menu_mainmenu_summary">Показать кнопку &#8216;главное меню&#8217; в меню навигации.</string>
+    <string name="silent">Без звука</string>
+    <string name="navigation_drawer_open">Открыть навигационное меню</string>
+    <string name="navigation_drawer_close">Закрыть навигационное меню</string>
+    <string name="nav_notifications">Уведомления</string>
+    <string name="settings">Настройки</string>
+    <string name="context_share_image">Поделиться изображением</string>
+    <string name="context_share_link">Поделиться ссылкой</string>
+    <string name="context_share_image_progress">Отправка изображения…</string>
+    <string name="content_copy_link_done">Ссылка скопирована в буфер обмена</string>
+    <string name="permission_denied">Нет доступа, невозможно завершить действие</string>
+    <string name="downloaded">Загруженные</string>
+    <string name="new_bookmark">Добавленные:</string>
+    <string name="remove_bookmark">Удаленные:</string>
+    <string-array name="intervalPrefTitles">
+        <item>1 минута</item>
+        <item>2 минуты</item>
+        <item>5 минут</item>
+        <item>15 минут</item>
+        <item>30 минут</item>
+        <item>1 час</item>
+        <item>3 часа</item>
+        <item>6 часов</item>
+    </string-array>
+    <string-array name="Start">
+        <item>Последнее</item>
+        <item>Популярное</item>
+        <item>Сообщения</item>
+    </string-array>
+</resources>

@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+targetCompatibility = '1.7'
+sourceCompatibility = '1.7'
+
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    def junitVersion = hasProperty('JUNIT_VERSION') ? JUNIT_VERSION : '4.11';
+    testCompile "junit:junit:${junitVersion}"
+    testCompile 'commons-io:commons-io:2.1'
+    testCompile 'org.easytesting:fest-assert-core:2.0M10'
+}

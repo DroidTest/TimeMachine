@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/border"
+    android:orientation="horizontal"
+    android:padding="@dimen/layout_margin_medium"
+    android:elevation="@dimen/card_elevation"
+    android:weightSum="5">
+
+    <TextView
+        android:id="@+id/ticketName"
+        android:layout_width="@dimen/layout_margin_none"
+        android:paddingEnd="@dimen/padding_medium"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        tools:text="Google I/O" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="@dimen/layout_margin_none"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxLines="2"
+        android:ellipsize="end"
+        tools:text="$25" />
+
+    <TextView
+        android:id="@+id/qty"
+        android:paddingStart="@dimen/padding_medium"
+        android:layout_width="@dimen/layout_margin_none"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="4" />
+
+    <TextView
+        android:id="@+id/subTotal"
+        android:layout_width="@dimen/layout_margin_none"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:text="$100" />
+</LinearLayout>

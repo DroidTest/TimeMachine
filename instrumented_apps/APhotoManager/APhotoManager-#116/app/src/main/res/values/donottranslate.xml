@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (C) 2014-2018 k3b
+
+This file is part of "A Photo Manager" (https://github.com/k3b/AndroFotoFinder/)
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License
+for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <http://www.gnu.org/licenses/>
+
+-->
+<!--
+    resources that should NOT be localized and are version independant
+-->
+<resources>
+	<string name="btn_popup" translatable="false">&#8230;</string>
+	<string name="global_log_file_path" translatable="false">copy/aPhotoManager.log</string>
+	<string name="settings_debug_libs_title" translatable="false">LogCat libs</string>
+	<string name="settings_debug_sql_title" translatable="false">LogCat SQL</string>
+	<string name="settings_debug_jpg_title" translatable="false">LogCat JPG</string>
+	<string name="settings_debug_map_title" translatable="false">LogCat geo map</string>
+
+	<string name="bookmark_reset" translatable="false">RESET</string>
+
+	<string name="settings_debug_view_item_title" translatable="false">LogCat gridview/listview</string>
+
+	<!-- added to all language specific about boxes as $translate$ -->
+	<string name="about_translate" translatable="false"><![CDATA["
+	App and internet homepage available in these languages:<ul>
+	<li>
+		ar,&nbsp;
+		<a href="https://github.com/k3b/APhotoManager/wiki/de-home">de</a>,&nbsp;
+		<a href="https://github.com/k3b/APhotoManager/wiki/home">en</a>,&nbsp;
+		<a href="https://github.com/k3b/APhotoManager/wiki/es-home">es</a>,&nbsp;
+		<a href="https://github.com/k3b/APhotoManager/wiki/fr-home">fr</a>,&nbsp;
+		<a href="https://github.com/k3b/APhotoManager/wiki/it-home">it</a>,&nbsp;
+		<a href="https://github.com/k3b/APhotoManager/wiki/ja-home">ja</a>,&nbsp;
+		nl,&nbsp;pl,&nbsp;
+		<a href="https://github.com/k3b/APhotoManager/wiki/ro-home">ro</a>
+		,&nbsp;ru,
+		&nbsp;<a href="https://github.com/k3b/APhotoManager/wiki/tr-home">tr</a>,
+		&nbsp;<a href="https://github.com/k3b/APhotoManager/wiki/zh-CN-home">zh-CN</a>,
+		&nbsp;<a href="https://github.com/k3b/APhotoManager/wiki/zh-TW-home">zh-TW</a>
+	</li>
+	<li>
+		<b>Help us to translate this app into other languages:</b>
+		<ul>
+			<li>On a pc with keyboard and internet access through the
+				<a href="https://github.com/k3b/APhotoManager/issues/21">crowdin.com website.</a>
+			</li>
+			<li>On android through the "A Photo Manager" menu <b>Settings/Translate</b> using the stringlate app.
+			</li>
+		</ul>
+	</li>
+</ul>
+	"]]></string>
+
+	<!-- #70: header for new generated properties file .../sqldir/ImageExtraDetailSqlDef.properties -->
+	<string name="image_context_properties_header" translatable="false"><![CDATA["#
+# Generated with \'%1$s\' Version %2$s.
+#
+# This properties file contain sqlite sql formulas for the context data in the image view in the format
+# name=sql expression.
+#
+# name is the menu title where the sql belongs to.
+#
+# for all available columns see the "Details" label
+#
+# '|' will be replaced by newline '\\n'
+#
+  "]]></string>
+
+	<!-- version_postfix="" for fdroid-release and version_postfix=" (dev)" for development branch-->
+	<string name="about_content" translatable="false"><![CDATA["  <a href="https://github.com/k3b/APhotoManager/wiki">
+    <b>A Photo Manager</b>
+  </a>
+  <br />Version AndroFotoFinder $versionName$
+  <br />
+  <hr />$about$
+  <br />
+  <hr />$translate$
+  <hr />
+  <p>Minimal requirements: Android 4.0 (API 14), Internet/WiFi connection to download geodata and a SD card to cache geodata and to
+  store photos
+  <br />
+  <br />Licence: 
+  <a href="http://www.gnu.org/licenses/gpl-3.0">GPLv3</a>
+  <br />
+  <br />Required permissions:</p>
+  <ul>
+    <li>INTERNET: to download map data from Open Street Map Server</li>
+    <li>ACCESS_NETWORK_STATE and ACCESS_WIFI_STATE: to find out if WiFi/Internet is online to start downloading geodata if
+    necessary</li>
+    <li>WRITE_EXTERNAL_STORAGE to cache downloaded map data in local file system and to do file operations.</li>
+    <li>READ_LOGS after app crash the logcat is written to /mnt/sdcard/copy/log/androFotofinder.logcat*.txt .</li>
+  </ul>
+  <p>The code uses</p>
+  <ul>
+    <li>
+    <a href="https://github.com/osmdroid/osmdroid">osmdroid library</a> to display online maps from
+    <a href="http://www.openstreetmap.org">Open Street Map</a></li>
+    <li>
+    <li>
+    <a href="https://github.com/LonamiWebs/Stringlate/">Andrid Stringlate app</a> to allow the app
+    user to thranslate this app to other gui-languages</li>
+    <li>
+    <a href="https://github.com/mapsforge/mapsforge">mapsforge library</a> to display offline maps</li>
+    <li>
+    <a href="https://github.com/chrisbanes/PhotoView">chris bane&#39;s PhotoView</a> that implemnts the zoomable image view.
+    <a href="https://github.com/k3b/PhotoView">Using k3b-s extended version with "reload on zoom" and "hugeimage-support")</a> that has not been merged into the original yet</li>
+    <li>
+    <a href="https://github.com/nostra13/Android-Universal-Image-Loader">Sergey Tarasevich's  Android-Universal-Image-Loader</a> for
+    manageing miniatur image previews(thumbnails)</li>
+    <li>
+    <a href="https://github.com/k3b/k3b-geoHelper">k3b-geoHelper</a> for handling geo-uri-s</li>
+    <li>
+    <a href="https://github.com/drewnoakes/metadata-extractor/wiki/GettingStarted">drew noakes metadata-extractor</a> to display
+    extended exif info</li>
+    <li>
+    Sergey Tarasevich-s <a href="https://github.com/nostra13/Android-Universal-Image-Loader/">Android-Universal-Image-Loader</a> 
+	a Powerful and flexible library for loading, caching and displaying (thumbnail-) images on Android. </li>
+    <li>
+    <a href="http://www.slf4j.org/">slf4j logging for java</a> with the 
+    <a href="http://github.com/lp0/slf4j-android">https://github.com/lp0/slf4j-android</a> driver</li>
+    <li>
+    <a href="http://junit.org/">junit testing support</a> with 
+    <a href="https://github.com/mockito/mockito">Mockito</a></li>
+    <li>
+    <a href="http://junit.org/">junit testing support</a> with
+    <a href="https://github.com/mockito/mockito">Mockito</a></li>
+  </ul>
+  <hr />
+  <h2>History</h2>
+  See <a href="https://github.com/k3b/APhotoManager/wiki/History">History</a>.
+  <br />
+  <hr />
+  <h2>Links</h2>
+  <ul>
+    <li>Source code of current version of &quot;a Photo Manager&quot; (A(ndro)FotoFinder) at git repository@github.com
+    <br />
+    <a href="http://github.com/k3b/APhotoManager/">https://github.com/k3b/APhotoManager/</a></li>
+    <li>
+      <a href="https://github.com/k3b/APhotoManager/wiki/History">APhotoManager Changelog</a>
+    </li>
+    <li>Source code of osmdroid library at git repository@github.com
+    <br />
+    <a href="https://github.com/osmdroid/osmdroid">https://github.com/osmdroid/osmdroid</a></li>
+    <li>slf4j logging for java org.slf4j:slf4j-api
+    <br />
+    <a href="http://www.slf4j.org/">http://www.slf4j.org/</a></li>
+    <li>slf4j logging driver for android eu.lp0.slf4j:slf4j-android
+    <br />
+    <a href="http://github.com/lp0/slf4j-android">https://github.com/lp0/slf4j-android</a></li>
+    <li>junit testing support junit:junit
+    <br />
+    <a href="http://junit.org/">http://junit.org/</a></li>
+    <li>Mockito testing support
+    <br />
+    <a href="https://github.com/mockito/mockito">https://github.com/mockito/mockito</a></li>
+    <li>Geographic data comes from Open Street Map
+    <br />
+    <a href="http://www.openstreetmap.org">http://www.openstreetmap.org</a></li>
+    <li>The GPLv3 license is available at
+    <br />
+    <a href="http://www.gnu.org/licenses/gpl-3.0">http://www.gnu.org/licenses/gpl-3.0</a></li>
+  </ul>
+  <br />
+  <hr />
+  <h2>Legal stuff</h2>
+  <b>A Photo Manager (A(ndro)FotoFinder)</b>
+  <br />
+  <br />Copyright (c) 2015-2016 by k3b
+  <br />Licensed under GPL, Version 3.0 or later.
+  <br />
+  <hr />Translations supported 
+  <a href="http://crowdin.com">crowdin.com</a>
+  <ul>
+  	<li>arabic by medowill</li>
+  	<li>Dutch by keunes</li>
+    <li>English by k3b, v133, keunes and mary-kate</li>
+    <li>French by Tuuux</li>
+    <li>German by k3b and v133</li>
+    <li>Italian by random_r</li>
+    <li>Japanese by naofum</li>
+    <li>Polish by Maselkowicz</li>
+    <li>Romanian by mironeasav</li>
+    <li>russian by divizdev</li>
+    <li>turkish by  erdenerr and srkns</li>
+  </ul>
+  <br />Android is a trademark of Google Inc. Use of this trademark is subject to Google Permissions.
+  <br />
+  <hr />
+  <br />
+  <br />
+  <hr />
+  <br />
+  <br />
+  <hr />
+  <br />
+  "]]></string>
+
+</resources>

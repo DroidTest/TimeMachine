@@ -1,6 +1,9 @@
 import os
 import subprocess
 
+from config_fuzzer import RunParameters
+
+
 class MonkeyController:
 
 
@@ -12,8 +15,7 @@ class MonkeyController:
     def run_monkey(self, packageName,event_num,delay):
         del self.output[:]
 
-        #cmd = 'adb -s ' + 'emulator-'+':'+'5554'+' shell su -c "monkey -p ' + packageName + ' -v ' + ' --ignore-crashes --pct-trackball 0 --pct-appswitch 0' + ' --throttle '+str(delay) + ' ' + str(event_num)+'"'
-        cmd = 'adb -s ' + 'emulator-5554' + ' shell monkey -p ' + packageName + ' --ignore-crashes --ignore-timeouts --ignore-security-exceptions  --ignore-native-crashes --throttle '+str(delay) + ' -v  ' + str(event_num) + ' '
+        cmd = 'adb -s ' + RunParameters.AVD_SERIAL + ' shell monkey -p ' + packageName + ' --ignore-crashes --ignore-timeouts --ignore-security-exceptions  --ignore-native-crashes --throttle '+str(delay) + ' -v  ' + str(event_num) + ' '
         print cmd
 
 
@@ -41,7 +43,7 @@ class MonkeyController:
      # kill monkey
     def kill_monkey(self):
         print("--killing monkey")
-        os.system("adb shell pkill -f monkey")
+        os.system("adb -s " + RunParameters.AVD_SERIAL +" shell pkill -f monkey")
 
     def reset_event_seq(self):
         print("Reset seq")

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="Start">
+        <item>MostRecent</item>
+        <item>TopStories</item>
+        <item>Messages</item>
+    </string-array>
+    <string-array name="intervalPrefTitles">
+        <item>1 phút</item>
+        <item>2 phút</item>
+        <item>5 phút</item>
+        <item>15 phút</item>
+        <item>30 phút</item>
+        <item>1 giờ</item>
+        <item>3 giờ</item>
+        <item>6 giờ</item>
+    </string-array>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Chỉ đường về nhà"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Di chuyển lên"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Tùy chọn khác"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Xong"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Xem tất cả"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Chọn một ứng dụng"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"TẮT"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"BẬT"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"space"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Tìm kiếm…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Xóa truy vấn"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Truy vấn tìm kiếm"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Tìm kiếm"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Gửi truy vấn"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Tìm kiếm bằng giọng nói"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Chia sẻ với"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Chia sẻ với <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Thu gọn"</string>
+    <string name="about_translations">Giúp đỡ, chúng tôi cần bạn</string>
+    <string name="about_updates">Nâng cấp</string>
+    <string name="app_themes">Chủ đề ứng dụng</string>
+    <string name="app_themes_summary">Bạn có thể chọn chủ đề ứng dụng khác.</string>
+    <string name="appearance_setting_title">Giao diện</string>
+    <string name="changelog">Nhật ký thay đổi</string>
+    <string name="content_copy_link_done">Đường dẫn đã được sao chép vào bảng tạm</string>
+    <string name="context_share_image">Chia sẻ ảnh</string>
+    <string name="context_share_link">Chia sẻ liên kết</string>
+    <string msgid="3209159573327985035" name="copy">"Sao chép"</string>
+    <string name="devs_who_helped_me">Các nhà phát triển đã giúp tôi đặt câu hỏi của tôi và lấy mã từ ứng dụng của họ</string>
+    <string name="downloaded">Downloaded</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"Nâng cao"</string>
+    <string name="fab_checkin">Check in</string>
+    <string name="fab_enable">Floating Action Button</string>
+    <string name="fab_enable_summary">Show the FAB.</string>
+    <string name="fab_jump_top">Nhảy lên đầu</string>
+    <string name="fab_photo">Đăng ảnh</string>
+    <string name="fab_text">Đăng trạng thái</string>
+    <string name="facebook_message">Tin nhắn trên Facebook</string>
+    <string name="facebook_notifications">Thông báo trên Facebook</string>
+    <string name="general_setting_title">Thiết lập chung</string>
+    <string name="help_translations">Giúp tôi để dịch ứng dụng sang ngôn ngữ của bạn</string>
+    <string name="hide_birthdays_summary">Khi được kích hoạt, sẽ ẩn sinh nhật từ dòng thời gian.</string>
+    <string name="hide_birthdays_title">Ẩn sinh nhật</string>
+    <string name="hide_editor_newsfeed_summary">Khi được kích hoạt, trình sửa trạng thái sẽ được ẩn trên dòng thời gian.</string>
+    <string name="hide_editor_newsfeed_title">Ẩn trình sửa trạng thái trên dòng thời gian</string>
+    <string name="hide_menu_bar_summary">Khi kích hoạt, thanh menu Facebook sẽ được ẩn.</string>
+    <string name="hide_menu_bar_title">Ẩn thanh menu</string>
+    <string name="hide_recently_commented">Hide recently commented</string>
+    <string name="hide_recently_commented_summary">X people recently commented on this.</string>
+    <string name="hide_sponsored_summary">Khi được kích hoạt, sẽ ẩn nội dung được tài trợ (quảng cáo) từ dòng thời gian.</string>
+    <string name="hide_sponsored_title">Ẩn nội dung được tài trợ</string>
+    <string name="interval_pref">Khoảng thời gian để kiểm tra</string>
+    <string name="interval_pref_description_new">Thông báo sẽ được kiểm tra mỗi %s.</string>
+    <string name="led_light">Đèn LED</string>
+    <string name="location_enabled_summary">Kích hoạt tính năng này để cho phép Facebook để có được vị trí của bạn.</string>
+    <string name="location_enabled_title">Truy cập vị trí</string>
+    <string name="menu_events">Sự kiện</string>
+    <string name="menu_events_summary">Khi được kích hoạt, nút ‘Sự kiện’ trên menu điều hướng sẽ biến mất.</string>
+    <string name="menu_friendreq">Lời mời kết bạn</string>
+    <string name="menu_friendreq_summary">Khi được vô hiệu hóa, ‘Lời mời kết bạn’ trên menu điều hướng sẽ biến mất.</string>
+    <string name="menu_groups">Nhóm</string>
+    <string name="menu_groups_summary">Khi được vô hiệu hóa, ‘Nhóm’ trên menu điều hướng sẽ biến mất.</string>
+    <string name="menu_mainmenu">Menu chính</string>
+    <string name="menu_mainmenu_summary">Khi được vô hiệu hóa, ‘Menu chính’ trên menu điều hướng sẽ biến mất.</string>
+    <string name="menu_messages">Tin nhắn</string>
+    <string name="menu_most_recent">Most Recent</string>
+    <string name="menu_photos">Ảnh</string>
+    <string name="menu_photos_summary">Khi được kích hoạt, nút ‘Ảnh’ trên menu điều hướng sẽ biến mất.</string>
+    <string name="menu_search">Tìm kiếm</string>
+    <string name="menu_search_summary">Khi được vô hiệu hóa, ‘Tìm kiếm’ trên menu điều hướng sẽ biến mất.</string>
+    <string name="menu_top_stories">Top stories</string>
+    <string name="menu_top_stories_summary">Khi được vô hiệu hóa, ‘Top stories’ trên menu điều hướng sẽ biến mất.</string>
+    <string name="more">Về</string>
+    <string name="nav_notifications">Thông báo</string>
+    <string name="navigation_drawer_close">Thoát ngăn điều hướng</string>
+    <string name="navigation_drawer_open">Mở ngăn điều hướng</string>
+    <string name="navigation_menu_settings">Điều hướng các mục menu</string>
+    <string name="navigation_menu_settings_description">Bạn có thể hiển thị/ẩn các mục trong điều hướng menu.</string>
+    <string name="navigation_menu_title">Menu điều hướng</string>
+    <string name="navigation_setting_title">Điều hướng</string>
+    <string name="new_bookmark">Added:</string>
+    <string msgid="478774118347071097" name="not_set">"Chưa đặt"</string>
+    <string name="notif">Thông báo</string>
+    <string name="notification_sound">Âm thanh thông báo</string>
+    <string name="notification_sound_description">Chọn nhạc chuông hoặc im lặng: \u0020</string>
+    <string name="notification_sound_msg">Âm thanh tin nhắn</string>
+    <string name="notifications_setting_title">Thông báo</string>
+    <string name="notifications_settings">Cài đặt thông báo</string>
+    <string name="notifications_settings_description">Cài đặt thêm. Chọn khoảng thời gian, thiết lập âm thanh, đèn LED và độ rung.</string>
+    <string name="people_who_translated">Người dùng đã dịch ứng dụng</string>
+    <string msgid="7961817945132860002" name="preference_copied">"Đã sao chép \"<ns1:g id="SUMMARY">%1$s</ns1:g>\" vào khay nhớ tạm."</string>
+    <string name="remove_bookmark">Removed:</string>
+    <string name="save_data">Lưu dữ liệu</string>
+    <string name="save_data_summary">Khi được kích hoạt, tự động cấu hình ứng dụng sẽ lưu dữ liệu</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Tìm kiếm"</string>
+    <string name="settings">Thiết lập</string>
+    <string name="silent">Im lặng</string>
+    <string name="source_code">Mã nguồn trên Github</string>
+    <string name="start_url">Start URL</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stop_images_summary">Khi được kích hoạt, sẽ không tải về hình ảnh. Một số hình ảnh có thể vẫn còn trong bộ nhớ cache.</string>
+    <string name="stop_images_title">Đừng nạp ảnh</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="updates">Kiểm tra phiên bản mới</string>
+    <string name="updates_summary">Nạp trang web và tải về phiên bản mới nhất</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"TẮT"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"BẬT"</string>
+    <string name="vibrate">Độ rung</string>
+    <string name="vibrate_double">Độ rung kép</string>
+    <string name="withYou">Báo cáo lỗi hoặc yêu cầu tính năng mới</string>
+</resources>

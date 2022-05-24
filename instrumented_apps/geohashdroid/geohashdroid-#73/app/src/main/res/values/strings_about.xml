@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about_by">By Nicholas Killewald</string>
+    <string name="about_with">With contributions by Thomas Hirsch and Jonas Graudums</string>
+    <string name="about_based_on">Based on the Geohashing algorithm by Randall Munroe</string>
+    <string name="about_asset_studio">Featuring some images built with the assistance of Roman Nurik\'s Android Asset Studio ( https://romannurik.github.io/AndroidAssetStudio/index.html )</string>
+    <string name="about_disclaimer">Geohash Droid comes with no warranty or guarantees.  Always use common sense and obey local laws, international laws, etiquette laws, and the laws of physics when attempting to go to hash points.  Be kind, be courteous, and be safe.</string>
+    <string name="about_icon_description">Geohash Droid logo</string>
+    <string name="about_version">Git version</string>
+    <string name="about_date">(BUILD_DATE)</string>
+
+    <string name="url_geohash">http://xkcd.com</string>
+    <string name="url_project">https://github.com/CaptainSpam/geohashdroid</string>
+</resources>

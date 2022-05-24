@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:dialogTitle="@string/pref_wikiusername_dialogtitle"
+        android:key="WikiUserName"
+        android:persistent="true"
+        android:title="@string/pref_wikiusername_title"
+        android:singleLine="true"/>
+    <EditTextPreference
+        android:dialogTitle="@string/pref_wikipassword_dialogtitle"
+        android:key="WikiPassword"
+        android:persistent="true"
+        android:summary="@string/pref_wikipassword_summary"
+        android:title="@string/pref_wikipassword_title"
+        android:singleLine="true"
+        android:password="true" />
+</PreferenceScreen>

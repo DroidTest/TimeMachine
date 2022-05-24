@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:keepScreenOn="true"
+                android:id="@+id/map_content">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"
+        android:layout_gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="RtlHardcoded"
+        />
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        class="net.exclaimindustries.geohashdroid.widgets.ErrorBanner"
+        android:id="@+id/error_banner"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/standard_padding"
+        android:visibility="gone"
+        android:elevation="@dimen/elevation_error_banner"/>
+
+
+    <FrameLayout
+        android:id="@+id/progress_container"
+        android:layout_width="@dimen/progress_spinner_size"
+        android:layout_height="@dimen/progress_spinner_size"
+        android:padding="@dimen/standard_padding"
+        android:layout_margin="@dimen/double_padding"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/progress_background"
+        android:elevation="@dimen/elevation_progress">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:indeterminate="true"/>
+    </FrameLayout>
+</RelativeLayout>

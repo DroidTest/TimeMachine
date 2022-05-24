@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="Start">
+        <item>PalingTerbaru</item>
+        <item>BeritaTeratas</item>
+        <item>Pesan</item>
+    </string-array>
+    <string-array name="intervalPrefTitles">
+        <item>1 menit</item>
+        <item>2 menit</item>
+        <item>5 menit</item>
+        <item>15 menit</item>
+        <item>30 menit</item>
+        <item>1 jam</item>
+        <item>3 jam</item>
+        <item>6 jam</item>
+    </string-array>
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Tunjukkan jalan ke rumah"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Kembali ke atas"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Opsi lain"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Selesai"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Lihat semua"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Pilih aplikasi"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"NONAKTIF"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"AKTIF"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"spasi"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Telusuri..."</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Hapus kueri"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Telusuri kueri"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Telusuri"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Kirim kueri"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Penelusuran suara"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Bagikan dengan"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Bagikan dengan <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Ciutkan"</string>
+    <string name="about_translations">Tolong, kami membutuhkan anda</string>
+    <string name="about_updates">Pembaharuan</string>
+    <string name="app_themes">Tema aplikasi</string>
+    <string name="app_themes_summary">Anda bisa memilih tema aplikasi berbeda.</string>
+    <string name="appearance_setting_title">PENAMPILAN</string>
+    <string name="changelog">Perubahan</string>
+    <string msgid="3209159573327985035" name="copy">"Salin"</string>
+    <string name="devs_who_helped_me">Pengembang yang membantu menjawab pertanyaan saya dan mengambil kode dari aplikasi mereka</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"Lanjutan"</string>
+    <string name="fab_checkin">Singgah</string>
+    <string name="fab_enable">Tombol Floating Action</string>
+    <string name="fab_enable_summary">Tampilkan FAB.</string>
+    <string name="fab_jump_top">Lompat ke atas</string>
+    <string name="fab_photo">Pos sebuah foto</string>
+    <string name="fab_text">Pos sebuah status</string>
+    <string name="facebook_message">Notifikasi Pesan</string>
+    <string name="facebook_notifications">Notifikasi Facebook</string>
+    <string name="general_setting_title">Umum</string>
+    <string name="help_translations">Bantu saya untuk menterjemahkan aplikasi ini ke bahasa anda</string>
+    <string name="hide_birthdays_summary">Sembunyikan ulang tahun dari beranda, acara dan notifikasi.</string>
+    <string name="hide_birthdays_title">Sembunyikan ulang tahun</string>
+    <string name="hide_editor_newsfeed_summary">Jika diaktifkan, editor status akan disembunyikan di News Feed.</string>
+    <string name="hide_editor_newsfeed_title">Sembunyikan editor Status di News Feed</string>
+    <string name="hide_menu_bar_summary">Jika diaktifkan, bar Menu Facebook akan disembunyikan.</string>
+    <string name="hide_menu_bar_title">Sembunyikan bar Menu</string>
+    <string name="hide_recently_commented">Sembunyikan komentar terbaru</string>
+    <string name="hide_recently_commented_summary">X orang baru saja komentar di sini.</string>
+    <string name="hide_sponsored_summary">Sembunyikan konten ‘Sponsor’ (iklan) dari Beranda</string>
+    <string name="hide_sponsored_title">Sembunyikan Konten ‘Sponsor’</string>
+    <string name="interval_pref">Interval waktu untuk pengecekan</string>
+    <string name="interval_pref_description_new">Notifikasi akan dicek setiap %s.</string>
+    <string name="led_light">Lampu LED</string>
+    <string name="location_enabled_summary">Aktifkan untuk mengizikan Facebook mendapatkan lokasi anda.</string>
+    <string name="location_enabled_title">Akses lokasi</string>
+    <string name="more">Lainnya dan kredit</string>
+    <string name="navigation_menu_settings">Navigasi item menu.</string>
+    <string name="navigation_menu_settings_description">Anda bisa tampilkan/sembunyikan item di menu Navigasi.</string>
+    <string name="navigation_menu_title">MENU NAVIGASI</string>
+    <string name="navigation_setting_title">NAVIGASI</string>
+    <string msgid="478774118347071097" name="not_set">"Belum disetel"</string>
+    <string name="notif">Notifikasi</string>
+    <string name="notification_sound">Suara notifikasi</string>
+    <string name="notification_sound_description">Pilih sebuah nada atau bisu: \u0020</string>
+    <string name="notification_sound_msg">Suara pesan</string>
+    <string name="notifications_setting_title">NOTIFIKASI</string>
+    <string name="notifications_settings">Pengaturan notifikasi</string>
+    <string name="notifications_settings_description">Pengaturan tambahan. Pilih interval waktu, atur suara, LED dan getaran.</string>
+    <string name="people_who_translated">Pengguna yang menterjemahkan aplikasi</string>
+    <string msgid="7961817945132860002" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" disalin ke papan klip."</string>
+    <string name="save_data">Mode hemat data</string>
+    <string name="save_data_summary">Muat Facebook di versi biasa juga mematikan badge dan Info pembaharuan profil.</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Telusuri"</string>
+    <string name="source_code">Sumber kode di Github</string>
+    <string name="start_url">Mulai URL</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="stop_images_summary">Jika diaktifkan, tidak akan mengunduh gambar. Beberapa gambar mungkin tersisa di cache</string>
+    <string name="stop_images_title">Jangan muat gambar</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="updates">Cek untuk versi terbaru</string>
+    <string name="updates_summary">Muat laman dan unduh versi terbaru</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"NONAKTIF"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"AKTIF"</string>
+    <string name="vibrate">Getaran</string>
+    <string name="vibrate_double">Getaran ganda</string>
+    <string name="withYou">Laporan bugs atau minta fitur baru</string>
+</resources>

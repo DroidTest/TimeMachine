@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+  - License, v. 2.0. If a copy of the MPL was not distributed with this
+  - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <title>%pageTitle%</title>
+        <style>%css%</style>
+    </head>
+
+    <body id="errorPage" dir="auto">
+        <!-- PAGE CONTAINER (for styling purposes only) -->
+        <div id="errorPageContainer">
+
+            <img class="main" src="%imageContentInBase64%">
+
+            <!-- Error Title -->
+            <div id="errorTitle">
+                <h1 class="errorTitleText">%messageShort%</h1>
+            </div>
+
+            <!-- Short Description -->
+            <div id="errorDesc">
+                <p id="errorShortDescText">%messageLong%</p>
+            </div>
+
+            <!-- Retry Button -->
+            <button id="errorTryAgain" onclick="javascript:onRetryClicked();">%button%</button>
+            <script type='text/javascript'>
+                function onRetryClicked() {
+                    if (window.jsInterface) {
+                        window.jsInterface.onRetryClicked();
+                    } else {
+                        document.location.reload();
+                    }
+                }
+            </script>
+
+        </div>
+        <input type="hidden" id="mozillaErrorPage">
+    </body>
+</html>

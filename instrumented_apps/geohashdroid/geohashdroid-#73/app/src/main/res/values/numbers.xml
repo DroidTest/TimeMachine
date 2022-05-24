@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="known_location_circle_alpha">40</integer>
+    <integer name="known_location_circle_stroke_alpha">120</integer>
+</resources>

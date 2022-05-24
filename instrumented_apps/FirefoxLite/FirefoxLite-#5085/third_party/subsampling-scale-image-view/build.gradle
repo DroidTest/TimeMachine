@@ -1,0 +1,5 @@
+apply from: '../../buildSrc/android-library-base.gradle'
+
+dependencies {
+    implementation "androidx.annotation:annotation:${Versions.annotation}"
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (c) 2015 by k3b.
+ *
+ * This file is part of AndroFotoFinder.
+ *
+ * This program is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE. See the GNU General Public License
+ * for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program. If not, see <http://www.gnu.org/licenses/>
+ */
+ -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".directory.DirectoryPickerFragment">
+
+    <!--
+    [path_scroller with path_owner containing Button-s with path elements]
+    [directory_tree]
+    [cmd_cancel] [cmd_ok]
+    [status [current path] or 'Select Directory with Images to enable OK']
+    -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <HorizontalScrollView
+            android:id="@+id/parent_scroller"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            android:scrollbarSize="2dp"
+            android:scrollbarStyle="insideInset"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            >
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/parent_owner"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <!-- path bar goes here as dynamically inserted buttons -->
+                <!-- to see it in layout-editor uncomment this
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="path goes here"
+                    android:id="@+id/first_button" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="path goes here"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="path goes here"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="path goes here"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="path goes here"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="path goes here"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="path goes here"
+                    />
+                -->
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ExpandableListView
+            android:id="@+id/directory_tree"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/parent_scroller"
+            android:layout_above="@+id/cmd_ok"
+             />
+
+        <Button
+            android:id="@+id/cmd_cancel"
+            android:text="@android:string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/status"
+            android:gravity="center"
+            android:enabled="true"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/cmd_ok"
+            android:text="@android:string/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/status"
+            android:layout_toRightOf="@id/cmd_cancel"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/grid_cell_width"
+            android:layout_height="@dimen/grid_cell_height"
+            android:layout_above="@+id/status"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:ellipsize="start"
+            android:singleLine="true"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+
+            android:text="@string/selection_none_hint"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+

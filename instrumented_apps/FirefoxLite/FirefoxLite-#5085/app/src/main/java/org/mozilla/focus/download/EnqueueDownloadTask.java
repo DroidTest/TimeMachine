@@ -1,0 +1,162 @@
+package org.mozilla.focus.download;
+
+import android.app.Activity;
+import android.app.DownloadManager;
+import android.content.Context;
+import android.content.pm.PackageManager;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.os.Environment;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.webkit.CookieManager;
+import android.webkit.URLUtil;
+import android.widget.Toast;
+
+import org.mozilla.focus.R;
+import org.mozilla.focus.components.RelocateService;
+import org.mozilla.rocket.tabs.web.Download;
+
+import java.lang.ref.WeakReference;
+import java.util.List;
+
+/**
+ * Use Android's Download Manager to queue this download.
+ */
+public class EnqueueDownloadTask extends AsyncTask<Void, Void, EnqueueDownloadTask.ErrorCode> {
+
+    private static final String DOWNLOAD_MANAGER_PACKAGE_NAME = "com.android.providers.downloads";
+
+    private WeakReference<Activity> activityRef;
+    private Download download;
+    private String refererUrl;
+
+    public EnqueueDownloadTask(@NonNull Activity activity, @NonNull Download download, @Nullable String refererUrl) {
+        this.activityRef = new WeakReference<>(activity);
+        this.download = download;
+        this.refererUrl = refererUrl;
+    }
+
+    public enum ErrorCode {
+        SUCCESS, GENERAL_ERROR, STORAGE_UNAVAILABLE, FILE_NOT_SUPPORTED, DOWNLOAD_MANAGER_DISABLED
+    }
+
+    @Override
+    protected ErrorCode doInBackground(Void... params) {
+        final Context context = activityRef.get();
+        if (context == null) {
+            return ErrorCode.GENERAL_ERROR;
+        }
+
+        final String cookie = CookieManager.getInstance().getCookie(download.getUrl());
+        final String fileName = (download.getName() != null)
+                ? download.getName()
+                : URLUtil.guessFileName(download.getUrl(), download.getContentDisposition(), download.getMimeType());
+
+        // so far each download always return null even for an image.
+        // But we might move downloaded file to another directory.
+        // So, for now we always save file to DIRECTORY_DOWNLOADS
+        final String dir = Environment.DIRECTORY_DOWNLOADS;
+
+        if (!Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
+            return ErrorCode.STORAGE_UNAVAILABLE;
+        }
+
+        // block non-http/https download links
+        if (!URLUtil.isNetworkUrl(download.getUrl())) {
+            return ErrorCode.FILE_NOT_SUPPORTED;
+        }
+
+        if (!isDownloadManagerEnabled(context)) {
+            return ErrorCode.DOWNLOAD_MANAGER_DISABLED;
+        }
+
+        final DownloadManager.Request request = new DownloadManager.Request(Uri.parse(download.getUrl()))
+                .addRequestHeader("User-Agent", download.getUserAgent())
+                .addRequestHeader("Cookie", cookie)
+                .addRequestHeader("Referer", refererUrl)
+                .setDestinationInExternalPublicDir(dir, fileName)
+                .setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED)
+                .setMimeType(download.getMimeType());
+
+        request.allowScanningByMediaScanner();
+
+        final DownloadManager manager = (DownloadManager) context.getSystemService(Context.DOWNLOAD_SERVICE);
+        final Long downloadId = manager.enqueue(request);
+
+        DownloadInfo downloadInfo = new DownloadInfo();
+        downloadInfo.setDownloadId(downloadId);
+        // On Pixel, When downloading downloaded content which is still available, DownloadManager
+        // returns the previous download id.
+        // For that case we remove the old entry and re-insert a new one to move it to the top.
+        // (Note that this is not the case for devices like Samsung, I have not verified yet if this
+        // is a because of on those devices we move files to SDcard or if this is true even if the
+        // file is not moved.)
+        if (!DownloadInfoManager.getInstance().recordExists(downloadId)) {
+            DownloadInfoManager.getInstance().insert(downloadInfo, new DownloadInfoManager.AsyncInsertListener() {
+                @Override
+                public void onInsertComplete(long id) {
+                    DownloadInfoManager.notifyRowUpdated(context, id);
+                }
+            });
+        } else {
+            DownloadInfoManager.getInstance().queryByDownloadId(downloadId, new DownloadInfoManager.AsyncQueryListener() {
+                @Override
+                public void onQueryComplete(List downloadInfoList) {
+                    if (!downloadInfoList.isEmpty()) {
+                        DownloadInfo info = (DownloadInfo) downloadInfoList.get(0);
+                        DownloadInfoManager.getInstance().delete(info.getRowId(), null);
+                        DownloadInfoManager.getInstance().insert(info, new DownloadInfoManager.AsyncInsertListener() {
+                            @Override
+                            public void onInsertComplete(long rowId) {
+                                DownloadInfoManager.notifyRowUpdated(context, rowId);
+                                RelocateService.broadcastRelocateFinished(context, rowId);
+                            }
+                        });
+                    }
+                }
+            });
+        }
+
+        return ErrorCode.SUCCESS;
+    }
+
+    @Override
+    protected void onPostExecute(ErrorCode errorCode) {
+        final Activity activity = activityRef.get();
+        if (activity == null || activity.isFinishing() || activity.isDestroyed()) {
+            return;
+        }
+
+        switch (errorCode) {
+            case STORAGE_UNAVAILABLE:
+                Toast.makeText(activity,
+                        R.string.message_storage_unavailable_cancel_download,
+                        Toast.LENGTH_LONG)
+                        .show();
+                break;
+            case FILE_NOT_SUPPORTED:
+                Toast.makeText(activity, R.string.download_file_not_supported, Toast.LENGTH_LONG).show();
+                break;
+            case SUCCESS:
+                if (!download.isStartFromContextMenu()) {
+                    Toast.makeText(activity, R.string.download_started, Toast.LENGTH_LONG).show();
+                }
+                break;
+            case GENERAL_ERROR:
+            default:
+                break;
+        }
+    }
+
+    private boolean isDownloadManagerEnabled(final Context context) {
+        int state = PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
+        try {
+            state = context.getPackageManager().getApplicationEnabledSetting(DOWNLOAD_MANAGER_PACKAGE_NAME);
+        } catch (IllegalArgumentException e) { // throws when the named package does not exist
+            e.printStackTrace();
+        }
+
+        return !(state == PackageManager.COMPONENT_ENABLED_STATE_DISABLED || state == PackageManager.COMPONENT_ENABLED_STATE_DISABLED_USER);
+    }
+}

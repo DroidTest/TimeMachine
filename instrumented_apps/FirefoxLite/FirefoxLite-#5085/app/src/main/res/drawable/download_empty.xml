@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="40dp"
+    android:height="41dp"
+    android:viewportWidth="40"
+    android:viewportHeight="41">
+
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M 0 0 H 40 V 40 H 0 V 0 Z" />
+    <group
+            android:translateX="8"
+            android:translateY="2">
+        <path
+            android:name="path-1"
+            android:fillType="evenOdd"
+            android:strokeColor="#FF737373"
+            android:strokeWidth="4"
+            android:strokeLineJoin="round"
+            android:strokeLineCap="round"
+            android:pathData="M12 0v25" />
+        <path
+            android:name="path-1"
+            android:fillType="evenOdd"
+            android:strokeColor="#FF737373"
+            android:strokeWidth="1"
+            android:strokeLineJoin="round"
+            android:strokeLineCap="round"
+            android:pathData="M12 0v25" />
+        <path
+            android:name="path-1"
+            android:fillType="evenOdd"
+            android:strokeColor="#FF737373"
+            android:strokeWidth="4"
+            android:strokeLineJoin="round"
+            android:strokeLineCap="round"
+            android:pathData="M12 0v25" />
+        <path
+            android:fillType="evenOdd"
+            android:strokeColor="#FF737373"
+            android:strokeWidth="4"
+            android:strokeLineJoin="round"
+            android:strokeLineCap="round"
+            android:pathData="M 0 15 L 12.5 27 L 25 15 " />
+        <path
+            android:fillType="evenOdd"
+            android:strokeColor="#FF737373"
+            android:strokeWidth="4"
+            android:strokeLineJoin="round"
+            android:strokeLineCap="round"
+            android:pathData="M0 35h25" />
+    </group>
+</vector>

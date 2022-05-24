@@ -1,0 +1,71 @@
+<!-- If you did not specify these parameters in the template, please substitute appropriate things for IMAGE, LAT, LON, and DATE (YYYY-MM-DD format) 
+
+[[Image:{{{image|IMAGE}}}|thumb|left]]
+
+And DON'T FORGET to add your expedition and the best photo you took to the gallery on the Main Page! We'd love to read your report, but that means we first have to discover it!
+-->
+<table class="infobox" style="width: 22em; text-align: left; font-size: 88%; line-height: 1.5em; border: 1px solid rgb(170, 170, 170); background-color: rgb(249, 249, 249); color: black; margin: 0.5em 0pt 0.5em 1em; padding: 0.2em; float: right; clear: right;" cellspacing="5">
+<tr>
+<td colspan="3" style="text-align: center;">
+<p>[[%%DATENUMERIC%%|%%DATESHORT%%]] Globalhash:<br />
+'''%%LATITUDE%%, %%LONGITUDE%%'''<br />
+[http://www.drwilco.net/globalhash/map.html?date=%%DATENUMERIC%%&zoom=8&abs=1 drwilco] [http://maps.google.com/maps?f=q&amp;hl=en&amp;q=%%LATITUDEURL%%,+%%LONGITUDEURL%%+%28Globalhash+for+%%DATEGOOGLE%%%29&amp;ie=UTF8&amp;t=h google] [http://www.openstreetmap.org/?mlat=%%LATITUDEURL%%&amp;mlon=%%LONGITUDEURL%%&amp;zoom=16&amp;layers=B000FTF osm]
+</p>
+</td>
+</tr>
+</table>
+
+<!-- edit as necessary -->
+__NOTOC__
+== Location ==
+<!-- where you've surveyed the hash to be -->
+
+== Participants ==
+<!-- who attended -->
+
+== Plans ==
+<!-- what were the original plans -->
+
+== Expedition ==
+<!-- how it all turned out. your narrative goes here. -->
+
+== Tracklog ==
+<!-- if your GPS device keeps a log, you may post a link here -->
+
+== Photos == 
+<!-- Insert pictures between the gallery tags using the following format: 
+Image:2009-##-## ## ## Alpha.jpg | Witty Comment
+-->
+<gallery perrow="4">
+</gallery>
+
+
+<!-- =============== USEFUL CATEGORIES FOLLOW ================
+Delete the next line ONLY if you have chosen the appropriate categories below. If you are unsure, don't worry. People will read your report and help you with the classification. -->
+[[Category:New report]]
+
+<!-- Potential categories. Please include all the ones appropriate to your expedition -->
+<!-- If this is a planning page:
+[[Category:Expedition planning]]
+-->
+
+<!-- An actual expedition:
+[[Category:Expeditions]]
+-- and one or more of --
+[[Category:Expeditions with photos]]
+[[Category:Expeditions with videos]]
+[[Category:Expedition without GPS]]
+-->
+ 
+<!-- if you reached your coords:	
+[[Category:Coordinates reached]]
+-->
+
+<!-- or if you failed :(
+[[Category:Coordinates not reached]]
+-- and a reason --
+[[Category:Not reached - Mother Nature]]
+[[Category:Not reached - No public access]]
+[[Category:Not reached - Technology]]
+[[Category:Failed - Did not attempt]]
+-->

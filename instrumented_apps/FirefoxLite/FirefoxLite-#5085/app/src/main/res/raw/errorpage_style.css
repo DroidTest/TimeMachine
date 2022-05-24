@@ -1,0 +1,100 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+
+  background: linear-gradient(to bottom, #363959 0%, #0F1126 100%);
+  padding: 0 20px;
+
+  font-weight: 300;
+  -moz-text-size-adjust: none;
+  font-family: sans-serif;
+}
+
+#errorPageContainer {
+  /* If the page is greater than 550px center the content.
+   * This number should be kept in sync with the media query for tablets below */
+  max-width: 550px;
+  margin: 0 auto;
+  padding-top: 10vh;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+img.main {
+    display: block;
+    width: auto;
+    height: 35vh;
+    margin: 0 auto;
+}
+
+ul {
+  padding: 0 1em;
+  margin: 0;
+}
+
+h1.errorTitleText {
+  margin: 0;
+  text-align: center;
+  font-size: 14pt;
+  color: #00C8D7;
+}
+
+#errorTitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#errorDesc {
+  margin-bottom: 10px;
+}
+
+#errorDesc ul li {
+  list-style-type: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+button {
+  /* Force buttons to display: block here to try and enforce collapsing margins */
+  display: block;
+  width: 100%;
+  max-width: 150px;
+  border: none;
+  padding: 1rem;
+  font-family: sans-serif;
+  background-color: #0A84FF;
+  color: #FFFFFF;
+  border-radius: 4px;
+  background-image: none;
+  margin: auto;
+}
+
+/* CSS for screen size large than 500px. In current app implementation, the WebView height on
+   Nexus 5 is about 490px, and designers regard it as threshold */
+@media screen and (min-height: 500px) {
+  #errorPageContainer {
+    padding-top: 15vh;
+  }
+
+  #errorDesc ul li {
+    font-size: 1.1rem;
+  }
+
+  h1.errorTitleText {
+    font-size: 32px;
+  }
+
+}
+

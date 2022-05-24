@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="infobox_padding">8dp</dimen>
+    <dimen name="infobox_drawable_padding">4dp</dimen>
+
+    <dimen name="input_graticule_width">90dp</dimen>
+    <dimen name="input_graticule_fontsize">30sp</dimen>
+    <dimen name="input_graticule_margin">4dp</dimen>
+    <dimen name="input_graticule_closest_icon_margin">8dp</dimen>
+    <dimen name="infobox_fontsize">18sp</dimen>
+    <dimen name="details_title_fontsize">34sp</dimen>
+    <dimen name="details_title_fontsize_land">36sp</dimen>
+    <dimen name="details_subtitle_fontsize">28sp</dimen>
+    <dimen name="details_coords_fontsize">28sp</dimen>
+    <dimen name="details_coords_fontsize_land">28sp</dimen>
+    <dimen name="details_distance_fontsize">20sp</dimen>
+    <dimen name="details_accuracy_fontsize">14sp</dimen>
+    <dimen name="details_padding_horiz">10dp</dimen>
+    <dimen name="details_distance_padding">10dp</dimen>
+    <dimen name="details_text_padding">5dp</dimen>
+
+    <dimen name="details_accuracy_fontsize_small">12sp</dimen>
+
+    <dimen name="wikipost_options_size">200dp</dimen>
+    <dimen name="wikipost_fontsize">16sp</dimen>
+    <dimen name="wikipost_tiny_fontsize">14sp</dimen>
+    <dimen name="wikipost_really_tiny_fontsize">12sp</dimen>
+    <dimen name="wikipost_header_fontsize">24sp</dimen>
+
+    <dimen name="version_history_leader_fontsize_version">24sp</dimen>
+    <dimen name="version_history_leader_fontsize_date">20sp</dimen>
+    <dimen name="version_history_leader_fontsize_title">12sp</dimen>
+    <dimen name="version_history_header_footer_fontsize">14sp</dimen>
+
+    <dimen name="version_history_bullet_image_size">10dp</dimen>
+    <dimen name="version_history_bullet_image_margin_top">5dp</dimen>
+    <dimen name="version_history_bullet_image_margin_left">4dp</dimen>
+    <dimen name="version_history_bullet_image_margin_right">8dp</dimen>
+    <dimen name="version_history_bullet_image_margin_bottom">5dp</dimen>
+
+    <dimen name="dialog_padding">20dp</dimen>
+    <dimen name="gallery_button_padding">10dp</dimen>
+
+    <dimen name="about_title">28sp</dimen>
+    <dimen name="about_description">16sp</dimen>
+    <dimen name="about_version">12sp</dimen>
+    <dimen name="about_disclaimer">12sp</dimen>
+    <dimen name="about_urls">18sp</dimen>
+
+    <dimen name="wiki_nominal_icon_size">100dp</dimen>
+    <!-- This one really really doesn't depend on dpi or whatnot, as this is
+         directly going into an image that'll always be a fairly similar size
+         no matter what happens. -->
+    <dimen name="infobox_picture_fontsize">20px</dimen>
+
+    <dimen name="standard_padding">8dp</dimen>
+    <dimen name="double_padding">16dp</dimen>
+    <dimen name="margin_zoom_button">@dimen/standard_padding</dimen>
+    <dimen name="wiki_fragment_padding">16dp</dimen>
+
+    <dimen name="elevation_standard">4dp</dimen>
+    <dimen name="elevation_graticule_picker">@dimen/elevation_standard</dimen>
+    <dimen name="elevation_error_banner">@dimen/elevation_standard</dimen>
+    <dimen name="elevation_progress">@dimen/elevation_standard</dimen>
+    <dimen name="elevation_extra_fragment">@dimen/elevation_standard</dimen>
+    <dimen name="elevation_infobox">2dp</dimen>
+    <dimen name="elevation_zoom_button">16dp</dimen>
+
+    <dimen name="error_banner_height">64dp</dimen>
+    <dimen name="map_zoom_padding">64dp</dimen>
+
+    <dimen name="known_location_marker_canvas_size">32dp</dimen>
+    <dimen name="known_location_stroke">1.5dp</dimen>
+
+    <dimen name="known_location_pin_head_radius">6dp</dimen>
+    <dimen name="known_location_pin_base_length">24dp</dimen>
+    <dimen name="known_location_circle_stroke_width">2dp</dimen>
+
+    <dimen name="known_location_address_post_width">2dp</dimen>
+    <dimen name="known_location_address_post_height">12dp</dimen>
+    <dimen name="known_location_address_sign_width">26dp</dimen>
+    <dimen name="known_location_address_sign_height">20dp</dimen>
+    <dimen name="known_location_address_sign_inset">2dp</dimen>
+    <dimen name="known_location_address_sign_inner_inset">4dp</dimen>
+
+    <dimen name="progress_spinner_size">60dp</dimen>
+</resources>

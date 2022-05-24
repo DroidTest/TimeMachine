@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.zeeroooo.materialfb"
+    android:installLocation="auto"
+    android:versionCode="74"
+    android:versionName="4.0.2" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="me.zeeroooo.materialfb.MFB"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="me.zeeroooo.materialfb.activities.MainActivity"
+            android:configChanges="orientation|screenSize|screenLayout|locale"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:theme="@style/Splash"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="m.facebook.com"
+                    android:scheme="http" />
+                <data
+                    android:host="m.facebook.com"
+                    android:scheme="https" />
+                <data
+                    android:host="touch.facebook.com"
+                    android:scheme="http" />
+                <data
+                    android:host="touch.facebook.com"
+                    android:scheme="https" />
+                <data
+                    android:host="facebook.com"
+                    android:scheme="http" />
+                <data
+                    android:host="facebook.com"
+                    android:scheme="https" />
+                <data
+                    android:host="www.facebook.com"
+                    android:scheme="http" />
+                <data
+                    android:host="www.facebook.com"
+                    android:scheme="https" />
+                <data
+                    android:host="mobile.facebook.com"
+                    android:scheme="https" />
+                <data
+                    android:host="mobile.facebook.com"
+                    android:scheme="http" />
+                <data
+                    android:host="mbasic.facebook.com"
+                    android:scheme="https" />
+                <data
+                    android:host="mbasic.facebook.com"
+                    android:scheme="http" />
+                <data android:scheme="fb" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="me.zeeroooo.materialfb.activities.PhotoActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:theme="@style/Media" />
+        <activity
+            android:name="me.zeeroooo.materialfb.activities.SettingsActivity"
+            android:configChanges="orientation|screenSize|screenLayout|locale"
+            android:launchMode="singleTask"
+            android:parentActivityName="me.zeeroooo.materialfb.activities.MainActivity"
+            android:resizeableActivity="true" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+        </activity>
+        <activity
+            android:name="me.zeeroooo.materialfb.activities.VideoActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:launchMode="singleTask"
+            android:resizeableActivity="true"
+            android:theme="@style/Media" />
+
+        <provider
+            android:name="androidx.work.impl.WorkManagerInitializer"
+            android:authorities="me.zeeroooo.materialfb.workmanager-init"
+            android:directBootAware="false"
+            android:exported="false"
+            android:multiprocess="true" />
+
+        <service
+            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" />
+        <service
+            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_job_service_default"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+            android:directBootAware="false"
+            android:enabled="true"
+            android:exported="false" />
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+            android:directBootAware="false"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+            android:directBootAware="false"
+            android:enabled="@bool/enable_system_alarm_service_default"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="org.acra.sender.LegacySenderService"
+            android:enabled="@bool/acra_enable_legacy_service"
+            android:exported="false"
+            android:process=":acra" />
+        <service
+            android:name="org.acra.sender.JobSenderService"
+            android:enabled="@bool/acra_enable_job_service"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:process=":acra" />
+
+        <provider
+            android:name="org.acra.attachment.AcraContentProvider"
+            android:authorities="me.zeeroooo.materialfb.acra"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:process=":acra" />
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="me.zeeroooo.materialfb.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

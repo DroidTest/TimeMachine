@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <org.mozilla.rocket.home.ui.HomeScreenBackground
+        android:id="@+id/home_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:background="@drawable/bg_homescreen_pattern"/>
+
+    <org.mozilla.rocket.nightmode.themed.ThemedLinearLayout
+        android:id="@+id/account_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_account_layout"
+        android:orientation="horizontal"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/reward_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ripple_circle"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_gift_states" />
+
+        <ImageView
+            android:id="@+id/profile_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ripple_circle"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_account_states" />
+
+    </org.mozilla.rocket.nightmode.themed.ThemedLinearLayout>
+
+    <ImageView
+        android:id="@+id/home_fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_firefox_lite_logo"
+        android:visibility="@integer/home_firefox_logo_visibility"
+        app:layout_constraintBottom_toTopOf="@id/arc_panel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.255"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/content_hub_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/content_hub_title_top_margin"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_fragment_title"
+        tools:layout_marginTop="16dp">
+
+        <org.mozilla.rocket.nightmode.themed.ThemedTextView
+            android:id="@+id/content_hub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/home_content_services"
+            android:textColor="@color/home_content_hub_title"
+            android:textSize="12dp"
+            android:visibility="@integer/content_hub_title_visibility"
+            android:shadowColor="#4C000000"
+            android:shadowRadius="8"
+            android:paddingTop="4dp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            tools:ignore="SpUsage" />
+
+        <org.mozilla.rocket.home.contenthub.ui.ContentHub
+            android:id="@+id/content_hub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            tools:background="#00FF00"
+            tools:layout_height="40dp"
+            tools:layout_width="200dp" />
+    </LinearLayout>
+
+    <org.mozilla.rocket.home.logoman.ui.LogoManNotification
+        android:id="@+id/logo_man_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/arc_panel" />
+
+    <org.mozilla.rocket.nightmode.themed.ThemedImageView
+        android:id="@+id/arc_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_arch"
+        android:tint="@color/home_arc_panel"
+        app:layout_constraintBottom_toTopOf="@id/arc_panel"
+        app:layout_constraintDimensionRatio="360:34" />
+
+    <org.mozilla.rocket.nightmode.themed.ThemedLinearLayout
+        android:id="@+id/arc_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:backgroundTint="@color/home_arc_panel"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="160dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/main_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="186.67dp"
+            tools:layout_height="150dp" />
+
+        <org.mozilla.rocket.home.topsites.ui.PagerIndicator
+            android:id="@+id/page_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:visibility="@integer/top_sites_pager_indicator_visibility" />
+
+        <org.mozilla.rocket.nightmode.themed.ThemedConstraintLayout
+            android:id="@+id/search_panel"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="@android:color/white"
+            android:backgroundTint="@color/home_search_panel">
+
+            <org.mozilla.rocket.nightmode.themed.ThemedImageView
+                android:id="@+id/shopping_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/bg_shopping_search_btn"
+                android:foreground="@drawable/ripple_circle"
+                android:elevation="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_shopping_search"
+                android:tint="@color/home_shopping_search"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <org.mozilla.rocket.nightmode.themed.ThemedImageView
+                android:id="@+id/private_mode_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/bg_shopping_search_btn"
+                android:foreground="@drawable/ripple_circle"
+                android:elevation="1dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/private_browsing_mask_states"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <org.mozilla.rocket.nightmode.themed.ThemedView
+                android:id="@+id/home_fragment_fake_input"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_shopping_search_btn"
+                android:foreground="@drawable/ripple_round_rectangle_radius_20"
+                android:elevation="1dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <org.mozilla.rocket.nightmode.themed.ThemedImageView
+                android:id="@+id/home_fragment_fake_input_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="12dp"
+                android:elevation="1dp"
+                android:src="@drawable/ic_search_home"
+                android:tint="@color/home_search_bar_widget"
+                app:layout_constraintBottom_toBottomOf="@id/home_fragment_fake_input"
+                app:layout_constraintStart_toStartOf="@id/home_fragment_fake_input"
+                app:layout_constraintTop_toTopOf="@id/home_fragment_fake_input" />
+
+            <org.mozilla.rocket.nightmode.themed.ThemedTextView
+                android:id="@+id/home_fragment_fake_input_text"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:elevation="1dp"
+                android:gravity="center_vertical"
+                android:text="@string/home_search_bar_text"
+                android:textColor="@color/fake_input_text"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/home_fragment_fake_input"
+                app:layout_constraintEnd_toEndOf="@id/home_fragment_fake_input"
+                app:layout_constraintStart_toEndOf="@id/home_fragment_fake_input_icon"
+                app:layout_constraintTop_toTopOf="@id/home_fragment_fake_input" />
+
+            <org.mozilla.rocket.home.ui.MenuButton
+                android:id="@+id/home_fragment_menu_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ripple_circle"
+                android:elevation="1dp"
+                android:paddingEnd="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/home_fragment_fake_input"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <org.mozilla.focus.tabs.TabCounter
+                android:id="@+id/home_fragment_tab_counter"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/ripple_circle"
+                android:elevation="1dp"
+                app:drawableColor="@color/home_search_bar_widget"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/home_fragment_menu_button"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </org.mozilla.rocket.nightmode.themed.ThemedConstraintLayout>
+
+    </org.mozilla.rocket.nightmode.themed.ThemedLinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

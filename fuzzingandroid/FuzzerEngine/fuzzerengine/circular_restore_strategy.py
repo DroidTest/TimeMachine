@@ -36,35 +36,35 @@ class CircularRestoreStrategy:
         format = "Circular Queue Strategy\nSize of recent restore queue is " + str(self.recent_restores_size) + "\n"
         format = format + "Recent restore queue is " + str(self.recent_restores) + "\n"
         return format
-    
-    
-    def compute_k_neighbours_fittness(self, node,steps):
-        traveller= K_Path_Traveller()
-        paths=traveller.compute_fitness_k_neighbors(self.state_graph,node,steps)
-        #traveller.dump(paths)
-       
-        if len(paths) ==0 :
+
+
+    def compute_k_neighbours_fittness(self, node, steps):
+        traveller = K_Path_Traveller()
+        paths = traveller.compute_fitness_k_neighbors(self.state_graph, node, steps)
+        # traveller.dump(paths)
+
+        if len(paths) == 0:
             raise Exception('no available paths')
         total_fitness = 0
         for path in paths:
             for state in path:
                 total_fitness = total_fitness + state.fitness_score
 
-        return total_fitness/len(paths)
+        return total_fitness / len(paths)
 
-    
+
     def get_k_neighbours_fittest_state(self):
-        
-        snapshots= self.state_graph.get_snapshots()
+
+        snapshots = self.state_graph.get_snapshots()
         fittest_node = None
-        highest_score=0
-        
+        highest_score = 0
+
         for item in snapshots:
-            s=item[1]
+            s = item[1]
             k_score = self.compute_k_neighbours_fittness(s, self.recent_restores_size)
             if s.fitness_score > highest_score:
                 fittest_node = s
-                highest_score=s.fitness_score
+                highest_score = s.fitness_score
 
                 print s.uid + " k_neighbour_fitness: " + str(s)
         return fittest_node.uid
