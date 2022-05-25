@@ -29,7 +29,7 @@ pages={1-12}}
 ```
 
 ## Architecture ##
-The whole system runs in the Ubuntu operating system. App under test is installed in an Android emulator. TimeMachine connects the emulator via ADB to test the app. Main Components are configured as followed:
+The whole system runs in a Unix-like operating system. App under test is installed in an Android emulator. TimeMachine connects the emulator via ADB to test the app. Main Components are configured as followed:
 
 * Android SDK
 * Android-x86-7.1.r2
