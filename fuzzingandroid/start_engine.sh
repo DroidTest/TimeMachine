@@ -76,7 +76,6 @@ sleep 5
 echo "OUTPUT_DIR: "$OUTPUT_DIR
 rm -rf $OUTPUT_DIR
 mkdir $OUTPUT_DIR
-mkdir $OUTPUT_DIR/ella_files
 mkdir $OUTPUT_DIR/ec_files
 touch $OUTPUT_DIR/timemachine-run.log
 OUTPUT_LOG_PATH=$OUTPUT_DIR/timemachine-run.log

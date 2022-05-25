@@ -18,25 +18,9 @@ def get_jacoco_coverage(restore_count, app_package_name, app_class_files_path, a
     output, err = cmd.communicate()
     print 'get_jacoco_coverage- return code: ' + ' output: ' + str(output) + ' ' + str(err) +' '
 
-def get_ella_coverage(restore_count):
-    cov_file_name = 'coverage' + str(restore_count)
-
-
-    cmd = subprocess.Popen (['../../scripts/pull_coverage_ella.sh', cov_file_name],stdout = subprocess.PIPE, stderr = subprocess.PIPE)
-    output, err = cmd.communicate()
-    print 'get_ella_coverage: return msg: error: ' + str(output) + ' ' + str(err)
-
-
 def compute_coverage_jacoco(app_class_files_path):
     #using compute_coverage to compute
     cmd = subprocess.Popen (['../../scripts/compute_coverage_jacoco.sh', app_class_files_path, RunParameters.OUTPUT_DIR],stdout = subprocess.PIPE, stderr = subprocess.PIPE)
-    output, err=cmd.communicate()
-    print 'compute_coverage-return code: ' + ' output: '+str(output) + '  ' + str(err) +' '
-
-def compute_coverage_ella():
-    #using compute_coverage to compute
-
-    cmd = subprocess.Popen ('../../scripts/compute_coverage_ella.sh',stdout = subprocess.PIPE, stderr = subprocess.PIPE)
     output, err=cmd.communicate()
     print 'compute_coverage-return code: ' + ' output: '+str(output) + '  ' + str(err) +' '
 
@@ -67,36 +51,14 @@ def read_coverage_jacoco():
         print "parse xml error, catch it!"
         return 0
 
-def read_coverage_ella():
-    if not os.path.isfile (RunParameters.OUTPUT_DIR+'/ella_files/cov'):
-        return 0
-    f= open (RunParameters.OUTPUT_DIR+'/ella_files/cov', 'r')
-    lines = f.readlines()
-    f.close()
-    print "[tingsu] current ella method coverage: " + str(lines[0])
-
-    return int(lines[0])
-
 def read_current_coverage():
-    if RunParameters.OPEN_SOURCE:
-        # return read_coverage()
-        return read_coverage_jacoco()
-    else:
-        return read_coverage_ella()
+    return read_coverage_jacoco()
 
 def compute_current_coverage(app_class_files_path):
-    if RunParameters.OPEN_SOURCE:
-        # compute_coverage()
-        compute_coverage_jacoco(app_class_files_path)
-    else:
-        compute_coverage_ella()
+    compute_coverage_jacoco(app_class_files_path)
 
 def pull_coverage_files(restore_count, app_package_name, app_class_files_path, avd_serial):
-    if RunParameters.OPEN_SOURCE:
-        # get_emma_coverage(restore_count)
-        get_jacoco_coverage(restore_count, app_package_name, app_class_files_path, avd_serial)
-    else:
-        get_ella_coverage(restore_count)
+    get_jacoco_coverage(restore_count, app_package_name, app_class_files_path, avd_serial)
 
 # def record_coverage():
 #     start_time = time.time()
@@ -121,16 +83,4 @@ def pull_coverage_files(restore_count, app_package_name, app_class_files_path, a
 #             coverage_file.close()
 #
 #         time.sleep(120)
-
-
-
-if __name__=='__main__':
-    # compute_coverage()
-    #read_coverage()
-
-    #coverage_writer=threading.Thread(target=record_coverage)
-    #coverage_writer.start()
-    compute_coverage_ella()
-    tp=read_coverage_ella()
-    print str(tp)
 
