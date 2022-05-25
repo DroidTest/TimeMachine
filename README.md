@@ -129,10 +129,10 @@ A directory of the app under testing should contain the following subjects.
 ├── class_files.json            json file to describe the path to built directory
 └── *.apk                       apk file of app under testing
 ```
-You can search examples under folder instrumented_apps for more details.
+If any problem in Jacoco Integration, search examples under folder instrumented_apps for more details or just contact us.
 
 ## Output ##
-TimeMachine automatedly creates output directories under your specify output path. The current date and emulator serials are used for naming output directories as a destinction.
+TimeMachine automatedly creates output directories under your specify output path. Current date and emulator serials are used for naming output directories as a destinction.
 ### output directory ###
 An output directory of TimeMachine contains the following subjects:
 ```
