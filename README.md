@@ -28,77 +28,101 @@ pages={1-12}}
 
 ```
 
-## Architecture ##
-The whole system runs in a Unix-like operating system. App under test is installed in an Android emulator. TimeMachine connects the emulator via ADB to test the app. Main Components are configured as followed:
-
-* Android SDK
-* Android-x86-7.1.r2
-* Python 2.7.17
-
-## Setup ##
+## Envrionment Setup ##
+TimeMachine runs on a Unix-like operating system. 
 The following is required to set up TimeMachine:
-* at least 100 GB hard drive 
-* 8 GB memory
+* Android SDK with API 25
+* Python 2.7
 * Ububntu 18.04 64-bit or Mac-OSX 10.15 
 
-### Step 1: clone repository ###
-```
-git clone https://github.com/DroidTest/TimeMachine.git
-```
-
-### Step 2: install dependencies ###
-
-#### Android SDK ####
-You can run the following command to download the latest Android cmdline-tools:
+### Android SDK installation ###
+Run the following command to download the latest Android cmdline-tools:
 ```
 wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
 ``` 
-Check commands "adb", "aapt", "avdmanager", "sdkmanager", "emulator" in your terminal to make sure you have correctly configured environment variables.
 
-The following sdk components are necessary:
-```
-#install android-25, emulator, platform-tools, build-tools
-./sdkmanager --update
-./sdkmanager "system-images;android-25;google_apis;x86" platform-tools "platforms;android-25" "build-tools;29.0.0"<<EOF
-y
-EOF
-``` 
+The following SDK components are necessary: 
+* android-25 platforms
+* emulator
+* platform-tools
+* build-tools
 
-Create an avd by for testing
+Check commands "adb", "aapt", "avdmanager", "emulator" in your terminal to make sure you have correctly configured environment variables.
+
+### Emulator starting ###
+Create an avd by avdmanager for testing:
 ```
 avdmanager create avd -n avd0 -k "system-images;android-25;google_apis;x86"<<EOF
 n
 EOF
 ```
-
-#### Python ####
-TimeMachine use Python 2.7.17 as interpreter. <br>
-
-If you are running TimeMachine on the Ubuntu 18.04, just run the following commands:
+Now you can use command "emulator" to start an Android emulator:
+```
+emulator -avd avd0 -writable-system 
+```
+### Python 2.7 ###
+For Ubuntu, run following commands:
 ```
 sudo apt install expect python2.7 python-pip
 pip install enum uiautomator
 ```
-### Step 3: start TimeMachine ###
+## App instrumentation ##
+TimeMachine takes as input open-source apps instrumented with [Jacoco](https://www.jacoco.org/jacoco/). 
+Under folder instrumented_apps are several open-source apps instrumented with Jacoco, i.e., AmazeFileManager and FirefoxLite. 
+You can also use TimeMachine to test your own jacoco-integrated apps.
 
-Test example apps by following commands:
-```  
-cd TimeMachine/fuzzingandroid
-python2.7 main.py --avd avd0 --apk ../instrumented_apps/AmazeFileManager/AmazeFileManager-3.4.2-#1837.apk --time 1h -o ../timemachine-results --no-headless
-```  
+### directory for app under testing ###
+A directory of app under testing should contain the following subjects.
+```
+├── source code                   jacoco-integrated source codes of app with built directories compiled by javac
+├── class_files.json              json file for describing the path to built directory
+└── *.apk                         jacoco-instrumented apk file of app under testing
+```
+
+### Jacoco integration example ###
+You can search [Jacoco Offline Instrumentation](https://www.jacoco.org/jacoco/trunk/doc/offline.html) to integrate your own open-source apps with Jacoco offline mode. 
+Here we take [AmazeFileManager](https://www.jacoco.org/jacoco/) as an example. Usually we only need three steps as below.
+
+First, add the gradle plugin "jacoco" to build.gradle of app module. 
+```
+apply plugin: 'jacoco'
+```
+Second, add JacocoInstrument directory we provide to source code directory.
+```
+JacocoInstrument
+├── FinishListener.java          
+├── JacocoInstrumentation.java         
+└── SMSInstrumentedReceiver.java     
+```
+Third, regist the BroadcastReceiver we added in AndroidManifest.xml
+```
+<manifest>
+    <application>
+        <receiver android:name=".JacocoInstrument.SMSInstrumentedReceiver">
+            <intent-filter>
+                <action android:name="edu.gatech.m3.emma.COLLECT_COVERAGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>
+
+```
+Now Jacoco integration is finished. We can build output directories and package source codes into apk files. 
+
+### check ###
+To check if Jacoco agent works well in apk file, install and run the apk file on the emulator and send broadcast as follows:
+ ```
+adb shell am broadcast -a edu.gatech.m3.emma.COLLECT_COVERAGE
+```
+If coverage.ec file is generated under path /data/data/${APP_PACKAGE_NAME}/files, then congratulations.
 
 ## Usage ##
-TimeMachine takes as input apks instrumented with Android apps instrumenting tool [Jacoco](https://www.jacoco.org/jacoco/). 
-Under folder instrumented_apps are several open-source apps instrumented with Jacoco, i.e., AmazeFileManager and FirefoxLite. 
-
-### deployment ###
-The command lines for deployment are as follow.
 ```
-usage: python2.7 main.py [-h] [--avd AVD_NAME] [--apk APK] [-n NUMBER_OF_DEVICES]
+python2.7 main.py [-h] [--avd AVD_NAME] [--apk APK] [-n NUMBER_OF_DEVICES]
                                 [--apk-list APK_LIST] -o O [--time TIME] [--repeat REPEAT]
                                 [--no-headless] [--offset OFFSET]
 
-optional arguments:
+
   -h, --help                    show this help message and exit
   --avd AVD_NAME                the device name
   --apk APK                     the path of apk under test
@@ -112,21 +136,19 @@ optional arguments:
   --offset OFFSET               device offset number w.r.t emulator-5554
 ```  
 
-### test your own apps ###
-You can use TimeMachine to test your own jacoco-integrated apps. 
 
-#### Jacoco Integration ####
-Search [Jacoco Offline Instrumentation](https://www.jacoco.org/jacoco/trunk/doc/offline.html) to integrate your own open-source apps with Jacoco offline mode. 
-Make sure to set the name of BroadcastReceiver into "edu.gatech.m3.emma.COLLECT_COVERAGE", or you will have to replace the name of BroadcastReceiver in "TimeMachine/fuzzingandroid/scripts/pull_coverage_jacoco.sh, line 14" with your own BroadcastReceiver name. 
+TimeMachine can be started easily with two steps.
+### Step 1: clone repository ###
+```
+git clone https://github.com/DroidTest/TimeMachine.git
+```
 
-#### create directory for app under testing ####
-A directory of the app under testing should contain the following subjects.
-```
-├── source_codes dir            source codes of app with built directory compiled by javac
-├── class_files.json            json file to describe the path to built directory
-└── *.apk                       apk file of app under testing
-```
-If any problem in Jacoco Integration, search examples under folder instrumented_apps for more details or just contact us.
+### Step 2: start TimeMachine ###
+Test example apps by following commands:
+```  
+cd TimeMachine/fuzzingandroid
+python2.7 main.py --avd avd0 --apk ../instrumented_apps/AmazeFileManager/AmazeFileManager-3.4.2-#1837.apk --time 1h -o ../timemachine-results --no-headless
+```  
 
 ## Output ##
 TimeMachine automatedly creates output directories under your specify output path. Current date and emulator serials are used for naming output directories as a destinction.
@@ -154,38 +176,8 @@ check logs
 cat ../timemachine-results/[output_file_dir_name]/timemachine-run.log
 ```
 
-## Issues for Mac-OSX 10.15 ##
-
-TimeMachine can run on Mac-OSX 10.15 smoothly with some changes as follow.
-
-### for emulator ###
-Please make sure the version of emulator you downloaded fits your OS well, or you will have to run with old emulator by following this: https://stackoverflow.com/questions/66455173/android-emulator-30-4-5-not-working-on-macos
-
-### for Python ###
-Compilation errors may occur if you directly use the built-in Python 2.7 provided by Mac-OSX 10.15. In this case, we recommend an external Python 2.7 environment which could be installed by conda(https://docs.conda.io) or other available package managers.
-
-### for usage ###
-Since the terminal of Mac-OSX 10.15 does not support commands "realpath" and "timeout", run "brew install coreunits" and then replace these two commands by "grealpath" and "gtimeout".
-<br>
-
-Here are lists of files including these two commands in TimeMachine:
-```
-#location of "realpath"
-TimeMachine/fuzzingandroid/run_timemachine.sh                   line 84,88
-TimeMachine/fuzzingandroid/scripts/compute_coverage_jacoco.sh   line 9
-TimeMachine/fuzzingandroid/scripts/pull_coverage_jacoco.sh      line 11
-
-#location of "timeout"
-TimeMachine/fuzzingandroid/run_timemachine.sh                   line 27,100
-TimeMachine/fuzzingandroid/start_engine.sh                      line 26
-```
-
-### for permission ###
-We suggest to run as root on Mac-OSX 10.15 so as to free your visit to files.
-
 ## Todo ##
 Optimize methods for state selection to achieve a better performance on coverage. <br>
-
 
 ## Need help? ##
 * Contact Zhen Dong for further issues.
