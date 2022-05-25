@@ -35,9 +35,6 @@ The whole system runs in the Ubuntu operating system. App under test is installe
 * Android-x86-7.1.r2
 * Python 2.7.17
 
-## Todo ##
-Optimize methods for state selection to achieve a better performance on coverage. <br>
-
 ## Setup ##
 The following is required to set up TimeMachine:
 * at least 100 GB hard drive 
@@ -185,6 +182,10 @@ TimeMachine/fuzzingandroid/start_engine.sh                      line 26
 
 ### for permission ###
 We suggest to run as root on Mac-OSX 10.15 so as to free your visit to files.
+
+## Todo ##
+Optimize methods for state selection to achieve a better performance on coverage. <br>
+
 
 ## Need help? ##
 * Contact Zhen Dong for further issues.
