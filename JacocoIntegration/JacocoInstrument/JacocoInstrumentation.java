@@ -1,5 +1,3 @@
-package com.amaze.filemanager.JacocoInstrument;
-
 import android.app.Instrumentation;
 import android.os.Bundle;
 import android.util.Log;

@@ -28,6 +28,9 @@ pages={1-12}}
 
 ```
 
+
+
+
 ## Envrionment Setup ##
 TimeMachine runs on a Unix-like operating system. 
 The following is required to set up TimeMachine:
@@ -66,6 +69,14 @@ For Ubuntu, run following commands:
 sudo apt install expect python2.7 python-pip
 pip install enum uiautomator
 ```
+
+
+
+
+
+
+
+
 ## App instrumentation ##
 TimeMachine takes as input open-source apps instrumented with [Jacoco](https://www.jacoco.org/jacoco/). 
 Under folder instrumented_apps are several open-source apps instrumented with Jacoco, i.e., AmazeFileManager and FirefoxLite. 
@@ -79,7 +90,7 @@ A directory of app under testing should contain the following subjects.
 └── *.apk                         jacoco-instrumented apk file of app under testing
 ```
 
-### Jacoco integration example ###
+### manual Jacoco integration ###
 You can search [Jacoco Offline Instrumentation](https://www.jacoco.org/jacoco/trunk/doc/offline.html) to integrate your own open-source apps with Jacoco offline mode. 
 Here we take [AmazeFileManager](https://www.jacoco.org/jacoco/) as an example. Usually we only need three steps as below.
 
@@ -87,7 +98,7 @@ First, add the gradle plugin "jacoco" to build.gradle of app module.
 ```
 apply plugin: 'jacoco'
 ```
-Second, add JacocoInstrument directory we provide to source code directory.
+Second, add "JacocoInstrument" directory we provide in JacocoIntegration to source code directory. Don't forget to add package name in these classes.
 ```
 JacocoInstrument
 ├── FinishListener.java          
@@ -95,6 +106,7 @@ JacocoInstrument
 └── SMSInstrumentedReceiver.java     
 ```
 Third, regist the BroadcastReceiver we added in AndroidManifest.xml
+
 ```
 <manifest>
     <application>
@@ -109,12 +121,34 @@ Third, regist the BroadcastReceiver we added in AndroidManifest.xml
 ```
 Now Jacoco integration is finished. We can build output directories and package source codes into apk files. 
 
+###  auto Jacoco integration ###
+We provide a simple python scripts auto_integrate.py for automatedly Jacoco integration. 
+
+```
+#USAGE: python2.7 auto_integrate.py MODULE_PATH SOURCE_CODE_PACKAGE_NAME
+
+cd JacocoIntegration
+python2.7 auto_integrate.py ~/AmazeFileManager/app com.amaze.filemanager
+```  
+Note that SOURCE_CODE_PACKAGE_NAME refers to the package name of source code instead of Application. 
+If this script does not fit your project structure well, manual integration always works.
+
 ### check ###
 To check if Jacoco agent works well in apk file, install and run the apk file on the emulator and send broadcast as follows:
  ```
 adb shell am broadcast -a edu.gatech.m3.emma.COLLECT_COVERAGE
 ```
 If coverage.ec file is generated under path /data/data/${APP_PACKAGE_NAME}/files, then congratulations.
+
+
+
+
+
+
+
+
+
+
 
 ## Usage ##
 ```
