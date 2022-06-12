@@ -33,7 +33,7 @@ pages={1-12}}
 
 ## Envrionment Dependency ##
 TimeMachine runs on a Unix-like operating system. 
-The following is required to set up TimeMachine:
+The followings are required to set up TimeMachine:
 * Android SDK with API 25
 * Python 2.7
 * Ububntu 18.04 64-bit or Mac-OSX 10.15 
@@ -122,7 +122,7 @@ In the directory, the class_files.json describes the path to built directory, wh
 }
 ```
 
-## Usage ##
+## Usage of TimeMachine ##
 ```
 python2.7 main.py [-h] [--avd AVD_NAME] [--apk APK] [-n NUMBER_OF_DEVICES]
                                 [--apk-list APK_LIST] -o O [--time TIME] [--repeat REPEAT]
