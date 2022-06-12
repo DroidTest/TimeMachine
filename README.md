@@ -31,48 +31,15 @@ pages={1-12}}
 
 
 
-## Envrionment Setup ##
+## Envrionment Dependency ##
 TimeMachine runs on a Unix-like operating system. 
 The following is required to set up TimeMachine:
 * Android SDK with API 25
 * Python 2.7
 * Ububntu 18.04 64-bit or Mac-OSX 10.15 
 
-### Android SDK installation ###
-Run the following command to download the latest Android cmdline-tools:
-```
-wget https://dl.google.com/android/repository/commandlinetools-linux-6858069_latest.zip
-``` 
-
-The following SDK components are necessary: 
-* android-25 platforms
-* emulator
-* platform-tools
-* build-tools
-
 Check commands "adb", "aapt", "avdmanager", "emulator" in your terminal to make sure you have correctly configured environment variables.
-
-### Emulator starting ###
-Create an avd by avdmanager for testing:
-```
-avdmanager create avd -n avd0 -k "system-images;android-25;google_apis;x86"<<EOF
-n
-EOF
-```
-Now you can use command "emulator" to start an Android emulator:
-```
-emulator -avd avd0 -writable-system 
-```
-### Python 2.7 ###
-For Ubuntu, run following commands:
-```
-sudo apt install expect python2.7 python-pip
-pip install enum uiautomator
-```
-
-
-
-
+Package "enum" and "uiautomator" are needed in python2.7.
 
 
 
@@ -80,75 +47,80 @@ pip install enum uiautomator
 ## App instrumentation ##
 TimeMachine takes as input open-source apps instrumented with [Jacoco](https://www.jacoco.org/jacoco/). 
 Under folder instrumented_apps are several open-source apps instrumented with Jacoco, i.e., AmazeFileManager and FirefoxLite. 
-You can also use TimeMachine to test your own jacoco-integrated apps.
 
-### directory for app under testing ###
-A directory of app under testing should contain the following subjects.
+You can also use TimeMachine to test your own jacoco-integrated apps. Here we take instrumentation of [AmazeFileManager v3.4.2](https://github.com/TeamAmaze/AmazeFileManager/releases/tag/v3.4.2) as an example.
+
+### Step 1: clone repository ###
+Clone the repository of project under instrumentation and TimeMachine.
 ```
-├── source code                   jacoco-integrated source codes of app with built directories compiled by javac
-├── class_files.json              json file for describing the path to built directory
-└── *.apk                         jacoco-instrumented apk file of app under testing
+git clone --branch v3.4.2 https://github.com/TeamAmaze/AmazeFileManager.git
+git clone https://github.com/DroidTest/TimeMachine.git
 ```
 
-### manual Jacoco integration ###
-You can search [Jacoco Offline Instrumentation](https://www.jacoco.org/jacoco/trunk/doc/offline.html) to integrate your own open-source apps with Jacoco offline mode. 
-Here we take [AmazeFileManager](https://www.jacoco.org/jacoco/) as an example. Usually we only need three steps as below.
 
-First, add the gradle plugin "jacoco" to build.gradle of app module. 
+### Step 2: integrate Jacoco ###
+Here we provide both manual and automate strategies for Jacoco integration.
+#### manual integration ####
+First, add the gradle plugin "jacoco" to build.gradle of app module.
 ```
-apply plugin: 'jacoco'
+echo -e "\napply plugin: 'jacoco'" >> AmazeFileManager/app/build.gradle
 ```
-Second, add "JacocoInstrument" directory we provide in JacocoIntegration to source code directory. Don't forget to add package name in these classes.
-```
-JacocoInstrument
-├── FinishListener.java          
-├── JacocoInstrumentation.java         
-└── SMSInstrumentedReceiver.java     
-```
-Third, regist the BroadcastReceiver we added in AndroidManifest.xml
 
+Second, add "JacocoIntegration/JacocoInstrument" directory we provide to source code directory.
 ```
-<manifest>
-    <application>
-        <receiver android:name=".JacocoInstrument.SMSInstrumentedReceiver">
-            <intent-filter>
-                <action android:name="edu.gatech.m3.emma.COLLECT_COVERAGE" />
-            </intent-filter>
-        </receiver>
-    </application>
-</manifest>
+cp -r TimeMachine/JacocoIntegration/JacocoInstrument AmazeFileManager/app/src/main/java/com/amaze/filemanager
 
+# add package name to java classes
+sed -i '1i package com.amaze.filemanager.JacocoInstrument;' AmazeFileManager/app/src/main/java/com/amaze/filemanager/JacocoInstrument/FinishListener.java
+sed -i '1i package com.amaze.filemanager.JacocoInstrument;' AmazeFileManager/app/src/main/java/com/amaze/filemanager/JacocoInstrument/JacocoInstrumentation.java
+sed -i '1i package com.amaze.filemanager.JacocoInstrument;' AmazeFileManager/app/src/main/java/com/amaze/filemanager/JacocoInstrument/SMSInstrumentedReceiver.java
 ```
-Now Jacoco integration is finished. We can build output directories and package source codes into apk files. 
 
-###  auto Jacoco integration ###
-We provide a simple python scripts auto_integrate.py for automatedly Jacoco integration. 
+Third, regist the BroadcastReceiver we added in AndroidManifest.xml.
+```
+sed -i "`sed -n -e "/<\/application>/=" AmazeFileManager/app/src/main/AndroidManifest.xml` i <receiver android:name=\".JacocoInstrument.SMSInstrumentedReceiver\"><intent-filter><action android:name=\"edu.gatech.m3.emma.COLLECT_COVERAGE\"/></intent-filter></receiver>" AmazeFileManager/app/src/main/AndroidManifest.xml
+```
+Now Jacoco integration is finished. We can build output directories and package source codes into apk file AmazeFileManager.apk.
 
+#### automate integration ####
+For easier use of tool, we provide a simple python scripts auto_integrate.py for automatedly Jacoco integration.
 ```
 #USAGE: python2.7 auto_integrate.py MODULE_PATH SOURCE_CODE_PACKAGE_NAME
 
-cd JacocoIntegration
-python2.7 auto_integrate.py ~/AmazeFileManager/app com.amaze.filemanager
+python2.7 TimeMachine/JacocoIntegration/auto_integrate.py AmazeFileManager/app com.amaze.filemanager
 ```  
-Note that SOURCE_CODE_PACKAGE_NAME refers to the package name of source code instead of Application. 
-If this script does not fit your project structure well, manual integration always works.
+Then you only need to generate apk file AmazeFileManager.apk from this project.
 
-### check ###
+### Step 3: check ###
 To check if Jacoco agent works well in apk file, install and run the apk file on the emulator and send broadcast as follows:
  ```
+adb install -g AmazeFileManager.apk
+adb shell am start com.amaze.filemanager.debug/com.amaze.filemanager.activities.MainActivity
 adb shell am broadcast -a edu.gatech.m3.emma.COLLECT_COVERAGE
 ```
 If coverage.ec file is generated under path /data/data/${APP_PACKAGE_NAME}/files, then congratulations.
 
 
-
-
-
-
-
-
-
-
+### Step 4: construct directory ###
+A directory of app under testing should contain the following subjects.
+```
+├── AmazeFileManager              jacoco-integrated source codes of app with built directories compiled by javac
+├── AmazeFileManager.apk          jacoco-instrumented apk file of app under testing
+└── class_files.json              json file for describing the path to built directory
+```
+In the directory, the class_files.json describes the path to built directory, which should be as follow in this example:
+```
+{
+	"AmazeFileManager.apk": {
+		"classfiles": ["AmazeFileManager/app/build/intermediates/javac/fdroidDebug/classes/",
+						"AmazeFileManager/commons_compress_7z/build/intermediates/javac/debug/classes/"
+		],
+		"sourcefiles": ["AmazeFileManager/app/src/main/java/",
+						"AmazeFileManager/commons_compress_7z/src/main/java/"
+		]
+	}
+}
+```
 
 ## Usage ##
 ```
@@ -171,16 +143,10 @@ python2.7 main.py [-h] [--avd AVD_NAME] [--apk APK] [-n NUMBER_OF_DEVICES]
 ```  
 
 
-TimeMachine can be started easily with two steps.
-### Step 1: clone repository ###
-```
-git clone https://github.com/DroidTest/TimeMachine.git
-```
-
-### Step 2: start TimeMachine ###
 Test example apps by following commands:
 ```  
 cd TimeMachine/fuzzingandroid
+
 python2.7 main.py --avd avd0 --apk ../instrumented_apps/AmazeFileManager/AmazeFileManager-3.4.2-#1837.apk --time 1h -o ../timemachine-results --no-headless
 ```  
 
@@ -209,6 +175,12 @@ cat ../timemachine-results/[output_file_dir_name]/crashes.log
 check logs
 cat ../timemachine-results/[output_file_dir_name]/timemachine-run.log
 ```
+
+### Changes from TimeMachine 1.0
+* remove Virtualbox from architecture to perform better
+* replace coverage collection tool from Emma to Jacoco
+* testing of closed source projects instrumented by ella is no longer supported
+
 
 ## Todo ##
 Optimize methods for state selection to achieve a better performance on coverage. <br>
