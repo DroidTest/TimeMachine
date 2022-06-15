@@ -66,7 +66,7 @@ git clone --branch v3.4.2 https://github.com/TeamAmaze/AmazeFileManager.git
 echo -e "\napply plugin: 'jacoco'" >> AmazeFileManager/app/build.gradle
 cp -r TimeMachine/JacocoIntegration/JacocoInstrument AmazeFileManager/app/src/main/java/com/amaze/filemanager
 
-# Import JacocoInstrument class
+# Add package names
 sed -i '1i package com.amaze.filemanager.JacocoInstrument;' AmazeFileManager/app/src/main/java/com/amaze/filemanager/JacocoInstrument/FinishListener.java
 sed -i '1i package com.amaze.filemanager.JacocoInstrument;' AmazeFileManager/app/src/main/java/com/amaze/filemanager/JacocoInstrument/JacocoInstrumentation.java
 sed -i '1i package com.amaze.filemanager.JacocoInstrument;' AmazeFileManager/app/src/main/java/com/amaze/filemanager/JacocoInstrument/SMSInstrumentedReceiver.java
@@ -83,10 +83,15 @@ cd AmazeFileManager
 ```
 5. Check if the instrumented app works
 ```
-# run the apk on emulator and check if coverage data is generated
+# Launch emulator
+
+# Run the apk on emulator 
+# corret the path of the apk file
 adb install -g AmazeFileManager.apk
 adb shell am start com.amaze.filemanager.debug/com.amaze.filemanager.activities.MainActivity
 adb shell am broadcast -a edu.gatech.m3.emma.COLLECT_COVERAGE
+
+# and check if coverage data is generated
 ```
 
 If coverage.ec file is generated under path /data/data/${APP_PACKAGE_NAME}/files, then congratulations.
