@@ -87,11 +87,10 @@ cd AmazeFileManager
 ./gradlew clean
 ./gradlew assembleDebug
 
-cd ..
-cp AmazeFileManager/app/build/outputs/apk/fdroid/debug/app-fdroid-debug.apk AmazeFileManager.apk
+cp app/build/outputs/apk/fdroid/debug/app-fdroid-debug.apk ../AmazeFileManager.apk
 
 # generate a class_files.json to describe the built directory
-echo "{\"AmazeFileManager.apk\": {\"classfiles\": [\"AmazeFileManager/app/build/intermediates/javac/fdroidDebug/classes/\",\"AmazeFileManager/commons_compress_7z/build/intermediates/javac/debug/classes/\"]}}" > class_files.json
+echo "{\"AmazeFileManager.apk\": {\"classfiles\": [\"AmazeFileManager/app/build/intermediates/javac/fdroidDebug/classes/\",\"AmazeFileManager/commons_compress_7z/build/intermediates/javac/debug/classes/\"]}}" > ../class_files.json
 ```
 5. Check if the instrumented app works
 ```
@@ -103,12 +102,13 @@ adb wait-for-device
 adb root
 
 # Run the apk on emulator 
-adb install -g AmazeFileManager.apk
+adb install -g ../AmazeFileManager.apk
 adb shell am start com.amaze.filemanager.debug/com.amaze.filemanager.activities.MainActivity
 
 # check if coverage data is generated
 adb shell am broadcast -a edu.gatech.m3.emma.COLLECT_COVERAGE
 adb shell "cat /data/data/com.amaze.filemanager.debug/files/coverage.ec"
+adb emu kill
 ```
 
 
@@ -137,7 +137,7 @@ python2.7 main.py [-h] [--avd AVD_NAME] [--apk APK] [-n NUMBER_OF_DEVICES]
 
 Test example apps by following commands:
 ```  
-cd TimeMachine/fuzzingandroid
+cd ../../TimeMachine/fuzzingandroid
 
 python2.7 main.py --avd avd0 --apk ../../appTest/AmazeFileManager.apk --time 1h -o ../../appTest/timemachine-results --no-headless
 ```  
