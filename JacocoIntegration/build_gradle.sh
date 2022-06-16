@@ -9,4 +9,4 @@ cd $PRO_PATH
 echo "rebuild gradle project..."
 
 ./gradlew clean
-./gradlew build
+./gradlew assembleDebug

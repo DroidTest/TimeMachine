@@ -50,21 +50,27 @@ Package "enum" and "uiautomator" are needed in python2.7.
 1. Clone TimeMachine
 ```
 # creating workspace
-mkdir appTest
-cd appTest
+mkdir workspace
+cd workspace
 
 git clone https://github.com/DroidTest/TimeMachine.git
 ```
 
 2. Clone an example app [AmazeFileManager v3.4.2](https://github.com/TeamAmaze/AmazeFileManager/releases/tag/v3.4.2)
 ```
+# creating dir for AUT
+mkdir appTest
+cd appTest
+
 git clone --branch v3.4.2 https://github.com/TeamAmaze/AmazeFileManager.git
 ```
 3. Instrumenting app with [Jacoco](https://www.jacoco.org/jacoco/)
 ```
 # Add the jacoco plugin
-echo -e "\napply plugin: 'jacoco'" >> AmazeFileManager/app/build.gradle
-cp -r TimeMachine/JacocoIntegration/JacocoInstrument AmazeFileManager/app/src/main/java/com/amaze/filemanager
+echo "\napply plugin: 'jacoco'" >> AmazeFileManager/app/build.gradle
+sed -i "`sed -n -e "/debug {/=" AmazeFileManager/app/build.gradle` a testCoverageEnabled true" AmazeFileManager/app/build.gradle
+
+cp -r ../TimeMachine/JacocoIntegration/JacocoInstrument AmazeFileManager/app/src/main/java/com/amaze/filemanager
 
 # Add package names
 sed -i '1i package com.amaze.filemanager.JacocoInstrument;' AmazeFileManager/app/src/main/java/com/amaze/filemanager/JacocoInstrument/FinishListener.java
@@ -79,46 +85,35 @@ sed -i "`sed -n -e "/<\/application>/=" AmazeFileManager/app/src/main/AndroidMan
 cd AmazeFileManager
 
 ./gradlew clean
-./gradlew build
+./gradlew assembleDebug
+
+cd ..
+cp AmazeFileManager/app/build/outputs/apk/fdroid/debug/app-fdroid-debug.apk AmazeFileManager.apk
+
+# generate a class_files.json to describe the built directory
+echo "{\"AmazeFileManager.apk\": {\"classfiles\": [\"AmazeFileManager/app/build/intermediates/javac/fdroidDebug/classes/\",\"AmazeFileManager/commons_compress_7z/build/intermediates/javac/debug/classes/\"]}}" > class_files.json
 ```
 5. Check if the instrumented app works
 ```
 # Launch emulator
+avdmanager create avd -n avd0 -k "system-images;android-25;google_apis;x86" -d pixel_2_xl -c 1000M -f
+nohup emulator -avd avd0 -writable-system &
+adb devices
+adb wait-for-device
+adb root
 
 # Run the apk on emulator 
-# corret the path of the apk file
 adb install -g AmazeFileManager.apk
 adb shell am start com.amaze.filemanager.debug/com.amaze.filemanager.activities.MainActivity
+
+# check if coverage data is generated
 adb shell am broadcast -a edu.gatech.m3.emma.COLLECT_COVERAGE
-
-# and check if coverage data is generated
+adb shell "cat /data/data/com.amaze.filemanager.debug/files/coverage.ec"
 ```
 
-If coverage.ec file is generated under path /data/data/${APP_PACKAGE_NAME}/files, then congratulations.
-
-
-### Step 4: construct directory ###
-A directory of app under testing should contain the following subjects.
-```
-├── AmazeFileManager              jacoco-integrated source codes of app with built directories compiled by javac
-├── AmazeFileManager.apk          jacoco-instrumented apk file of app under testing
-└── class_files.json              json file for describing the path to built directory
-```
-In the directory, the class_files.json describes the path to built directory, which should be as follow in this example:
-```
-{
-	"AmazeFileManager.apk": {
-		"classfiles": ["AmazeFileManager/app/build/intermediates/javac/fdroidDebug/classes/",
-						"AmazeFileManager/commons_compress_7z/build/intermediates/javac/debug/classes/"
-		],
-		"sourcefiles": ["AmazeFileManager/app/src/main/java/",
-						"AmazeFileManager/commons_compress_7z/src/main/java/"
-		]
-	}
-}
-```
 
 ## Usage of TimeMachine ##
+<!--
 ```
 python2.7 main.py [-h] [--avd AVD_NAME] [--apk APK] [-n NUMBER_OF_DEVICES]
                                 [--apk-list APK_LIST] -o O [--time TIME] [--repeat REPEAT]
@@ -137,17 +132,21 @@ python2.7 main.py [-h] [--avd AVD_NAME] [--apk APK] [-n NUMBER_OF_DEVICES]
   --no-headless                 show gui or not
   --offset OFFSET               device offset number w.r.t emulator-5554
 ```  
+--->
 
 
 Test example apps by following commands:
 ```  
 cd TimeMachine/fuzzingandroid
 
-python2.7 main.py --avd avd0 --apk ../instrumented_apps/AmazeFileManager/AmazeFileManager-3.4.2-#1837.apk --time 1h -o ../timemachine-results --no-headless
+python2.7 main.py --avd avd0 --apk ../../appTest/AmazeFileManager.apk --time 1h -o ../../appTest/timemachine-results --no-headless
 ```  
 
 ## Output ##
-TimeMachine automatedly creates output directories under your specify output path. Current date and emulator serials are used for naming output directories as a destinction.
+TimeMachine automatedly creates output directories under your specify output path.
+```  
+ls ../../appTest/timemachine-results/[output_dir_name]
+```  
 ### output directory ###
 An output directory of TimeMachine contains the following subjects:
 ```
@@ -163,13 +162,13 @@ An output directory of TimeMachine contains the following subjects:
 ### useful scripts ###
 ```
 #check current jacoco line coverage
-python2.7 compute_coverage.py ../timemachine-results/[output_file_dir_name]
+python2.7 compute_coverage.py ../../appTest/timemachine-results/[output_dir_name]
 
 #check crashes
-cat ../timemachine-results/[output_file_dir_name]/crashes.log
+cat ../../appTest/timemachine-results/[output_dir_name]/crashes.log
 
 check logs
-cat ../timemachine-results/[output_file_dir_name]/timemachine-run.log
+cat ../../appTest/timemachine-results/[output_dir_name]/timemachine-run.log
 ```
 
 ### Changes from TimeMachine 1.0
@@ -177,19 +176,7 @@ cat ../timemachine-results/[output_file_dir_name]/timemachine-run.log
 * replace coverage collection tool from Emma to Jacoco
 * testing of closed source projects instrumented by ella is no longer supported
 
-
-## Todo ##
-Optimize methods for state selection to achieve a better performance on coverage. <br>
-
-## Need help? ##
-* Contact Zhen Dong for further issues.
-
-## Contributors ##
+## Contact ##
 * Zhen Dong (zhendng@gmail.com)
-* Lucia Cojocaru
-* Xiao Liang Yu
-* Marcel Böhme
-* Abhik Roychoudhury
-* CAI Xiaobao
 
 
