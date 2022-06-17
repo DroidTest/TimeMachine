@@ -67,7 +67,7 @@ git clone --branch v3.4.2 https://github.com/TeamAmaze/AmazeFileManager.git
 3. Instrumenting app with [Jacoco](https://www.jacoco.org/jacoco/)
 ```
 # Add the jacoco plugin
-echo "\napply plugin: 'jacoco'" >> AmazeFileManager/app/build.gradle
+echo -e "\napply plugin: 'jacoco'" >> AmazeFileManager/app/build.gradle
 sed -i "`sed -n -e "/debug {/=" AmazeFileManager/app/build.gradle` a testCoverageEnabled true" AmazeFileManager/app/build.gradle
 
 cp -r ../TimeMachine/JacocoIntegration/JacocoInstrument AmazeFileManager/app/src/main/java/com/amaze/filemanager
@@ -99,6 +99,7 @@ echo "{\"AmazeFileManager.apk\": {\"classfiles\": [\"AmazeFileManager/app/build/
 6. Check if the instrumented app works
 ```
 # Launch emulator
+sdkmanager "system-images;android-25;google_apis;x86"
 avdmanager create avd -n avd0 -k "system-images;android-25;google_apis;x86" -d pixel_2_xl -c 1000M -f
 nohup emulator -avd avd0 -writable-system &
 adb devices
