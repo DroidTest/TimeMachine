@@ -18,7 +18,7 @@ AVD_NAME=$7
 echo "AVD_SERIAL: "$AVD_SERIAL
 echo "AVD_PORT: "$AVD_PORT
 
-function wait_adb {
+wait_adb(){
     while true;
     do
         echo 'adb not connected!'
@@ -76,6 +76,7 @@ sleep 5
 echo "OUTPUT_DIR: "$OUTPUT_DIR
 rm -rf $OUTPUT_DIR
 mkdir $OUTPUT_DIR
+mkdir $OUTPUT_DIR/temp_ec
 mkdir $OUTPUT_DIR/ec_files
 touch $OUTPUT_DIR/timemachine-run.log
 OUTPUT_LOG_PATH=$OUTPUT_DIR/timemachine-run.log
