@@ -85,7 +85,7 @@ sed -i "`sed -n -e "/<\/application>/=" AmazeFileManager/app/src/main/AndroidMan
 cd AmazeFileManager
 
 ./gradlew clean
-./gradlew assembleDebug
+./gradlew --no-daemon assembleDebug
 ```
 
 5. Setup the apk in the test folder
