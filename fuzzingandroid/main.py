@@ -1,4 +1,5 @@
 import os
+import subprocess
 import time
 from argparse import ArgumentParser
 from multiprocessing.pool import ThreadPool
@@ -25,7 +26,22 @@ def run_timemachine(apk, avd_serial, avd_name, output_dir, testing_time, screen_
                                                                    screen_option,
                                                                    adb_port)
     print('execute timemachine: %s' % command)
-    os.system(command)
+
+    p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    while True:
+        output=p.stdout.readline().strip()
+        print output
+        if "device offline" in output:
+            print "==============================>restart adb server!<======================================="
+            os.system("adb kill-server > /dev/null")
+            os.system("adb devices > /dev/null")
+            os.system("adb -s "+avd_serial+"wait-for-device > /dev/null")
+
+        if p.poll() != None:
+            print "output watcher is termined..."
+            break
+
+    # os.system(command)
 
 
 def get_all_apks(apk_list_file):
