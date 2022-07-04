@@ -31,10 +31,10 @@ pages={1-12}}
 
 
 
-## Prerequisite ##
+## Prerequisites ##
 * Ububntu 18.04 64-bit or Mac-OSX 10.15 
 * Android SDK with API 25 (ensuring adb, aapt, avdmanager, emulator correctly configured) 
-* Python 2.7 with enum and uiautomator packages
+* Python 2.7 (ensuring enum and uiautomator packages are installed)
 
 <!--
 adb, aapt, avdmanager, emulator 
@@ -66,7 +66,7 @@ cd appTest
 git clone --branch v3.4.2 https://github.com/TeamAmaze/AmazeFileManager.git
 ```
 
-### 2. Instrument app with [Jacoco](https://www.jacoco.org/jacoco/) ###
+### 2. Instrument the app with [Jacoco](https://www.jacoco.org/jacoco/) ###
 *  Build an instrumented apk
 ```
 # Add the jacoco plugin
