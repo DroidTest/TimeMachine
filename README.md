@@ -46,8 +46,9 @@ Package "enum" and "uiautomator" are needed in python2.7.
 
 
 
-## Running TimeMachine ##
-1. Clone TimeMachine
+## Run TimeMachine ##
+### 1. Clone Repos ###
+*  Clone TimeMachine
 ```
 # creating workspace
 mkdir workspace
@@ -56,7 +57,7 @@ cd workspace
 git clone https://github.com/DroidTest/TimeMachine.git
 ```
 
-2. Clone an example app [AmazeFileManager v3.4.2](https://github.com/TeamAmaze/AmazeFileManager/releases/tag/v3.4.2)
+*  Clone an example app [AmazeFileManager v3.4.2](https://github.com/TeamAmaze/AmazeFileManager/releases/tag/v3.4.2)
 ```
 # creating dir for AUT
 mkdir appTest
@@ -64,7 +65,9 @@ cd appTest
 
 git clone --branch v3.4.2 https://github.com/TeamAmaze/AmazeFileManager.git
 ```
-3. Instrumenting app with [Jacoco](https://www.jacoco.org/jacoco/)
+
+### 2. Instrument app with [Jacoco](https://www.jacoco.org/jacoco/) ###
+*  Build an instrumented apk
 ```
 # Add the jacoco plugin
 echo -e "\napply plugin: 'jacoco'" >> AmazeFileManager/app/build.gradle
@@ -79,16 +82,15 @@ sed -i '1i package com.amaze.filemanager.JacocoInstrument;' AmazeFileManager/app
 
 # Register the BroadcastReceiver in AndroidManifest.xml
 sed -i "`sed -n -e "/<\/application>/=" AmazeFileManager/app/src/main/AndroidManifest.xml` i <receiver android:name=\".JacocoInstrument.SMSInstrumentedReceiver\"><intent-filter><action android:name=\"edu.gatech.m3.emma.COLLECT_COVERAGE\"/></intent-filter></receiver>" AmazeFileManager/app/src/main/AndroidManifest.xml
-```
-4. Build an instrumented apk
-```
+
+# Build app with gradle
 cd AmazeFileManager
 
 ./gradlew clean
 ./gradlew --no-daemon assembleDebug
 ```
 
-5. Setup the apk in the test folder
+*  Setup the apk in the test folder
 
 ```
 cp app/build/outputs/apk/fdroid/debug/app-fdroid-debug.apk ../AmazeFileManager.apk
@@ -96,7 +98,10 @@ cp app/build/outputs/apk/fdroid/debug/app-fdroid-debug.apk ../AmazeFileManager.a
 # Generate a class_files.json to describe the built directory
 echo "{\"AmazeFileManager.apk\": {\"classfiles\": [\"AmazeFileManager/app/build/intermediates/javac/fdroidDebug/classes/\",\"AmazeFileManager/commons_compress_7z/build/intermediates/javac/debug/classes/\"]}}" > ../class_files.json
 ```
-6. Check if the instrumented app works
+
+
+
+### 3. Check if the instrumented app works ###
 ```
 # Launch emulator
 sdkmanager "system-images;android-25;google_apis;x86"
@@ -116,13 +121,15 @@ adb shell "cat /data/data/com.amaze.filemanager.debug/files/coverage.ec"
 adb emu kill
 ```
 
-7. Test the apk with TimeMachine
+
+### 4. Test the apk with TimeMachine ###
+* Launch TimeMachine
 ```  
 cd ../../TimeMachine/fuzzingandroid
 
 python2.7 main.py --avd avd0 --apk ../../appTest/AmazeFileManager.apk --time 1h -o ../../appTest/timemachine-results --no-headless
 ```   
-8. Check testing results
+* Check testing results
 
 ```  
 ls ../../appTest/timemachine-results/[output_dir_name]
