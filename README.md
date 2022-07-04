@@ -28,7 +28,12 @@ pages={1-12}}
 
 ```
 
+## What is new? ##
+For easy-to-use, we upgrade TimeMachine with following features:
 
+* Using the Android Emulator instead of Virtualbox 
+* Using Jacoco for instrumenting apps instead of EMMA
+* Solving other issues such as adb connection issues during fuzzing  
 
 
 ## Prerequisites ##
